@@ -14,8 +14,8 @@ export class AppComponent implements OnInit {
   constructor(private readonly api: ApiService) {}
 
   ngOnInit(): void {
-    this.api.getHealth().subscribe(() => {
-      console.log('got health');
+    this.api.discoverResources().subscribe((resources) => {
+      console.log(resources);
     });
   }
 }

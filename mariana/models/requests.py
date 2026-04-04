@@ -1,0 +1,29 @@
+from pydantic import BaseModel
+
+from models.resource import Resource
+
+
+class DiscoverRequest(BaseModel):
+    grade: str                # e.g. "Year 10"
+    subject: str              # e.g. "History"
+    state: str                # e.g. "NSW"
+    topic: str                # e.g. "World War I causes"
+    uploaded_doc_ids: list[str] = []  # Supabase doc IDs teacher uploaded
+
+class GenerateRequest(BaseModel):
+    grade: str
+    subject: str
+    state: str
+    topic: str
+    selected_resources: list[Resource]
+    additional_context: str = ""
+
+    @property
+    def selected_web_urls(self) -> list[str]:
+        return [r.url for r in self.selected_resources
+                if r.source_type == "web" and r.url is not None]
+
+    @property
+    def selected_document_ids(self) -> list[str]:
+        return [r.document_id for r in self.selected_resources
+                if r.source_type == "teacher_upload" and r.document_id is not None]
