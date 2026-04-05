@@ -19,6 +19,7 @@ class AgentService:
         weather_conditions: str | None = None
 
     def __init__(self):
+        """Initializes weather and generic grounded agents."""
         llm = LLMService.get()
         
         self.agent = create_agent(model=llm, tools=[self._get_weather()], response_format=ToolStrategy(self.ResponseFormat))
@@ -27,6 +28,7 @@ class AgentService:
         
 
     def _get_weather(self):
+        """Returns a mock tool to get weather information."""
         @tool
         def get_weather(city: str, current_weather: str) -> str:
             """Get weather for a given city."""
@@ -34,6 +36,6 @@ class AgentService:
         return get_weather
 
     async def get_weather(self, user_message: str):
+        """Invokes the grounded agent to process a weather-related user message."""
         response : AIMessage = self.grounded_agent.invoke( {"messages":[{"role":"user", "content":user_message}]})['messages'][-1]
         return str(response.content)
-

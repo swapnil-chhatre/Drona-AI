@@ -8,4 +8,5 @@ plan_service = PlanService()
 
 @router.post("/generate", response_model=StudyPlan)
 async def generate(request: GenerateRequest) -> StudyPlan:
+    """Handles POST request to generate a study plan via PlanService."""
     return await plan_service.generate(request)
