@@ -7,6 +7,10 @@ export const routes: Routes = [
     component: LandingComponent,
   },
   {
+    path: 'landing',
+    redirectTo: '',
+  },
+  {
     path: '**',
     redirectTo: '',
   },

@@ -1,13 +1,4 @@
 <div class="landing-shell">
-  <app-sidebar
-    class="landing-sidebar"
-    [items]="sidebarItems"
-    brandTitle="Drona-AI"
-    brandSubtitle="Intellectual Architect"
-    actionLabel="Generate New Plan"
-    actionIcon="add"
-  />
-
   <main class="landing-main">
     <header class="topbar">
       <div class="topbar__title-wrap">
@@ -34,13 +25,9 @@
 
           <div class="chip-row">
             @for (grade of gradeLevels; track grade.label) {
-              <button
-                class="choice-chip"
-                type="button"
-                [class.choice-chip--selected]="grade.selected"
-              >
-                {{ grade.label }}
-              </button>
+            <button class="choice-chip" type="button" [class.choice-chip--selected]="grade.selected">
+              {{ grade.label }}
+            </button>
             }
           </div>
         </article>
@@ -53,13 +40,9 @@
 
           <div class="chip-row">
             @for (subject of subjectAreas; track subject.label) {
-              <button
-                class="choice-chip"
-                type="button"
-                [class.choice-chip--selected]="subject.selected"
-              >
-                {{ subject.label }}
-              </button>
+            <button class="choice-chip" type="button" [class.choice-chip--selected]="subject.selected">
+              {{ subject.label }}
+            </button>
             }
           </div>
         </article>
@@ -73,7 +56,7 @@
           <label class="field-shell">
             <select>
               @for (standard of curriculumStandards; track standard) {
-                <option>{{ standard }}</option>
+              <option>{{ standard }}</option>
               }
             </select>
           </label>
@@ -95,9 +78,9 @@
         <span class="suggestions__label">Suggested:</span>
 
         @for (prompt of suggestedPrompts; track prompt) {
-          <button class="suggestion-pill" type="button">
-            {{ prompt }}
-          </button>
+        <button class="suggestion-pill" type="button">
+          {{ prompt }}
+        </button>
         }
       </div>
     </section>
