@@ -10,7 +10,7 @@ export class ApiService {
 
   constructor(private readonly http: HttpClient) {}
 
-  getHealth() {
-    return this.http.get(`${this.base}/api/health`);
+  discoverResources() {
+    return this.http.get(`${this.base}/api/discover`);
   }
 }
