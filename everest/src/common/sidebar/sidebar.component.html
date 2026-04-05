@@ -18,7 +18,7 @@
           [class.sidebar__link--active]="item.active"
           [routerLink]="item.route"
         >
-          <span class="material-symbols-outlined">{{ item.icon }}</span>
+          <span class="material-symbols-outlined" aria-hidden="true">{{ item.icon }}</span>
           <span>{{ item.label }}</span>
         </a>
       } @else {
@@ -27,7 +27,7 @@
           [class.sidebar__link--active]="item.active"
           type="button"
         >
-          <span class="material-symbols-outlined">{{ item.icon }}</span>
+          <span class="material-symbols-outlined" aria-hidden="true">{{ item.icon }}</span>
           <span>{{ item.label }}</span>
         </button>
       }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarComponent, SidebarNavItem } from '../sidebar/sidebar.component';
+import { SidebarComponent, SidebarNavItem } from '../common/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-landing',
