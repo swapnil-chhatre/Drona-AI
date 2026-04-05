@@ -9,6 +9,7 @@ from langchain_community.document_loaders import WebBaseLoader
 
 from services.llm_service import LLMService
 from services.rag_service import RagService
+from services.prompt_service import PromptService
 
 
 FOLLOW_UP_CHIPS = [
@@ -30,10 +31,10 @@ class PlanService:
         """Orchestrates content fetching and invokes LLM to generate the study plan."""
 
         # Step 1 — fetch web content for selected web resources
-        web_content = self._fetch_web_content(request.selected_web_urls)
+        web_content = await self._fetch_web_content(request.selected_web_urls)
 
         # Step 2 — RAG only the selected teacher documents  
-        doc_content = self._fetch_doc_content(
+        doc_content = await self._fetch_doc_content(
             topic=request.topic,
             document_ids=request.selected_document_ids
         )
@@ -54,33 +55,17 @@ class PlanService:
             for r in request.selected_resources
         ])
 
-        prompt = f"""You are an expert Australian curriculum designer.
-
-    Generate a comprehensive study plan for:
-    - Grade: {request.grade}
-    - Subject: {request.subject}  
-    - State/Region: {request.state}
-    - Topic: {request.topic}
-    - Additional context: {request.additional_context or "None provided"}
-
-    ## Selected Resources
-    {resources_text}
-
-    ## Web Content (from selected resources)
-    {web_content or "None available."}
-
-    ## Teacher Document Content (from selected uploads)
-    {doc_content or "None selected."}
-
-    ## Requirements
-    - Align with {request.state} curriculum standards
-    - Include learning objectives, structured lesson sequence, activities, and assessments
-    - Reference specific content from the web and document sections above
-    - Include Australian context and examples where relevant
-    - Use clear markdown formatting with headers, bullet points, and tables
-    - Estimate realistic timeframes for a classroom teacher
-
-    Format the output as a complete, ready-to-use markdown study plan."""
+        prompt = PromptService.plan_generation_prompt(
+            grade=request.grade,
+            subject=request.subject,
+            state=request.state,
+            topic=request.topic,
+            additional_context=request.additional_context or "None provided",
+            resources_text=resources_text,
+            web_content=web_content or "None available.",
+            doc_content=doc_content or "None selected.",
+            timeline_weeks=request.timeline_weeks
+        )
 
         response = self.llm.invoke(prompt)
 
@@ -89,13 +74,42 @@ class PlanService:
         return StudyPlan(
             markdown=response.text,
             title=f"{request.grade} {request.subject} — {request.topic}",
-            estimated_duration="2 weeks",
+            estimated_duration=f"{request.timeline_weeks} weeks",
             follow_up_chips=FOLLOW_UP_CHIPS,
         )
+    
+    async def stream_generate(self, request: GenerateRequest):
+        """Yields markdown tokens as they are generated."""
+        web_content = await self._fetch_web_content(request.selected_web_urls)
+        doc_content = await self._fetch_doc_content(
+            topic=request.topic,
+            document_ids=request.selected_document_ids
+        )
+
+        resources_text = "\n".join([
+            f"- [{r.title}]({r.url or 'teacher upload'}): {r.summary}"
+            for r in request.selected_resources
+        ])
+
+        prompt = PromptService.plan_generation_prompt(
+            grade=request.grade,
+            subject=request.subject,
+            state=request.state,
+            topic=request.topic,
+            additional_context=request.additional_context or "None provided",
+            resources_text=resources_text,
+            web_content= web_content or "None available.",
+            doc_content= doc_content or "None selected.",
+        )
+
+        # Stream tokens directly from the LLM — no agent needed
+        async for chunk in self.llm.astream(prompt):
+            if chunk.text:
+                yield chunk.text
 
 
 
-    def _fetch_web_content(self, urls: list[str]) -> str:
+    async def _fetch_web_content(self, urls: list[str]) -> str:
         """Scrapes text content from the provided web URLs."""
         if not urls:
             return ""
@@ -114,7 +128,7 @@ class PlanService:
         
         return "\n\n---\n\n".join(sections)
     
-    def _fetch_doc_content(self, topic: str, document_ids: list[str]) -> str:
+    async def _fetch_doc_content(self, topic: str, document_ids: list[str]) -> str:
         """Retrieves text content from specified teacher documents via RAG."""
         if not document_ids:
             return ""
