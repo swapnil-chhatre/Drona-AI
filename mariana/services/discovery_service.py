@@ -15,6 +15,7 @@ from services.rag_service import RagService
 class DiscoveryService:
 
     def __init__(self) -> None:
+        """Initializes RAG, LLM, Tavily search, and sets up the LangChain agent."""
         self.rag = RagService()
         self.llm = LLMService.get()
         
@@ -56,6 +57,7 @@ class DiscoveryService:
         )
 
     def _build_system_prompt(self) -> str:
+        """Returns the system prompt instructing the agent on resource criteria."""
         return """You are an expert educational resource finder for Australian K-12 teachers.
 Your job is to find high-quality, curriculum-aligned resources for the given grade, subject,
 state, and topic. Always search BOTH web and teacher documents.
@@ -79,6 +81,7 @@ Return structured results with honest quality assessments."""
 
 
     def search(self, request: DiscoverRequest) -> ResourceList:
+        """Combines request details into queries and invokes the agent to find resources."""
         location_specific_query = (
             f"Find educational resources for {request.grade} {request.subject} "
             f"students in {request.state}, Australia. Topic: {request.topic}. "

@@ -14,6 +14,7 @@ discovery_service = DiscoveryService()
 
 @router.get("/discover", response_model=ResourceList)
 def discover() -> ResourceList:
+    """Handles GET request to find web and teacher resources via DiscoveryService."""
     request = DiscoverRequest(grade="Year 10", subject="History", state="NSW", topic="Causes of World War I", uploaded_doc_ids=[])
     return discovery_service.search(request)
 

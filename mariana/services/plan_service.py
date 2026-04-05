@@ -22,10 +22,12 @@ FOLLOW_UP_CHIPS = [
 
 class PlanService:
     def __init__(self):
+        """Initializes LLM and RAG services."""
         self.llm = LLMService.get(temperature=0.4)
         self.rag = RagService()
 
     async def generate(self, request: GenerateRequest) -> StudyPlan:
+        """Orchestrates content fetching and invokes LLM to generate the study plan."""
 
         # Step 1 — fetch web content for selected web resources
         web_content = self._fetch_web_content(request.selected_web_urls)
@@ -45,6 +47,7 @@ class PlanService:
         web_content: str,
         doc_content: str
     ) -> StudyPlan:
+        """Constructs prompt with gathered content and generates the study plan."""
 
         resources_text = "\n".join([
             f"- [{r.title}]({r.url or 'teacher upload'}): {r.summary}"
@@ -93,6 +96,7 @@ class PlanService:
 
 
     def _fetch_web_content(self, urls: list[str]) -> str:
+        """Scrapes text content from the provided web URLs."""
         if not urls:
             return ""
         
@@ -111,6 +115,7 @@ class PlanService:
         return "\n\n---\n\n".join(sections)
     
     def _fetch_doc_content(self, topic: str, document_ids: list[str]) -> str:
+        """Retrieves text content from specified teacher documents via RAG."""
         if not document_ids:
             return ""
 

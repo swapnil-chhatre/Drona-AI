@@ -12,6 +12,7 @@ class LLMService:
         timeout: int | None = None,
         max_retries: int = 2,
         ) -> ChatGoogleGenerativeAI:
+        """Instantiates and returns a ChatGoogleGenerativeAI model."""
         return ChatGoogleGenerativeAI(
             model=model,
             temperature=temperature,
