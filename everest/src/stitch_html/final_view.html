@@ -1,0 +1,588 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Drona-AI | Final Study Plan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ffb688",
+              "primary-fixed-dim": "#a5c8ff",
+              "inverse-on-surface": "#eff0f9",
+              "secondary-fixed": "#cfe6f2",
+              "on-tertiary-container": "#fffeff",
+              surface: "#f9f9ff",
+              "surface-tint": "#005faf",
+              "surface-dim": "#d8dae2",
+              "on-error-container": "#93000a",
+              secondary: "#4c616c",
+              "outline-variant": "#c1c6d4",
+              "surface-variant": "#e0e2ea",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#354a53",
+              primary: "#005dac",
+              "surface-container-low": "#f2f3fc",
+              "on-surface-variant": "#414752",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e6e8f0",
+              "on-tertiary-fixed-variant": "#733600",
+              "tertiary-container": "#ba5b00",
+              "on-secondary-fixed": "#071e27",
+              tertiary: "#944700",
+              outline: "#717783",
+              "tertiary-fixed": "#ffdbc7",
+              error: "#ba1a1a",
+              "inverse-primary": "#a5c8ff",
+              "surface-container-highest": "#e0e2ea",
+              "surface-bright": "#f9f9ff",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#d4e3ff",
+              "surface-container": "#ecedf6",
+              "primary-container": "#1976d2",
+              "inverse-surface": "#2d3037",
+              "secondary-fixed-dim": "#b4cad6",
+              "on-primary-fixed-variant": "#004786",
+              "on-error": "#ffffff",
+              "secondary-container": "#cfe6f2",
+              "on-surface": "#181c21",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-container": "#526772",
+              "on-primary-fixed": "#001c3a",
+              "on-background": "#181c21",
+              "on-tertiary-fixed": "#311300",
+              "on-primary-container": "#fffdff",
+              background: "#f9f9ff",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Public Sans"],
+              label: ["Public Sans"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        line-height: 1;
+      }
+      .glass-panel {
+        background: rgba(249, 249, 255, 0.8);
+        backdrop-filter: blur(12px);
+      }
+      .ai-accent-bar {
+        border-left: 4px solid #ba5b00;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="w-full sticky top-0 z-50 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex justify-between items-center px-6 py-3"
+    >
+      <div class="flex items-center gap-8">
+        <span
+          class="text-2xl font-extrabold text-blue-800 dark:text-blue-300 font-headline"
+          >Drona-AI</span
+        >
+        <div class="hidden md:flex gap-6 items-center">
+          <a
+            class="font-manrope font-bold text-lg tracking-tight text-blue-800 dark:text-blue-200 border-b-2 border-blue-700"
+            href="#"
+            >My Study Plans</a
+          >
+          <a
+            class="font-manrope font-bold text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-600 hover:bg-slate-200/50 transition-colors"
+            href="#"
+            >Dashboard</a
+          >
+          <a
+            class="font-manrope font-bold text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-600 hover:bg-slate-200/50 transition-colors"
+            href="#"
+            >Resources</a
+          >
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="hidden sm:flex items-center bg-surface-container-low px-4 py-2 rounded-full outline outline-variant/40 outline-1"
+        >
+          <span class="material-symbols-outlined text-outline">search</span>
+          <input
+            class="bg-transparent border-none focus:ring-0 text-sm font-label ml-2"
+            placeholder="Search architecture..."
+            type="text"
+          />
+        </div>
+        <button
+          class="p-2 hover:bg-slate-200/50 rounded-full transition-colors"
+        >
+          <span class="material-symbols-outlined text-blue-700"
+            >notifications</span
+          >
+        </button>
+        <button
+          class="p-2 hover:bg-slate-200/50 rounded-full transition-colors"
+        >
+          <span class="material-symbols-outlined text-blue-700"
+            >help_outline</span
+          >
+        </button>
+        <img
+          alt="User avatar"
+          class="w-8 h-8 rounded-full object-cover"
+          data-alt="Close-up portrait of a professional male designer with a focused expression in a bright modern studio setting"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr3MFDlk2Fa1tJ6-czgRym77cD_uabaSaMFBouQml_w7NfaLgzgSxRhSvTcTguH0hWyvtB98OTgllEepjjugK_aHqhzjhhrER-09Kz-b0N8iLZMgdyER5OWd2rQMzd-dJlQXMuKT2KBzwwQ9mLiNBuVfMUV-MKIEzmweYcUG8AVLaWA_OXm9dRazGrRvdE2puvpn9XtswQProZA6UodafF-Q8F4UaghCcJZHxWrJ8TdBKn2yvJaE9fB6-JhKa6C2B2cvaAxndgNVv7"
+        />
+      </div>
+    </nav>
+    <div class="flex min-h-screen">
+      <!-- SideNavBar -->
+      <aside
+        class="h-screen w-64 fixed left-0 top-0 hidden lg:flex flex-col bg-slate-100/80 dark:bg-slate-900/80 backdrop-blur-xl p-4 gap-2 border-r border-outline-variant/10"
+      >
+        <div class="flex items-center gap-3 px-2 py-6 mb-4">
+          <div
+            class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-weight="fill"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >architecture</span
+            >
+          </div>
+          <div>
+            <h1
+              class="text-xl font-black text-blue-900 dark:text-blue-100 leading-none"
+            >
+              Drona-AI
+            </h1>
+            <p
+              class="text-[10px] uppercase tracking-widest text-slate-500 mt-1 font-label"
+            >
+              Intellectual Architect
+            </p>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-1">
+          <a
+            class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:bg-white/50 transition-all font-manrope text-sm font-medium tracking-wide"
+            href="#"
+          >
+            <span class="material-symbols-outlined">dashboard</span>
+            Dashboard
+          </a>
+          <a
+            class="flex items-center gap-3 bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-300 rounded-lg px-4 py-3 font-manrope text-sm font-bold tracking-wide"
+            href="#"
+          >
+            <span class="material-symbols-outlined">menu_book</span>
+            My Study Plans
+          </a>
+          <a
+            class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:bg-white/50 transition-all font-manrope text-sm font-medium tracking-wide"
+            href="#"
+          >
+            <span class="material-symbols-outlined">upload_file</span>
+            Uploaded Docs
+          </a>
+          <a
+            class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:bg-white/50 transition-all font-manrope text-sm font-medium tracking-wide"
+            href="#"
+          >
+            <span class="material-symbols-outlined">settings</span>
+            Settings
+          </a>
+        </nav>
+        <div class="mt-auto p-4">
+          <button
+            class="w-full bg-gradient-to-r from-primary to-primary-container text-white rounded-xl py-3 font-headline font-bold flex items-center justify-center gap-2 hover:scale-95 active:scale-100 transition-all shadow-lg shadow-primary/20"
+          >
+            <span class="material-symbols-outlined">add</span>
+            Generate New Plan
+          </button>
+        </div>
+      </aside>
+      <!-- Main Content Canvas -->
+      <main class="flex-1 lg:ml-64 bg-surface min-h-screen p-4 md:p-8 lg:p-12">
+        <div class="max-w-5xl mx-auto flex flex-col xl:flex-row gap-8">
+          <!-- Study Plan Scrollable View -->
+          <div class="flex-1">
+            <header class="mb-10">
+              <div
+                class="flex items-center gap-2 text-primary font-label text-sm font-semibold tracking-wider mb-2"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >auto_awesome</span
+                >
+                AI-GENERATED ARCHITECTURAL BLUEPRINT
+              </div>
+              <h2
+                class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tight leading-tight"
+              >
+                Advanced Neural Architectures &amp; Cognitive Flow
+              </h2>
+              <div
+                class="flex flex-wrap gap-4 mt-4 text-outline font-label text-xs"
+              >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-sm"
+                    >calendar_today</span
+                  >
+                  Oct 24, 2023</span
+                >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-sm">timer</span>
+                  12 Week Course</span
+                >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-sm">school</span>
+                  Graduate Level</span
+                >
+              </div>
+            </header>
+            <div
+              class="space-y-12 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/5"
+            >
+              <!-- Learning Objectives Section -->
+              <section>
+                <h3
+                  class="text-2xl font-headline font-bold text-primary mb-6 flex items-center gap-3"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >target</span
+                  >
+                  Learning Objectives
+                </h3>
+                <div class="space-y-6 text-on-surface-variant leading-relaxed">
+                  <div
+                    class="flex gap-4 items-start bg-surface-container-low p-4 rounded-xl"
+                  >
+                    <span class="text-primary font-bold font-headline mt-1"
+                      >01</span
+                    >
+                    <p class="body-lg">
+                      Synthesize complex neural network topologies with
+                      attention-based mechanisms for multi-modal processing.
+                    </p>
+                  </div>
+                  <div
+                    class="flex gap-4 items-start bg-surface-container-low p-4 rounded-xl"
+                  >
+                    <span class="text-primary font-bold font-headline mt-1"
+                      >02</span
+                    >
+                    <p class="body-lg">
+                      Evaluate the structural integrity of latent spaces in
+                      generative adversarial frameworks and diffusion models.
+                    </p>
+                  </div>
+                  <div
+                    class="flex gap-4 items-start bg-surface-container-low p-4 rounded-xl"
+                  >
+                    <span class="text-primary font-bold font-headline mt-1"
+                      >03</span
+                    >
+                    <p class="body-lg">
+                      Implement ethical bias mitigation strategies across
+                      decentralized learning nodes.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <!-- Activities Section -->
+              <section
+                class="ai-accent-bar bg-secondary-container/20 p-6 rounded-r-xl"
+              >
+                <h3
+                  class="text-2xl font-headline font-bold text-on-surface mb-6 flex items-center gap-3"
+                >
+                  <span class="material-symbols-outlined text-tertiary"
+                    >rocket_launch</span
+                  >
+                  Core Learning Activities
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <h4
+                      class="font-bold text-on-surface flex items-center gap-2"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm text-primary"
+                        >data_thresholding</span
+                      >
+                      Deep Dive: Analysis
+                    </h4>
+                    <p class="text-sm text-on-surface-variant">
+                      Perform a comparative analysis of Transformer vs. State
+                      Space models using the provided Jupyter environment.
+                    </p>
+                  </div>
+                  <div class="space-y-2">
+                    <h4
+                      class="font-bold text-on-surface flex items-center gap-2"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm text-primary"
+                        >code</span
+                      >
+                      Architectural Build
+                    </h4>
+                    <p class="text-sm text-on-surface-variant">
+                      Construct a miniature latent flow model with 3 distinct
+                      branching pathways for cross-attention testing.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <!-- Resources Section -->
+              <section>
+                <h3
+                  class="text-2xl font-headline font-bold text-primary mb-6 flex items-center gap-3"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >library_books</span
+                  >
+                  Curated Resources &amp; Citations
+                </h3>
+                <div class="space-y-4">
+                  <div
+                    class="group flex items-center justify-between p-4 bg-surface hover:bg-surface-container-high transition-colors rounded-xl border-b border-outline-variant/10"
+                  >
+                    <div class="flex gap-4 items-center">
+                      <span
+                        class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                        >description</span
+                      >
+                      <div>
+                        <p class="font-bold text-on-surface">
+                          Vaswani et al. (2017)
+                        </p>
+                        <p class="text-xs text-outline">
+                          Attention Is All You Need — NIPS Foundation
+                        </p>
+                      </div>
+                    </div>
+                    <a
+                      class="text-primary hover:underline font-label text-xs font-bold uppercase tracking-tighter"
+                      href="#"
+                      >View Source</a
+                    >
+                  </div>
+                  <div
+                    class="group flex items-center justify-between p-4 bg-surface hover:bg-surface-container-high transition-colors rounded-xl border-b border-outline-variant/10"
+                  >
+                    <div class="flex gap-4 items-center">
+                      <span
+                        class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                        >video_library</span
+                      >
+                      <div>
+                        <p class="font-bold text-on-surface">
+                          Diffusion Theory Masterclass
+                        </p>
+                        <p class="text-xs text-outline">
+                          Stanford Engineering Series (Video)
+                        </p>
+                      </div>
+                    </div>
+                    <a
+                      class="text-primary hover:underline font-label text-xs font-bold uppercase tracking-tighter"
+                      href="#"
+                      >View Source</a
+                    >
+                  </div>
+                </div>
+              </section>
+              <!-- Assessment Section -->
+              <section>
+                <h3
+                  class="text-2xl font-headline font-bold text-primary mb-6 flex items-center gap-3"
+                >
+                  <span class="material-symbols-outlined text-primary-container"
+                    >fact_check</span
+                  >
+                  Mastery Assessment
+                </h3>
+                <div
+                  class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden"
+                >
+                  <div class="relative z-10">
+                    <h4 class="font-bold text-lg mb-2 text-on-surface">
+                      Capstone Project: The Resilient Mind
+                    </h4>
+                    <p class="text-on-surface-variant mb-6 leading-relaxed">
+                      Design a self-healing neural network schema that maintains
+                      functional accuracy after 30% synthetic neuron loss.
+                      Submit as a documented PDF with architecture diagrams.
+                    </p>
+                    <div class="flex items-center gap-4">
+                      <span
+                        class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold"
+                        >Due in 14 Days</span
+                      >
+                      <span
+                        class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold"
+                        >Weighted: 40%</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-primary/5 select-none"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >workspace_premium</span
+                  >
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- Action Sidebar -->
+          <aside class="xl:w-80 w-full shrink-0">
+            <div class="sticky top-24 space-y-6">
+              <!-- Summary Card -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10"
+              >
+                <h4 class="font-headline font-bold text-on-surface mb-4">
+                  Export Options
+                </h4>
+                <div class="flex flex-col gap-3">
+                  <button
+                    class="w-full flex items-center justify-between p-4 bg-primary text-white rounded-xl hover:opacity-90 transition-opacity"
+                  >
+                    <span class="flex items-center gap-3">
+                      <span class="material-symbols-outlined"
+                        >picture_as_pdf</span
+                      >
+                      <span class="font-bold text-sm">Download as PDF</span>
+                    </span>
+                    <span class="material-symbols-outlined text-sm"
+                      >download</span
+                    >
+                  </button>
+                  <button
+                    class="w-full flex items-center justify-between p-4 bg-surface-container-high text-on-surface rounded-xl hover:bg-surface-container-highest transition-colors"
+                  >
+                    <span class="flex items-center gap-3">
+                      <span class="material-symbols-outlined"
+                        >content_copy</span
+                      >
+                      <span class="font-bold text-sm">Copy to Clipboard</span>
+                    </span>
+                    <span class="material-symbols-outlined text-sm"
+                      >check_circle</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <!-- Progress Card -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10"
+              >
+                <h4 class="font-headline font-bold text-on-surface mb-4">
+                  Plan Stats
+                </h4>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-end">
+                    <div>
+                      <p
+                        class="text-xs text-outline font-label uppercase font-bold tracking-widest"
+                      >
+                        Complexity
+                      </p>
+                      <p
+                        class="text-xl font-headline font-black text-on-surface"
+                      >
+                        Architectural
+                      </p>
+                    </div>
+                    <div class="text-right">
+                      <p
+                        class="text-xs text-outline font-label uppercase font-bold tracking-widest"
+                      >
+                        Depth
+                      </p>
+                      <p class="text-xl font-headline font-black text-primary">
+                        Advanced
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden"
+                  >
+                    <div class="h-full w-[85%] bg-primary rounded-full"></div>
+                  </div>
+                  <p class="text-[10px] text-center text-outline italic">
+                    Generated with Drona-AI Cognitive Engine v4.2
+                  </p>
+                </div>
+              </div>
+              <!-- Mini Image Card -->
+              <div
+                class="rounded-xl overflow-hidden shadow-lg shadow-primary/10 relative h-48 group"
+              >
+                <img
+                  alt="Tech visualization"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  data-alt="Abstract 3D visualization of a neural network with glowing connections and data particles in deep blue and gold colors"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNol7uuC-Bbi6rpliX5XMj-QG8-Q0nprShELbl88lhMpKvGtKebr5R9RqaS-1RJb05ej-R9jqBGKpQGBO_fmoBbyOHcyoWEH1I8lVbvOdwoaXNr3oVGk9ofl2r0y7us4CLagkXJ1nAQi3xYPS5AYrTxqWbXt-PT7CUeqxLuI6V2HYahQKisYkCbuccEAzaxtI5263iORcOjQpkFAy47QBqtqQyolXfwT4KS3KOyAVcAhbX19LQyOtuJPEBOc1hOARbPuXzZE7_VS21"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-4"
+                >
+                  <p class="text-white font-headline font-bold">
+                    Visual Study Guide
+                  </p>
+                  <p class="text-white/70 text-xs">
+                    Included in full PDF export
+                  </p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
