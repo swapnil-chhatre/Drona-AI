@@ -125,40 +125,19 @@
   gap: 0.35rem;
 }
 
-.final-tabs {
-  display: flex;
-  gap: 0.25rem;
-  overflow-x: auto;
-  margin: 1.75rem 0;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(193, 198, 212, 0.28);
-}
-
-.final-tabs button {
-  border: 0;
-  border-bottom: 2px solid transparent;
-  background: transparent;
-  padding: 0.95rem 1.1rem;
-  color: var(--color-outline);
-  font-family: var(--font-headline);
-  font-size: 0.92rem;
-  font-weight: 700;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.final-tabs button.is-active {
-  color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
-}
-
 .blueprint-panel {
   position: relative;
+  margin-top: 1.75rem;
   padding: 2rem;
   border-radius: 1.5rem;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(193, 198, 212, 0.16);
   box-shadow: 0 18px 50px rgba(24, 28, 33, 0.06);
+}
+
+.blueprint-panel--accent {
+  border-left: 4px solid #ba5b00;
+  background: rgba(255, 255, 255, 0.94);
 }
 
 .copy-button {
@@ -180,21 +159,6 @@
   cursor: pointer;
 }
 
-.markdown-section + .markdown-section {
-  margin-top: 2.5rem;
-}
-
-.markdown-section {
-  padding: 0;
-}
-
-.markdown-section--accent {
-  padding: 1.5rem;
-  border-left: 4px solid #ba5b00;
-  border-radius: 0 1.25rem 1.25rem 0;
-  background: rgba(207, 230, 242, 0.2);
-}
-
 .markdown-section__header {
   display: flex;
   align-items: center;
@@ -206,7 +170,7 @@
   color: var(--color-primary-container);
 }
 
-.markdown-section--accent .markdown-section__header .material-symbols-outlined {
+.blueprint-panel--accent .markdown-section__header .material-symbols-outlined {
   color: var(--color-tertiary);
 }
 
@@ -218,16 +182,33 @@
   color: var(--color-primary);
 }
 
-.markdown-section--accent .markdown-section__header h2 {
+.blueprint-panel--accent .markdown-section__header h2 {
   color: var(--color-on-surface);
 }
 
+.markdown-render {
+  display: block;
+}
+
+:host ::ng-deep .markdown-render h1,
+:host ::ng-deep .markdown-render h2,
 :host ::ng-deep .markdown-render h3,
 :host ::ng-deep .markdown-render h4 {
   margin: 1rem 0 0.6rem;
   font-family: var(--font-headline);
   font-weight: 800;
   color: var(--color-on-surface);
+}
+
+:host ::ng-deep .markdown-render h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+:host ::ng-deep .markdown-render h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 :host ::ng-deep .markdown-render h3 {
@@ -245,8 +226,9 @@
   font-size: 1rem;
 }
 
-:host ::ng-deep .markdown-render ul {
-  padding-left: 1.25rem;
+:host ::ng-deep .markdown-render ul,
+:host ::ng-deep .markdown-render ol {
+  padding-left: 1.4rem;
 }
 
 :host ::ng-deep .markdown-render strong {
@@ -306,6 +288,21 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.task-card:hover {
+  transform: translateY(-1px);
+}
+
+.task-card--active {
+  border-color: rgba(0, 93, 172, 0.3);
+  background: rgba(212, 227, 255, 0.58);
+  box-shadow: 0 16px 30px rgba(0, 93, 172, 0.08);
 }
 
 .task-card .material-symbols-outlined {

@@ -30,35 +30,28 @@
 
           <div class="final-header__meta">
             @for (fact of summaryFacts; track fact.label) {
-            <span>
-              <span class="material-symbols-outlined" aria-hidden="true">{{ fact.icon }}</span>
-              {{ fact.label }}
-            </span>
+              <span>
+                <span class="material-symbols-outlined" aria-hidden="true">{{ fact.icon }}</span>
+                {{ fact.label }}
+              </span>
             }
           </div>
         </header>
 
-        <div class="final-tabs">
-          @for (tab of viewModel.tabs; track tab.label) {
-          <button type="button" [class.is-active]="tab.active">{{ tab.label }}</button>
-          }
-        </div>
-
-        <section class="blueprint-panel">
-          <button type="button" class="copy-button">
+        <section class="blueprint-panel" [class.blueprint-panel--accent]="activeDocument.tone === 'tertiary'">
+          <button type="button" class="copy-button" (click)="copyMarkdown()">
             <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
-            <span>Copy</span>
+            <span>{{ copyLabel }}</span>
           </button>
 
-          @for (chunk of markdownChunks; track trackChunk($index, chunk)) {
-          <article class="markdown-section" [class.markdown-section--accent]="chunk.accent === 'tertiary'">
+          <article class="markdown-section">
             <header class="markdown-section__header">
-              <span class="material-symbols-outlined" aria-hidden="true">{{ chunk.icon }}</span>
-              <h2>{{ chunk.title }}</h2>
+              <span class="material-symbols-outlined" aria-hidden="true">{{ activeDocument.icon }}</span>
+              <h2>{{ activeDocument.label }}</h2>
             </header>
-            <markdown class="markdown-render" [data]="chunk.markdown" />
+
+            <markdown class="markdown-render" [data]="activeDocument.markdown" />
           </article>
-          }
         </section>
       </div>
 
@@ -70,12 +63,18 @@
           </div>
 
           <div class="task-grid">
-            @for (action of actionCards; track action.label) {
-            <button type="button" class="task-card" [class.task-card--tertiary]="action.tone === 'tertiary'"
-              [class.task-card--secondary]="action.tone === 'secondary'">
-              <span class="material-symbols-outlined" aria-hidden="true">{{ action.icon }}</span>
-              <span>{{ action.label }}</span>
-            </button>
+            @for (action of actionCards; track action.id) {
+              <button
+                type="button"
+                class="task-card"
+                [class.task-card--active]="action.id === activeDocument.id"
+                [class.task-card--tertiary]="action.tone === 'tertiary'"
+                [class.task-card--secondary]="action.tone === 'secondary'"
+                (click)="selectDocument(action.id)"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">{{ action.icon }}</span>
+                <span>{{ action.label }}</span>
+              </button>
             }
           </div>
         </div>
@@ -85,13 +84,13 @@
 
           <div class="export-list">
             @for (option of exportOptions; track option.label) {
-            <button type="button" class="export-button">
-              <span class="export-button__label">
-                <span class="material-symbols-outlined" aria-hidden="true">{{ option.icon }}</span>
-                <span>{{ option.label }}</span>
-              </span>
-              <span class="material-symbols-outlined" aria-hidden="true">{{ option.actionIcon }}</span>
-            </button>
+              <button type="button" class="export-button">
+                <span class="export-button__label">
+                  <span class="material-symbols-outlined" aria-hidden="true">{{ option.icon }}</span>
+                  <span>{{ option.label }}</span>
+                </span>
+                <span class="material-symbols-outlined" aria-hidden="true">{{ option.actionIcon }}</span>
+              </button>
             }
           </div>
         </div>

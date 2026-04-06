@@ -1,20 +1,9 @@
-export interface FinalResultChunk {
+export interface FinalResultDocument {
   id: string;
-  title: string;
-  icon: string;
-  accent: 'primary' | 'tertiary';
-  markdown: string;
-}
-
-export interface FinalResultTab {
-  label: string;
-  active?: boolean;
-}
-
-export interface FinalResultAction {
   label: string;
   icon: string;
   tone: 'primary' | 'secondary' | 'tertiary';
+  markdown: string;
 }
 
 export interface FinalResultExportOption {
@@ -29,8 +18,6 @@ export interface FinalResultResponse {
   createdAt: string;
   duration: string;
   level: string;
-  tabs: FinalResultTab[];
-  chunks: FinalResultChunk[];
-  actions: FinalResultAction[];
+  documents: FinalResultDocument[];
   exports: FinalResultExportOption[];
 }
