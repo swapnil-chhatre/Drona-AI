@@ -1,0 +1,98 @@
+<div class="landing-shell">
+  <main class="landing-main">
+
+    <section class="hero">
+      <div class="hero__copy">
+        <h1>
+          What are we <span>building</span> today?
+        </h1>
+        <p>
+          Select your parameters and let the Intellectual Architect draft your curriculum.
+        </p>
+      </div>
+
+      <div class="selector-grid">
+        <article class="panel panel--compact">
+          <div class="panel__eyebrow">
+            <span class="material-symbols-outlined">school</span>
+            <span>Grade Level</span>
+          </div>
+
+          <div class="chip-row">
+            @for (grade of gradeLevels; track grade.label) {
+            <button class="choice-chip" type="button" [class.choice-chip--selected]="grade.selected">
+              {{ grade.label }}
+            </button>
+            }
+          </div>
+        </article>
+
+        <article class="panel panel--wide">
+          <div class="panel__eyebrow">
+            <span class="material-symbols-outlined">biotech</span>
+            <span>Subject Area</span>
+          </div>
+
+          <div class="chip-row">
+            @for (subject of subjectAreas; track subject.label) {
+            <button class="choice-chip" type="button" [class.choice-chip--selected]="subject.selected">
+              {{ subject.label }}
+            </button>
+            }
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel__eyebrow">
+            <span class="material-symbols-outlined">map</span>
+            <span>Curriculum Standard</span>
+          </div>
+
+          <label class="field-shell">
+            <select>
+              @for (standard of curriculumStandards; track standard) {
+              <option>{{ standard }}</option>
+              }
+            </select>
+          </label>
+        </article>
+
+        <article class="panel panel--topic">
+          <div class="panel__eyebrow">
+            <span class="material-symbols-outlined">lightbulb</span>
+            <span>Focus Topic</span>
+          </div>
+
+          <label class="field-shell">
+            <input type="text" placeholder="e.g., Plate Tectonics or Cellular Mitosis" />
+          </label>
+        </article>
+      </div>
+
+      <div class="suggestions">
+        <span class="suggestions__label">Suggested:</span>
+
+        @for (prompt of suggestedPrompts; track prompt) {
+        <button class="suggestion-pill" type="button">
+          {{ prompt }}
+        </button>
+        }
+      </div>
+    </section>
+
+    <footer class="composer">
+      <div class="composer__glow"></div>
+      <div class="composer__inner">
+        <input type="text" placeholder="Help me build a study plan for..." />
+        <button type="button" aria-label="Send prompt">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </div>
+      <p>Drona-AI may generate information that requires professional verification.</p>
+    </footer>
+
+    <div class="background-mark" aria-hidden="true">
+      <span class="material-symbols-outlined">architecture</span>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,373 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ffb688",
+              "primary-fixed-dim": "#a5c8ff",
+              "inverse-on-surface": "#eff0f9",
+              "secondary-fixed": "#cfe6f2",
+              "on-tertiary-container": "#fffeff",
+              surface: "#f9f9ff",
+              "surface-tint": "#005faf",
+              "surface-dim": "#d8dae2",
+              "on-error-container": "#93000a",
+              secondary: "#4c616c",
+              "outline-variant": "#c1c6d4",
+              "surface-variant": "#e0e2ea",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#354a53",
+              primary: "#005dac",
+              "surface-container-low": "#f2f3fc",
+              "on-surface-variant": "#414752",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e6e8f0",
+              "on-tertiary-fixed-variant": "#733600",
+              "tertiary-container": "#ba5b00",
+              "on-secondary-fixed": "#071e27",
+              tertiary: "#944700",
+              outline: "#717783",
+              "tertiary-fixed": "#ffdbc7",
+              error: "#ba1a1a",
+              "inverse-primary": "#a5c8ff",
+              "surface-container-highest": "#e0e2ea",
+              "surface-bright": "#f9f9ff",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#d4e3ff",
+              "surface-container": "#ecedf6",
+              "primary-container": "#1976d2",
+              "inverse-surface": "#2d3037",
+              "secondary-fixed-dim": "#b4cad6",
+              "on-primary-fixed-variant": "#004786",
+              "on-error": "#ffffff",
+              "secondary-container": "#cfe6f2",
+              "on-surface": "#181c21",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-container": "#526772",
+              "on-primary-fixed": "#001c3a",
+              "on-background": "#181c21",
+              "on-tertiary-fixed": "#311300",
+              "on-primary-container": "#fffdff",
+              background: "#f9f9ff",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Public Sans"],
+              label: ["Public Sans"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-panel {
+        background: rgba(249, 249, 255, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+      .shimmer {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(25, 118, 210, 0.1),
+          transparent
+        );
+        background-size: 200% 100%;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed"
+  >
+    <!-- Sidebar Navigation (SideNavBar) -->
+    <aside
+      class="h-screen w-64 fixed left-0 top-0 bg-slate-100/80 dark:bg-slate-900/80 backdrop-blur-xl flex flex-col p-4 gap-2 z-40"
+    >
+      <div class="flex flex-col mb-8 px-4 pt-4">
+        <h1
+          class="text-xl font-black text-blue-900 dark:text-blue-100 font-headline"
+        >
+          Drona-AI
+        </h1>
+        <p
+          class="text-xs font-medium tracking-wide text-blue-700 dark:text-blue-400 font-headline opacity-70"
+        >
+          Intellectual Architect
+        </p>
+      </div>
+      <nav class="flex-1 flex flex-col gap-1">
+        <a
+          class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:text-blue-600 hover:bg-white/50 dark:hover:bg-slate-800/50 transition-all rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">dashboard</span>
+          <span class="font-manrope text-sm font-medium tracking-wide"
+            >Dashboard</span
+          >
+        </a>
+        <a
+          class="flex items-center gap-3 bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-300 rounded-lg px-4 py-3 font-bold transition-all"
+          href="#"
+        >
+          <span class="material-symbols-outlined">menu_book</span>
+          <span class="font-manrope text-sm font-medium tracking-wide"
+            >My Study Plans</span
+          >
+        </a>
+        <a
+          class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:text-blue-600 hover:bg-white/50 dark:hover:bg-slate-800/50 transition-all rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">upload_file</span>
+          <span class="font-manrope text-sm font-medium tracking-wide"
+            >Uploaded Docs</span
+          >
+        </a>
+        <a
+          class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:text-blue-600 hover:bg-white/50 dark:hover:bg-slate-800/50 transition-all rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">settings</span>
+          <span class="font-manrope text-sm font-medium tracking-wide"
+            >Settings</span
+          >
+        </a>
+      </nav>
+      <button
+        class="mt-auto bg-gradient-to-r from-primary to-primary-container text-white rounded-xl py-3 px-4 font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity"
+      >
+        <span class="material-symbols-outlined text-xl">add_circle</span>
+        <span class="font-manrope text-sm">Generate New Plan</span>
+      </button>
+    </aside>
+    <main class="ml-64 min-h-screen relative overflow-hidden">
+      <!-- Background decorative element -->
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-24 -left-24 w-64 h-64 bg-tertiary/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <!-- Top Navigation (TopNavBar) -->
+      <header
+        class="w-full sticky top-0 z-50 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex justify-between items-center px-8 py-4"
+      >
+        <div class="flex items-center gap-2">
+          <h2
+            class="font-headline font-extrabold text-2xl text-blue-800 dark:text-blue-300"
+          >
+            Generation
+          </h2>
+        </div>
+        <div class="flex items-center gap-6">
+          <div class="relative group">
+            <span
+              class="material-symbols-outlined text-slate-600 dark:text-slate-400 group-hover:text-blue-600 transition-colors cursor-pointer"
+              >notifications</span
+            >
+            <span
+              class="absolute top-0 right-0 w-2 h-2 bg-error rounded-full"
+            ></span>
+          </div>
+          <span
+            class="material-symbols-outlined text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors cursor-pointer"
+            >help_outline</span
+          >
+          <div
+            class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border-2 border-white/50"
+          >
+            <img
+              alt="User avatar"
+              class="w-full h-full object-cover"
+              data-alt="professional headshot of a smiling man with neat hair in a bright modern office setting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn0JODt0QiltiJNRTcF1XrzaX7LOluW7zOgTnDlxxnN2Rqo9IDrdNpzwejPFazR_-DLag2uMiItJ1UTMYoUpoBesP-92TsCGbmTtGla9XWCpbKtqLySsmlR7i_iNAgvfqXvMeTi9otJrfUOvYubc3ygU-y4458aenN28epjsN7g5SDOcQvg9yB77DreTS4vzpuqPkZltD1-OhyRw-OPte7nhzVNx5LtHGozxKUcgI0LfDGDMm5Gu_WcCXgn4zZ7vtwEqYAuYsiXGoW"
+            />
+          </div>
+        </div>
+      </header>
+      <!-- Generation Content Area -->
+      <div
+        class="max-w-4xl mx-auto px-6 py-12 flex flex-col items-center justify-center min-h-[calc(100vh-80px)]"
+      >
+        <!-- Central Processing Hub -->
+        <div
+          class="w-full glass-panel rounded-[2rem] p-12 text-center relative"
+        >
+          <!-- Animated Pulse Visual -->
+          <div class="mb-10 relative inline-flex items-center justify-center">
+            <div
+              class="absolute w-32 h-32 bg-primary/10 rounded-full animate-ping"
+            ></div>
+            <div
+              class="relative w-24 h-24 bg-gradient-to-br from-primary to-primary-container rounded-full flex items-center justify-center shadow-xl shadow-primary/30"
+            >
+              <span
+                class="material-symbols-outlined text-white text-5xl"
+                data-weight="fill"
+                >neurology</span
+              >
+            </div>
+          </div>
+          <!-- Text Header -->
+          <h3
+            class="font-headline text-3xl font-extrabold text-on-surface mb-3 tracking-tight"
+          >
+            Architecting Your Knowledge
+          </h3>
+          <p
+            class="text-on-surface-variant font-body text-lg max-w-md mx-auto mb-12"
+          >
+            Drona-AI is analyzing your selected resources to craft a custom
+            learning trajectory.
+          </p>
+          <!-- Progress Bar Section -->
+          <div class="max-w-xl mx-auto mb-16">
+            <div class="flex justify-between items-end mb-3 px-1">
+              <span class="text-sm font-semibold text-primary font-headline"
+                >CURRENT PROGRESS</span
+              >
+              <span class="text-2xl font-black text-primary font-headline"
+                >64%</span
+              >
+            </div>
+            <div
+              class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-primary to-primary-container w-[64%] rounded-full relative"
+              >
+                <div class="absolute inset-0 shimmer opacity-30"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Status Tickers (Bento-lite style) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+            <!-- Status Item 1: Completed -->
+            <div
+              class="bg-surface-container-low p-5 rounded-2xl flex items-start gap-4 transition-all border-l-4 border-primary"
+            >
+              <div class="bg-primary/10 text-primary p-2 rounded-lg">
+                <span class="material-symbols-outlined text-xl"
+                  >check_circle</span
+                >
+              </div>
+              <div>
+                <p
+                  class="font-headline text-xs font-bold text-primary tracking-widest uppercase mb-1"
+                >
+                  STEP 01
+                </p>
+                <p class="text-sm font-semibold text-on-surface leading-snug">
+                  Scanning web pages...
+                </p>
+              </div>
+            </div>
+            <!-- Status Item 2: Active -->
+            <div
+              class="bg-surface-container-lowest p-5 rounded-2xl flex items-start gap-4 shadow-md ring-1 ring-primary/5 border-l-4 border-tertiary"
+            >
+              <div class="bg-tertiary-fixed text-tertiary p-2 rounded-lg">
+                <span class="material-symbols-outlined text-xl animate-spin"
+                  >sync</span
+                >
+              </div>
+              <div>
+                <p
+                  class="font-headline text-xs font-bold text-tertiary tracking-widest uppercase mb-1"
+                >
+                  STEP 02
+                </p>
+                <p class="text-sm font-semibold text-on-surface leading-snug">
+                  Extracting key chunks from docs...
+                </p>
+              </div>
+            </div>
+            <!-- Status Item 3: Pending -->
+            <div
+              class="bg-surface-container-low p-5 rounded-2xl flex items-start gap-4 opacity-50 grayscale"
+            >
+              <div
+                class="bg-surface-container-high text-outline p-2 rounded-lg"
+              >
+                <span class="material-symbols-outlined text-xl">pending</span>
+              </div>
+              <div>
+                <p
+                  class="font-headline text-xs font-bold text-outline tracking-widest uppercase mb-1"
+                >
+                  STEP 03
+                </p>
+                <p class="text-sm font-semibold text-on-surface leading-snug">
+                  Generating curriculum-aligned plan...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Context Info Footer -->
+        <div
+          class="mt-12 flex flex-wrap justify-center gap-12 text-on-surface-variant/70"
+        >
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">security</span>
+            <span class="text-xs font-medium font-label"
+              >Encrypted Data Processing</span
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">database</span>
+            <span class="text-xs font-medium font-label"
+              >4 Selected Sources</span
+            >
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">bolt</span>
+            <span class="text-xs font-medium font-label">Est. time: 45s</span>
+          </div>
+        </div>
+      </div>
+      <!-- AI Background Detail (The "Machine-Thought" Indicator) -->
+      <div
+        class="absolute bottom-10 right-10 flex flex-col items-end gap-2 opacity-20 pointer-events-none"
+      >
+        <div
+          class="w-48 h-1 bg-gradient-to-l from-primary-container to-transparent rounded-full"
+        ></div>
+        <div
+          class="w-32 h-1 bg-gradient-to-l from-tertiary-container to-transparent rounded-full"
+        ></div>
+        <div
+          class="w-64 h-1 bg-gradient-to-l from-primary to-transparent rounded-full"
+        ></div>
+      </div>
+    </main>
+    <!-- Contextual FAB (Suppressed as per rules for Transactional/Detail states) -->
+  </body>
+</html>
