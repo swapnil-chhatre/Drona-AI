@@ -1,0 +1,139 @@
+{
+  "Science": {
+    "Year 8": {
+      "level_description": {
+        "overview": "In Year 8, students are introduced to cells as microscopic structures that explain macroscopic properties of living systems. They link form and function at a cellular level and explore the organisation of body systems in terms of flows of matter between interdependent organs. Similarly, they explore changes in matter at a particle level, and distinguish between chemical and physical change. They begin to classify different forms of energy, and describe the role of energy in causing change in systems, including the role of heat and kinetic energy in the rock cycle.",
+        "key_ideas": "Students use experimentation to isolate relationships between components in systems and explain these relationships through increasingly complex representations. They make predictions and propose explanations, drawing on evidence to support their views while considering other points of view.",
+        "note": "The science inquiry skills and science as a human endeavour strands are described across a two-year band and should be addressed across Years 7-8."
+      },
+      "content_descriptions": {
+        "Science Understanding": {
+          "Biological sciences": [
+            {
+              "description": "Cells are the basic units of living things; they have specialised structures and functions",
+              "code": "ACSSU149",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU149"
+            },
+            {
+              "description": "Multi-cellular organisms contain systems of organs carrying out specialised functions that enable them to survive and reproduce",
+              "code": "ACSSU150",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU150"
+            }
+          ],
+          "Chemical sciences": [
+            {
+              "description": "Properties of the different states of matter can be explained in terms of the motion and arrangement of particles",
+              "code": "ACSSU151",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU151"
+            },
+            {
+              "description": "Differences between elements, compounds and mixtures can be described at a particle level",
+              "code": "ACSSU152",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU152"
+            },
+            {
+              "description": "Chemical change involves substances reacting to form new substances",
+              "code": "ACSSU225",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU225"
+            }
+          ],
+          "Earth and space sciences": [
+            {
+              "description": "Sedimentary, igneous and metamorphic rocks contain minerals and are formed by processes that occur within Earth over a variety of timescales",
+              "code": "ACSSU153",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU153"
+            }
+          ],
+          "Physical sciences": [
+            {
+              "description": "Energy appears in different forms, including movement (kinetic energy), heat and potential energy, and energy transformations and transfers cause change within systems",
+              "code": "ACSSU155",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU155"
+            }
+          ]
+        },
+        "Science as a Human Endeavour": {
+          "Nature and development of science": [
+            {
+              "description": "Scientific knowledge has changed peoples' understanding of the world and is refined as new evidence becomes available",
+              "code": "ACSHE134",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE134"
+            },
+            {
+              "description": "Science knowledge can develop through collaboration across the disciplines of science and the contributions of people from a range of cultures",
+              "code": "ACSHE226",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE226"
+            }
+          ],
+          "Use and influence of science": [
+            {
+              "description": "Solutions to contemporary issues that are found using science and technology may impact on other areas of society and may involve ethical considerations",
+              "code": "ACSHE135",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE135"
+            },
+            {
+              "description": "People use science understanding and skills in their occupations and these have influenced the development of practices in areas of human activity",
+              "code": "ACSHE136",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE136"
+            }
+          ]
+        },
+        "Science Inquiry Skills": {
+          "Questioning and predicting": [
+            {
+              "description": "Identify questions and problems that can be investigated scientifically and make predictions based on scientific knowledge",
+              "code": "ACSIS139",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS139"
+            }
+          ],
+          "Planning and conducting": [
+            {
+              "description": "Collaboratively and individually plan and conduct a range of investigation types, including fieldwork and experiments, ensuring safety and ethical guidelines are followed",
+              "code": "ACSIS140",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS140"
+            },
+            {
+              "description": "Measure and control variables, select equipment appropriate to the task and collect data with accuracy",
+              "code": "ACSIS141",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS141"
+            }
+          ],
+          "Processing and analysing data and information": [
+            {
+              "description": "Construct and use a range of representations, including graphs, keys and models to represent and analyse patterns or relationships in data using digital technologies as appropriate",
+              "code": "ACSIS144",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS144"
+            },
+            {
+              "description": "Summarise data from students' own investigations and secondary sources, and use scientific understanding to identify relationships and draw conclusions based on evidence",
+              "code": "ACSIS145",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS145"
+            }
+          ],
+          "Evaluating": [
+            {
+              "description": "Reflect on scientific investigations including evaluating the quality of the data collected and identifying improvements",
+              "code": "ACSIS146",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS146"
+            },
+            {
+              "description": "Use scientific knowledge and findings from investigations to evaluate claims based on evidence",
+              "code": "ACSIS234",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS234"
+            }
+          ],
+          "Communicating": [
+            {
+              "description": "Communicate ideas, findings and evidence based solutions to problems using scientific language and representations, using digital technologies as appropriate",
+              "code": "ACSIS148",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS148"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students explain how differences in cells may relate to their function, and describe the organisation of body systems. They describe patterns of change and compare physical and chemical change. They explain energy transformations and transfers and describe the role of energy in forming geological features. They describe factors that can influence the development of science understanding, and explain how science is used to inform decisions and actions."
+      }
+    }
+  }
+}
