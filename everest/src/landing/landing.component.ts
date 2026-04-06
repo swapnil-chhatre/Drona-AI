@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { SidebarComponent } from '../common/sidebar/sidebar.component';
+import { DiscoverRequest } from '../interfaces/discover-request';
 
 @Component({
   selector: 'app-landing',
@@ -9,6 +11,8 @@ import { SidebarComponent } from '../common/sidebar/sidebar.component';
   styleUrl: './landing.component.css',
 })
 export class LandingComponent {
+  private readonly router = inject(Router);
+
   protected readonly gradeLevels = [
     { label: 'K-5', selected: false },
     { label: '6-8', selected: false },
@@ -35,4 +39,18 @@ export class LandingComponent {
     'Python Fundamentals',
     'Renaissance Art History',
   ];
+
+  protected sendPrompt(): void {
+    const request: DiscoverRequest = {
+      grade: 'Year 10',
+      subject: 'History',
+      state: 'NSW',
+      topic: 'Causes of World War I',
+      uploaded_doc_ids: [],
+    };
+
+    void this.router.navigate(['/discover'], {
+      state: { request },
+    });
+  }
 }

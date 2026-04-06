@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SidebarComponent } from '../common/sidebar/sidebar.component';
+import { DiscoverRequest } from '../interfaces/discover-request';
 import { Resource } from '../interfaces/resource';
 
 type ResourceBadgeTone = 'primary' | 'source' | 'muted';
@@ -27,6 +28,8 @@ interface SelectedResourceSummary {
   styleUrl: './discover.component.css',
 })
 export class DiscoverComponent {
+  protected readonly request: DiscoverRequest = this.getRequest();
+
   protected readonly resources: DiscoverResource[] = [
     {
       title: 'The Dual Nature of Light: Wave-Particle Duality',
@@ -100,4 +103,24 @@ export class DiscoverComponent {
 
   protected readonly recommendation =
     'I recommend including the "Dual Nature of Light" MIT resource. It provides the mathematical rigor missing in the other detected web results and aligns perfectly with your "Module 1" learning objectives.';
+
+  protected get topicTitle(): string {
+    return this.request.topic;
+  }
+
+  protected get requestSummary(): string {
+    return `Showing hardcoded discovery results for ${this.request.grade} ${this.request.subject} aligned to ${this.request.state}.`;
+  }
+
+  private getRequest(): DiscoverRequest {
+    const request = history.state.request as DiscoverRequest | undefined;
+
+    return request ?? {
+      grade: 'Year 10',
+      subject: 'History',
+      state: 'NSW',
+      topic: 'Causes of World War I',
+      uploaded_doc_ids: [],
+    };
+  }
 }
