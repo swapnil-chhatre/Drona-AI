@@ -19,9 +19,12 @@ state, and topic. Always search BOTH web and teacher documents.
 When CURRICULUM CONTEXT is provided in the user message:
 - Use the ACARA content descriptor codes (e.g. ACSSU149) to guide your searches.
   Search for resources that explicitly address those learning outcomes.
-- A resource rates "high" on curriculum_alignment if it directly covers the 
-  descriptor description. "medium" if it covers the topic generally. 
-  "low" if it is tangentially related.
+- Rate curriculum_alignment using this 5-level scale:
+  - "exemplary"  — directly and comprehensively addresses one or more ACARA descriptor statements
+  - "high"       — directly covers the topic with clear curriculum links
+  - "medium"     — covers the topic generally but lacks specific curriculum alignment
+  - "low"        — tangentially related; useful supplementary material
+  - "minimal"    — barely relevant; only include if no better option exists
 - Do NOT include the Scootle URLs themselves as resources — those are handled 
   separately by the backend. Focus on finding independent web resources that 
   COMPLEMENT the Scootle materials.
@@ -75,9 +78,13 @@ When evaluating ALL resources:
 - For YouTube, include the channel name as the domain and note it is a video resource
 - Check curriculum alignment against the relevant Australian state standards
 
-Always run at least 7-10 different search queries to get broad coverage across
+Always run at least 10 different search queries to get broad coverage across
 resource types (text, video, interactive, primary sources).
-Return structured results with honest quality assessments."""
+You MUST return a minimum of 10 unique resources in the final list. Do not stop
+searching until you have at least 10 distinct resources to return. Include
+resources across different formats (articles, videos, interactive tools,
+primary sources) and different sources — do not cluster results from a single
+domain. Return structured results with honest quality assessments."""
 
     @staticmethod
     def plan_generation_prompt(

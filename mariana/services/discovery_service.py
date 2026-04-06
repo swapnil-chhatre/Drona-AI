@@ -105,10 +105,16 @@ class DiscoveryService:
 {curriculum_block if curriculum_block else "No specific outcomes matched — find broadly relevant resources."}
 --------------------------
 
-When rating curriculum_alignment for each resource, check it against the 
-ACARA outcomes listed above. A resource that directly addresses one of the 
-descriptor statements above should be rated "high".
+When rating curriculum_alignment for each resource, check it against the
+ACARA outcomes listed above using this 5-level scale:
+- "exemplary"  — directly and comprehensively addresses one or more descriptor statements
+- "high"       — directly covers the topic with clear curriculum links
+- "medium"     — covers the topic generally but lacks specific curriculum alignment
+- "low"        — tangentially related; useful supplementary material
+- "minimal"    — barely relevant; only include if no better option exists
 """
+
+        print(full_message)
 
         # ── 4. Run the agent ────────────────────────────────────────────────
         result: ResourceList = self.agent.invoke(

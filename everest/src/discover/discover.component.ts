@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { SidebarComponent } from '../common/sidebar/sidebar.component';
 import { DiscoverRequest } from '../interfaces/discover-request';
 import { Resource } from '../interfaces/resource';
+import { CurriculumOutcome } from '../interfaces/curriculum-outcome';
+import { ApiService } from '../services/api.service';
 
 type ResourceBadgeTone = 'primary' | 'source' | 'muted';
 
@@ -15,10 +17,6 @@ interface DiscoverResource extends Resource {
   dimmed?: boolean;
 }
 
-interface SelectedResourceSummary {
-  title: string;
-  source: string;
-}
 
 @Component({
   selector: 'app-discover',
@@ -27,100 +25,85 @@ interface SelectedResourceSummary {
   templateUrl: './discover.component.html',
   styleUrl: './discover.component.css',
 })
-export class DiscoverComponent {
+export class DiscoverComponent implements OnInit {
+  private readonly api = inject(ApiService);
+
   protected readonly request: DiscoverRequest = this.getRequest();
-
-  protected readonly resources: DiscoverResource[] = [
-    {
-      title: 'The Dual Nature of Light: Wave-Particle Duality',
-      url: 'https://edu.mit.edu/physics/quantum-foundations',
-      summary:
-        "Comprehensive lecture notes covering the double-slit experiment, photon momentum, and De Broglie's wavelength calculations. Perfectly matches Section 1.4 of your syllabus.",
-      source_type: 'web',
-      curriculum_alignment: 'high',
-      bias_risk: 'low',
-      reading_level: 'Advanced secondary',
-      domain: 'mit.edu',
-      follow_up_questions: [],
-      selected: true,
-      metaIcon: 'public',
-      metaLabel: 'https://edu.mit.edu/physics/quantum-foundations',
-      badgeText: '98% Alignment',
-      badgeTone: 'primary',
-      tags: ['Core Theory', 'Lecture Notes'],
-    },
-    {
-      title: 'Syllabus_Physics_Draft_2024.pdf',
-      url: null,
-      summary:
-        'Your uploaded primary curriculum document. Drona-AI is using this as the architectural backbone for the study plan structure.',
-      source_type: 'teacher_upload',
-      curriculum_alignment: 'high',
-      bias_risk: 'low',
-      reading_level: 'Teacher source',
-      domain: null,
-      follow_up_questions: [],
-      document_id: 'physics-draft-2024',
-      selected: true,
-      metaIcon: 'description',
-      metaLabel: 'Uploaded Document • 2.4 MB',
-      badgeText: '100% Source',
-      badgeTone: 'source',
-      tags: [],
-    },
-    {
-      title: 'Heisenberg Uncertainty Principle Simplified',
-      url: 'https://www.youtube.com/watch?v=example',
-      summary:
-        'Visual breakdown of the uncertainty principle. Recommended as supplementary material for visual learners.',
-      source_type: 'web',
-      curriculum_alignment: 'medium',
-      bias_risk: 'medium',
-      reading_level: 'General secondary',
-      domain: 'youtube.com',
-      follow_up_questions: [],
-      selected: false,
-      metaIcon: 'movie',
-      metaLabel: 'YouTube • ScienceSimplified Channel',
-      badgeText: '82% Alignment',
-      badgeTone: 'muted',
-      tags: ['Supplementary', 'Video'],
-      dimmed: true,
-    },
-  ];
-
-  protected readonly selectedResources: SelectedResourceSummary[] = [
-    { title: 'Dual Nature of Light', source: 'mit.edu' },
-    { title: 'Syllabus_Physics_Draft_2024.pdf', source: 'Internal Document' },
-    { title: 'Photoelectric Effect Basics', source: 'khanacademy.org' },
-  ];
+  protected readonly resources = signal<DiscoverResource[]>([]);
+  protected readonly curriculumOutcomes = signal<CurriculumOutcome[]>([]);
+  protected readonly isLoading = signal(false);
 
   protected readonly planSummary = {
-    selectedCountLabel: '4 items ready for processing',
     planDepth: 'Comprehensive',
     readingTime: '~4.5 Hours',
   };
 
+  protected get selectedResources(): DiscoverResource[] {
+    return this.resources().filter(r => r.selected);
+  }
+
+  protected get selectedCountLabel(): string {
+    const count = this.selectedResources.length;
+    return count === 0 ? 'No items selected' : `${count} item${count === 1 ? '' : 's'} ready for processing`;
+  }
+
   protected readonly recommendation =
     'I recommend including the "Dual Nature of Light" MIT resource. It provides the mathematical rigor missing in the other detected web results and aligns perfectly with your "Module 1" learning objectives.';
 
+  ngOnInit(): void {
+    this.fetchResources();
+  }
+
   protected get topicTitle(): string {
-    return this.request.topic;
+    return this.request.topic || 'New Discovery';
   }
 
   protected get requestSummary(): string {
-    return `Showing hardcoded discovery results for ${this.request.grade} ${this.request.subject} aligned to ${this.request.state}.`;
+    return `Showing discovery results for ${this.request.grade} ${this.request.subject} aligned to ${this.request.state}.`;
+  }
+
+  protected toggleSelection(resource: DiscoverResource): void {
+    this.resources.update(list =>
+      list.map(r => r === resource ? { ...r, selected: !r.selected } : r)
+    );
+  }
+
+  private fetchResources(): void {
+    this.isLoading.set(true);
+    this.api.discoverResources(this.request).subscribe({
+      next: (response) => {
+        const mapped = response.resources.map((r) => this.mapToDiscoverResource(r));
+        this.resources.set(mapped);
+        this.curriculumOutcomes.set(response.curriculum_outcomes);
+        this.isLoading.set(false);
+      },
+      error: (err) => {
+        console.error('Failed to fetch resources', err);
+        this.isLoading.set(false);
+      },
+    });
+  }
+
+  private mapToDiscoverResource(resource: Resource): DiscoverResource {
+    return {
+      ...resource,
+      selected: false,
+      metaIcon: resource.source_type === 'teacher_upload' ? 'description' : 'public',
+      metaLabel: resource.domain || (resource.source_type === 'teacher_upload' ? 'Uploaded Document' : 'Web Resource'),
+      badgeText: { exemplary: '100% Alignment', high: '85% Alignment', medium: '70% Alignment', low: '50% Alignment', minimal: '30% Alignment' }[resource.curriculum_alignment],
+      badgeTone: (resource.curriculum_alignment === 'exemplary' || resource.curriculum_alignment === 'high') ? 'primary' : 'muted',
+      tags: resource.source_type === 'web' ? ['Core Theory'] : [],
+    };
   }
 
   private getRequest(): DiscoverRequest {
     const request = history.state.request as DiscoverRequest | undefined;
 
     return request ?? {
-      grade: 'Year 10',
-      subject: 'History',
-      state: 'NSW',
-      topic: 'Causes of World War I',
-      uploaded_doc_ids: [],
+      grade: 'Grade 8',
+      subject: 'Science',
+      state: 'NSW - Australia',
+      topic: '',
     };
   }
 }
