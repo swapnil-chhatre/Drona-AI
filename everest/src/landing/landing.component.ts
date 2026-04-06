@@ -1,7 +1,6 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { SidebarComponent } from '../common/sidebar/sidebar.component';
 import { DiscoverRequest } from '../interfaces/discover-request';
 import { DiscoverStateService } from '../services/discover-state.service';
 import { ApiService } from '../services/api.service';
@@ -9,7 +8,7 @@ import { ApiService } from '../services/api.service';
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [SidebarComponent, FormsModule],
+  imports: [FormsModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',
 })

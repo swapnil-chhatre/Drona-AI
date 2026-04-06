@@ -1,6 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { SidebarComponent } from '../common/sidebar/sidebar.component';
 import { DiscoverRequest } from '../interfaces/discover-request';
 import { Resource } from '../interfaces/resource';
 import { CurriculumOutcome } from '../interfaces/curriculum-outcome';
@@ -21,11 +20,10 @@ interface DiscoverResource extends Resource {
   dimmed?: boolean;
 }
 
-
 @Component({
   selector: 'app-discover',
   standalone: true,
-  imports: [SidebarComponent],
+  imports: [],
   templateUrl: './discover.component.html',
   styleUrl: './discover.component.css',
 })
@@ -43,12 +41,14 @@ export class DiscoverComponent implements OnInit {
   protected readonly aiRecommendation = signal<string>('');
 
   protected get selectedResources(): DiscoverResource[] {
-    return this.resources().filter(r => r.selected);
+    return this.resources().filter((r) => r.selected);
   }
 
   protected get selectedCountLabel(): string {
     const count = this.selectedResources.length;
-    return count === 0 ? 'No items selected' : `${count} item${count === 1 ? '' : 's'} ready for processing`;
+    return count === 0
+      ? 'No items selected'
+      : `${count} item${count === 1 ? '' : 's'} ready for processing`;
   }
 
   ngOnInit(): void {
@@ -82,12 +82,12 @@ export class DiscoverComponent implements OnInit {
       selected_resources: this.selectedResources,
       curriculum_outcomes: this.curriculumOutcomes(),
     });
-    void this.router.navigate(['/study-plan']);
+    void this.router.navigate(['/final-result']);
   }
 
   protected toggleSelection(resource: DiscoverResource): void {
-    this.resources.update(list =>
-      list.map(r => r === resource ? { ...r, selected: !r.selected } : r)
+    this.resources.update((list) =>
+      list.map((r) => (r === resource ? { ...r, selected: !r.selected } : r)),
     );
   }
 
@@ -95,7 +95,9 @@ export class DiscoverComponent implements OnInit {
     this.isLoading.set(true);
     this.api.discoverResources(this.request).subscribe({
       next: (response) => {
-        const mapped = response.resources.map((r) => this.mapToDiscoverResource(r));
+        const mapped = response.resources.map((r) =>
+          this.mapToDiscoverResource(r),
+        );
         this.resources.set(mapped);
         this.curriculumOutcomes.set(response.curriculum_outcomes);
         this.aiRecommendation.set(response.ai_recommendation ?? '');
@@ -112,20 +114,37 @@ export class DiscoverComponent implements OnInit {
     return {
       ...resource,
       selected: false,
-      metaIcon: resource.source_type === 'teacher_upload' ? 'description' : 'public',
-      metaLabel: resource.domain || (resource.source_type === 'teacher_upload' ? 'Uploaded Document' : 'Web Resource'),
-      badgeText: { exemplary: '100% Alignment', high: '85% Alignment', medium: '70% Alignment', low: '50% Alignment', minimal: '30% Alignment' }[resource.curriculum_alignment],
-      badgeTone: (resource.curriculum_alignment === 'exemplary' || resource.curriculum_alignment === 'high') ? 'primary' : 'muted',
+      metaIcon:
+        resource.source_type === 'teacher_upload' ? 'description' : 'public',
+      metaLabel:
+        resource.domain ||
+        (resource.source_type === 'teacher_upload'
+          ? 'Uploaded Document'
+          : 'Web Resource'),
+      badgeText: {
+        exemplary: '100% Alignment',
+        high: '85% Alignment',
+        medium: '70% Alignment',
+        low: '50% Alignment',
+        minimal: '30% Alignment',
+      }[resource.curriculum_alignment],
+      badgeTone:
+        resource.curriculum_alignment === 'exemplary' ||
+        resource.curriculum_alignment === 'high'
+          ? 'primary'
+          : 'muted',
       tags: resource.source_type === 'web' ? ['Core Theory'] : [],
     };
   }
 
   private getRequest(): DiscoverRequest {
-    return this.discoverState.request() ?? {
-      grade: 'Year 8',
-      subject: 'Science',
-      state: 'NSW - Australia',
-      topic: '',
-    };
+    return (
+      this.discoverState.request() ?? {
+        grade: 'Year 8',
+        subject: 'Science',
+        state: 'NSW - Australia',
+        topic: '',
+      }
+    );
   }
 }
