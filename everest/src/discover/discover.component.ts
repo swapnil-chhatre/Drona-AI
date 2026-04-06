@@ -1,9 +1,13 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { SidebarComponent } from '../common/sidebar/sidebar.component';
 import { DiscoverRequest } from '../interfaces/discover-request';
 import { Resource } from '../interfaces/resource';
 import { CurriculumOutcome } from '../interfaces/curriculum-outcome';
+import { GenerateRequest } from '../interfaces/generate-request';
 import { ApiService } from '../services/api.service';
+import { DiscoverStateService } from '../services/discover-state.service';
+import { PlanStateService } from '../services/plan-state.service';
 
 type ResourceBadgeTone = 'primary' | 'source' | 'muted';
 
@@ -27,16 +31,16 @@ interface DiscoverResource extends Resource {
 })
 export class DiscoverComponent implements OnInit {
   private readonly api = inject(ApiService);
+  private readonly router = inject(Router);
+  private readonly discoverState = inject(DiscoverStateService);
+  private readonly planState = inject(PlanStateService);
 
   protected readonly request: DiscoverRequest = this.getRequest();
   protected readonly resources = signal<DiscoverResource[]>([]);
   protected readonly curriculumOutcomes = signal<CurriculumOutcome[]>([]);
   protected readonly isLoading = signal(false);
 
-  protected readonly planSummary = {
-    planDepth: 'Comprehensive',
-    readingTime: '~4.5 Hours',
-  };
+  protected readonly aiRecommendation = signal<string>('');
 
   protected get selectedResources(): DiscoverResource[] {
     return this.resources().filter(r => r.selected);
@@ -47,19 +51,38 @@ export class DiscoverComponent implements OnInit {
     return count === 0 ? 'No items selected' : `${count} item${count === 1 ? '' : 's'} ready for processing`;
   }
 
-  protected readonly recommendation =
-    'I recommend including the "Dual Nature of Light" MIT resource. It provides the mathematical rigor missing in the other detected web results and aligns perfectly with your "Module 1" learning objectives.';
-
   ngOnInit(): void {
-    this.fetchResources();
+    if (this.request.topic) {
+      this.fetchResources();
+    }
+  }
+
+  protected get hasTopic(): boolean {
+    return !!this.request.topic;
   }
 
   protected get topicTitle(): string {
     return this.request.topic || 'New Discovery';
   }
 
+  protected goToDashboard(): void {
+    void this.router.navigate(['/']);
+  }
+
   protected get requestSummary(): string {
     return `Showing discovery results for ${this.request.grade} ${this.request.subject} aligned to ${this.request.state}.`;
+  }
+
+  protected onGeneratePlan(): void {
+    this.planState.set({
+      grade: this.request.grade,
+      subject: this.request.subject,
+      state: this.request.state,
+      topic: this.request.topic,
+      selected_resources: this.selectedResources,
+      curriculum_outcomes: this.curriculumOutcomes(),
+    });
+    void this.router.navigate(['/study-plan']);
   }
 
   protected toggleSelection(resource: DiscoverResource): void {
@@ -75,6 +98,7 @@ export class DiscoverComponent implements OnInit {
         const mapped = response.resources.map((r) => this.mapToDiscoverResource(r));
         this.resources.set(mapped);
         this.curriculumOutcomes.set(response.curriculum_outcomes);
+        this.aiRecommendation.set(response.ai_recommendation ?? '');
         this.isLoading.set(false);
       },
       error: (err) => {
@@ -97,10 +121,8 @@ export class DiscoverComponent implements OnInit {
   }
 
   private getRequest(): DiscoverRequest {
-    const request = history.state.request as DiscoverRequest | undefined;
-
-    return request ?? {
-      grade: 'Grade 8',
+    return this.discoverState.request() ?? {
+      grade: 'Year 8',
       subject: 'Science',
       state: 'NSW - Australia',
       topic: '',

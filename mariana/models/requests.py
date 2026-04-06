@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from models.resource import Resource
+from models.resource import Resource, CurriculumOutcome
 
 
 class DiscoverRequest(BaseModel):
@@ -15,6 +15,7 @@ class GenerateRequest(BaseModel):
     state: str
     topic: str
     selected_resources: list[Resource]
+    curriculum_outcomes: list[CurriculumOutcome] = []
     additional_context: str = ""
     timeline_weeks: int = 2
 

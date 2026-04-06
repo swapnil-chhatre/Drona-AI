@@ -19,9 +19,11 @@
           </div>
 
           <div class="chip-row">
-            @for (grade of gradeLevels; track grade.label) {
-            <button class="choice-chip" type="button" [class.choice-chip--selected]="grade.selected">
-              {{ grade.label }}
+            @for (grade of grades(); track grade) {
+            <button class="choice-chip" type="button"
+              [class.choice-chip--selected]="grade === selectedGrade()"
+              (click)="selectGrade(grade)">
+              {{ grade }}
             </button>
             }
           </div>
@@ -34,9 +36,11 @@
           </div>
 
           <div class="chip-row">
-            @for (subject of subjectAreas; track subject.label) {
-            <button class="choice-chip" type="button" [class.choice-chip--selected]="subject.selected">
-              {{ subject.label }}
+            @for (subject of subjects(); track subject) {
+            <button class="choice-chip" type="button"
+              [class.choice-chip--selected]="subject === selectedSubject()"
+              (click)="selectSubject(subject)">
+              {{ subject }}
             </button>
             }
           </div>
@@ -61,7 +65,7 @@
       <div class="suggestions">
         <span class="suggestions__label">Suggested:</span>
 
-        @for (prompt of suggestedPrompts; track prompt) {
+        @for (prompt of suggestedPrompts(); track prompt) {
         <button class="suggestion-pill" type="button" (click)="setFocusTopic(prompt)">
           {{ prompt }}
         </button>

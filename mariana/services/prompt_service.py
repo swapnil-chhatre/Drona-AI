@@ -84,7 +84,12 @@ You MUST return a minimum of 10 unique resources in the final list. Do not stop
 searching until you have at least 10 distinct resources to return. Include
 resources across different formats (articles, videos, interactive tools,
 primary sources) and different sources — do not cluster results from a single
-domain. Return structured results with honest quality assessments."""
+domain. Return structured results with honest quality assessments.
+
+For the ai_recommendation field, write 2-3 sentences addressed directly to the
+teacher. Highlight the single most valuable resource found, explain why it stands
+out (curriculum alignment, depth, format), and suggest how it could be used in
+the classroom alongside one complementary resource."""
 
     @staticmethod
     def plan_generation_prompt(
@@ -96,6 +101,7 @@ domain. Return structured results with honest quality assessments."""
         resources_text: str,
         web_content: str,
         doc_content: str,
+        curriculum_context: str = "",
         timeline_weeks: int = 2,
     ) -> str:
 
@@ -127,6 +133,8 @@ domain. Return structured results with honest quality assessments."""
       - Use 🇦🇺 when referencing Australian curriculum standards or local context
       """
 
+        curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+
         return f"""You are an expert Australian curriculum designer.
 
   Generate a comprehensive study plan for:
@@ -136,7 +144,7 @@ domain. Return structured results with honest quality assessments."""
   - Topic: {topic}
   - Timeline: {timeline_weeks} weeks
   - Additional context: {additional_context}
-
+{curriculum_section}
   ## Selected Resources
   {resources_text}
 
@@ -153,6 +161,7 @@ domain. Return structured results with honest quality assessments."""
   ## Requirements
   - Align with {state} curriculum standards
   - Include learning objectives, structured lesson sequence, activities, and assessments
+  - Where curriculum outcomes are provided above, explicitly map each learning objective to its ACARA code
   - Reference specific content from the web and document sections above
   - Include Australian context and examples where relevant (use 🇦🇺 to flag these)
   - Estimate realistic timeframes for a classroom teacher (use ⏱️)

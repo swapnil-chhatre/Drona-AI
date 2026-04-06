@@ -1,8 +1,10 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from '../common/sidebar/sidebar.component';
 import { DiscoverRequest } from '../interfaces/discover-request';
+import { DiscoverStateService } from '../services/discover-state.service';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-landing',
@@ -11,12 +13,17 @@ import { DiscoverRequest } from '../interfaces/discover-request';
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',
 })
-export class LandingComponent {
+export class LandingComponent implements OnInit {
   private readonly router = inject(Router);
+  private readonly discoverState = inject(DiscoverStateService);
+  private readonly api = inject(ApiService);
 
-  protected readonly gradeLevels = [{ label: 'Grade 8', selected: true }];
+  protected readonly grades = signal<string[]>([]);
+  protected readonly subjects = signal<string[]>([]);
+  protected readonly suggestedPrompts = signal<string[]>([]);
 
-  protected readonly subjectAreas = [{ label: 'Science', selected: true }];
+  protected readonly selectedGrade = signal('Year 8');
+  protected readonly selectedSubject = signal('Science');
 
   protected readonly curriculumStandards = [
     'NSW - Australia',
@@ -26,14 +33,21 @@ export class LandingComponent {
   ];
 
   protected readonly selectedStandard = signal(this.curriculumStandards[0]);
-
   protected readonly focusTopic = signal('');
 
-  protected readonly suggestedPrompts = [
-    'Climate Change Impact',
-    'Plate Tectonics',
-    'Cellular Mitosis',
-  ];
+  ngOnInit(): void {
+    this.loadSuggestions();
+  }
+
+  protected selectGrade(grade: string): void {
+    this.selectedGrade.set(grade);
+    this.loadSuggestions();
+  }
+
+  protected selectSubject(subject: string): void {
+    this.selectedSubject.set(subject);
+    this.loadSuggestions();
+  }
 
   protected setFocusTopic(prompt: string): void {
     this.focusTopic.set(prompt);
@@ -41,14 +55,24 @@ export class LandingComponent {
 
   protected sendPrompt(): void {
     const request: DiscoverRequest = {
-      grade: 'Grade 8',
-      subject: 'Science',
+      grade: this.selectedGrade(),
+      subject: this.selectedSubject(),
       state: this.selectedStandard(),
       topic: this.focusTopic(),
     };
 
-    void this.router.navigate(['/discover'], {
-      state: { request },
+    this.discoverState.set(request);
+    void this.router.navigate(['/discover']);
+  }
+
+  private loadSuggestions(): void {
+    this.api.getSuggestions(this.selectedGrade(), this.selectedSubject()).subscribe({
+      next: (response) => {
+        this.grades.set(response.grades);
+        this.subjects.set(response.subjects);
+        this.suggestedPrompts.set(response.suggestions);
+      },
+      error: (err) => console.error('Failed to load suggestions', err),
     });
   }
 }

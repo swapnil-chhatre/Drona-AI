@@ -1,0 +1,248 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.plan-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(165, 200, 255, 0.25), transparent 40%),
+    linear-gradient(180deg, #f9f9ff 0%, #f2f4fb 100%);
+}
+
+.plan-main {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .plan-main {
+    margin-left: 16rem;
+    padding: 1.5rem 2rem 4rem;
+  }
+}
+
+.plan-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0 1.5rem;
+}
+
+.plan-topbar__brand {
+  font-family: var(--font-headline);
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--color-primary);
+}
+
+.plan-topbar__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-topbar__step {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.plan-topbar__status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-outline);
+}
+
+.plan-topbar__status--done {
+  color: #1a7f4b;
+}
+
+.plan-topbar__status .material-symbols-outlined {
+  font-size: 1.1rem;
+}
+
+.plan-content {
+  max-width: 860px;
+}
+
+.plan-title {
+  margin: 0 0 2rem;
+  font-family: var(--font-headline);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: var(--color-on-surface);
+}
+
+.plan-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  gap: 1rem;
+  color: var(--color-primary);
+}
+
+.plan-loading .material-symbols-outlined {
+  font-size: 3rem;
+}
+
+.plan-loading p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-on-surface-variant);
+}
+
+.plan-output {
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.84);
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 50px rgba(24, 28, 33, 0.06);
+  color: var(--color-on-surface);
+  font-size: 0.97rem;
+  line-height: 1.75;
+}
+
+/* ── Markdown body styles ─────────────────────────────────────────
+   ::ng-deep is required because [innerHTML] content is injected at
+   runtime and sits outside Angular's component style encapsulation.
+   Scoping under .markdown-body prevents leaking to other components.
+   ---------------------------------------------------------------- */
+
+:host ::ng-deep .markdown-body :is(h1, h2, h3, h4) {
+  font-family: var(--font-headline);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin: 2rem 0 0.75rem;
+  color: var(--color-on-surface);
+}
+
+:host ::ng-deep .markdown-body h1 { font-size: 1.9rem; }
+:host ::ng-deep .markdown-body h2 { font-size: 1.45rem; border-bottom: 2px solid var(--color-outline-variant); padding-bottom: 0.4rem; }
+:host ::ng-deep .markdown-body h3 { font-size: 1.15rem; }
+:host ::ng-deep .markdown-body h4 { font-size: 1rem; }
+
+:host ::ng-deep .markdown-body p {
+  margin: 0 0 1rem;
+}
+
+:host ::ng-deep .markdown-body strong {
+  font-weight: 800;
+  color: var(--color-on-surface);
+}
+
+:host ::ng-deep .markdown-body em {
+  color: var(--color-on-surface-variant);
+}
+
+:host ::ng-deep .markdown-body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+:host ::ng-deep .markdown-body a:hover {
+  color: var(--color-primary-container);
+}
+
+:host ::ng-deep .markdown-body ul,
+:host ::ng-deep .markdown-body ol {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+}
+
+:host ::ng-deep .markdown-body li {
+  margin-bottom: 0.4rem;
+}
+
+:host ::ng-deep .markdown-body li + li {
+  margin-top: 0.25rem;
+}
+
+:host ::ng-deep .markdown-body blockquote {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 4px solid var(--color-primary);
+  background: rgba(0, 93, 172, 0.05);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: var(--color-on-surface-variant);
+}
+
+:host ::ng-deep .markdown-body code {
+  font-family: 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.88em;
+  padding: 0.15em 0.45em;
+  border-radius: 0.35rem;
+  background: var(--color-surface-container-low);
+  color: #ba5b00;
+}
+
+:host ::ng-deep .markdown-body pre {
+  margin: 1.25rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  background: #1e2128;
+  overflow-x: auto;
+}
+
+:host ::ng-deep .markdown-body pre code {
+  background: none;
+  color: #e2e8f0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+:host ::ng-deep .markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.92rem;
+}
+
+:host ::ng-deep .markdown-body th {
+  padding: 0.65rem 1rem;
+  background: var(--color-surface-container-low);
+  font-weight: 800;
+  text-align: left;
+  border-bottom: 2px solid var(--color-outline-variant);
+}
+
+:host ::ng-deep .markdown-body td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--color-outline-variant);
+  vertical-align: top;
+}
+
+:host ::ng-deep .markdown-body tr:last-child td {
+  border-bottom: none;
+}
+
+:host ::ng-deep .markdown-body hr {
+  border: none;
+  border-top: 1px solid var(--color-outline-variant);
+  margin: 2rem 0;
+}
+
+:host ::ng-deep .markdown-body > :first-child {
+  margin-top: 0;
+}
+
+.rotating {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
