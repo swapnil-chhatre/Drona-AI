@@ -11,6 +11,7 @@ from models.requests import DiscoverRequest
 from models.resource import ResourceList
 from services.llm_service import LLMService
 from services.rag_service import RagService
+from services.prompt_service import PromptService
 
 class DiscoveryService:
 
@@ -32,7 +33,7 @@ class DiscoveryService:
             for d in docs:
                 results.append(
                     f"TEACHER_DOCUMENT\n"
-                    f"document_id: {d.id}\n"          # ← PGVector chunk ID
+                    f"document_id: {d.metadata.get('document_id')}\n"
                     f"filename: {d.metadata.get('filename', 'Unknown')}\n"
                     f"source_type: teacher_upload\n"
                     f"url: null\n"
@@ -58,26 +59,7 @@ class DiscoveryService:
 
     def _build_system_prompt(self) -> str:
         """Returns the system prompt instructing the agent on resource criteria."""
-        return """You are an expert educational resource finder for Australian K-12 teachers.
-Your job is to find high-quality, curriculum-aligned resources for the given grade, subject,
-state, and topic. Always search BOTH web and teacher documents.
-
-- Web results → set source_type to "web", include the real URL and domain
-- Teacher document results (marked TEACHER_DOCUMENT) → you MUST include these as 
-  resources with source_type set to "teacher_upload", url set to null, 
-  domain set to "teacher_upload", and use the filename as the title.
-  Do NOT skip teacher documents. Every TEACHER_DOCUMENT result must appear 
-  in your final resource list.
-
-When evaluating resources:
-- Prefer .edu.au, abc.net.au, australiancurriculum.edu.au, and government sources
-- Flag any resource with potential bias, outdated content, or inappropriate reading level
-- Check curriculum alignment against Australian state standards
-- Consider Australian context — prefer resources with local examples, First Nations
-  perspectives where relevant, and Australian historical/cultural references
-
-Always run at least 7-10 different search queries to get broad coverage.
-Return structured results with honest quality assessments."""
+        return PromptService.discovery_system_prompt()
 
 
     def search(self, request: DiscoverRequest) -> ResourceList:

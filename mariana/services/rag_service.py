@@ -20,10 +20,10 @@ class RagService:
 
         self.retriever = self.vector_store.as_retriever(search_kwargs={"k": 5})
 
-    # def ingest(self, text: str, metadata: dict) -> None:
-    #     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-    #     chunks = splitter.create_documents([text], metadatas=[metadata])
-    #     self.vector_store.add_documents(chunks)
+    def ingest(self, text: str, metadata: dict) -> None:
+        splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+        chunks = splitter.create_documents([text], metadatas=[metadata])
+        self.vector_store.add_documents(chunks)
 
     def retrieve(self, query: str) -> list[Document]:
         """Retrieves top 5 document chunks from PGVector for a general query."""

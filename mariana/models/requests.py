@@ -17,6 +17,7 @@ class GenerateRequest(BaseModel):
     topic: str
     selected_resources: list[Resource]
     additional_context: str = ""
+    timeline_weeks: int = 2
 
     @property
     def selected_web_urls(self) -> list[str]:
