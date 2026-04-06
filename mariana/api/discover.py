@@ -12,10 +12,9 @@ router = APIRouter(prefix="/api", tags=["discover"])
 agent_service = AgentService()
 discovery_service = DiscoveryService()
 
-@router.get("/discover", response_model=ResourceList)
-def discover() -> ResourceList:
-    """Handles GET request to find web and teacher resources via DiscoveryService."""
-    request = DiscoverRequest(grade="Year 10", subject="History", state="NSW", topic="Causes of World War I", uploaded_doc_ids=[])
+@router.post("/discover", response_model=ResourceList)
+def discover(request: DiscoverRequest) -> ResourceList:
+    """Handles POST request to find web and teacher resources via DiscoveryService."""
     return discovery_service.search(request)
 
 

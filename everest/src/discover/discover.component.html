@@ -21,66 +21,97 @@
         </header>
 
         <div class="resource-list">
-          @for (resource of resources; track resource.title) {
-          <article class="resource-card" [class.resource-card--dimmed]="resource.dimmed">
-            <div class="resource-card__content">
-              <div class="resource-card__check">
-                <input type="checkbox" [checked]="resource.selected" />
-              </div>
-
-              <div class="resource-card__body">
-                <div class="resource-card__header">
-                  <div>
-                    <h2>{{ resource.title }}</h2>
-                    <p class="resource-card__meta">
-                      <span class="material-symbols-outlined" aria-hidden="true">{{ resource.metaIcon }}</span>
-                      <span>{{ resource.metaLabel }}</span>
-                    </p>
-                  </div>
-
-                  <span class="resource-card__badge"
-                    [class.resource-card__badge--muted]="resource.badgeTone === 'muted'">
-                    {{ resource.badgeText }}
-                  </span>
-                </div>
-
-                <p class="resource-card__summary">{{ resource.summary }}</p>
-
-                @if (resource.tags.length) {
-                <div class="resource-card__tags">
-                  @for (tag of resource.tags; track tag) {
-                  <span>{{ tag }}</span>
+          @if (isLoading()) {
+            <div class="loading-state">
+              <span class="material-symbols-outlined rotating">sync</span>
+              <p>Discovering resources...</p>
+            </div>
+          } @else {
+            @if (curriculumOutcomes().length) {
+              <section class="outcomes-section">
+                <h3>Curriculum Alignment</h3>
+                <div class="outcome-chips">
+                  @for (outcome of curriculumOutcomes(); track outcome.code) {
+                    <div class="outcome-chip" [title]="outcome.description">
+                      <strong>{{ outcome.code }}</strong>: {{ outcome.strand }}
+                    </div>
                   }
                 </div>
-                }
-              </div>
-            </div>
-          </article>
-          }
+              </section>
+            }
 
-          <section class="ai-recommendation">
-            <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
-            <div>
-              <h3>AI Recommendation</h3>
-              <p>{{ recommendation }}</p>
-            </div>
-          </section>
+            @for (resource of resources(); track resource.title) {
+            <article class="resource-card" [class.resource-card--dimmed]="resource.dimmed">
+              <div class="resource-card__content">
+                <div class="resource-card__check">
+                  <input type="checkbox" [checked]="resource.selected" (change)="toggleSelection(resource)" />
+                </div>
+
+                <div class="resource-card__body">
+                  <div class="resource-card__header">
+                    <div>
+                      <h2>{{ resource.title }}</h2>
+                      <div class="resource-card__meta">
+                        <span class="material-symbols-outlined" aria-hidden="true">{{ resource.metaIcon }}</span>
+                        <span>{{ resource.metaLabel }}</span>
+                      </div>
+                    </div>
+                    <span class="resource-card__badge"
+                      [class.resource-card__badge--muted]="resource.badgeTone === 'muted'">
+                      {{ resource.badgeText }}
+                    </span>
+                  </div>
+
+                  <p class="resource-card__summary">{{ resource.summary }}</p>
+
+                  <div class="resource-card__footer">
+                    @if (resource.tags.length) {
+                    <div class="resource-card__tags">
+                      @for (tag of resource.tags; track tag) {
+                      <span>{{ tag }}</span>
+                      }
+                    </div>
+                    }
+
+                    @if (resource.url) {
+                      <a class="resource-card__action-btn" [attr.href]="resource.url" target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+                        <span>Open Resource</span>
+                      </a>
+                    }
+                  </div>
+                </div>
+              </div>
+            </article>
+            }
+
+            <section class="ai-recommendation">
+              <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
+              <div>
+                <h3>AI Recommendation</h3>
+                <p>{{ recommendation }}</p>
+              </div>
+            </section>
+          }
         </div>
       </div>
 
       <aside class="selected-sidebar">
         <div class="selected-sidebar__header">
           <h2>Selected Resources</h2>
-          <p>{{ planSummary.selectedCountLabel }}</p>
+          <p>{{ selectedCountLabel }}</p>
         </div>
 
         <div class="selected-sidebar__list">
+          @if (selectedResources.length === 0) {
+            <p class="selected-sidebar__empty">Check resources on the left to add them here.</p>
+          }
           @for (resource of selectedResources; track resource.title) {
           <article class="selected-item">
             <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
             <div>
               <h3>{{ resource.title }}</h3>
-              <p>{{ resource.source }}</p>
+              <p>{{ resource.metaLabel }}</p>
             </div>
           </article>
           }

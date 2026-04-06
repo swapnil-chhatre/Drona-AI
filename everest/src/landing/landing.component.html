@@ -49,22 +49,11 @@
           </div>
 
           <label class="field-shell">
-            <select>
+            <select [ngModel]="selectedStandard()" (ngModelChange)="selectedStandard.set($event)">
               @for (standard of curriculumStandards; track standard) {
-              <option>{{ standard }}</option>
+              <option [value]="standard">{{ standard }}</option>
               }
             </select>
-          </label>
-        </article>
-
-        <article class="panel panel--topic">
-          <div class="panel__eyebrow">
-            <span class="material-symbols-outlined">lightbulb</span>
-            <span>Focus Topic</span>
-          </div>
-
-          <label class="field-shell">
-            <input type="text" placeholder="e.g., Plate Tectonics or Cellular Mitosis" />
           </label>
         </article>
       </div>
@@ -73,7 +62,7 @@
         <span class="suggestions__label">Suggested:</span>
 
         @for (prompt of suggestedPrompts; track prompt) {
-        <button class="suggestion-pill" type="button">
+        <button class="suggestion-pill" type="button" (click)="setFocusTopic(prompt)">
           {{ prompt }}
         </button>
         }
@@ -83,7 +72,7 @@
     <footer class="composer">
       <div class="composer__glow"></div>
       <div class="composer__inner">
-        <input type="text" placeholder="Help me build a study plan for..." />
+        <input type="text" [ngModel]="focusTopic()" (ngModelChange)="focusTopic.set($event)" name="focusTopic" placeholder="Help me build a study plan for..." (keyup.enter)="sendPrompt()" />
         <button type="button" aria-label="Send prompt" (click)="sendPrompt()">
           <span class="material-symbols-outlined">send</span>
         </button>

@@ -8,7 +8,6 @@ class DiscoverRequest(BaseModel):
     subject: str              # e.g. "History"
     state: str                # e.g. "NSW"
     topic: str                # e.g. "World War I causes"
-    uploaded_doc_ids: list[str] = []  # Supabase doc IDs teacher uploaded
 
 class GenerateRequest(BaseModel):
     grade: str
