@@ -17,49 +17,65 @@ from services.curriculum_service import CurriculumService
 class DiscoveryService:
 
     def __init__(self) -> None:
+        """Initializes RAG, LLM, Tavily search, and sets up the LangChain agent."""
         self.rag        = RagService()
         self.llm        = LLMService.get()
         self.curriculum = CurriculumService()
+        self.tavily     = TavilySearch(max_results=15, topic="general")
 
-        tavily = TavilySearch(max_results=15, topic="general")
+        self.agent = create_agent(
+            model=self.llm,
+            tools=self._get_tools(),
+            system_prompt=self._build_system_prompt(),
+            response_format=ToolStrategy(ResourceList),
+        )
 
+    def _get_tools(self) -> list:
+        """Defines the tools available to the discovery agent."""
+        
         @tool
         def search_teacher_documents(query: str) -> str:
             """Search documents that the teacher has previously uploaded."""
-            docs = self.rag.retrieve(query)
-            if not docs:
-                return "No teacher documents found."
-            results = []
-            for d in docs:
-                results.append(
-                    f"TEACHER_DOCUMENT\n"
-                    f"document_id: {d.metadata.get('document_id')}\n"
-                    f"filename: {d.metadata.get('filename', 'Unknown')}\n"
-                    f"source_type: teacher_upload\n"
-                    f"url: null\n"
-                    f"domain: teacher_upload\n"
-                    f"content: {d.page_content}"
-                )
-            return "\n\n---\n\n".join(results)
+            return self._search_teacher_documents_logic(query)
 
         @tool
         def search_web_resources(query: str) -> str:
             """Search the web for educational resources, articles, and materials.
             Use specific queries like 'Year 8 Science cells biological systems Australia'."""
-            results = tavily.invoke(query)
-            return json.dumps(results)
+            return self._search_web_resources_logic(query)
 
-        self.agent = create_agent(
-            model=self.llm,
-            tools=[search_web_resources, search_teacher_documents],
-            system_prompt=self._build_system_prompt(),
-            response_format=ToolStrategy(ResourceList),
-        )
+        return [search_web_resources, search_teacher_documents]
+
+    def _search_teacher_documents_logic(self, query: str) -> str:
+        """Encapsulates the logic for searching teacher-uploaded documents."""
+        docs = self.rag.retrieve(query)
+        if not docs:
+            return "No teacher documents found."
+        
+        results = []
+        for d in docs:
+            results.append(
+                f"TEACHER_DOCUMENT\n"
+                f"document_id: {d.metadata.get('document_id')}\n"
+                f"filename: {d.metadata.get('filename', 'Unknown')}\n"
+                f"source_type: teacher_upload\n"
+                f"url: null\n"
+                f"domain: teacher_upload\n"
+                f"content: {d.page_content}"
+            )
+        return "\n\n---\n\n".join(results)
+
+    def _search_web_resources_logic(self, query: str) -> str:
+        """Encapsulates the logic for searching web resources."""
+        results = self.tavily.invoke(query)
+        return json.dumps(results)
 
     def _build_system_prompt(self) -> str:
+        """Returns the system prompt instructing the agent on resource criteria."""
         return PromptService.discovery_system_prompt()
 
     def search(self, request: DiscoverRequest) -> ResourceList:
+        """Combines request details into queries and invokes the agent to find resources."""
         # ── 1. Pull matched curriculum outcomes ────────────────────────────
         curriculum_outcomes = self.curriculum.get_outcomes(
             subject=request.subject,
@@ -121,9 +137,11 @@ ACARA outcomes listed above using this 5-level scale:
             {"messages": [HumanMessage(content=full_message)]}
         )["structured_response"]
 
-        # ── 5. Attach curriculum outcomes to the result ────────────────────
-        # The agent fills resources[] — we bolt on curriculum_outcomes[]
-        # so the frontend gets both in one response.
+        # ── 5. Sort resources by curriculum alignment (best first) ────────
+        _alignment_order = {"exemplary": 0, "high": 1, "medium": 2, "low": 3, "minimal": 4}
+        result.resources.sort(key=lambda r: _alignment_order.get(r.curriculum_alignment, 99))
+
+        # ── 6. Attach curriculum outcomes to the result ────────────────────
         result.curriculum_outcomes = curriculum_outcomes
 
         return result
