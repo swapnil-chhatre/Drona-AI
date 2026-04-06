@@ -3,14 +3,13 @@ import { Router } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 import { marked } from 'marked';
-import { SidebarComponent } from '../common/sidebar/sidebar.component';
 import { ApiService } from '../services/api.service';
 import { PlanStateService } from '../services/plan-state.service';
 
 @Component({
   selector: 'app-study-plan',
   standalone: true,
-  imports: [SidebarComponent],
+  imports: [],
   templateUrl: './study-plan.component.html',
   styleUrl: './study-plan.component.css',
 })

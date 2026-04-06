@@ -1,21 +1,27 @@
 <div class="final-shell">
-  <app-sidebar [items]="sidebarItems" />
-
   <main class="final-main">
     <header class="final-topbar">
       <div class="final-topbar__links">
         <span class="final-topbar__brand">Drona-AI</span>
         <nav class="final-topbar__nav" aria-label="Section navigation">
-          <a class="is-active" href="#">My Study Plans</a>
-          <a href="#">Dashboard</a>
-          <a href="#">Resources</a>
+          <a class="is-active" routerLink="/final-result">My Study Plans</a>
+          <a routerLink="/">Dashboard</a>
         </nav>
       </div>
 
-      <label class="final-search" aria-label="Search architecture">
-        <span class="material-symbols-outlined" aria-hidden="true">search</span>
-        <input type="text" placeholder="Search architecture..." />
-      </label>
+      <div class="final-topbar__meta">
+        @if (isStreaming()) {
+          <span class="final-status">
+            <span class="material-symbols-outlined rotating" aria-hidden="true">sync</span>
+            Architecting Blueprint...
+          </span>
+        } @else if (isDone()) {
+          <span class="final-status final-status--done">
+            <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+            Blueprint Complete
+          </span>
+        }
+      </div>
     </header>
 
     <section class="final-layout">
@@ -23,10 +29,10 @@
         <header class="final-header">
           <div class="final-header__eyebrow">
             <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
-            <span>{{ viewModel.eyebrow }}</span>
+            <span>AI-GENERATED ARCHITECTURAL BLUEPRINT</span>
           </div>
 
-          <h1>{{ viewModel.title }}</h1>
+          <h1>{{ planTitle }}</h1>
 
           <div class="final-header__meta">
             @for (fact of summaryFacts; track fact.label) {
@@ -38,19 +44,26 @@
           </div>
         </header>
 
-        <section class="blueprint-panel" [class.blueprint-panel--accent]="activeDocument.tone === 'tertiary'">
-          <button type="button" class="copy-button" (click)="copyMarkdown()">
+        <section class="blueprint-panel">
+          <button type="button" class="copy-button" (click)="copyMarkdown()" [disabled]="!displayMarkdown()" aria-label="Copy markdown">
             <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
-            <span>{{ copyLabel }}</span>
+            <span>{{ copyLabel() }}</span>
           </button>
 
           <article class="markdown-section">
             <header class="markdown-section__header">
-              <span class="material-symbols-outlined" aria-hidden="true">{{ activeDocument.icon }}</span>
-              <h2>{{ activeDocument.label }}</h2>
+              <span class="material-symbols-outlined" aria-hidden="true">{{ activeDocument().icon }}</span>
+              <h2>{{ activeDocument().label }}</h2>
             </header>
 
-            <markdown class="markdown-render" [data]="activeDocument.markdown" />
+            @if (activeDocumentId() === 'study-plan' && !markdown() && isStreaming()) {
+              <div class="plan-loading">
+                <span class="material-symbols-outlined rotating">auto_awesome</span>
+                <p>Building your blueprint...</p>
+              </div>
+            }
+
+            <markdown class="markdown-render" [data]="displayMarkdown()" />
           </article>
         </section>
       </div>
@@ -67,7 +80,7 @@
               <button
                 type="button"
                 class="task-card"
-                [class.task-card--active]="action.id === activeDocument.id"
+                [class.task-card--active]="action.id === activeDocumentId()"
                 [class.task-card--tertiary]="action.tone === 'tertiary'"
                 [class.task-card--secondary]="action.tone === 'secondary'"
                 (click)="selectDocument(action.id)"
@@ -81,17 +94,16 @@
 
         <div class="utility-card">
           <h3>Export Options</h3>
+          <p class="utility-card__desc">Download your study plan in high-fidelity formats.</p>
 
           <div class="export-list">
-            @for (option of exportOptions; track option.label) {
-              <button type="button" class="export-button">
-                <span class="export-button__label">
-                  <span class="material-symbols-outlined" aria-hidden="true">{{ option.icon }}</span>
-                  <span>{{ option.label }}</span>
-                </span>
-                <span class="material-symbols-outlined" aria-hidden="true">{{ option.actionIcon }}</span>
-              </button>
-            }
+            <button type="button" class="export-button">
+              <span class="export-button__label">
+                <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
+                <span>Download as PDF</span>
+              </span>
+              <span class="material-symbols-outlined" aria-hidden="true">download</span>
+            </button>
           </div>
         </div>
       </aside>
