@@ -26,3 +26,4 @@ class ResourceList(BaseModel):
     curriculum_outcomes: list[CurriculumOutcome]  # Scootle cards for frontend
     search_queries_used: list[str]
     total_found: int
+    ai_recommendation: str = Field(description="A concise 2-3 sentence recommendation for the teacher summarising the best resources found and why.")

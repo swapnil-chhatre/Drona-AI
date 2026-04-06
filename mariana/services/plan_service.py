@@ -10,6 +10,7 @@ from langchain_community.document_loaders import WebBaseLoader
 from services.llm_service import LLMService
 from services.rag_service import RagService
 from services.prompt_service import PromptService
+from services.curriculum_service import CurriculumService
 
 
 FOLLOW_UP_CHIPS = [
@@ -26,6 +27,7 @@ class PlanService:
         """Initializes LLM and RAG services."""
         self.llm = LLMService.get(temperature=0.4)
         self.rag = RagService()
+        self.curriculum = CurriculumService()
 
     async def generate(self, request: GenerateRequest) -> StudyPlan:
         """Orchestrates content fetching and invokes LLM to generate the study plan."""
@@ -42,8 +44,27 @@ class PlanService:
         # Step 3 — single LLM call with everything
         return await self._generate_plan(request, web_content, doc_content)
 
+    def _build_curriculum_context(self, request: GenerateRequest) -> str:
+        """Builds a curriculum context block from passed outcomes or re-derives from syllabus."""
+        if request.curriculum_outcomes:
+            lines = [
+                f"AUSTRALIAN CURRICULUM OUTCOMES FOR {request.subject.upper()} {request.grade.upper()}",
+                f"Topic: {request.topic}",
+                "Map learning objectives to these ACARA content descriptors:\n",
+            ]
+            for o in request.curriculum_outcomes:
+                lines.append(f"[{o.code}] {o.sub_strand}: {o.description}")
+                lines.append(f"  Scootle: {o.scootle_url}")
+            return "\n".join(lines)
+        # Fallback: re-derive from syllabus if frontend didn't send outcomes
+        return self.curriculum.get_context_block(
+            subject=request.subject,
+            grade=request.grade,
+            topic=request.topic,
+        )
+
     async def _generate_plan(
-        self, 
+        self,
         request: GenerateRequest,
         web_content: str,
         doc_content: str
@@ -64,7 +85,8 @@ class PlanService:
             resources_text=resources_text,
             web_content=web_content or "None available.",
             doc_content=doc_content or "None selected.",
-            timeline_weeks=request.timeline_weeks
+            curriculum_context=self._build_curriculum_context(request),
+            timeline_weeks=request.timeline_weeks,
         )
 
         response = self.llm.invoke(prompt)
@@ -98,8 +120,9 @@ class PlanService:
             topic=request.topic,
             additional_context=request.additional_context or "None provided",
             resources_text=resources_text,
-            web_content= web_content or "None available.",
-            doc_content= doc_content or "None selected.",
+            web_content=web_content or "None available.",
+            doc_content=doc_content or "None selected.",
+            curriculum_context=self._build_curriculum_context(request),
         )
 
         # Stream tokens directly from the LLM — no agent needed

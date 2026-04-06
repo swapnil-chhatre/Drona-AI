@@ -3,11 +3,6 @@
   <main class="discover-main">
     <header class="discover-topbar">
       <div class="discover-topbar__brand">Drona-AI</div>
-
-      <label class="discover-search" aria-label="Search resources">
-        <span class="material-symbols-outlined" aria-hidden="true">search</span>
-        <input type="text" placeholder="Search curated resources..." />
-      </label>
     </header>
 
     <section class="discover-layout">
@@ -32,9 +27,9 @@
                 <h3>Curriculum Alignment</h3>
                 <div class="outcome-chips">
                   @for (outcome of curriculumOutcomes(); track outcome.code) {
-                    <div class="outcome-chip" [title]="outcome.description">
+                    <a class="outcome-chip" [attr.href]="outcome.scootle_url" target="_blank" rel="noopener noreferrer" [title]="outcome.description">
                       <strong>{{ outcome.code }}</strong>: {{ outcome.strand }}
-                    </div>
+                    </a>
                   }
                 </div>
               </section>
@@ -85,13 +80,15 @@
             </article>
             }
 
-            <section class="ai-recommendation">
-              <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
-              <div>
-                <h3>AI Recommendation</h3>
-                <p>{{ recommendation }}</p>
-              </div>
-            </section>
+            @if (aiRecommendation()) {
+              <section class="ai-recommendation">
+                <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
+                <div>
+                  <h3>AI Recommendation</h3>
+                  <p>{{ aiRecommendation() }}</p>
+                </div>
+              </section>
+            }
           }
         </div>
       </div>
@@ -118,17 +115,9 @@
         </div>
 
         <div class="plan-summary">
-          <div class="plan-summary__row">
-            <span>Estimated Plan Depth</span>
-            <strong>{{ planSummary.planDepth }}</strong>
-          </div>
-
-          <div class="plan-summary__row">
-            <span>Reading Time</span>
-            <strong>{{ planSummary.readingTime }}</strong>
-          </div>
-
-          <button type="button" class="plan-summary__button">
+          <button type="button" class="plan-summary__button"
+            (click)="onGeneratePlan()"
+            [disabled]="selectedResources.length === 0">
             <span>Generate Study Plan</span>
             <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
           </button>
