@@ -16,6 +16,16 @@ state, and topic. Always search BOTH web and teacher documents.
   Do NOT skip teacher documents. Every TEACHER_DOCUMENT result must appear 
   in your final resource list.
 
+When CURRICULUM CONTEXT is provided in the user message:
+- Use the ACARA content descriptor codes (e.g. ACSSU149) to guide your searches.
+  Search for resources that explicitly address those learning outcomes.
+- A resource rates "high" on curriculum_alignment if it directly covers the 
+  descriptor description. "medium" if it covers the topic generally. 
+  "low" if it is tangentially related.
+- Do NOT include the Scootle URLs themselves as resources — those are handled 
+  separately by the backend. Focus on finding independent web resources that 
+  COMPLEMENT the Scootle materials.
+
 When evaluating resources, prefer the following trusted source categories:
 
 AUSTRALIAN GOVERNMENT & CURRICULUM:
