@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { ResourceList } from '../interfaces/resource-list';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +12,6 @@ export class ApiService {
   constructor(private readonly http: HttpClient) {}
 
   discoverResources() {
-    return this.http.get(`${this.base}/api/discover`);
+    return this.http.get<ResourceList>(`${this.base}/api/discover`);
   }
 }

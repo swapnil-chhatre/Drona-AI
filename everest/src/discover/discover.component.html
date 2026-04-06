@@ -1,204 +1,110 @@
-<mat-sidenav-container class="app-container">
-  <!-- Sidebar Navigation -->
-  <!-- <mat-sidenav mode="side" opened class="left-sidenav">
-    <div class="brand-header">
-      <h2 class="font-headline brand-title">Drona-AI</h2>
-      <p class="brand-subtitle">Intellectual Architect</p>
-    </div>
-    
-    <mat-nav-list class="sidebar-nav">
-      <a mat-list-item href="#">
-        <mat-icon matListItemIcon>dashboard</mat-icon>
-        <span matListItemTitle>Dashboard</span>
-      </a>
-      <a mat-list-item href="#" class="active-nav-item">
-        <mat-icon matListItemIcon style="font-variation-settings: 'FILL' 1">menu_book</mat-icon>
-        <span matListItemTitle>My Study Plans</span>
-      </a>
-      <a mat-list-item href="#">
-        <mat-icon matListItemIcon>upload_file</mat-icon>
-        <span matListItemTitle>Uploaded Docs</span>
-      </a>
-      <a mat-list-item href="#">
-        <mat-icon matListItemIcon>settings</mat-icon>
-        <span matListItemTitle>Settings</span>
-      </a>
-    </mat-nav-list>
+<div class="discover-shell">
+  <app-sidebar />
+  <main class="discover-main">
+    <header class="discover-topbar">
+      <div class="discover-topbar__brand">Drona-AI</div>
 
-    <div class="sidebar-footer">
-      <button mat-flat-button color="primary" class="generate-btn">
-        Generate New Plan
-      </button>
-    </div>
-  </mat-sidenav> -->
+      <label class="discover-search" aria-label="Search resources">
+        <span class="material-symbols-outlined" aria-hidden="true">search</span>
+        <input type="text" placeholder="Search curated resources..." />
+      </label>
+    </header>
 
-  <mat-sidenav-content class="main-content">
-    <!-- Top Navigation Bar -->
-    <mat-toolbar class="top-navbar">
-      <span class="font-headline top-brand">Drona-AI</span>
-      
-      <div class="search-container">
-        <mat-icon class="search-icon">search</mat-icon>
-        <input class="search-input" placeholder="Search curated resources..." type="text">
-      </div>
-
-      <span class="spacer"></span>
-      
-      <div class="top-actions">
-        <button mat-icon-button><mat-icon>notifications</mat-icon></button>
-        <button mat-icon-button><mat-icon>help_outline</mat-icon></button>
-        <div class="user-avatar">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIfbd4ihTSGeRJ9XSvJwZ2oG74QGujwEY2TpiQlojnnkGq0pt3sz5rpFBRJcicdeYz0_HllGsXNNSnqqbCYZPhxewtpNBzRu0xFJNFV64kn4LkaPRfhmZllByXKp91eQY2zjX4fRnOGCWt3qPba2E2PnwcPTgukGvtDLmMOsYJqqrLl7xUGMRpfrtQwdugF6xZ8GXzUg0gQC9PTDLK5LIIAjWtyhUvPGWZxna9HSpTyHXC0DJco9LEWIoWf_lD7w74gaKbGIzEij45" alt="User avatar">
-        </div>
-      </div>
-    </mat-toolbar>
-
-    <div class="content-layout">
-      <!-- Resource Discovery Feed -->
-      <div class="feed-container">
+    <section class="discover-layout">
+      <div class="discover-feed">
         <header class="feed-header">
-          <span class="step-label">Step 2: Resource Discovery</span>
-          <h1 class="font-headline feed-title">Quantum Physics Fundamentals</h1>
-          <p class="feed-subtitle">
-            We've identified 12 high-authority resources based on your syllabus. Select the materials you want to synthesize into the study plan.
+          <span class="feed-header__step">Step 2: Resource Discovery</span>
+          <h1 class="feed-header__title">{{ topicTitle }}</h1>
+          <p class="feed-header__subtitle">
+            {{ requestSummary }}
           </p>
         </header>
 
         <div class="resource-list">
-          <!-- Resource Card 1 -->
-          <mat-card class="resource-card" appearance="outlined">
-            <mat-card-content class="resource-card-content">
-              <mat-checkbox [checked]="true" color="primary"></mat-checkbox>
-              <div class="resource-details">
-                <div class="resource-header">
-                  <div class="resource-title-area">
-                    <h3 class="font-headline resource-title">The Dual Nature of Light: Wave-Particle Duality</h3>
-                    <p class="resource-meta">
-                      <mat-icon class="meta-icon">public</mat-icon>
-                      https://edu.mit.edu/physics/quantum-foundations
+          @for (resource of resources; track resource.title) {
+          <article class="resource-card" [class.resource-card--dimmed]="resource.dimmed">
+            <div class="resource-card__content">
+              <div class="resource-card__check">
+                <input type="checkbox" [checked]="resource.selected" />
+              </div>
+
+              <div class="resource-card__body">
+                <div class="resource-card__header">
+                  <div>
+                    <h2>{{ resource.title }}</h2>
+                    <p class="resource-card__meta">
+                      <span class="material-symbols-outlined" aria-hidden="true">{{ resource.metaIcon }}</span>
+                      <span>{{ resource.metaLabel }}</span>
                     </p>
                   </div>
-                  <span class="alignment-badge">98% Alignment</span>
-                </div>
-                <p class="resource-desc">
-                  Comprehensive lecture notes covering the double-slit experiment, photon momentum, and De Broglie's wavelength calculations. Perfectly matches Section 1.4 of your syllabus.
-                </p>
-                <div class="resource-tags">
-                  <span class="tag">Core Theory</span>
-                  <span class="tag">Lecture Notes</span>
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
 
-          <!-- Resource Card 2 -->
-          <mat-card class="resource-card" appearance="outlined">
-            <mat-card-content class="resource-card-content">
-              <mat-checkbox [checked]="true" color="primary"></mat-checkbox>
-              <div class="resource-details">
-                <div class="resource-header">
-                  <div class="resource-title-area">
-                    <h3 class="font-headline resource-title">Syllabus_Physics_Draft_2024.pdf</h3>
-                    <p class="resource-meta">
-                      <mat-icon class="meta-icon">description</mat-icon>
-                      Uploaded Document • 2.4 MB
-                    </p>
-                  </div>
-                  <span class="source-badge">100% Source</span>
+                  <span class="resource-card__badge"
+                    [class.resource-card__badge--muted]="resource.badgeTone === 'muted'">
+                    {{ resource.badgeText }}
+                  </span>
                 </div>
-                <p class="resource-desc">
-                  Your uploaded primary curriculum document. Drona-AI is using this as the architectural backbone for the study plan structure.
-                </p>
-              </div>
-            </mat-card-content>
-          </mat-card>
 
-          <!-- Resource Card 3 -->
-          <mat-card class="resource-card dim-card" appearance="outlined">
-            <mat-card-content class="resource-card-content">
-              <mat-checkbox color="primary"></mat-checkbox>
-              <div class="resource-details">
-                <div class="resource-header">
-                  <div class="resource-title-area">
-                    <h3 class="font-headline resource-title">Heisenberg Uncertainty Principle Simplified</h3>
-                    <p class="resource-meta">
-                      <mat-icon class="meta-icon">movie</mat-icon>
-                      YouTube • ScienceSimplified Channel
-                    </p>
-                  </div>
-                  <span class="alignment-badge-dim">82% Alignment</span>
-                </div>
-                <p class="resource-desc">
-                  Visual breakdown of the uncertainty principle. Recommended as supplementary material for visual learners.
-                </p>
-                <div class="resource-tags">
-                  <span class="tag">Supplementary</span>
-                  <span class="tag">Video</span>
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
+                <p class="resource-card__summary">{{ resource.summary }}</p>
 
-          <!-- AI Response Component -->
-          <div class="ai-recommendation">
-            <mat-icon class="ai-icon">psychology</mat-icon>
-            <div class="ai-content">
-              <h4 class="font-headline ai-title">AI Recommendation</h4>
-              <p class="ai-desc">
-                I recommend including the "Dual Nature of Light" MIT resource. It provides the mathematical rigor missing in the other detected web results and aligns perfectly with your "Module 1" learning objectives.
-              </p>
+                @if (resource.tags.length) {
+                <div class="resource-card__tags">
+                  @for (tag of resource.tags; track tag) {
+                  <span>{{ tag }}</span>
+                  }
+                </div>
+                }
+              </div>
             </div>
-          </div>
+          </article>
+          }
+
+          <section class="ai-recommendation">
+            <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
+            <div>
+              <h3>AI Recommendation</h3>
+              <p>{{ recommendation }}</p>
+            </div>
+          </section>
         </div>
       </div>
 
-      <!-- Right Sidebar: Selected Resources -->
-      <aside class="right-sidebar">
-        <div class="right-sidebar-header">
-          <h2 class="font-headline selected-title">Selected Resources</h2>
-          <p class="selected-subtitle">4 items ready for processing</p>
+      <aside class="selected-sidebar">
+        <div class="selected-sidebar__header">
+          <h2>Selected Resources</h2>
+          <p>{{ planSummary.selectedCountLabel }}</p>
         </div>
 
-        <div class="selected-list">
-          <div class="selected-item">
-            <mat-icon class="check-icon">check_circle</mat-icon>
-            <div class="item-text">
-              <p class="font-headline item-title">Dual Nature of Light</p>
-              <p class="item-meta">mit.edu</p>
+        <div class="selected-sidebar__list">
+          @for (resource of selectedResources; track resource.title) {
+          <article class="selected-item">
+            <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+            <div>
+              <h3>{{ resource.title }}</h3>
+              <p>{{ resource.source }}</p>
             </div>
-          </div>
-          <div class="selected-item">
-            <mat-icon class="check-icon">check_circle</mat-icon>
-            <div class="item-text">
-              <p class="font-headline item-title">Syllabus_Physics_Draft_2024.pdf</p>
-              <p class="item-meta">Internal Document</p>
-            </div>
-          </div>
-          <div class="selected-item">
-            <mat-icon class="check-icon">check_circle</mat-icon>
-            <div class="item-text">
-              <p class="font-headline item-title">Photoelectric Effect Basics</p>
-              <p class="item-meta">khanacademy.org</p>
-            </div>
-          </div>
+          </article>
+          }
         </div>
 
         <div class="plan-summary">
-          <div class="summary-row">
-            <span class="summary-label">Estimated Plan Depth</span>
-            <span class="summary-value">Comprehensive</span>
+          <div class="plan-summary__row">
+            <span>Estimated Plan Depth</span>
+            <strong>{{ planSummary.planDepth }}</strong>
           </div>
-          <div class="summary-row">
-            <span class="summary-label">Reading Time</span>
-            <span class="summary-value">~4.5 Hours</span>
+
+          <div class="plan-summary__row">
+            <span>Reading Time</span>
+            <strong>{{ planSummary.readingTime }}</strong>
           </div>
-          <button mat-flat-button color="primary" class="generate-plan-btn">
+
+          <button type="button" class="plan-summary__button">
             <span>Generate Study Plan</span>
-            <mat-icon>auto_awesome</mat-icon>
+            <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
           </button>
-          <p class="powered-by">Powered by Intellectual Architect Engine v4.2</p>
+
+          <p class="plan-summary__footnote">Powered by Intellectual Architect Engine v4.2</p>
         </div>
       </aside>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    </section>
+  </main>
+</div>
