@@ -16,6 +16,8 @@ export const routes: Routes = [
   {
     path: 'study-plan',
     component: StudyPlanComponent,
+  },
+  {
     path: 'final-result',
     component: FinalResultComponent,
   },
