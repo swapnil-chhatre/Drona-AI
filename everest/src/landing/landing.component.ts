@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarComponent, SidebarNavItem } from '../common/sidebar/sidebar.component';
+import { SidebarComponent } from '../common/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-landing',
@@ -9,22 +9,15 @@ import { SidebarComponent, SidebarNavItem } from '../common/sidebar/sidebar.comp
   styleUrl: './landing.component.css',
 })
 export class LandingComponent {
-  protected readonly sidebarItems: SidebarNavItem[] = [
-    { label: 'Dashboard', icon: 'dashboard', route: '/', active: true },
-    { label: 'My Study Plans', icon: 'menu_book' },
-    { label: 'Uploaded Docs', icon: 'upload_file' },
-    { label: 'Settings', icon: 'settings' },
-  ];
-
   protected readonly gradeLevels = [
-    { label: 'K-5', selected: true },
+    { label: 'K-5', selected: false },
     { label: '6-8', selected: false },
     { label: '9-12', selected: false },
   ];
 
   protected readonly subjectAreas = [
     { label: 'Mathematics', selected: false },
-    { label: 'Science', selected: true },
+    { label: 'Science', selected: false },
     { label: 'History', selected: false },
     { label: 'Economics', selected: false },
     { label: 'Literature', selected: false },

@@ -16,11 +16,19 @@ export interface SidebarNavItem {
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  readonly items = input<SidebarNavItem[]>([]);
+  protected readonly sidebarItems: SidebarNavItem[] = [
+    { label: 'Dashboard', icon: 'dashboard', route: '/', active: true },
+    { label: 'My Study Plans', icon: 'menu_book', route: '/discover' },
+    { label: 'Uploaded Docs', icon: 'upload_file' },
+    { label: 'Settings', icon: 'settings' },
+  ];
+
+  readonly items = input<SidebarNavItem[]>(this.sidebarItems);
   readonly brandTitle = input('Drona-AI');
   readonly brandSubtitle = input('Intellectual Architect');
   readonly brandIcon = input('architecture');
   readonly actionLabel = input('Generate New Plan');
   readonly actionIcon = input('add');
   readonly actionTriggered = output<void>();
+
 }
