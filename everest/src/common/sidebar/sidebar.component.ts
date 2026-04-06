@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 export interface SidebarNavItem {
   label: string;
@@ -11,13 +11,13 @@ export interface SidebarNavItem {
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
   protected readonly sidebarItems: SidebarNavItem[] = [
-    { label: 'Dashboard', icon: 'dashboard', route: '/', active: true },
+    { label: 'Dashboard', icon: 'dashboard', route: '/' },
     { label: 'My Study Plans', icon: 'menu_book', route: '/discover' },
     { label: 'Uploaded Docs', icon: 'upload_file' },
     { label: 'Settings', icon: 'settings' },
