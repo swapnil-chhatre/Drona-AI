@@ -24,13 +24,21 @@
             <input #fileInput type="file" accept=".pdf,.docx,.txt" multiple hidden (change)="onFileSelected($event)" />
 
             <button type="button" class="dropzone" (click)="fileInput.click()" (dragover)="onDragOver($event)"
-              (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" [class.is-dragging]="isDragging()">
+              (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
               <span class="dropzone__icon">
                 <span class="material-symbols-outlined" aria-hidden="true">cloud_upload</span>
               </span>
               <span class="dropzone__headline">Click to upload or drag and drop</span>
-              <span class="dropzone__subcopy">PDF, DOCX, TXT or URLs (Max 50MB per file)</span>
+              <span class="dropzone__subcopy">PDF, DOCX, TXT (Max 2MB per file)</span>
             </button>
+
+            @if (showNotification()) {
+            <div class="upload-notification" [class.success]="notificationTone() === 'success'"
+              [class.error]="notificationTone() === 'error'">
+              <span>{{ notificationMessage() }}</span>
+              <button type="button" (click)="dismissNotification()">✕</button>
+            </div>
+            }
           </div>
         </article>
       </section>
@@ -59,12 +67,20 @@
               </div>
 
               <div class="document-actions">
-                <button type="button" aria-label="Preview document">
+                <button type="button" aria-label="Preview document"
+                  [class.document-action--disabled]="!document.fileUrl"
+                  [title]="document.fileUrl ? 'View document' : 'No preview available'"
+                  (click)="viewDocument(document)">
                   <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
                 </button>
-                <button type="button" aria-label="Delete document">
-                  <span class="material-symbols-outlined" aria-hidden="true">delete</span>
-                </button>
+                <!-- <button
+                  type="button"
+                  aria-label="Delete document"
+                  class="document-action--delete"
+                  title="Delete document"
+                  (click)="deleteDocument(document)"> -->
+                <!-- <span class="material-symbols-outlined" aria-hidden="true">delete</span>
+                </button> -->
               </div>
             </div>
 

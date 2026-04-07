@@ -299,6 +299,23 @@
   border-radius: 0.6rem;
   background: transparent;
   color: var(--color-outline);
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.document-actions button:hover {
+  background: rgba(0, 93, 172, 0.08);
+  color: var(--color-primary);
+}
+
+.document-actions button.document-action--disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.document-actions button.document-action--delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .document-meta h3 {

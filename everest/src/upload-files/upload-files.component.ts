@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 type UploadTone = 'indexed' | 'processing';
 type LibraryView = 'grid' | 'list';
+type NotificationTone = 'success' | 'error' | 'info';
 
 interface UploadFileItem {
   id: string;
@@ -13,6 +14,8 @@ interface UploadFileItem {
   date: string;
   statusLabel: string;
   tone: UploadTone;
+  /** Blob URL for locally-uploaded files; null for pre-seeded/link items */
+  fileUrl: string | null;
 }
 
 @Component({
@@ -23,13 +26,13 @@ interface UploadFileItem {
   styleUrl: './upload-files.component.css',
 })
 export class UploadFilesComponent {
-  /** The current search term entered by the user */
   protected readonly searchQuery = signal('');
-  
-  /** Controls whether the library is displayed as a grid or a list */
   protected readonly selectedView = signal<LibraryView>('list');
 
-  /** Mock data representing the user's document vault */
+  protected readonly notificationMessage = signal('');
+  protected readonly notificationTone = signal<NotificationTone>('info');
+  protected readonly showNotification = signal(false);
+
   protected readonly documents = signal<UploadFileItem[]>([
     {
       id: 'advanced-neurobiology',
@@ -39,6 +42,7 @@ export class UploadFilesComponent {
       date: 'Oct 12, 2023',
       statusLabel: 'Indexed',
       tone: 'indexed',
+      fileUrl: null,
     },
     {
       id: 'quantum-physics-notes',
@@ -48,6 +52,7 @@ export class UploadFilesComponent {
       date: 'Oct 14, 2023',
       statusLabel: 'Processing',
       tone: 'processing',
+      fileUrl: null,
     },
     {
       id: 'architecture-patterns-link',
@@ -57,6 +62,7 @@ export class UploadFilesComponent {
       date: 'Oct 10, 2023',
       statusLabel: 'Indexed',
       tone: 'indexed',
+      fileUrl: null,
     },
     {
       id: 'ethical-ai-framework',
@@ -66,25 +72,13 @@ export class UploadFilesComponent {
       date: 'Sep 28, 2023',
       statusLabel: 'Indexed',
       tone: 'indexed',
+      fileUrl: null,
     },
   ]);
 
-  // --- Upload State Signals ---
-  /** Files currently selected or dropped by the user */
-  protected readonly selectedFiles = signal<File[]>([]);
-  /** Holds any validation error message from the upload process */
-  protected readonly uploadError = signal('');
-  /** Tracks whether a file is currently being dragged over the dropzone */
-  protected readonly isDragging = signal(false);
-
-  // Configuration thresholds
-  private readonly maxFileSize = 50 * 1024 * 1024; // 50 MB
+  private readonly maxFileSize = 2 * 1024 * 1024; // 2MB hard limit
   private readonly allowedExtensions = ['pdf', 'docx', 'txt'];
 
-  /**
-   * Computes the subset of documents that match the search query.
-   * If the search query is empty, it returns all documents.
-   */
   protected readonly filteredDocuments = computed(() => {
     const query = this.searchQuery().trim().toLowerCase();
 
@@ -97,27 +91,43 @@ export class UploadFilesComponent {
     );
   });
 
-  /** Retrieves the first document that is currently in 'processing' state */
   protected readonly activeProcessingDocument = computed(() =>
     this.documents().find((document) => document.tone === 'processing') ?? null
   );
 
-  /** Number of fully indexed documents */
   protected readonly indexedCount = computed(
     () => this.documents().filter((document) => document.tone === 'indexed').length
   );
 
-  /** Number of documents currently processing */
   protected readonly processingCount = computed(
     () => this.documents().filter((document) => document.tone === 'processing').length
   );
 
-  /** Updates the view layout (list vs grid) */
   protected setView(view: LibraryView): void {
     this.selectedView.set(view);
   }
 
-  /** Handles files explicitly selected via the hidden file input */
+  protected viewDocument(doc: UploadFileItem): void {
+    if (doc.fileUrl) {
+      window.open(doc.fileUrl, '_blank');
+    } else {
+      this.showToast('No preview available for pre-existing documents.', 'info');
+    }
+  }
+
+  // protected deleteDocument(doc: UploadFileItem): void {
+  //   const confirmed = window.confirm(`Delete "${doc.title}"? This cannot be undone.`);
+  //   if (!confirmed) return;
+
+  //   // Revoke the blob URL to free memory
+  //   if (doc.fileUrl) {
+  //     URL.revokeObjectURL(doc.fileUrl);
+  //   }
+
+  //   this.documents.set(this.documents().filter((d) => d.id !== doc.id));
+  //   this.showToast(`"${doc.title}" has been removed.`, 'info');
+  // }
+
   protected onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
 
@@ -126,86 +136,60 @@ export class UploadFilesComponent {
     }
 
     const files = Array.from(input.files);
-    this.handleFiles(files);
 
-    // lets user pick the same file again if needed
+    for (const file of files) {
+      this.handleSingleFile(file);
+    }
+
     input.value = '';
   }
 
-  /** Visual indicator handler for drag over events */
   protected onDragOver(event: DragEvent): void {
     event.preventDefault();
     event.stopPropagation();
-    this.isDragging.set(true);
   }
 
-  /** Resets visual indicator when drag leaves the component */
   protected onDragLeave(event: DragEvent): void {
     event.preventDefault();
     event.stopPropagation();
-    this.isDragging.set(false);
   }
 
-  /** Captures dropped files and processes them */
   protected onDrop(event: DragEvent): void {
     event.preventDefault();
     event.stopPropagation();
-    this.isDragging.set(false);
 
     const files = Array.from(event.dataTransfer?.files ?? []);
+
     if (!files.length) {
       return;
     }
 
-    this.handleFiles(files);
-  }
-
-  /** Utility: removes a specific file from the selected files list */
-  protected removeSelectedFile(fileToRemove: File): void {
-    this.selectedFiles.set(
-      this.selectedFiles().filter((file) => file !== fileToRemove)
-    );
-  }
-
-  /** Utility: clears the entire currently selected files list and any errors */
-  protected clearSelectedFiles(): void {
-    this.selectedFiles.set([]);
-    this.uploadError.set('');
-  }
-
-  /**
-   * Validates ingested files and pushes valid ones to the list of documents 
-   * as active 'processing' uploads.
-   */
-  private handleFiles(files: File[]): void {
-    this.uploadError.set('');
-
-    const validFiles: File[] = [];
-
     for (const file of files) {
-      const extension = file.name.split('.').pop()?.toLowerCase();
-
-      if (!extension || !this.allowedExtensions.includes(extension)) {
-        this.uploadError.set('Only PDF, DOCX, and TXT files are allowed.');
-        continue;
-      }
-
-      if (file.size > this.maxFileSize) {
-        this.uploadError.set(`"${file.name}" exceeds the 50MB limit.`);
-        continue;
-      }
-
-      validFiles.push(file);
+      this.handleSingleFile(file);
     }
+  }
 
-    if (!validFiles.length) {
+  protected dismissNotification(): void {
+    this.showNotification.set(false);
+    this.notificationMessage.set('');
+  }
+
+  private handleSingleFile(file: File): void {
+    const extension = file.name.split('.').pop()?.toLowerCase();
+
+    if (!extension || !this.allowedExtensions.includes(extension)) {
+      this.showToast('Only PDF, DOCX, and TXT files are allowed.', 'error');
       return;
     }
 
-    this.selectedFiles.set([...this.selectedFiles(), ...validFiles]);
+    if (file.size > this.maxFileSize) {
+      this.showToast('File is too large. Max is 2MB.', 'error');
+      return;
+    }
 
-    // Add uploaded files immediately into your document list as "Processing"
-    const newItems: UploadFileItem[] = validFiles.map((file) => ({
+    const fileUrl = URL.createObjectURL(file);
+
+    const newDocument: UploadFileItem = {
       id: this.createId(file.name),
       title: file.name,
       typeIcon: this.getTypeIcon(file.name),
@@ -213,35 +197,41 @@ export class UploadFilesComponent {
       date: this.formatDate(new Date()),
       statusLabel: 'Processing',
       tone: 'processing',
-    }));
+      fileUrl,
+    };
 
-    this.documents.set([...newItems, ...this.documents()]);
+    this.documents.set([newDocument, ...this.documents()]);
 
-    // If you want backend upload immediately, call this:
-    // this.uploadFiles(validFiles);
+    // Hardcoded fake indexing delay
+    setTimeout(() => {
+      this.markDocumentAsIndexed(newDocument.id);
+      this.showToast('File successfully indexed in vector database.', 'success');
+    }, 2000);
   }
 
-  /** 
-   * Prepares valid files for transmission to backend endpoints. 
-   * (Method scaffold for future API integration)
-   */
-  protected uploadFiles(files: File[]): void {
-    const formData = new FormData();
-
-    files.forEach((file) => {
-      formData.append('files', file);
-    });
-
-    // Example only:
-    // inject HttpClient and use:
-    // this.http.post('/api/upload', formData).subscribe(...)
+  private markDocumentAsIndexed(documentId: string): void {
+    this.documents.set(
+      this.documents().map((document) =>
+        document.id === documentId
+          ? {
+            ...document,
+            statusLabel: 'Indexed',
+            tone: 'indexed',
+          }
+          : document
+      )
+    );
   }
 
-  /** Utility: Formats file sizes from bytes to readable strings. */
-  protected formatFileSize(bytes: number): string {
-    if (bytes < 1024) return `${bytes} B`;
-    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
-    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  private showToast(message: string, tone: NotificationTone): void {
+    this.notificationMessage.set(message);
+    this.notificationTone.set(tone);
+    this.showNotification.set(true);
+
+    setTimeout(() => {
+      this.showNotification.set(false);
+      this.notificationMessage.set('');
+    }, 3000);
   }
 
   private getTypeIcon(fileName: string): string {
