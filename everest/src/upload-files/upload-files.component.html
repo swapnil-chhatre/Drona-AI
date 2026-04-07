@@ -33,22 +33,6 @@
             </button>
           </div>
         </article>
-
-        <!-- <aside class="insight-card">
-          <h3>
-            <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
-            RAG Optimization
-          </h3>
-
-          @if (activeProcessingDocument(); as processingDoc) {
-          <p>
-            Your latest upload "{{ processingDoc.title }}" is currently being vectorized. Indexing at
-            {{ overallProgress(processingDoc) }}%.
-          </p>
-          } @else {
-          <p>Your uploaded knowledge base is healthy and all documents are fully indexed.</p>
-          }
-        </aside> -->
       </section>
 
       <section class="library-section">
@@ -57,19 +41,11 @@
             <h2>Document Library</h2>
 
             <div class="view-toggle" aria-label="Toggle document layout">
-              <button type="button" [class.is-active]="selectedView() === 'grid'" (click)="setView('grid')">
-                <span class="material-symbols-outlined" aria-hidden="true">grid_view</span>
-              </button>
               <button type="button" [class.is-active]="selectedView() === 'list'" (click)="setView('list')">
                 <span class="material-symbols-outlined" aria-hidden="true">view_list</span>
               </button>
             </div>
           </div>
-
-          <button type="button" class="filter-button">
-            <span class="material-symbols-outlined" aria-hidden="true">filter_list</span>
-            <span>Filter</span>
-          </button>
         </div>
 
         <div class="documents-grid" [class.documents-grid--list]="selectedView() === 'list'">

@@ -2,15 +2,15 @@ import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent, SidebarNavItem } from '../common/sidebar/sidebar.component';
 
-type UploadStageKey = 'ingestion' | 'vectorisation' | 'database';
+// type UploadStageKey = 'ingestion' | 'vectorisation' | 'database';
 type UploadTone = 'indexed' | 'processing';
 type LibraryView = 'grid' | 'list';
 
-interface UploadStage {
-  key: UploadStageKey;
-  label: string;
-  progress: number;
-}
+// interface UploadStage {
+//   key: UploadStageKey;
+//   label: string;
+//   progress: number;
+// }
 
 interface UploadFileItem {
   id: string;
@@ -38,7 +38,7 @@ export class UploadFilesComponent {
   ];
 
   protected readonly searchQuery = signal('');
-  protected readonly selectedView = signal<LibraryView>('grid');
+  protected readonly selectedView = signal<LibraryView>('list');
 
   protected readonly documents = signal<UploadFileItem[]>([
     {
@@ -130,15 +130,15 @@ export class UploadFilesComponent {
   //   return Math.round(total / document.stages.length);
   // }
 
-  protected stageStateClass(stage: UploadStage): 'done' | 'active' | 'pending' {
-    if (stage.progress >= 100) {
-      return 'done';
-    }
+  // protected stageStateClass(stage: UploadStage): 'done' | 'active' | 'pending' {
+  //   if (stage.progress >= 100) {
+  //     return 'done';
+  //   }
 
-    if (stage.progress > 0) {
-      return 'active';
-    }
+  //   if (stage.progress > 0) {
+  //     return 'active';
+  //   }
 
-    return 'pending';
-  }
+  //   return 'pending';
+  // }
 }
