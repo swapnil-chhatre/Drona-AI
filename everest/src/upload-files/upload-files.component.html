@@ -21,8 +21,7 @@
               learning and retrieval. Documents will be used for further study plan generation.
             </p>
 
-            <input #fileInput type="file" accept=".pdf,.docx,.txt" multiple hidden
-              (change)="onFileSelected($event)" />
+            <input #fileInput type="file" accept=".pdf,.docx,.txt" multiple hidden (change)="onFileSelected($event)" />
 
             <button type="button" class="dropzone" (click)="fileInput.click()" (dragover)="onDragOver($event)"
               (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" [class.is-dragging]="isDragging()">
@@ -82,13 +81,6 @@
 
           </article>
           }
-
-          <button type="button" class="new-source-card">
-            <span class="new-source-card__icon">
-              <span class="material-symbols-outlined" aria-hidden="true">add_circle</span>
-            </span>
-            <span>New Knowledge Source</span>
-          </button>
         </div>
       </section>
 
