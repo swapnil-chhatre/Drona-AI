@@ -1,11 +1,9 @@
 <div class="upload-shell">
   <main class="upload-main">
-    <app-sidebar />
     <header class="upload-topbar">
       <div class="upload-topbar__title">
         <h1>Library</h1>
       </div>
-
       <label class="upload-search" aria-label="Search documents">
         <span class="material-symbols-outlined" aria-hidden="true">search</span>
         <input type="text" [ngModel]="searchQuery()" (ngModelChange)="searchQuery.set($event)"
@@ -23,7 +21,11 @@
               learning and retrieval. Documents will be used for further study plan generation.
             </p>
 
-            <button type="button" class="dropzone">
+            <input #fileInput type="file" accept=".pdf,.docx,.txt" multiple hidden
+              (change)="onFileSelected($event)" />
+
+            <button type="button" class="dropzone" (click)="fileInput.click()" (dragover)="onDragOver($event)"
+              (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" [class.is-dragging]="isDragging()">
               <span class="dropzone__icon">
                 <span class="material-symbols-outlined" aria-hidden="true">cloud_upload</span>
               </span>
@@ -78,20 +80,6 @@
               </div>
             </div>
 
-            <!-- <div class="status-bar">
-              @for (stage of document.stages; track stage.key) {
-              <div class="status-stage" [class.status-stage--done]="stageStateClass(stage) === 'done'"
-                [class.status-stage--active]="stageStateClass(stage) === 'active'">
-                <div class="status-stage__label-row">
-                  <span>{{ stage.label }}</span>
-                  <span>{{ stage.progress }}%</span>
-                </div>
-                <div class="status-stage__track">
-                  <span class="status-stage__fill" [style.width.%]="stage.progress"></span>
-                </div>
-              </div>
-              }
-            </div> -->
           </article>
           }
 

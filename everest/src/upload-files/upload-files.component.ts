@@ -1,6 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SidebarComponent } from '../common/sidebar/sidebar.component';
 
 type UploadTone = 'indexed' | 'processing';
 type LibraryView = 'grid' | 'list';
@@ -18,14 +18,18 @@ interface UploadFileItem {
 @Component({
   selector: 'app-upload-files',
   standalone: true,
-  imports: [FormsModule, SidebarComponent],
+  imports: [CommonModule, FormsModule],
   templateUrl: './upload-files.component.html',
   styleUrl: './upload-files.component.css',
 })
 export class UploadFilesComponent {
+  /** The current search term entered by the user */
   protected readonly searchQuery = signal('');
+  
+  /** Controls whether the library is displayed as a grid or a list */
   protected readonly selectedView = signal<LibraryView>('list');
 
+  /** Mock data representing the user's document vault */
   protected readonly documents = signal<UploadFileItem[]>([
     {
       id: 'advanced-neurobiology',
@@ -65,6 +69,22 @@ export class UploadFilesComponent {
     },
   ]);
 
+  // --- Upload State Signals ---
+  /** Files currently selected or dropped by the user */
+  protected readonly selectedFiles = signal<File[]>([]);
+  /** Holds any validation error message from the upload process */
+  protected readonly uploadError = signal('');
+  /** Tracks whether a file is currently being dragged over the dropzone */
+  protected readonly isDragging = signal(false);
+
+  // Configuration thresholds
+  private readonly maxFileSize = 50 * 1024 * 1024; // 50 MB
+  private readonly allowedExtensions = ['pdf', 'docx', 'txt'];
+
+  /**
+   * Computes the subset of documents that match the search query.
+   * If the search query is empty, it returns all documents.
+   */
   protected readonly filteredDocuments = computed(() => {
     const query = this.searchQuery().trim().toLowerCase();
 
@@ -72,39 +92,196 @@ export class UploadFilesComponent {
       return this.documents();
     }
 
-    return this.documents().filter((document) => document.title.toLowerCase().includes(query));
+    return this.documents().filter((document) =>
+      document.title.toLowerCase().includes(query)
+    );
   });
 
+  /** Retrieves the first document that is currently in 'processing' state */
   protected readonly activeProcessingDocument = computed(() =>
     this.documents().find((document) => document.tone === 'processing') ?? null
   );
 
+  /** Number of fully indexed documents */
   protected readonly indexedCount = computed(
     () => this.documents().filter((document) => document.tone === 'indexed').length
   );
 
+  /** Number of documents currently processing */
   protected readonly processingCount = computed(
     () => this.documents().filter((document) => document.tone === 'processing').length
   );
 
+  /** Updates the view layout (list vs grid) */
   protected setView(view: LibraryView): void {
     this.selectedView.set(view);
   }
 
-  // protected overallProgress(document: UploadFileItem): number {
-  //   const total = document.stages.reduce((sum, stage) => sum + stage.progress, 0);
-  //   return Math.round(total / document.stages.length);
-  // }
+  /** Handles files explicitly selected via the hidden file input */
+  protected onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
 
-  // protected stageStateClass(stage: UploadStage): 'done' | 'active' | 'pending' {
-  //   if (stage.progress >= 100) {
-  //     return 'done';
-  //   }
+    if (!input.files || input.files.length === 0) {
+      return;
+    }
 
-  //   if (stage.progress > 0) {
-  //     return 'active';
-  //   }
+    const files = Array.from(input.files);
+    this.handleFiles(files);
 
-  //   return 'pending';
-  // }
+    // lets user pick the same file again if needed
+    input.value = '';
+  }
+
+  /** Visual indicator handler for drag over events */
+  protected onDragOver(event: DragEvent): void {
+    event.preventDefault();
+    event.stopPropagation();
+    this.isDragging.set(true);
+  }
+
+  /** Resets visual indicator when drag leaves the component */
+  protected onDragLeave(event: DragEvent): void {
+    event.preventDefault();
+    event.stopPropagation();
+    this.isDragging.set(false);
+  }
+
+  /** Captures dropped files and processes them */
+  protected onDrop(event: DragEvent): void {
+    event.preventDefault();
+    event.stopPropagation();
+    this.isDragging.set(false);
+
+    const files = Array.from(event.dataTransfer?.files ?? []);
+    if (!files.length) {
+      return;
+    }
+
+    this.handleFiles(files);
+  }
+
+  /** Utility: removes a specific file from the selected files list */
+  protected removeSelectedFile(fileToRemove: File): void {
+    this.selectedFiles.set(
+      this.selectedFiles().filter((file) => file !== fileToRemove)
+    );
+  }
+
+  /** Utility: clears the entire currently selected files list and any errors */
+  protected clearSelectedFiles(): void {
+    this.selectedFiles.set([]);
+    this.uploadError.set('');
+  }
+
+  /**
+   * Validates ingested files and pushes valid ones to the list of documents 
+   * as active 'processing' uploads.
+   */
+  private handleFiles(files: File[]): void {
+    this.uploadError.set('');
+
+    const validFiles: File[] = [];
+
+    for (const file of files) {
+      const extension = file.name.split('.').pop()?.toLowerCase();
+
+      if (!extension || !this.allowedExtensions.includes(extension)) {
+        this.uploadError.set('Only PDF, DOCX, and TXT files are allowed.');
+        continue;
+      }
+
+      if (file.size > this.maxFileSize) {
+        this.uploadError.set(`"${file.name}" exceeds the 50MB limit.`);
+        continue;
+      }
+
+      validFiles.push(file);
+    }
+
+    if (!validFiles.length) {
+      return;
+    }
+
+    this.selectedFiles.set([...this.selectedFiles(), ...validFiles]);
+
+    // Add uploaded files immediately into your document list as "Processing"
+    const newItems: UploadFileItem[] = validFiles.map((file) => ({
+      id: this.createId(file.name),
+      title: file.name,
+      typeIcon: this.getTypeIcon(file.name),
+      typeTone: this.getTypeTone(file.name),
+      date: this.formatDate(new Date()),
+      statusLabel: 'Processing',
+      tone: 'processing',
+    }));
+
+    this.documents.set([...newItems, ...this.documents()]);
+
+    // If you want backend upload immediately, call this:
+    // this.uploadFiles(validFiles);
+  }
+
+  /** 
+   * Prepares valid files for transmission to backend endpoints. 
+   * (Method scaffold for future API integration)
+   */
+  protected uploadFiles(files: File[]): void {
+    const formData = new FormData();
+
+    files.forEach((file) => {
+      formData.append('files', file);
+    });
+
+    // Example only:
+    // inject HttpClient and use:
+    // this.http.post('/api/upload', formData).subscribe(...)
+  }
+
+  /** Utility: Formats file sizes from bytes to readable strings. */
+  protected formatFileSize(bytes: number): string {
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  }
+
+  private getTypeIcon(fileName: string): string {
+    const extension = fileName.split('.').pop()?.toLowerCase();
+
+    switch (extension) {
+      case 'pdf':
+        return 'picture_as_pdf';
+      case 'docx':
+        return 'description';
+      case 'txt':
+        return 'article';
+      default:
+        return 'insert_drive_file';
+    }
+  }
+
+  private getTypeTone(fileName: string): 'pdf' | 'doc' | 'link' {
+    const extension = fileName.split('.').pop()?.toLowerCase();
+
+    switch (extension) {
+      case 'pdf':
+        return 'pdf';
+      case 'docx':
+      case 'txt':
+        return 'doc';
+      default:
+        return 'doc';
+    }
+  }
+
+  private createId(fileName: string): string {
+    return `${fileName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${Date.now()}`;
+  }
+
+  private formatDate(date: Date): string {
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: '2-digit',
+      year: 'numeric',
+    });
+  }
 }
