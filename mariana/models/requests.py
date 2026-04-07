@@ -8,16 +8,19 @@ class DiscoverRequest(BaseModel):
     subject: str              # e.g. "History"
     state: str                # e.g. "NSW"
     topic: str                # e.g. "World War I causes"
+    first_nation: bool # e.g. "false"
 
 class GenerateRequest(BaseModel):
     grade: str
     subject: str
     state: str
     topic: str
+    first_nation: bool
     selected_resources: list[Resource]
     curriculum_outcomes: list[CurriculumOutcome] = []
     additional_context: str = ""
     timeline_weeks: int = 2
+    level: str = "Beginner"  # e.g. "Beginner", "Intermediate", "Advanced"
 
     @property
     def selected_web_urls(self) -> list[str]:

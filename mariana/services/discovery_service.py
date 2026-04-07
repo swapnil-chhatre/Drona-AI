@@ -117,6 +117,22 @@ class DiscoveryService:
             f"ACARA codes {codes_str}."
         )
 
+        first_nations_query = ""
+        first_nations_instruction = ""
+        if request.first_nation:
+            first_nations_query = (
+                f"Find educational resources that specifically incorporate Australian Aboriginal and Torres Strait Islander "
+                f"histories, cultures, and perspectives for {request.grade} {request.subject} topic: {request.topic}. "
+                f"Look for authentic First Nations voices and stories."
+            )
+            first_nations_instruction = """
+--- FIRST NATIONS PERSPECTIVE REQUESTED ---
+The teacher has requested a focus on First Nations perspectives. 
+Prioritize finding and including resources that feature Australian Aboriginal and Torres Strait Islander 
+histories, cultures, or knowledge systems related to this topic. Where applicable.
+-------------------------------------------
+"""
+
         # ── 3. Inject curriculum context into the message ──────────────────
         full_message = f"""
 {location_query}
@@ -124,6 +140,10 @@ class DiscoveryService:
 {general_query}
 
 {scootle_query}
+
+{first_nations_query}
+
+{first_nations_instruction}
 
 --- CURRICULUM CONTEXT ---
 {curriculum_block if curriculum_block else "No specific outcomes matched — find broadly relevant resources."}
@@ -137,8 +157,6 @@ ACARA outcomes listed above using this 5-level scale:
 - "low"        — tangentially related; useful supplementary material
 - "minimal"    — barely relevant; only include if no better option exists
 """
-
-        print(full_message)
 
         # ── 4. Run the agent ────────────────────────────────────────────────
         result: ResourceList = self.agent.invoke(
