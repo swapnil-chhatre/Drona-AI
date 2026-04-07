@@ -34,7 +34,7 @@
       }
 
       @if (markdown()) {
-        <div class="plan-output markdown-body" [innerHTML]="renderedHtml"></div>
+        <div class="plan-output markdown-body" [innerHTML]="renderedHtml()"></div>
       }
     </div>
   </main>

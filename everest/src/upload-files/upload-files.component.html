@@ -1,0 +1,157 @@
+<div class="upload-shell">
+  <app-sidebar [items]="sidebarItems" />
+
+  <main class="upload-main">
+    <header class="upload-topbar">
+      <div class="upload-topbar__title">
+        <h1>Library</h1>
+      </div>
+
+      <label class="upload-search" aria-label="Search documents">
+        <span class="material-symbols-outlined" aria-hidden="true">search</span>
+        <input type="text" [ngModel]="searchQuery()" (ngModelChange)="searchQuery.set($event)"
+          placeholder="Search documents..." />
+      </label>
+    </header>
+
+    <div class="upload-content">
+      <section class="upload-hero">
+        <article class="hero-card">
+          <div class="hero-card__body">
+            <h2>Ingest Knowledge</h2>
+            <p>
+              Add new documents to your intellectual vault. Drona-AI will index them for context-aware
+              learning and retrieval. Documents will be used for further study plan generation.
+            </p>
+
+            <button type="button" class="dropzone">
+              <span class="dropzone__icon">
+                <span class="material-symbols-outlined" aria-hidden="true">cloud_upload</span>
+              </span>
+              <span class="dropzone__headline">Click to upload or drag and drop</span>
+              <span class="dropzone__subcopy">PDF, DOCX, TXT or URLs (Max 50MB per file)</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- <aside class="insight-card">
+          <h3>
+            <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
+            RAG Optimization
+          </h3>
+
+          @if (activeProcessingDocument(); as processingDoc) {
+          <p>
+            Your latest upload "{{ processingDoc.title }}" is currently being vectorized. Indexing at
+            {{ overallProgress(processingDoc) }}%.
+          </p>
+          } @else {
+          <p>Your uploaded knowledge base is healthy and all documents are fully indexed.</p>
+          }
+        </aside> -->
+      </section>
+
+      <section class="library-section">
+        <div class="library-toolbar">
+          <div class="library-toolbar__left">
+            <h2>Document Library</h2>
+
+            <div class="view-toggle" aria-label="Toggle document layout">
+              <button type="button" [class.is-active]="selectedView() === 'grid'" (click)="setView('grid')">
+                <span class="material-symbols-outlined" aria-hidden="true">grid_view</span>
+              </button>
+              <button type="button" [class.is-active]="selectedView() === 'list'" (click)="setView('list')">
+                <span class="material-symbols-outlined" aria-hidden="true">view_list</span>
+              </button>
+            </div>
+          </div>
+
+          <button type="button" class="filter-button">
+            <span class="material-symbols-outlined" aria-hidden="true">filter_list</span>
+            <span>Filter</span>
+          </button>
+        </div>
+
+        <div class="documents-grid" [class.documents-grid--list]="selectedView() === 'list'">
+          @for (document of filteredDocuments(); track document.id) {
+          <article class="document-card" [class.document-card--processing]="document.tone === 'processing'">
+            <div class="document-card__header">
+              <div class="document-icon" [class.document-icon--pdf]="document.typeTone === 'pdf'"
+                [class.document-icon--doc]="document.typeTone === 'doc'"
+                [class.document-icon--link]="document.typeTone === 'link'">
+                <span class="material-symbols-outlined" aria-hidden="true">{{ document.typeIcon }}</span>
+              </div>
+
+              <div class="document-actions">
+                <button type="button" aria-label="Preview document">
+                  <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                </button>
+                <button type="button" aria-label="Delete document">
+                  <span class="material-symbols-outlined" aria-hidden="true">delete</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="document-meta">
+              <h3>{{ document.title }}</h3>
+              <div class="document-badges">
+                <span class="document-date">{{ document.date }}</span>
+                <span class="document-status" [class.document-status--processing]="document.tone === 'processing'">
+                  <span class="document-status__dot"></span>
+                  {{ document.statusLabel }}
+                </span>
+              </div>
+            </div>
+
+            <!-- <div class="status-bar">
+              @for (stage of document.stages; track stage.key) {
+              <div class="status-stage" [class.status-stage--done]="stageStateClass(stage) === 'done'"
+                [class.status-stage--active]="stageStateClass(stage) === 'active'">
+                <div class="status-stage__label-row">
+                  <span>{{ stage.label }}</span>
+                  <span>{{ stage.progress }}%</span>
+                </div>
+                <div class="status-stage__track">
+                  <span class="status-stage__fill" [style.width.%]="stage.progress"></span>
+                </div>
+              </div>
+              }
+            </div> -->
+          </article>
+          }
+
+          <button type="button" class="new-source-card">
+            <span class="new-source-card__icon">
+              <span class="material-symbols-outlined" aria-hidden="true">add_circle</span>
+            </span>
+            <span>New Knowledge Source</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="context-bar">
+        <div class="context-bar__summary">
+          <div class="context-bar__icon">
+            <span class="material-symbols-outlined" aria-hidden="true">insights</span>
+          </div>
+          <div>
+            <h4>Retrieval Context Health</h4>
+            <p>
+              Your AI model currently has access to 142 distinct knowledge chunks across
+              {{ indexedCount() }} indexed documents and {{ processingCount() }} in-progress upload.
+            </p>
+          </div>
+        </div>
+
+        <div class="context-bar__actions">
+          <button type="button" class="secondary-button">Clean Cache</button>
+          <button type="button" class="primary-button">Optimize Index</button>
+        </div>
+      </footer>
+    </div>
+
+    <button type="button" class="assistant-fab" aria-label="Open upload assistant">
+      <span class="material-symbols-outlined" aria-hidden="true">smart_toy</span>
+    </button>
+  </main>
+</div>
