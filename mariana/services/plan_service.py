@@ -150,8 +150,11 @@ class PlanService:
                 collected.append(chunk.text)
                 yield chunk.text
 
-        # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
+        # Write the full response to the fixture file for use in TEST_MODE (best-effort)
+        try:
+            _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
+        except OSError as e:
+            print(f"⚠️ Could not save study plan fixture: {e}")
 
     async def stream_quiz(self, request: GenerateRequest):
         """Yields quiz markdown tokens as they are generated."""
@@ -192,8 +195,11 @@ class PlanService:
                 collected.append(chunk.text)
                 yield chunk.text
 
-        # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_QUIZ_PLAN.write_text("".join(collected), encoding="utf-8")
+        # Write the full response to the fixture file for use in TEST_MODE (best-effort)
+        try:
+            _FIXTURE_PATH_QUIZ_PLAN.write_text("".join(collected), encoding="utf-8")
+        except OSError as e:
+            print(f"⚠️ Could not save quiz fixture: {e}")
 
     async def stream_activities(self, request: GenerateRequest):
         """Yields activities markdown tokens as they are generated."""
@@ -234,8 +240,11 @@ class PlanService:
                 collected.append(chunk.text)
                 yield chunk.text
 
-        # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_ACTIVITIES.write_text("".join(collected), encoding="utf-8")
+        # Write the full response to the fixture file for use in TEST_MODE (best-effort)
+        try:
+            _FIXTURE_PATH_ACTIVITIES.write_text("".join(collected), encoding="utf-8")
+        except OSError as e:
+            print(f"⚠️ Could not save activities fixture: {e}")
 
     async def stream_keywords(self, request: GenerateRequest):
         """Yields keywords markdown tokens as they are generated."""
@@ -275,8 +284,11 @@ class PlanService:
                 collected.append(chunk.text)
                 yield chunk.text
 
-        # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_KEYWORDS.write_text("".join(collected), encoding="utf-8")
+        # Write the full response to the fixture file for use in TEST_MODE (best-effort)
+        try:
+            _FIXTURE_PATH_KEYWORDS.write_text("".join(collected), encoding="utf-8")
+        except OSError as e:
+            print(f"⚠️ Could not save keywords fixture: {e}")
 
     async def _fixture_stream(self, type="study_plan"):
         """Streams the saved markdown fixture in small chunks to simulate LLM output."""
