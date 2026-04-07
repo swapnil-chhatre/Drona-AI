@@ -2,7 +2,35 @@
 
 
 class PromptService:
+    
+    MATH_INSTRUCTIONS = """
+      ## Formatting Rules
+      - Use clear markdown formatting with headers, bullet points, and tables
+      - For mathematical expressions or scientific notation, use LaTeX syntax:
+      - Inline math: $E = mc^2$ or $6.022 \\times 10^{23}$
+      - Block math: $$\\frac{d}{dx}f(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}$$
+      """
 
+    EMOJI_INSTRUCTIONS = """
+      ## Emoji & Visual Formatting Rules
+      Use emojis consistently to give each section a distinct visual identity:
+
+      ### Section Header Emojis
+      - 🎯 **Learning Objectives** — prefix each objective with a bold number (01, 02, 03)
+      - 🚀 **Core Learning Activities** — split into two named columns: **🔍 Deep Dive: Analysis** and **🏗️ Architectural Build**
+      - 📚 **Curated Resources & Citations** — each resource on its own line with 📄 for documents and 🌐 for web links
+      - ✅ **Mastery Assessment** — include a capstone-style project card with metadata tags
+
+      ### Content Formatting
+      - Prefix each learning objective with its number styled as `**01**`, `**02**`, `**03**`
+      - For activities, use a two-column style with `|` separators in a markdown table
+      - For resources, include the author/title and a `[VIEW SOURCE](url)` link on the same line
+      - For assessments, end with inline tags like `` `Due in X weeks` `` and `` `Weighted X%` ``
+      - Use 📌 for key notes or callouts within sections
+      - Use ⏱️ when referencing timeframes
+      - Use 🇦🇺 when referencing Australian curriculum standards or local context
+      """
+    
     @staticmethod
     def discovery_system_prompt() -> str:
         return """You are an expert educational resource finder for Australian K-12 teachers.
@@ -105,34 +133,6 @@ the classroom alongside one complementary resource."""
         timeline_weeks: int = 2,
     ) -> str:
 
-        MATH_INSTRUCTIONS = """
-      ## Formatting Rules
-      - Use clear markdown formatting with headers, bullet points, and tables
-      - For mathematical expressions or scientific notation, use LaTeX syntax:
-      - Inline math: $E = mc^2$ or $6.022 \\times 10^{23}$
-      - Block math: $$\\frac{d}{dx}f(x) = \\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}$$
-      """
-
-        EMOJI_INSTRUCTIONS = """
-      ## Emoji & Visual Formatting Rules
-      Use emojis consistently to give each section a distinct visual identity:
-
-      ### Section Header Emojis
-      - 🎯 **Learning Objectives** — prefix each objective with a bold number (01, 02, 03)
-      - 🚀 **Core Learning Activities** — split into two named columns: **🔍 Deep Dive: Analysis** and **🏗️ Architectural Build**
-      - 📚 **Curated Resources & Citations** — each resource on its own line with 📄 for documents and 🌐 for web links
-      - ✅ **Mastery Assessment** — include a capstone-style project card with metadata tags
-
-      ### Content Formatting
-      - Prefix each learning objective with its number styled as `**01**`, `**02**`, `**03**`
-      - For activities, use a two-column style with `|` separators in a markdown table
-      - For resources, include the author/title and a `[VIEW SOURCE](url)` link on the same line
-      - For assessments, end with inline tags like `` `Due in X weeks` `` and `` `Weighted X%` ``
-      - Use 📌 for key notes or callouts within sections
-      - Use ⏱️ when referencing timeframes
-      - Use 🇦🇺 when referencing Australian curriculum standards or local context
-      """
-
         curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
 
         return f"""You are an expert Australian curriculum designer.
@@ -154,9 +154,9 @@ the classroom alongside one complementary resource."""
   ## Teacher Document Content (from selected uploads)
   {doc_content}
 
-  {MATH_INSTRUCTIONS}
+  {PromptService.MATH_INSTRUCTIONS}
 
-  {EMOJI_INSTRUCTIONS}
+  {PromptService.EMOJI_INSTRUCTIONS}
 
   ## Requirements
   - Align with {state} curriculum standards
@@ -167,3 +167,144 @@ the classroom alongside one complementary resource."""
   - Estimate realistic timeframes for a classroom teacher (use ⏱️)
 
   Format the output as a complete, ready-to-use markdown study plan using the emoji and visual formatting rules above."""
+
+    @staticmethod
+    def quiz_generation_prompt(
+        grade: str,
+        subject: str,
+        state: str,
+        topic: str,
+        additional_context: str,
+        resources_text: str,
+        web_content: str,
+        doc_content: str,
+        curriculum_context: str = "",
+    ) -> str:
+        curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+
+        return f"""You are an expert Australian curriculum designer.
+
+  Generate a comprehensive quiz for:
+  - Grade: {grade}
+  - Subject: {subject}
+  - State/Region: {state}
+  - Topic: {topic}
+  - Additional context: {additional_context}
+{curriculum_section}
+  ## Selected Resources
+  {resources_text}
+
+  ## Web Content (from selected resources)
+  {web_content}
+
+  ## Teacher Document Content (from selected uploads)
+  {doc_content}
+
+  {PromptService.MATH_INSTRUCTIONS}
+
+  {PromptService.EMOJI_INSTRUCTIONS}
+
+  ## Quiz Requirements
+  1.  **Structure**:
+      - Part A: 5 Multiple Choice Questions (with answers at the end)
+      - Part B: 3 Short Answer Questions (with marking criteria)
+      - Part C: 1 Extended Response/Analysis Question
+  2.  **Alignment**:
+      - Ensure questions directly relate to the provided curriculum outcomes and content from the resources.
+      - Use 🇦🇺 for questions with Australian context.
+  3.  **Formatting**:
+      - Use clear markdown formatting.
+      - Use ❓ for questions and ✅ for answers/marking guides.
+      - For math/science, use LaTeX ($...$ or $$...$$).
+
+  Format the output as a complete, ready-to-use markdown quiz."""
+
+    @staticmethod
+    def activities_generation_prompt(
+        grade: str,
+        subject: str,
+        state: str,
+        topic: str,
+        additional_context: str,
+        resources_text: str,
+        web_content: str,
+        doc_content: str,
+        curriculum_context: str = "",
+    ) -> str:
+        curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+
+        return f"""You are an expert Australian curriculum designer.
+
+  Generate a list of classroom activities for:
+  - Grade: {grade}
+  - Subject: {subject}
+  - State/Region: {state}
+  - Topic: {topic}
+  - Additional context: {additional_context}
+{curriculum_section}
+  ## Selected Resources
+  {resources_text}
+
+  ## Web Content (from selected resources)
+  {web_content}
+
+  ## Teacher Document Content (from selected uploads)
+  {doc_content}
+
+  ## Activities Requirements
+  1.  **Diversity**: Include 3-5 distinct activities (e.g., hands-on, collaborative, research-based, or creative).
+  2.  **Alignment**: Directly link activities to the curriculum outcomes and provided resources.
+  3.  **Structure**: For each activity, include:
+      - 🏷️ **Activity Name**
+      - ⏱️ **Estimated Duration**
+      - 👥 **Grouping** (Individual, Pairs, or Groups)
+      - 🛠️ **Materials Needed**
+      - 📝 **Step-by-Step Instructions**
+      - 🇦🇺 **Australian Context** (where applicable)
+  4.  **Formatting**: Use clear markdown formatting with emojis.
+
+  Format the output as a complete, ready-to-use markdown activities plan."""
+
+    @staticmethod
+    def keywords_generation_prompt(
+        grade: str,
+        subject: str,
+        state: str,
+        topic: str,
+        additional_context: str,
+        resources_text: str,
+        web_content: str,
+        doc_content: str,
+        curriculum_context: str = "",
+    ) -> str:
+        curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+
+        return f"""You are an expert Australian curriculum designer.
+
+  Generate a list of keywords and definitions for:
+  - Grade: {grade}
+  - Subject: {subject}
+  - State/Region: {state}
+  - Topic: {topic}
+  - Additional context: {additional_context}
+{curriculum_section}
+  ## Selected Resources
+  {resources_text}
+
+  ## Web Content (from selected resources)
+  {web_content}
+
+  ## Teacher Document Content (from selected uploads)
+  {doc_content}
+
+  ## Keywords Requirements
+  1.  **Selection**: Identify 10-15 essential keywords or technical terms related to this topic.
+  2.  **Definitions**: Provide clear, grade-appropriate definitions for each term.
+  3.  **Context**: Include an example sentence or context for each term, ideally using Australian examples (🇦🇺).
+  4.  **Formatting**:
+      - Use a markdown table or a clean bulleted list.
+      - Use 🔑 for the term and 📖 for the definition.
+
+  Format the output as a complete, ready-to-use markdown keywords list."""
+
+

@@ -1,11 +1,13 @@
 # services/discovery_service.py
 import json
+from pathlib import Path
 from langchain.agents import create_agent
 from langchain_core.messages import HumanMessage
 from langchain_core.tools import tool
 from langchain_tavily import TavilySearch
 from langchain.agents.structured_output import ToolStrategy
 
+from config import TEST_MODE
 from models.requests import DiscoverRequest
 from models.resource import ResourceList
 from services.llm_service import LLMService
@@ -13,22 +15,25 @@ from services.rag_service import RagService
 from services.prompt_service import PromptService
 from services.curriculum_service import CurriculumService
 
+_FIXTURE_PATH = Path(__file__).parent.parent / "data" / "fixtures" / "discover_response.json"
+
 
 class DiscoveryService:
 
     def __init__(self) -> None:
         """Initializes RAG, LLM, Tavily search, and sets up the LangChain agent."""
-        self.rag        = RagService()
-        self.llm        = LLMService.get()
         self.curriculum = CurriculumService()
-        self.tavily     = TavilySearch(max_results=15, topic="general")
 
-        self.agent = create_agent(
-            model=self.llm,
-            tools=self._get_tools(),
-            system_prompt=self._build_system_prompt(),
-            response_format=ToolStrategy(ResourceList),
-        )
+        if not TEST_MODE:
+            self.rag    = RagService()
+            self.llm    = LLMService.get()
+            self.tavily = TavilySearch(max_results=15, topic="general")
+            self.agent  = create_agent(
+                model=self.llm,
+                tools=self._get_tools(),
+                system_prompt=self._build_system_prompt(),
+                response_format=ToolStrategy(ResourceList),
+            )
 
     def _get_tools(self) -> list:
         """Defines the tools available to the discovery agent."""
@@ -76,6 +81,9 @@ class DiscoveryService:
 
     def search(self, request: DiscoverRequest) -> ResourceList:
         """Combines request details into queries and invokes the agent to find resources."""
+        if TEST_MODE:
+            return self._fixture_response(request)
+
         # ── 1. Pull matched curriculum outcomes ────────────────────────────
         curriculum_outcomes = self.curriculum.get_outcomes(
             subject=request.subject,
@@ -144,4 +152,26 @@ ACARA outcomes listed above using this 5-level scale:
         # ── 6. Attach curriculum outcomes to the result ────────────────────
         result.curriculum_outcomes = curriculum_outcomes
 
+        # ── 7. Save the result to a JSON file ──────────────────────────────
+        # Pydantic v2 uses model_dump_json()
+        json_data = result.model_dump_json(indent=4) 
+        
+        # If you are on an older version of Pydantic (v1), use .json() instead:
+        # json_data = result.json(indent=4)
+
+        with open(_FIXTURE_PATH, "w") as f:
+            f.write(json_data)
+
+        return result
+
+    def _fixture_response(self, request: DiscoverRequest) -> ResourceList:
+        """Returns the saved fixture instead of calling the LLM/Tavily."""
+        data = json.loads(_FIXTURE_PATH.read_text(encoding="utf-8"))
+        result = ResourceList(**data)
+        # Still attach live curriculum outcomes so the chips render correctly
+        result.curriculum_outcomes = self.curriculum.get_outcomes(
+            subject=request.subject,
+            grade=request.grade,
+            topic=request.topic,
+        )
         return result
