@@ -27,6 +27,63 @@ async def generate_stream(request: GenerateRequest):
         }
     )
 
+@router.post("/generate/quiz/stream")
+async def generate_quiz_stream(request: GenerateRequest):
+    """Streams the quiz markdown token by token via SSE."""
+    async def event_generator():
+        async for chunk in plan_service.stream_quiz(request):
+            data = json.dumps({"token": chunk})
+            yield f"data: {data}\n\n"
+        # Signal completion
+        yield f"event: done\ndata: {{}}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
+    )
+
+@router.post("/generate/activities/stream")
+async def generate_activities_stream(request: GenerateRequest):
+    """Streams the activities markdown token by token via SSE."""
+    async def event_generator():
+        async for chunk in plan_service.stream_activities(request):
+            data = json.dumps({"token": chunk})
+            yield f"data: {data}\n\n"
+        # Signal completion
+        yield f"event: done\ndata: {{}}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
+    )
+
+@router.post("/generate/keywords/stream")
+async def generate_keywords_stream(request: GenerateRequest):
+    """Streams the keywords markdown token by token via SSE."""
+    async def event_generator():
+        async for chunk in plan_service.stream_keywords(request):
+            data = json.dumps({"token": chunk})
+            yield f"data: {data}\n\n"
+        # Signal completion
+        yield f"event: done\ndata: {{}}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
+    )
+
 # Keep non-streaming as fallback
 @router.post("/generate", response_model=StudyPlan)
 async def generate(request: GenerateRequest) -> StudyPlan:

@@ -1,0 +1,175 @@
+{
+    "resources": [
+        {
+            "title": "Mathematics Hub: Pythagoras and Trigonometry Planning Tool",
+            "url": "https://www.mathematicshub.edu.au/planning-tool/8/measurement/pythagoras-and-trigonometry/",
+            "summary": "A comprehensive planning tool for Year 8 teachers covering Pythagoras' Theorem, including lesson plans for visual and algebraic proofs and practical applications.",
+            "source_type": "web",
+            "curriculum_alignment": "exemplary",
+            "bias_risk": "low",
+            "reading_level": "Teacher",
+            "domain": "mathematicshub.edu.au",
+            "follow_up_questions": [
+                "How can students use these planning tools to differentiate learning?",
+                "What are the best ways to assess student understanding of the proof?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "Visual Proof of Pythagoras' Theorem - Eddie Woo",
+            "url": "https://www.youtube.com/watch?v=tTHhBE5lYTg",
+            "summary": "An engaging video by Australian educator Eddie Woo that provides a clear, visual proof of Pythagoras' Theorem suitable for Year 8 students.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "YouTube",
+            "follow_up_questions": [
+                "How does this visual proof compare to algebraic methods?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "NSW Department of Education: Pythagoras Theorem Resources",
+            "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/mathematics/mathematics-curriculum-resources-k-12/mathematics-7-10-resources/pythagoras-theorem",
+            "summary": "Official NSW Department of Education resources including worksheets and problem-solving activities for Pythagoras' Theorem.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "education.nsw.gov.au",
+            "follow_up_questions": [
+                "How can these activities be adapted for different ability levels?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "AMSI TIMES Module: Pythagoras' Theorem",
+            "url": "https://amsi.org.au/teacher_modules/pythagoras_theorem.html",
+            "summary": "A detailed module from the TIMES project providing rigorous mathematical background, proofs, and applications of Pythagoras' Theorem.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Teacher",
+            "domain": "amsi.org.au",
+            "follow_up_questions": [
+                "How can teachers use these modules to support student inquiry?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "Khan Academy: Pythagoras' Theorem Unit",
+            "url": "https://www.khanacademy.org/math/grade-8-math/x37b9516354b6ae1a:pythagoras-theorem",
+            "summary": "Interactive practice problems and instructional videos on Pythagoras' Theorem, aligned with middle school curriculum standards.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "khanacademy.org",
+            "follow_up_questions": [
+                "How do these practice problems help build fluency?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "AMSI: Year 8 Sampling from a Population",
+            "url": "https://www.amsi.org.au/ESA_middle_years/Year8/Year8_md/Year8_3a.html",
+            "summary": "AMSI resources for Year 8 students investigating data collection techniques, including census and sampling.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "amsi.org.au",
+            "follow_up_questions": [
+                "How can these resources be used to explain the difference between census and sampling?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "MathsLinks: Investigating Terminating and Recurring Decimals",
+            "url": "https://mathslinks.net/browse/8_ACMNA184",
+            "summary": "Resources and activities for investigating terminating and recurring decimals, aligned with ACMNA184.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "mathslinks.net",
+            "follow_up_questions": [
+                "What are some common misconceptions students have about recurring decimals?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "Calculate: Investigating Decimal Numbers Topic Summary",
+            "url": "https://calculate.org.au/wp-content/uploads/sites/15/2020/05/grade-8-topic-1-intro-investigating-decimals.pdf",
+            "summary": "A comprehensive topic summary and activity guide for investigating decimal numbers, including terminating and recurring decimals.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "calculate.org.au",
+            "follow_up_questions": [
+                "How can these worksheets be used for formative assessment?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "Twinkl: Census Data Collection Maths Activity",
+            "url": "https://www.twinkl.com.au/resource/census-data-collection-maths-activity-au-n-1630542853",
+            "summary": "A classroom activity pack for collecting data, helping students understand census and sampling techniques.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "twinkl.com.au",
+            "follow_up_questions": [
+                "How can this activity be used to introduce the concept of a census?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "YouTube: Year 8 Terminating and Recurring Decimals",
+            "url": "https://www.youtube.com/watch?v=plLlmHUH2aY",
+            "summary": "A short video explaining the difference between terminating and recurring decimals.",
+            "source_type": "web",
+            "curriculum_alignment": "medium",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "YouTube",
+            "follow_up_questions": [
+                "How can this video be used to spark class discussion?"
+            ],
+            "document_id": "null"
+        }
+    ],
+    "curriculum_outcomes": [
+        {
+            "code": "ACMNA184",
+            "description": "Investigate terminating and recurring decimals",
+            "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA184",
+            "strand": "Number and Algebra",
+            "sub_strand": "Real numbers"
+        },
+        {
+            "code": "ACMSP284",
+            "description": "Investigate techniques for collecting data, including census, sampling and observation",
+            "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP284",
+            "strand": "Statistics and Probability",
+            "sub_strand": "Data representation and interpretation"
+        }
+    ],
+    "search_queries_used": [
+        "Year 8 Mathematics Pythagoras' Theorem proof and uses Australian curriculum",
+        "ACMNA184 terminating and recurring decimals Year 8 Mathematics resources",
+        "ACMSP284 data collection census sampling observation Year 8 Mathematics resources",
+        "Pythagoras' Theorem proof from first principles Year 8 interactive",
+        "ABC Education Pythagoras' Theorem Year 8",
+        "Maths Pathway Pythagoras' Theorem Year 8",
+        "Khan Academy Pythagoras' Theorem proof Year 8",
+        "NSW Department of Education Mathematics Year 8 Pythagoras' Theorem resources",
+        "Pythagoras' Theorem proof Year 8",
+        "terminating recurring decimals data collection Year 8"
+    ],
+    "total_found": 10,
+    "ai_recommendation": "The most valuable resource is the 'Mathematics Hub: Pythagoras and Trigonometry Planning Tool', which provides a comprehensive, curriculum-aligned framework for teaching the theorem through both visual and algebraic proofs. I recommend using this alongside the 'Eddie Woo: Visual Proof of Pythagoras' Theorem' video, which offers an engaging, age-appropriate explanation that helps students build their understanding from first principles."
+}
