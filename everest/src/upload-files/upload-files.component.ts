@@ -1,21 +1,23 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+import { Component, OnDestroy, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { EmbeddingStatus, UploadResponse, UploadService } from '../services/upload.service';
 
 type UploadTone = 'indexed' | 'processing';
-type LibraryView = 'grid' | 'list';
 type NotificationTone = 'success' | 'error' | 'info';
+type DocumentTone = 'pdf' | 'doc';
 
 interface UploadFileItem {
   id: string;
   title: string;
   typeIcon: string;
-  typeTone: 'pdf' | 'doc' | 'link';
+  typeTone: DocumentTone;
   date: string;
   statusLabel: string;
+  embeddingStatus: EmbeddingStatus | null;
   tone: UploadTone;
-  /** Blob URL for locally-uploaded files; null for pre-seeded/link items */
   fileUrl: string | null;
+  documentId: string | null;
 }
 
 @Component({
@@ -25,59 +27,17 @@ interface UploadFileItem {
   templateUrl: './upload-files.component.html',
   styleUrl: './upload-files.component.css',
 })
-export class UploadFilesComponent {
-  protected readonly searchQuery = signal('');
-  protected readonly selectedView = signal<LibraryView>('list');
+export class UploadFilesComponent implements OnDestroy {
+  private readonly uploadService = inject(UploadService);
+  private readonly maxFileSize = 2 * 1024 * 1024;
+  private readonly allowedExtensions = ['pdf', 'docx', 'txt'];
+  private notificationTimeoutId: ReturnType<typeof setTimeout> | null = null;
 
+  protected readonly searchQuery = signal('');
   protected readonly notificationMessage = signal('');
   protected readonly notificationTone = signal<NotificationTone>('info');
   protected readonly showNotification = signal(false);
-
-  protected readonly documents = signal<UploadFileItem[]>([
-    {
-      id: 'advanced-neurobiology',
-      title: 'Advanced_Neurobiology_2024.pdf',
-      typeIcon: 'picture_as_pdf',
-      typeTone: 'pdf',
-      date: 'Oct 12, 2023',
-      statusLabel: 'Indexed',
-      tone: 'indexed',
-      fileUrl: null,
-    },
-    {
-      id: 'quantum-physics-notes',
-      title: 'Study_Notes_Quantum_Physics.docx',
-      typeIcon: 'description',
-      typeTone: 'doc',
-      date: 'Oct 14, 2023',
-      statusLabel: 'Processing',
-      tone: 'processing',
-      fileUrl: null,
-    },
-    {
-      id: 'architecture-patterns-link',
-      title: 'Wikipedia: Architecture_Patterns',
-      typeIcon: 'link',
-      typeTone: 'link',
-      date: 'Oct 10, 2023',
-      statusLabel: 'Indexed',
-      tone: 'indexed',
-      fileUrl: null,
-    },
-    {
-      id: 'ethical-ai-framework',
-      title: 'Ethical_AI_Framework_V2.pdf',
-      typeIcon: 'picture_as_pdf',
-      typeTone: 'pdf',
-      date: 'Sep 28, 2023',
-      statusLabel: 'Indexed',
-      tone: 'indexed',
-      fileUrl: null,
-    },
-  ]);
-
-  private readonly maxFileSize = 2 * 1024 * 1024; // 2MB hard limit
-  private readonly allowedExtensions = ['pdf', 'docx', 'txt'];
+  protected readonly documents = signal<UploadFileItem[]>([]);
 
   protected readonly filteredDocuments = computed(() => {
     const query = this.searchQuery().trim().toLowerCase();
@@ -91,10 +51,6 @@ export class UploadFilesComponent {
     );
   });
 
-  protected readonly activeProcessingDocument = computed(() =>
-    this.documents().find((document) => document.tone === 'processing') ?? null
-  );
-
   protected readonly indexedCount = computed(
     () => this.documents().filter((document) => document.tone === 'indexed').length
   );
@@ -103,44 +59,37 @@ export class UploadFilesComponent {
     () => this.documents().filter((document) => document.tone === 'processing').length
   );
 
-  protected setView(view: LibraryView): void {
-    this.selectedView.set(view);
-  }
+  protected readonly hasDocuments = computed(() => this.filteredDocuments().length > 0);
 
-  protected viewDocument(doc: UploadFileItem): void {
-    if (doc.fileUrl) {
-      window.open(doc.fileUrl, '_blank');
-    } else {
-      this.showToast('No preview available for pre-existing documents.', 'info');
+  ngOnDestroy(): void {
+    if (this.notificationTimeoutId) {
+      clearTimeout(this.notificationTimeoutId);
+    }
+
+    for (const document of this.documents()) {
+      if (document.fileUrl) {
+        URL.revokeObjectURL(document.fileUrl);
+      }
     }
   }
 
-  // protected deleteDocument(doc: UploadFileItem): void {
-  //   const confirmed = window.confirm(`Delete "${doc.title}"? This cannot be undone.`);
-  //   if (!confirmed) return;
+  protected viewDocument(document: UploadFileItem): void {
+    if (!document.fileUrl) {
+      this.showToast('Preview is only available for files uploaded in this session.', 'info');
+      return;
+    }
 
-  //   // Revoke the blob URL to free memory
-  //   if (doc.fileUrl) {
-  //     URL.revokeObjectURL(doc.fileUrl);
-  //   }
-
-  //   this.documents.set(this.documents().filter((d) => d.id !== doc.id));
-  //   this.showToast(`"${doc.title}" has been removed.`, 'info');
-  // }
+    window.open(document.fileUrl, '_blank', 'noopener,noreferrer');
+  }
 
   protected onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
 
-    if (!input.files || input.files.length === 0) {
+    if (!input.files?.length) {
       return;
     }
 
-    const files = Array.from(input.files);
-
-    for (const file of files) {
-      this.handleSingleFile(file);
-    }
-
+    this.handleFiles(Array.from(input.files));
     input.value = '';
   }
 
@@ -164,104 +113,158 @@ export class UploadFilesComponent {
       return;
     }
 
-    for (const file of files) {
-      this.handleSingleFile(file);
-    }
+    this.handleFiles(files);
   }
 
   protected dismissNotification(): void {
+    if (this.notificationTimeoutId) {
+      clearTimeout(this.notificationTimeoutId);
+      this.notificationTimeoutId = null;
+    }
+
     this.showNotification.set(false);
     this.notificationMessage.set('');
+  }
+
+  private handleFiles(files: File[]): void {
+    for (const file of files) {
+      this.handleSingleFile(file);
+    }
   }
 
   private handleSingleFile(file: File): void {
     const extension = file.name.split('.').pop()?.toLowerCase();
 
     if (!extension || !this.allowedExtensions.includes(extension)) {
-      this.showToast('Only PDF, DOCX, and TXT files are allowed.', 'error');
+      this.showToast('Only PDF, DOCX, and TXT files are supported right now.', 'error');
       return;
     }
 
     if (file.size > this.maxFileSize) {
-      this.showToast('File is too large. Max is 2MB.', 'error');
+      this.showToast(`"${file.name}" is larger than 2MB. Try again with a smaller file.`, 'error');
       return;
     }
 
-    const fileUrl = URL.createObjectURL(file);
-
+    const localId = this.createId(file.name);
     const newDocument: UploadFileItem = {
-      id: this.createId(file.name),
+      id: localId,
       title: file.name,
       typeIcon: this.getTypeIcon(file.name),
       typeTone: this.getTypeTone(file.name),
       date: this.formatDate(new Date()),
-      statusLabel: 'Processing',
+      statusLabel: 'Uploading and indexing',
+      embeddingStatus: null,
       tone: 'processing',
-      fileUrl,
+      fileUrl: URL.createObjectURL(file),
+      documentId: null,
     };
 
     this.documents.set([newDocument, ...this.documents()]);
+    this.showToast(`Uploading "${file.name}" and generating embeddings...`, 'info');
 
-    // Hardcoded fake indexing delay
-    setTimeout(() => {
-      this.markDocumentAsIndexed(newDocument.id);
-      this.showToast('File successfully indexed in vector database.', 'success');
-    }, 2000);
+    this.uploadService.uploadFile(file).subscribe({
+      next: (response: UploadResponse) => {
+        this.markDocumentAsIndexed(
+          localId,
+          response.document_id,
+          response.filename,
+          response.embedding_status
+        );
+        this.showToast(
+          `"${response.filename}" uploaded successfully. Embedding status: ${response.embedding_status}.`,
+          'success'
+        );
+      },
+      error: (error) => {
+        this.markDocumentAsFailed(localId);
+
+        const backendMessage =
+          (typeof error?.error?.detail === 'string' && error.error.detail) ||
+          'Upload failed. Please try again.';
+
+        this.showToast(backendMessage, 'error');
+      },
+    });
   }
 
-  private markDocumentAsIndexed(documentId: string): void {
+  private markDocumentAsIndexed(
+    localId: string,
+    documentId: string,
+    filename: string,
+    embeddingStatus: EmbeddingStatus
+  ): void {
     this.documents.set(
       this.documents().map((document) =>
-        document.id === documentId
+        document.id === localId
           ? {
-            ...document,
-            statusLabel: 'Indexed',
-            tone: 'indexed',
-          }
+              ...document,
+              title: filename,
+              documentId,
+              embeddingStatus,
+              statusLabel: this.getIndexedStatusLabel(embeddingStatus),
+              tone: 'indexed',
+            }
+          : document
+      )
+    );
+  }
+
+  private removeDocument(localId: string): void {
+    const document = this.documents().find((item) => item.id === localId);
+
+    if (document?.fileUrl) {
+      URL.revokeObjectURL(document.fileUrl);
+    }
+
+    this.documents.set(this.documents().filter((item) => item.id !== localId));
+  }
+
+  private markDocumentAsFailed(localId: string): void {
+    this.documents.set(
+      this.documents().map((document) =>
+        document.id === localId
+          ? {
+              ...document,
+              embeddingStatus: null,
+              statusLabel: 'Upload failed',
+              tone: 'processing',
+            }
           : document
       )
     );
   }
 
   private showToast(message: string, tone: NotificationTone): void {
+    if (this.notificationTimeoutId) {
+      clearTimeout(this.notificationTimeoutId);
+    }
+
     this.notificationMessage.set(message);
     this.notificationTone.set(tone);
     this.showNotification.set(true);
 
-    setTimeout(() => {
+    this.notificationTimeoutId = setTimeout(() => {
       this.showNotification.set(false);
       this.notificationMessage.set('');
+      this.notificationTimeoutId = null;
     }, 3000);
   }
 
   private getTypeIcon(fileName: string): string {
-    const extension = fileName.split('.').pop()?.toLowerCase();
-
-    switch (extension) {
-      case 'pdf':
-        return 'picture_as_pdf';
-      case 'docx':
-        return 'description';
-      case 'txt':
-        return 'article';
-      default:
-        return 'insert_drive_file';
-    }
+    return fileName.toLowerCase().endsWith('.pdf') ? 'picture_as_pdf' : 'description';
   }
 
-  private getTypeTone(fileName: string): 'pdf' | 'doc' | 'link' {
-    const extension = fileName.split('.').pop()?.toLowerCase();
-
-    switch (extension) {
-      case 'pdf':
-        return 'pdf';
-      case 'docx':
-      case 'txt':
-        return 'doc';
-      default:
-        return 'doc';
-    }
+  private getTypeTone(fileName: string): DocumentTone {
+    return fileName.toLowerCase().endsWith('.pdf') ? 'pdf' : 'doc';
   }
+
+  private getIndexedStatusLabel(embeddingStatus: EmbeddingStatus): string {
+    return embeddingStatus === 'done' ? 'Embedded and ready' : 'Indexed';
+  }
+
+  // protected deleteDocument(document: UploadFileItem): void {
+  //   // Keep delete functionality disabled until the backend delete endpoint exists.
+  // }
 
   private createId(fileName: string): string {
     return `${fileName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${Date.now()}`;

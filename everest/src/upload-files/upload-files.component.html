@@ -47,22 +47,16 @@
         <div class="library-toolbar">
           <div class="library-toolbar__left">
             <h2>Document Library</h2>
-
-            <div class="view-toggle" aria-label="Toggle document layout">
-              <button type="button" [class.is-active]="selectedView() === 'list'" (click)="setView('list')">
-                <span class="material-symbols-outlined" aria-hidden="true">view_list</span>
-              </button>
-            </div>
           </div>
         </div>
 
-        <div class="documents-grid" [class.documents-grid--list]="selectedView() === 'list'">
+        @if (hasDocuments()) {
+        <div class="documents-grid documents-grid--list">
           @for (document of filteredDocuments(); track document.id) {
           <article class="document-card" [class.document-card--processing]="document.tone === 'processing'">
             <div class="document-card__header">
               <div class="document-icon" [class.document-icon--pdf]="document.typeTone === 'pdf'"
-                [class.document-icon--doc]="document.typeTone === 'doc'"
-                [class.document-icon--link]="document.typeTone === 'link'">
+                [class.document-icon--doc]="document.typeTone === 'doc'">
                 <span class="material-symbols-outlined" aria-hidden="true">{{ document.typeIcon }}</span>
               </div>
 
@@ -98,6 +92,16 @@
           </article>
           }
         </div>
+        } @else {
+        <article class="document-card">
+          <div class="document-meta">
+            <h3>No uploaded documents yet</h3>
+            <div class="document-badges">
+              <span class="document-date">Upload a PDF, DOCX, or TXT file to start indexing content.</span>
+            </div>
+          </div>
+        </article>
+        }
       </section>
 
       <footer class="context-bar">
@@ -108,15 +112,10 @@
           <div>
             <h4>Retrieval Context Health</h4>
             <p>
-              Your AI model currently has access to 142 distinct knowledge chunks across
+              Your AI model currently has access to the documents uploaded in this session, with
               {{ indexedCount() }} indexed documents and {{ processingCount() }} in-progress upload.
             </p>
           </div>
-        </div>
-
-        <div class="context-bar__actions">
-          <button type="button" class="secondary-button">Clean Cache</button>
-          <button type="button" class="primary-button">Optimize Index</button>
         </div>
       </footer>
     </div>
