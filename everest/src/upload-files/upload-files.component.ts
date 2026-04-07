@@ -1,16 +1,9 @@
 import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SidebarComponent, SidebarNavItem } from '../common/sidebar/sidebar.component';
+import { SidebarComponent } from '../common/sidebar/sidebar.component';
 
-// type UploadStageKey = 'ingestion' | 'vectorisation' | 'database';
 type UploadTone = 'indexed' | 'processing';
 type LibraryView = 'grid' | 'list';
-
-// interface UploadStage {
-//   key: UploadStageKey;
-//   label: string;
-//   progress: number;
-// }
 
 interface UploadFileItem {
   id: string;
@@ -30,13 +23,6 @@ interface UploadFileItem {
   styleUrl: './upload-files.component.css',
 })
 export class UploadFilesComponent {
-  protected readonly sidebarItems: SidebarNavItem[] = [
-    { label: 'Dashboard', icon: 'dashboard', route: '/' },
-    { label: 'My Study Plans', icon: 'menu_book', route: '/discover' },
-    { label: 'Uploaded Docs', icon: 'upload_file', route: '/upload-files', active: true },
-    { label: 'Settings', icon: 'settings' },
-  ];
-
   protected readonly searchQuery = signal('');
   protected readonly selectedView = signal<LibraryView>('list');
 
@@ -49,11 +35,6 @@ export class UploadFilesComponent {
       date: 'Oct 12, 2023',
       statusLabel: 'Indexed',
       tone: 'indexed',
-      // stages: [
-      //   { key: 'ingestion', label: 'File Ingestion', progress: 100 },
-      //   { key: 'vectorisation', label: 'Vectorisation', progress: 100 },
-      //   { key: 'database', label: 'Database Ingestion', progress: 100 },
-      // ],
     },
     {
       id: 'quantum-physics-notes',
@@ -63,11 +44,6 @@ export class UploadFilesComponent {
       date: 'Oct 14, 2023',
       statusLabel: 'Processing',
       tone: 'processing',
-      // stages: [
-      //   { key: 'ingestion', label: 'File Ingestion', progress: 100 },
-      //   { key: 'vectorisation', label: 'Vectorisation', progress: 89 },
-      //   { key: 'database', label: 'Database Ingestion', progress: 42 },
-      // ],
     },
     {
       id: 'architecture-patterns-link',
@@ -77,11 +53,6 @@ export class UploadFilesComponent {
       date: 'Oct 10, 2023',
       statusLabel: 'Indexed',
       tone: 'indexed',
-      // stages: [
-      //   { key: 'ingestion', label: 'File Ingestion', progress: 100 },
-      //   { key: 'vectorisation', label: 'Vectorisation', progress: 100 },
-      //   { key: 'database', label: 'Database Ingestion', progress: 100 },
-      // ],
     },
     {
       id: 'ethical-ai-framework',
@@ -91,11 +62,6 @@ export class UploadFilesComponent {
       date: 'Sep 28, 2023',
       statusLabel: 'Indexed',
       tone: 'indexed',
-      // stages: [
-      //   { key: 'ingestion', label: 'File Ingestion', progress: 100 },
-      //   { key: 'vectorisation', label: 'Vectorisation', progress: 100 },
-      //   { key: 'database', label: 'Database Ingestion', progress: 100 },
-      // ],
     },
   ]);
 
