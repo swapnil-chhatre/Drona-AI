@@ -56,14 +56,14 @@
               <h2>{{ activeDocument().label }}</h2>
             </header>
 
-            @if (activeDocumentId() === 'study-plan' && !markdown() && isStreaming()) {
+            @if (!activeDocument().markdown && isStreaming()) {
               <div class="plan-loading">
                 <span class="material-symbols-outlined rotating">auto_awesome</span>
                 <p>Building your blueprint...</p>
               </div>
             }
 
-            <markdown class="markdown-render" [data]="displayMarkdown()" />
+            <markdown class="markdown-render" [data]="displayMarkdown()" [katex]="true"></markdown>
           </article>
         </section>
       </div>
@@ -76,7 +76,7 @@
           </div>
 
           <div class="task-grid">
-            @for (action of actionCards; track action.id) {
+            @for (action of actionCards(); track action.id) {
               <button
                 type="button"
                 class="task-card"

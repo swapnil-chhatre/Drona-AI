@@ -68,4 +68,131 @@ export class ApiService {
       return () => controller.abort();
     });
   }
+
+  streamQuiz(request: GenerateRequest): Observable<string> {
+    return new Observable(observer => {
+      const controller = new AbortController();
+
+      fetch(`${this.base}/api/generate/quiz/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(request),
+        signal: controller.signal,
+      })
+        .then(response => {
+          const reader = response.body!.getReader();
+          const decoder = new TextDecoder();
+
+          const read = () => {
+            reader.read().then(({ done, value }) => {
+              if (done) { observer.complete(); return; }
+
+              const text = decoder.decode(value, { stream: true });
+              for (const line of text.split('\n')) {
+                if (line.startsWith('event: done')) {
+                  observer.complete();
+                  return;
+                }
+                if (line.startsWith('data: ')) {
+                  try {
+                    const parsed = JSON.parse(line.slice(6));
+                    if (parsed.token !== undefined) observer.next(parsed.token);
+                  } catch { /* partial chunk — ignore */ }
+                }
+              }
+              read();
+            }).catch(err => observer.error(err));
+          };
+          read();
+        })
+        .catch(err => observer.error(err));
+
+      // Cancel the fetch if the Observable is unsubscribed
+      return () => controller.abort();
+    });
+  }
+
+  streamActivities(request: GenerateRequest): Observable<string> {
+    return new Observable(observer => {
+      const controller = new AbortController();
+
+      fetch(`${this.base}/api/generate/activities/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(request),
+        signal: controller.signal,
+      })
+        .then(response => {
+          const reader = response.body!.getReader();
+          const decoder = new TextDecoder();
+
+          const read = () => {
+            reader.read().then(({ done, value }) => {
+              if (done) { observer.complete(); return; }
+
+              const text = decoder.decode(value, { stream: true });
+              for (const line of text.split('\n')) {
+                if (line.startsWith('event: done')) {
+                  observer.complete();
+                  return;
+                }
+                if (line.startsWith('data: ')) {
+                  try {
+                    const parsed = JSON.parse(line.slice(6));
+                    if (parsed.token !== undefined) observer.next(parsed.token);
+                  } catch { /* partial chunk — ignore */ }
+                }
+              }
+              read();
+            }).catch(err => observer.error(err));
+          };
+          read();
+        })
+        .catch(err => observer.error(err));
+
+      return () => controller.abort();
+    });
+  }
+
+  streamKeywords(request: GenerateRequest): Observable<string> {
+    return new Observable(observer => {
+      const controller = new AbortController();
+
+      fetch(`${this.base}/api/generate/keywords/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(request),
+        signal: controller.signal,
+      })
+        .then(response => {
+          const reader = response.body!.getReader();
+          const decoder = new TextDecoder();
+
+          const read = () => {
+            reader.read().then(({ done, value }) => {
+              if (done) { observer.complete(); return; }
+
+              const text = decoder.decode(value, { stream: true });
+              for (const line of text.split('\n')) {
+                if (line.startsWith('event: done')) {
+                  observer.complete();
+                  return;
+                }
+                if (line.startsWith('data: ')) {
+                  try {
+                    const parsed = JSON.parse(line.slice(6));
+                    if (parsed.token !== undefined) observer.next(parsed.token);
+                  } catch { /* partial chunk — ignore */ }
+                }
+              }
+              read();
+            }).catch(err => observer.error(err));
+          };
+          read();
+        })
+        .catch(err => observer.error(err));
+
+      return () => controller.abort();
+    });
+  }
 }
