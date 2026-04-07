@@ -1,4 +1,3 @@
-import psycopg2
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,17 +9,26 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL")
-connection = psycopg2.connect(DATABASE_URL)
+app = FastAPI(title="Drona-AI API")
 
-app = FastAPI()
+# ALLOWED_ORIGINS env var is a comma-separated list of allowed origins.
+# Set it in Railway to your Vercel URL, e.g.:
+#   ALLOWED_ORIGINS=https://your-app.vercel.app
+# Multiple origins: ALLOWED_ORIGINS=https://your-app.vercel.app,https://staging.vercel.app
+_raw_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:4200")
+allowed_origins = [o.strip().rstrip("/") for o in _raw_origins.split(",") if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"],
+    allow_origins=allowed_origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/health")
+def health() -> dict:
+    return {"status": "ok"}
 
 
 app.include_router(discover_router)

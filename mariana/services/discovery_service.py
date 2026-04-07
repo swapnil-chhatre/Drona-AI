@@ -170,15 +170,12 @@ ACARA outcomes listed above using this 5-level scale:
         # ── 6. Attach curriculum outcomes to the result ────────────────────
         result.curriculum_outcomes = curriculum_outcomes
 
-        # ── 7. Save the result to a JSON file ──────────────────────────────
-        # Pydantic v2 uses model_dump_json()
-        json_data = result.model_dump_json(indent=4) 
-        
-        # If you are on an older version of Pydantic (v1), use .json() instead:
-        # json_data = result.json(indent=4)
-
-        with open(_FIXTURE_PATH, "w") as f:
-            f.write(json_data)
+        # ── 7. Save the result to a fixture file (best-effort; skipped if read-only FS) ─
+        try:
+            _FIXTURE_PATH.parent.mkdir(parents=True, exist_ok=True)
+            _FIXTURE_PATH.write_text(result.model_dump_json(indent=4), encoding="utf-8")
+        except OSError as e:
+            print(f"⚠️ Could not save discover fixture: {e}")
 
         return result
 
