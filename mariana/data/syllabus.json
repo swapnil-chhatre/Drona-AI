@@ -1,0 +1,459 @@
+{
+  "Science": {
+    "Year 8": {
+      "level_description": {
+        "overview": "In Year 8, students are introduced to cells as microscopic structures that explain macroscopic properties of living systems. They link form and function at a cellular level and explore the organisation of body systems in terms of flows of matter between interdependent organs. Similarly, they explore changes in matter at a particle level, and distinguish between chemical and physical change. They begin to classify different forms of energy, and describe the role of energy in causing change in systems, including the role of heat and kinetic energy in the rock cycle.",
+        "key_ideas": "Students use experimentation to isolate relationships between components in systems and explain these relationships through increasingly complex representations. They make predictions and propose explanations, drawing on evidence to support their views while considering other points of view.",
+        "note": "The science inquiry skills and science as a human endeavour strands are described across a two-year band and should be addressed across Years 7-8."
+      },
+      "content_descriptions": {
+        "Science Understanding": {
+          "Biological sciences": [
+            {
+              "description": "Cells are the basic units of living things; they have specialised structures and functions",
+              "code": "ACSSU149",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU149"
+            },
+            {
+              "description": "Multi-cellular organisms contain systems of organs carrying out specialised functions that enable them to survive and reproduce",
+              "code": "ACSSU150",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU150"
+            }
+          ],
+          "Chemical sciences": [
+            {
+              "description": "Properties of the different states of matter can be explained in terms of the motion and arrangement of particles",
+              "code": "ACSSU151",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU151"
+            },
+            {
+              "description": "Differences between elements, compounds and mixtures can be described at a particle level",
+              "code": "ACSSU152",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU152"
+            },
+            {
+              "description": "Chemical change involves substances reacting to form new substances",
+              "code": "ACSSU225",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU225"
+            }
+          ],
+          "Earth and space sciences": [
+            {
+              "description": "Sedimentary, igneous and metamorphic rocks contain minerals and are formed by processes that occur within Earth over a variety of timescales",
+              "code": "ACSSU153",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU153"
+            }
+          ],
+          "Physical sciences": [
+            {
+              "description": "Energy appears in different forms, including movement (kinetic energy), heat and potential energy, and energy transformations and transfers cause change within systems",
+              "code": "ACSSU155",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU155"
+            }
+          ]
+        },
+        "Science as a Human Endeavour": {
+          "Nature and development of science": [
+            {
+              "description": "Scientific knowledge has changed peoples' understanding of the world and is refined as new evidence becomes available",
+              "code": "ACSHE134",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE134"
+            },
+            {
+              "description": "Science knowledge can develop through collaboration across the disciplines of science and the contributions of people from a range of cultures",
+              "code": "ACSHE226",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE226"
+            }
+          ],
+          "Use and influence of science": [
+            {
+              "description": "Solutions to contemporary issues that are found using science and technology may impact on other areas of society and may involve ethical considerations",
+              "code": "ACSHE135",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE135"
+            },
+            {
+              "description": "People use science understanding and skills in their occupations and these have influenced the development of practices in areas of human activity",
+              "code": "ACSHE136",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSHE136"
+            }
+          ]
+        },
+        "Science Inquiry Skills": {
+          "Questioning and predicting": [
+            {
+              "description": "Identify questions and problems that can be investigated scientifically and make predictions based on scientific knowledge",
+              "code": "ACSIS139",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS139"
+            }
+          ],
+          "Planning and conducting": [
+            {
+              "description": "Collaboratively and individually plan and conduct a range of investigation types, including fieldwork and experiments, ensuring safety and ethical guidelines are followed",
+              "code": "ACSIS140",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS140"
+            },
+            {
+              "description": "Measure and control variables, select equipment appropriate to the task and collect data with accuracy",
+              "code": "ACSIS141",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS141"
+            }
+          ],
+          "Processing and analysing data and information": [
+            {
+              "description": "Construct and use a range of representations, including graphs, keys and models to represent and analyse patterns or relationships in data using digital technologies as appropriate",
+              "code": "ACSIS144",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS144"
+            },
+            {
+              "description": "Summarise data from students' own investigations and secondary sources, and use scientific understanding to identify relationships and draw conclusions based on evidence",
+              "code": "ACSIS145",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS145"
+            }
+          ],
+          "Evaluating": [
+            {
+              "description": "Reflect on scientific investigations including evaluating the quality of the data collected and identifying improvements",
+              "code": "ACSIS146",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS146"
+            },
+            {
+              "description": "Use scientific knowledge and findings from investigations to evaluate claims based on evidence",
+              "code": "ACSIS234",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS234"
+            }
+          ],
+          "Communicating": [
+            {
+              "description": "Communicate ideas, findings and evidence based solutions to problems using scientific language and representations, using digital technologies as appropriate",
+              "code": "ACSIS148",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSIS148"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students explain how differences in cells may relate to their function, and describe the organisation of body systems. They describe patterns of change and compare physical and chemical change. They explain energy transformations and transfers and describe the role of energy in forming geological features. They describe factors that can influence the development of science understanding, and explain how science is used to inform decisions and actions."
+      }
+    }
+  },
+  "Mathematics": {
+    "Year 8": {
+      "level_description": {
+        "overview": "The proficiency strands understanding, fluency, problem-solving and reasoning are an integral part of mathematics content across the three content strands: number and algebra, measurement and geometry, and statistics and probability. The proficiencies reinforce the significance of working mathematically within the content and describe how the content is explored or developed.",
+        "key_ideas": "At this year level: understanding includes describing patterns in uses of indices with whole numbers, recognising equivalences between fractions, decimals, percentages and ratios, plotting non-linear relationships, and identifying conditions for congruence of triangles.",
+        "note": "The mathematics content at this year level involves three strands: Number and Algebra, Measurement and Geometry, and Statistics and Probability."
+      },
+      "content_descriptions": {
+        "Number and Algebra": {
+          "Number and place value": [
+            {
+              "description": "Use index notation with numbers to establish the index laws with positive integral indices and the zero index",
+              "code": "ACMNA182",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA182"
+            }
+          ],
+          "Real numbers": [
+            {
+              "description": "Carry out the four operations with rational numbers and integers, using efficient mental and written strategies and appropriate digital technologies",
+              "code": "ACMNA183",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA183"
+            },
+            {
+              "description": "Investigate terminating and recurring decimals",
+              "code": "ACMNA184",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA184"
+            }
+          ],
+          "Money and financial mathematics": [
+            {
+              "description": "Solve problems involving profit and loss, with and without digital technologies",
+              "code": "ACMNA189",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA189"
+            }
+          ],
+          "Linear and non-linear relationships": [
+            {
+              "description": "Plot linear relationships on the Cartesian plane with and without the use of digital technologies",
+              "code": "ACMNA193",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA193"
+            },
+            {
+              "description": "Solve linear equations using algebraic and graphical techniques. Verify solutions by substitution",
+              "code": "ACMNA194",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA194"
+            }
+          ]
+        },
+        "Measurement and Geometry": {
+          "Using units of measurement": [
+            {
+              "description": "Choose appropriate units of measurement for area and volume and convert from one unit to another",
+              "code": "ACMMG195",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG195"
+            },
+            {
+              "description": "Find perimeters and areas of parallelograms, trapeziums, rhombuses and kites",
+              "code": "ACMMG196",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG196"
+            }
+          ],
+          "Geometric reasoning": [
+            {
+              "description": "Define congruence of plane shapes using transformations",
+              "code": "ACMMG200",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG200"
+            }
+          ]
+        },
+        "Statistics and Probability": {
+          "Chance": [
+            {
+              "description": "Identify complementary events and use the sum of probabilities to solve problems",
+              "code": "ACMSP204",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP204"
+            }
+          ],
+          "Data representation and interpretation": [
+            {
+              "description": "Investigate techniques for collecting data, including census, sampling and observation",
+              "code": "ACMSP284",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP284"
+            },
+            {
+              "description": "Explore the practicalities and implications of obtaining data through sampling using a variety of investigative processes",
+              "code": "ACMSP206",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP206"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students solve everyday problems involving rates, ratios and percentages. They recognise index laws and apply them to whole numbers. They describe rational and irrational numbers. Students solve problems involving profit and loss. They make connections between expanding and factorising algebraic expressions. Students solve linear equations and graph linear relationships on the Cartesian plane. They convert between units of measurement for area and for volume, and perform calculations to determine perimeter and area of parallelograms, rhombuses and kites. They identify conditions for congruence of triangles and deduce the properties of quadrilaterals. Students model authentic situations with two-way tables and Venn diagrams. They choose appropriate language to describe events and experiments."
+      }
+    }
+  },
+  "History": {
+    "Year 8": {
+      "level_description": {
+        "overview": "The Year 8 curriculum provides a study of history from the end of the ancient period to the beginning of the modern period, c.650–1750 AD (CE). This was when major civilisations around the world came into contact with each other. Social, economic, religious and political beliefs were often challenged and significantly changed. It was the period when the modern world began to take shape.",
+        "key_ideas": "The content provides opportunities to develop historical understanding through key concepts, including evidence, continuity and change, cause and effect, perspectives, empathy, significance and contestability.",
+        "note": "The history content at this year level involves two strands: historical knowledge and understanding, and historical skills. These strands are interrelated and have been developed to be taught in an integrated way, and in ways that are appropriate to specific local contexts."
+      },
+      "content_descriptions": {
+        "Historical Knowledge and Understanding": {
+          "Overview of the ancient to modern world": [
+            {
+              "description": "The transformation of the Roman world and the spread of Christianity and Islam",
+              "code": "ACOKFH008",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACOKFH008"
+            },
+            {
+              "description": "Key features of the medieval world (feudalism, trade routes, voyages of discovery, contact and conflict)",
+              "code": "ACOKFH009",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACOKFH009"
+            },
+            {
+              "description": "The emergence of ideas about the world and the place of people in it by the end of the period (such as the Renaissance, the Scientific Revolution and the Enlightenment)",
+              "code": "ACOKFH010",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACOKFH010"
+            }
+          ],
+          "The Western and Islamic world": [
+            {
+              "description": "The way of life in Medieval Europe (social, cultural, economic and political features) and the roles and relationships of different groups in society",
+              "code": "ACDSEH008",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACDSEH008"
+            },
+            {
+              "description": "Significant developments and/or cultural achievements, such as changing relations between Islam and the West (including the Crusades), architecture, medieval manuscripts and music",
+              "code": "ACDSEH050",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACDSEH050"
+            }
+          ],
+          "The Asia-Pacific world": [
+            {
+              "description": "The way of life in shogunate Japan, including social, cultural, economic and political features",
+              "code": "ACDSEH012",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACDSEH012"
+            }
+          ]
+        },
+        "Historical Skills": {
+          "Chronology, terms and concepts": [
+            {
+              "description": "Sequence historical events, developments and periods",
+              "code": "ACHHS148",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHHS148"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students recognise and explain patterns of change and continuity over time. They explain the causes and effects of events and developments. They identify the motives and actions of people at the time. Students explain the significance of individuals and groups and how they were influenced by the beliefs and values of their society. They describe different interpretations of the past."
+      }
+    }
+  },
+  "Geography": {
+    "Year 8": {
+      "level_description": {
+        "overview": "There are two units of study in the Year 8 curriculum for Geography: 'Landforms and landscapes' and 'Changing nations'. 'Landforms and landscapes' focuses on investigating geomorphology through a study of landscapes and their landforms. 'Changing nations' investigates the changing human geography of countries, as revealed by shifts in population distribution.",
+        "key_ideas": "A framework for developing students' geographical knowledge, understanding and skills is provided through the inclusion of inquiry questions and specific inquiry skills, including the use and interpretation of maps, photographs and other representations of geographical data.",
+        "note": "The content of this year level is organised into two strands: geographical knowledge and understanding, and geographical inquiry and skills. These strands are interrelated and have been developed to be taught in an integrated manner, and in ways that are appropriate to specific local contexts."
+      },
+      "content_descriptions": {
+        "Geographical Knowledge and Understanding": {
+          "Unit 1: Landforms and landscapes": [
+            {
+              "description": "Different types of landscapes and their distinctive landform features",
+              "code": "ACHGK048",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK048"
+            },
+            {
+              "description": "Geomorphic processes that produce landforms, including a case study of at least one landform",
+              "code": "ACHGK050",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK050"
+            }
+          ],
+          "Unit 2: Changing nations": [
+            {
+              "description": "Causes and consequences of urbanisation, drawing on a study from Indonesia, or another country of the Asia region",
+              "code": "ACHGK054",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK054"
+            },
+            {
+              "description": "Reasons for, and effects of, internal migration in both Australia and China",
+              "code": "ACHGK056",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK056"
+            }
+          ]
+        },
+        "Geographical Inquiry and Skills": {
+          "Observing, questioning and planning": [
+            {
+              "description": "Develop geographically significant questions and plan an inquiry using appropriate geographical methodologies and concepts",
+              "code": "ACHGS055",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGS055"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students explain geographical processes that influence the characteristics of places and explain how places are perceived and valued differently. They explain interconnections within environments and between people and places and explain how they change places and environments. They compare alternative strategies to a geographical challenge, taking into account environmental, economic and social factors."
+      }
+    }
+  },
+  "Civics and Citizenship": {
+    "Year 8": {
+      "level_description": {
+        "overview": "The Year 8 curriculum provides a study of the responsibilities and freedoms of citizens and how Australians can actively participate in their democracy. Students consider how laws are made and the types of laws used in Australia. Students also examine what it means to be Australian by identifying the reasons for and influences that shape national identity.",
+        "key_ideas": "A framework for developing students' civics and citizenship knowledge, understanding and skills at this year level is provided by the following key questions: What are the freedoms and responsibilities of citizens in Australia's democracy? How are laws made and applied in Australia? What different perspectives are there about national identity?",
+        "note": "The civics and citizenship content at this year level involves two strands: civics and citizenship knowledge and understanding, and civics and citizenship skills. These strands are interrelated and have been developed to be taught in an integrated way."
+      },
+      "content_descriptions": {
+        "Civics and Citizenship Knowledge and Understanding": {
+          "Government and democracy": [
+            {
+              "description": "The freedoms that enable active participation in Australia's democracy within the bounds of law, including freedom of speech, association, assembly, religion and movement",
+              "code": "ACHCK061",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK061"
+            },
+            {
+              "description": "How citizens can participate in Australia's democracy, including use of the electoral system, contact with their elected representatives, use of lobby groups, and direct action",
+              "code": "ACHCK062",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK062"
+            }
+          ],
+          "Laws and citizens": [
+            {
+              "description": "How laws are made in Australia through parliaments (statutory law) and through the courts (common law)",
+              "code": "ACHCK063",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK063"
+            },
+            {
+              "description": "The types of law in Australia, including criminal law and civil law, and the place of Aboriginal and Torres Strait Islander customary law",
+              "code": "ACHCK064",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK064"
+            }
+          ],
+          "Citizenship, diversity and identity": [
+            {
+              "description": "Different perspectives about Australia's national identity, including Aboriginal and Torres Strait Islander perspectives, and what it means to be Australian",
+              "code": "ACHCK066",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK066"
+            }
+          ]
+        },
+        "Civics and Citizenship Skills": {
+          "Questioning and research": [
+            {
+              "description": "Develop a range of questions to investigate Australia's political and legal systems",
+              "code": "ACHCS068",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCS068"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students analyse features of Australian democracy, and explain features of Australia's democracy that enable active participation. They recognise different types of law in Australia and explain how laws are made. They identify the diverse belief systems in Australia and analyse issues about national identity and the factors that contribute to people's sense of belonging."
+      }
+    }
+  },
+  "Economics and Business": {
+    "Year 8": {
+      "level_description": {
+        "overview": "The Year 8 curriculum gives students the opportunity to further develop their understanding of economics and business concepts by exploring the ways markets – including traditional Aboriginal and Torres Strait Islander markets – work within Australia, the participants in the market system and the ways they may influence the market's operation.",
+        "key_ideas": "The rights, responsibilities and opportunities that arise for businesses, consumers and governments are considered along with the influences on the ways individuals work now and into the future.",
+        "note": "The economics and business content at this year level involves two strands: economics and business knowledge and understanding, and economics and business skills. These strands are interrelated and have been developed to be taught in an integrated way, and in ways that are appropriate to specific local contexts."
+      },
+      "content_descriptions": {
+        "Economics and Business Knowledge and Understanding": {
+          "Resource allocation and making choices": [
+            {
+              "description": "The ways markets in Australia operate to enable the distribution of resources, and why they may be influenced by government",
+              "code": "ACHEK027",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK027"
+            },
+            {
+              "description": "The traditional markets of Aboriginal and Torres Strait Islander communities and their participation in contemporary markets",
+              "code": "ACHEK028",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK028"
+            }
+          ],
+          "Consumer and financial literacy": [
+            {
+              "description": "The rights and responsibilities of consumers and businesses in Australia in terms of financial and economic decision-making",
+              "code": "ACHEK029",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK029"
+            }
+          ],
+          "Business environment": [
+            {
+              "description": "Types of businesses and the ways that businesses respond to opportunities in Australia",
+              "code": "ACHEK030",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK030"
+            }
+          ],
+          "Work and work futures": [
+            {
+              "description": "Influences on the ways people work and factors that might affect work in the future",
+              "code": "ACHEK031",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK031"
+            }
+          ]
+        },
+        "Economics and Business Skills": {
+          "Questioning and research": [
+            {
+              "description": "Develop questions about an economic or business issue or event, and plan and conduct an investigation or project",
+              "code": "ACHES032",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHES032"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students explain how markets operate and recognise why governments may influence the market's operation. They explain the rights and responsibilities of consumers and businesses in terms of financial and economic decision-making. They explain why different types of businesses exist and describe the different ways businesses can respond to opportunities in the market. Students describe influences on the way people work and factors that may affect work in the future."
+      }
+    }
+  }
+}

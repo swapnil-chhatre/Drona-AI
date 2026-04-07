@@ -1,0 +1,41 @@
+<aside class="sidebar">
+  <div class="sidebar__brand">
+    <div class="sidebar__brand-icon">
+      <span class="material-symbols-outlined">{{ brandIcon() }}</span>
+    </div>
+
+    <div>
+      <h2>{{ brandTitle() }}</h2>
+      <p>{{ brandSubtitle() }}</p>
+    </div>
+  </div>
+
+  <nav class="sidebar__nav" aria-label="Primary">
+    @for (item of items(); track item.label) {
+      @if (item.route) {
+        <a
+          class="sidebar__link"
+          routerLinkActive="sidebar__link--active"
+          [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+          [routerLink]="item.route"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">{{ item.icon }}</span>
+          <span>{{ item.label }}</span>
+        </a>
+      } @else {
+        <button
+          class="sidebar__link sidebar__link--button"
+          type="button"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">{{ item.icon }}</span>
+          <span>{{ item.label }}</span>
+        </button>
+      }
+    }
+  </nav>
+
+  <button class="sidebar__action" type="button" (click)="actionTriggered.emit()">
+    <span class="material-symbols-outlined">{{ actionIcon() }}</span>
+    <span>{{ actionLabel() }}</span>
+  </button>
+</aside>
