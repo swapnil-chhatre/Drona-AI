@@ -33,6 +33,7 @@ export class LandingComponent implements OnInit {
 
   protected readonly selectedStandard = signal(this.curriculumStandards[0]);
   protected readonly focusTopic = signal('');
+  protected readonly firstNation = signal(false);
 
   ngOnInit(): void {
     this.loadSuggestions();
@@ -58,6 +59,7 @@ export class LandingComponent implements OnInit {
       subject: this.selectedSubject(),
       state: this.selectedStandard(),
       topic: this.focusTopic(),
+      first_nation: this.firstNation(),
     };
 
     this.discoverState.set(request);
@@ -65,13 +67,15 @@ export class LandingComponent implements OnInit {
   }
 
   private loadSuggestions(): void {
-    this.api.getSuggestions(this.selectedGrade(), this.selectedSubject()).subscribe({
-      next: (response) => {
-        this.grades.set(response.grades);
-        this.subjects.set(response.subjects);
-        this.suggestedPrompts.set(response.suggestions);
-      },
-      error: (err) => console.error('Failed to load suggestions', err),
-    });
+    this.api
+      .getSuggestions(this.selectedGrade(), this.selectedSubject())
+      .subscribe({
+        next: (response) => {
+          this.grades.set(response.grades);
+          this.subjects.set(response.subjects);
+          this.suggestedPrompts.set(response.suggestions);
+        },
+        error: (err) => console.error('Failed to load suggestions', err),
+      });
   }
 }

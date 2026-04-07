@@ -98,6 +98,7 @@ class PlanService:
             doc_content=doc_content or "None selected.",
             curriculum_context=self._build_curriculum_context(request),
             timeline_weeks=request.timeline_weeks,
+            first_nation_perspective=request.first_nation,
         )
 
         response = self.llm.invoke(prompt)
@@ -139,6 +140,7 @@ class PlanService:
             web_content=web_content or "None available.",
             doc_content=doc_content or "None selected.",
             curriculum_context=self._build_curriculum_context(request),
+            first_nation_perspective=request.first_nation,
         )
 
         # Stream tokens directly from the LLM and collect for fixture saving
@@ -179,6 +181,8 @@ class PlanService:
             web_content=web_content or "None available.",
             doc_content=doc_content or "None selected.",
             curriculum_context=self._build_curriculum_context(request),
+            level=request.level,
+            first_nation_perspective=request.first_nation,
         )
 
         # Stream tokens directly from the LLM and collect for fixture saving
@@ -219,6 +223,8 @@ class PlanService:
             web_content=web_content or "None available.",
             doc_content=doc_content or "None selected.",
             curriculum_context=self._build_curriculum_context(request),
+            level=request.level,
+            first_nation_perspective=request.first_nation,
         )
 
         # Stream tokens directly from the LLM and collect for fixture saving
@@ -259,6 +265,7 @@ class PlanService:
             web_content=web_content or "None available.",
             doc_content=doc_content or "None selected.",
             curriculum_context=self._build_curriculum_context(request),
+            first_nation_perspective=request.first_nation,
         )
 
         # Stream tokens directly from the LLM and collect for fixture saving

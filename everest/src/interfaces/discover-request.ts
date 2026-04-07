@@ -3,4 +3,5 @@ export interface DiscoverRequest {
   subject: string;
   state: string;
   topic: string;
+  first_nation: boolean;
 }

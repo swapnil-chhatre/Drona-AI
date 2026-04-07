@@ -211,6 +211,62 @@
   font-weight: 700;
 }
 
+.resource-card__tags span.tag--video {
+  background: rgba(124, 58, 237, 0.1);
+  color: #5b21b6;
+}
+
+.resource-card__tags span.tag--interactive {
+  background: rgba(5, 150, 105, 0.1);
+  color: #065f46;
+}
+
+.resource-card__tags span.tag--government {
+  background: rgba(30, 64, 175, 0.1);
+  color: #1e3a8a;
+}
+
+.resource-card__tags span.tag--curriculum {
+  background: rgba(0, 93, 172, 0.1);
+  color: var(--color-primary);
+}
+
+.resource-card__tags span.tag--museum {
+  background: rgba(120, 53, 15, 0.1);
+  color: #78350f;
+}
+
+.resource-card__tags span.tag--media {
+  background: rgba(220, 38, 38, 0.1);
+  color: #991b1b;
+}
+
+.resource-card__tags span.tag--study-guide {
+  background: rgba(17, 94, 89, 0.1);
+  color: #115e59;
+}
+
+.resource-card__tags span.tag--pdf {
+  background: rgba(190, 18, 60, 0.1);
+  color: #be123c;
+}
+
+.resource-card__tags span.tag--teacher-upload {
+  background: rgba(217, 119, 6, 0.1);
+  color: #92400e;
+}
+
+.resource-card__tags span.tag--bias {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.resource-card__tags span.tag--generic {
+  background: rgba(113, 119, 131, 0.1);
+  color: var(--color-on-surface-variant);
+}
+
 .ai-recommendation {
   display: flex;
   gap: 1rem;

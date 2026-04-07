@@ -62,7 +62,7 @@
                     @if (resource.tags.length) {
                     <div class="resource-card__tags">
                       @for (tag of resource.tags; track tag) {
-                      <span>{{ tag }}</span>
+                      <span [class]="tagClass(tag)">{{ tag }}</span>
                       }
                     </div>
                     }

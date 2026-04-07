@@ -6,8 +6,10 @@ export interface GenerateRequest {
   subject: string;
   state: string;
   topic: string;
+  first_nation: boolean;
   selected_resources: Resource[];
   curriculum_outcomes: CurriculumOutcome[];
   additional_context?: string;
   timeline_weeks?: number;
+  level?: 'Beginner' | 'Intermediate' | 'Advanced';
 }
