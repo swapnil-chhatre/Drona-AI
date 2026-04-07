@@ -28,7 +28,6 @@ class RagService:
     def retrieve(self, query: str) -> list[Document]:
         """Retrieves top 5 document chunks from PGVector for a general query."""
         result = self.retriever.invoke(query)
-        print(result)
         return result
     
     def retrieve_by_ids(self, query: str, document_ids: list[str]) -> list[Document]:
@@ -40,5 +39,4 @@ class RagService:
             }
         )
         result = retriever.invoke(query)
-        print(result)
         return result

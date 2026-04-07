@@ -131,9 +131,16 @@ the classroom alongside one complementary resource."""
         doc_content: str,
         curriculum_context: str = "",
         timeline_weeks: int = 2,
+        first_nation_perspective: bool = False,
     ) -> str:
 
         curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+        first_nations_instruction = """
+  ## First Nations Perspective
+  You MUST integrate Australian Aboriginal and Torres Strait Islander histories, cultures, and perspectives throughout the study plan. 
+  Ensure this is not just a 'bolt-on' section but is woven into activities, examples, and learning objectives where appropriate. 
+  Use respectful and contemporary terminology.
+  """ if first_nation_perspective else ""
 
         return f"""You are an expert Australian curriculum designer.
 
@@ -145,6 +152,7 @@ the classroom alongside one complementary resource."""
   - Timeline: {timeline_weeks} weeks
   - Additional context: {additional_context}
 {curriculum_section}
+{first_nations_instruction}
   ## Selected Resources
   {resources_text}
 
@@ -179,8 +187,14 @@ the classroom alongside one complementary resource."""
         web_content: str,
         doc_content: str,
         curriculum_context: str = "",
+        level: str = "Beginner",
+        first_nation_perspective: bool = False,
     ) -> str:
         curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+        first_nations_instruction = """
+  ## First Nations Perspective
+  Ensure the quiz includes questions that reflect Australian Aboriginal and Torres Strait Islander histories, cultures, or perspectives related to the topic.
+  """ if first_nation_perspective else ""
 
         return f"""You are an expert Australian curriculum designer.
 
@@ -189,8 +203,10 @@ the classroom alongside one complementary resource."""
   - Subject: {subject}
   - State/Region: {state}
   - Topic: {topic}
+  - Difficulty Level: {level}
   - Additional context: {additional_context}
 {curriculum_section}
+{first_nations_instruction}
   ## Selected Resources
   {resources_text}
 
@@ -205,14 +221,15 @@ the classroom alongside one complementary resource."""
   {PromptService.EMOJI_INSTRUCTIONS}
 
   ## Quiz Requirements
-  1.  **Structure**:
+  1.  **Complexity**: Ensure the quiz complexity is appropriate for a **{level}** level.
+  2.  **Structure**:
       - Part A: 5 Multiple Choice Questions (with answers at the end)
       - Part B: 3 Short Answer Questions (with marking criteria)
       - Part C: 1 Extended Response/Analysis Question
-  2.  **Alignment**:
+  3.  **Alignment**:
       - Ensure questions directly relate to the provided curriculum outcomes and content from the resources.
       - Use 🇦🇺 for questions with Australian context.
-  3.  **Formatting**:
+  4.  **Formatting**:
       - Use clear markdown formatting.
       - Use ❓ for questions and ✅ for answers/marking guides.
       - For math/science, use LaTeX ($...$ or $$...$$).
@@ -230,8 +247,15 @@ the classroom alongside one complementary resource."""
         web_content: str,
         doc_content: str,
         curriculum_context: str = "",
+        level: str = "Beginner",
+        first_nation_perspective: bool = False,
     ) -> str:
         curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+        first_nations_instruction = """
+  ## First Nations Perspective
+  You MUST include activities that incorporate Australian Aboriginal and Torres Strait Islander histories, cultures, and perspectives. 
+  Focus on authentic integration and respectful engagement with First Nations knowledge systems and stories.
+  """ if first_nation_perspective else ""
 
         return f"""You are an expert Australian curriculum designer.
 
@@ -240,8 +264,10 @@ the classroom alongside one complementary resource."""
   - Subject: {subject}
   - State/Region: {state}
   - Topic: {topic}
+  - Difficulty Level: {level}
   - Additional context: {additional_context}
 {curriculum_section}
+{first_nations_instruction}
   ## Selected Resources
   {resources_text}
 
@@ -252,16 +278,17 @@ the classroom alongside one complementary resource."""
   {doc_content}
 
   ## Activities Requirements
-  1.  **Diversity**: Include 3-5 distinct activities (e.g., hands-on, collaborative, research-based, or creative).
-  2.  **Alignment**: Directly link activities to the curriculum outcomes and provided resources.
-  3.  **Structure**: For each activity, include:
+  1.  **Complexity**: Ensure the activity complexity is appropriate for a **{level}** level.
+  2.  **Diversity**: Include 3-5 distinct activities (e.g., hands-on, collaborative, research-based, or creative).
+  3.  **Alignment**: Directly link activities to the curriculum outcomes and provided resources.
+  4.  **Structure**: For each activity, include:
       - 🏷️ **Activity Name**
       - ⏱️ **Estimated Duration**
       - 👥 **Grouping** (Individual, Pairs, or Groups)
       - 🛠️ **Materials Needed**
       - 📝 **Step-by-Step Instructions**
       - 🇦🇺 **Australian Context** (where applicable)
-  4.  **Formatting**: Use clear markdown formatting with emojis.
+  5.  **Formatting**: Use clear markdown formatting with emojis.
 
   Format the output as a complete, ready-to-use markdown activities plan."""
 
@@ -276,8 +303,13 @@ the classroom alongside one complementary resource."""
         web_content: str,
         doc_content: str,
         curriculum_context: str = "",
+        first_nation_perspective: bool = False,
     ) -> str:
         curriculum_section = f"\n  ## Curriculum Outcomes\n  {curriculum_context}\n" if curriculum_context else ""
+        first_nations_instruction = """
+  ## First Nations Perspective
+  Include keywords and concepts specific to Australian Aboriginal and Torres Strait Islander histories, cultures, and languages relevant to this topic.
+  """ if first_nation_perspective else ""
 
         return f"""You are an expert Australian curriculum designer.
 
@@ -288,6 +320,7 @@ the classroom alongside one complementary resource."""
   - Topic: {topic}
   - Additional context: {additional_context}
 {curriculum_section}
+{first_nations_instruction}
   ## Selected Resources
   {resources_text}
 

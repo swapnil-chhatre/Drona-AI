@@ -81,6 +81,7 @@ export class DiscoverComponent implements OnInit {
       topic: this.request.topic,
       selected_resources: this.selectedResources,
       curriculum_outcomes: this.curriculumOutcomes(),
+      first_nation: this.request.first_nation,
     });
     void this.router.navigate(['/final-result']);
   }
@@ -133,8 +134,96 @@ export class DiscoverComponent implements OnInit {
         resource.curriculum_alignment === 'high'
           ? 'primary'
           : 'muted',
-      tags: resource.source_type === 'web' ? ['Core Theory'] : [],
+      tags: this.deriveTags(resource),
     };
+  }
+
+  protected tagClass(tag: string): string {
+    const map: Record<string, string> = {
+      Video: 'tag--video',
+      Interactive: 'tag--interactive',
+      Government: 'tag--government',
+      Curriculum: 'tag--curriculum',
+      Museum: 'tag--museum',
+      Media: 'tag--media',
+      'Study Guide': 'tag--study-guide',
+      PDF: 'tag--pdf',
+      'Teacher Upload': 'tag--teacher-upload',
+    };
+    if (tag.includes('Bias')) return 'tag--bias';
+    return map[tag] ?? 'tag--generic';
+  }
+
+  private deriveTags(resource: Resource): string[] {
+    const tags: string[] = [];
+
+    // ── 1. Content format ─────────────────────────────────────────
+    if (resource.source_type === 'teacher_upload') {
+      tags.push('Teacher Upload');
+    } else {
+      const domain = (resource.domain ?? '').toLowerCase();
+      const url = (resource.url ?? '').toLowerCase();
+
+      if (
+        domain.includes('youtube') ||
+        domain.includes('vimeo') ||
+        domain.includes('youtu.be')
+      ) {
+        tags.push('Video');
+      } else if (url.endsWith('.pdf') || domain.includes('.pdf')) {
+        tags.push('PDF');
+      } else if (
+        domain.includes('khanacademy') ||
+        domain.includes('learner.org') ||
+        domain.includes('phet.') ||
+        domain.includes('interactives')
+      ) {
+        tags.push('Interactive');
+      } else if (
+        domain.includes('.gov.au') ||
+        domain.includes('geoscience') ||
+        domain.includes('naa.gov') ||
+        domain.includes('abs.gov') ||
+        domain.includes('bom.gov')
+      ) {
+        tags.push('Government');
+      } else if (
+        domain.includes('.edu.au') ||
+        domain.includes('australiancurriculum') ||
+        domain.includes('scootle') ||
+        domain.includes('asta.edu')
+      ) {
+        tags.push('Curriculum');
+      } else if (
+        domain.includes('museum') ||
+        domain.includes('awm.gov') ||
+        domain.includes('nma.gov')
+      ) {
+        tags.push('Museum');
+      } else if (domain.includes('bbc') || domain.includes('bitesize')) {
+        tags.push('Study Guide');
+      } else if (domain.includes('abc.net.au') || domain.includes('btn')) {
+        tags.push('Media');
+      } else if (domain.includes('ted.com') || domain.includes('ted-ed')) {
+        tags.push('Video');
+      } else {
+        tags.push('Article');
+      }
+    }
+
+    // ── 2. Reading level ──────────────────────────────────────────
+    if (resource.reading_level) {
+      tags.push(resource.reading_level);
+    }
+
+    // ── 3. Bias risk — only surface when worth flagging ───────────
+    if (resource.bias_risk === 'flag') {
+      tags.push('⚠ Review Bias');
+    } else if (resource.bias_risk === 'medium') {
+      tags.push('Check Bias');
+    }
+
+    return tags;
   }
 
   private getRequest(): DiscoverRequest {
@@ -144,6 +233,7 @@ export class DiscoverComponent implements OnInit {
         subject: 'Science',
         state: 'NSW - Australia',
         topic: '',
+        first_nation: false,
       }
     );
   }
