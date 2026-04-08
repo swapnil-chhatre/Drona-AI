@@ -189,3 +189,13 @@ uv run fastapi dev main.py
 ```
 
 Runs at `http://localhost:8000`
+
+## Future Scope
+
+- **Third-Party Service Integrations**: The platform can be extended to integrate with widely adopted educational and productivity services such as Google Classroom, Microsoft Teams for Education, Notion, and LMS platforms like Moodle or Canvas. These integrations would allow embedded content to surface directly within the tools teachers and students already use.
+
+- **Multi-Curriculum and University Content Support**: Currently scoped to a specific state curriculum, the system is designed to scale horizontally across multiple regional and national curricula. Future iterations will support syllabi from other state boards across Australia and internationally, as well as university-level course content and research materials.
+
+- **Multimodal Resource Search**: Beyond text-based retrieval, the system will evolve to support rich multimodal search across images, videos, and audio resources. This means educators will be able to retrieve annotated diagrams, lecture recordings, podcast episodes, and visual explainers alongside traditional reading material.
+
+- **Teacher Authoring and Content Curation Tools**: A dedicated interface for educators to annotate, curate, and contribute domain-specific content can be explored for the future. 
