@@ -10,6 +10,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Suppress LangChain / Tavily Search warning
+os.environ.setdefault("USER_AGENT", "Drona-AI-FastAPI")
+
 DATABASE_URL = os.getenv("DATABASE_URL")
 connection = psycopg2.connect(DATABASE_URL)
 

@@ -1,154 +1,153 @@
 {
     "resources": [
         {
-            "title": "AERO Ochre Science Year 8 Unit 1 - Cells, tissues and organs",
-            "url": "https://resources.ttn.edu.au/resource/view/A003880/index.html",
-            "summary": "A comprehensive 15-lesson sequence covering cells, tissues, and organs, with specific lessons (4-8) dedicated to animal and plant cell structure and function.",
+            "title": "PhET Energy Skate Park Simulation",
+            "url": "https://phet.colorado.edu/en/simulation/energy-skate-park",
+            "summary": "An interactive simulation that allows students to build tracks, ramps, and jumps to explore the conservation of energy and the transformation between kinetic and potential energy.",
             "source_type": "web",
             "curriculum_alignment": "exemplary",
             "bias_risk": "low",
             "reading_level": "Year 8",
             "domain": "resources.ttn.edu.au",
             "follow_up_questions": [
-                "How can we relate the structure of plant cell walls to the physical properties of plants?",
-                "In what ways do specialised cells in plants and animals differ in their function?"
+                "How does changing the friction setting affect the total energy of the system?",
+                "Can you predict the kinetic energy at the bottom of the ramp based on the starting height?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "5 native plants that illuminate deep Aboriginal knowledge",
-            "url": "https://education.cosmosmagazine.com/five-native-plants-that-illuminate-deep-aboriginal-knowledge/",
-            "summary": "An article exploring the features and uses of native Australian plants, highlighting deep Aboriginal knowledge and its importance in understanding ecosystems.",
+            "title": "Energy Transfer and Transformation Lesson Plan",
+            "url": "https://flipeducation.ai/curriculum/au/science/year-8/energy-transfer-and-transformation",
+            "summary": "A comprehensive lesson plan that guides students through identifying energy forms and using flow diagrams to model energy transfers and transformations in everyday devices.",
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
             "reading_level": "Year 8-10",
             "domain": "education.cosmosmagazine.com",
             "follow_up_questions": [
-                "How does First Nations knowledge of plants complement Western biological classification?",
-                "What specific plant structures might be important for the medicinal uses described?"
+                "What are the key differences between energy transfer and transformation?",
+                "Can you draw a flow diagram for a bicycle?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Comparing animal and plant cells (video) - Khan Academy",
-            "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms/x0c5bb03129646fd6:cell-parts-and-functions/v/comparing-animal-and-plant-cells",
-            "summary": "A clear, concise video explaining the fundamental similarities and differences between plant and animal cells, focusing on organelles.",
+            "title": "Science Learning Hub: Energy Conservation and Transfer",
+            "url": "https://www.sciencelearn.org.nz/concepts/energy",
+            "summary": "A collection of articles and diagrams explaining energy conservation, transfer, and transformation with clear, real-world examples like pendulums and food energy.",
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "khanacademy.org",
+            "domain": "sciencelearn.org.nz",
             "follow_up_questions": [
-                "What are the primary differences between plant and animal cells?",
-                "Why do plant cells require a cell wall?"
+                "How does a pendulum demonstrate energy transfer?",
+                "Why is heat often considered 'lost' energy in these systems?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Lesson: Comparing Cells",
-            "url": "https://serpmedia.org/scigen/l7.2.html",
-            "summary": "An interactive lesson comparing four types of cells (animal, plant, bacteria, yeast) with 3D models and diagrams.",
+            "title": "NSW Department of Education: Science 7-10 Energy Resources",
+            "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/science/science-curriculum-resources-k-12/science-s5-energy",
+            "summary": "Official NSW Department of Education resources providing syllabus-aligned guidance, assessment tasks, and unit planning for Stage 4/5 energy topics.",
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "serpmedia.org",
+            "domain": "education.nsw.gov.au",
             "follow_up_questions": [
-                "How do 3D models help us understand the function of organelles?",
-                "What are the differences between animal, plant, bacteria, and yeast cells?"
+                "How can you improve the fairness of your energy investigation?",
+                "What variables are you controlling in your energy experiment?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Year 8 Science – Cells & Microscopes (Flashcards Australia) - Tes",
-            "url": "https://www.tes.com/en-us/teaching-resource/year-8-science-cells-and-microscopes-free-flashcards-australia-13361958",
-            "summary": "Printable science flashcards aligned to the Australian Curriculum (ACSSU149) for retrieval practice on cell structures and microscopes.",
+            "title": "TED-Ed: A Guide to the Energy of the Earth",
+            "url": "https://ed.ted.com/lessons/a-guide-to-the-energy-of-the-earth-joshua-m-sneideman",
+            "summary": "An engaging animated video and lesson that explores how energy cycles through the planet, from the sun to food chains and electricity.",
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "tes.com",
+            "domain": "ed.ted.com",
             "follow_up_questions": [
-                "What are the key organelles to remember for Year 8?",
-                "How do microscopes help us see these structures?"
+                "How does energy cycle through the Earth's systems?",
+                "What are the implications of our energy choices on the environment?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "What are plant and animal cells? - BBC Bitesize",
-            "url": "https://www.bbc.co.uk/bitesize/articles/zkm7wnb",
-            "summary": "A structured guide with interactive activities and quizzes on the structure and function of plant and animal cells.",
+            "title": "Grade 8 Physics: Thermal Energy Transfer (YouTube)",
+            "url": "https://www.youtube.com/watch?v=xn8MhoyokAc",
+            "summary": "A clear video explanation of thermal energy transfer (conduction, convection, and radiation) suitable for Year 8 physics.",
             "source_type": "web",
             "curriculum_alignment": "medium",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "bbc.co.uk",
+            "domain": "youtube.com",
             "follow_up_questions": [
-                "What gives plant cells their crunch?",
-                "How do animal and plant cells differ in their structure?"
+                "What are the three main ways thermal energy is transferred?",
+                "Can you provide an example of each type of heat transfer?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Science Teacher Background Information - Seasonal Knowledge",
-            "url": "https://www.australiancurriculum.edu.au/support-resources/background-information/science_teacher_background_information_AC9S6U01_E7",
-            "summary": "Teacher background information on how Aboriginal and Torres Strait Islander peoples' seasonal knowledge relates to the management of plant and animal resources.",
-            "source_type": "web",
-            "curriculum_alignment": "medium",
-            "bias_risk": "low",
-            "reading_level": "Teacher/Year 8",
-            "domain": "australiancurriculum.edu.au",
-            "follow_up_questions": [
-                "How does seasonal knowledge inform the management of plant and animal resources?",
-                "Why is it important to integrate First Nations knowledge into science curricula?"
-            ],
-            "document_id": null
-        },
-        {
-            "title": "6.1 What is the particle model of matter? - Siyavula",
-            "url": "https://www.siyavula.com/read/za/natural-sciences/grade-8/particle-model-of-matter/06-particle-model-of-matter",
-            "summary": "A clear explanation of the particle model of matter, covering solids, liquids, and gases, relevant to ACSSU152.",
+            "title": "ASTA: Forms of Energy Year 8 CLE",
+            "url": "https://asta.edu.au/resource/forms-of-energy-year-8-cle/",
+            "summary": "A Connected Learning Experience (CLE) that guides students through investigating energy transformations and using data representations to justify conclusions.",
             "source_type": "web",
             "curriculum_alignment": "medium",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "siyavula.com",
+            "domain": "asta.edu.au",
             "follow_up_questions": [
-                "How does the particle model explain the states of matter?",
-                "How can we use the particle model to understand diffusion in cells?"
+                "How can you use digital technologies to represent your energy data?",
+                "What patterns did you observe in your energy investigation?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Introduction to the Particle Theory of Matter - Let's Talk Science",
-            "url": "https://letstalkscience.ca/educational-resources/backgrounders/introduction-particle-theory-matter",
-            "summary": "An introduction to the particle theory of matter, explaining how it serves as a scientific model for understanding matter.",
+            "title": "Good Science: Introduction to Energy Course",
+            "url": "https://www.goodscience.com.au/courses/year-8-physics-course/lessons/introduction-to-energy-lesson/",
+            "summary": "A structured course covering various energy topics with topic quizzes to test understanding of kinetic, potential, and thermal energy.",
             "source_type": "web",
             "curriculum_alignment": "medium",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "letstalkscience.ca",
+            "domain": "goodscience.com.au",
             "follow_up_questions": [
-                "What are the key tenets of the particle theory of matter?",
-                "How do particles behave in different states?"
+                "How do you calculate the efficiency of an energy transformation?",
+                "What is the role of heat as a by-product in energy systems?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Plant science: Indigenous Knowledge - UQ Library Guides",
-            "url": "https://guides.library.uq.edu.au/subject/plant-science/indigenous-knowledge",
-            "summary": "A library guide providing resources and context on Indigenous knowledge systems related to plant science and land management.",
+            "title": "Energy Transformation Diagrams Explained",
+            "url": "https://digestiblenotes.com/physics/heat_and_energy/energy_transformation_diagrams.php",
+            "summary": "An explanation of energy transformation diagrams (Sankey diagrams) and how they represent the flow and efficiency of energy.",
             "source_type": "web",
             "curriculum_alignment": "medium",
             "bias_risk": "low",
-            "reading_level": "Teacher/Year 8",
-            "domain": "guides.library.uq.edu.au",
+            "reading_level": "Year 8",
+            "domain": "digestiblenotes.com",
             "follow_up_questions": [
-                "How does Indigenous knowledge of flora and fauna differ from Western scientific classification?",
-                "How can we incorporate these perspectives into our science lessons?"
+                "Why is the thickness of the arrow important in a Sankey diagram?",
+                "What does a Sankey diagram tell us about energy efficiency?"
             ],
-            "document_id": null
+            "document_id": "null"
+        },
+        {
+            "title": "3483410.pdf",
+            "url": "null",
+            "summary": "A document discussing energy efficiency in the context of product lifecycles and supply chains, useful for discussing real-world energy applications.",
+            "source_type": "teacher_upload",
+            "curriculum_alignment": "low",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "teacher_upload",
+            "follow_up_questions": [
+                "How does energy efficiency relate to the product lifecycle mentioned in this document?"
+            ],
+            "document_id": "baf5d593-b196-452f-b38a-f7f12fd73fd0"
         }
     ],
     "curriculum_outcomes": [
@@ -168,17 +167,17 @@
         }
     ],
     "search_queries_used": [
-        "Year 8 Science plant and animal cells ACSSU149 Australian curriculum",
-        "Aboriginal and Torres Strait Islander perspectives on biology and cells for schools",
-        "Indigenous knowledge systems and biological classification for students",
-        "ABC Education Year 8 Science cells plant animal differences",
-        "Science by Doing Year 8 Cells and Systems",
-        "Australian Academy of Science Year 8 Science cells resources",
-        "First Nations perspectives on plants and animals for science curriculum",
-        "differences between plant and animal cells interactive activity Year 8",
-        "particle model of matter ACSSU152 Year 8 Science resources",
-        "First Nations knowledge of plant biology and ecosystems for science education"
+        "Year 8 Science energy transfer and transformation ACSSU155 Australia",
+        "ABC Education energy transfer and transformation Year 8 Science",
+        "NSW Department of Education Year 8 Science energy resources",
+        "energy transfer and transformation interactive simulation Year 8 science",
+        "kinetic and potential energy examples for Year 8 science",
+        "energy transformation diagrams for students",
+        "PhET energy skate park simulation for schools",
+        "sciencelearn.org.nz energy transfer and transformation",
+        "TED-Ed energy transfer videos for students",
+        "Year 8 Science energy unit plan Australia"
     ],
     "total_found": 10,
-    "ai_recommendation": "The most valuable resource is the AERO Ochre Science Year 8 Unit 1, which provides a comprehensive, curriculum-aligned sequence of lessons on cells that builds understanding from first principles. I recommend pairing this with the '5 native plants that illuminate deep Aboriginal knowledge' article from Cosmos Magazine to integrate authentic First Nations perspectives on plant biology and ecological relationships into your classroom discussions."
+    "ai_recommendation": "The PhET 'Energy Skate Park' simulation is the most valuable resource as it provides an interactive, visual, and inquiry-based environment for students to explore the conservation of energy and the transformation between kinetic and potential energy. I recommend using this alongside the 'Energy Transfer and Transformation' lesson plan from Flip Education, which provides a structured framework for students to apply their observations from the simulation to real-world examples and flow diagrams."
 }

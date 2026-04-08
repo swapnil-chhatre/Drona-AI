@@ -1,0 +1,21 @@
+<footer class="app-footer">
+  <div class="footer-content">
+    <div class="developers-list">
+      <span class="label">Builders:</span>
+      @for (dev of developers; track dev.name; let last = $last) {
+        <a [href]="dev.url" target="_blank" rel="noopener noreferrer" class="developer-link">
+          {{ dev.name }}
+        </a>
+        @if (!last) { <span class="separator">•</span> }
+      }
+    </div>
+    
+    <div class="heart-line">
+      Made with <span class="heart">♥</span> in Sydney
+    </div>
+
+    <div class="copyright">
+      &copy; {{ currentYear }} Drona-AI. All rights reserved.
+    </div>
+  </div>
+</footer>
