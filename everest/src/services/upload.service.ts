@@ -9,13 +9,10 @@ interface UploadApiResponse {
   status: 'success';
 }
 
-export type EmbeddingStatus = 'done';
-
 export interface UploadResponse {
   document_id: string;
   filename: string;
   status: 'success';
-  embedding_status: EmbeddingStatus;
 }
 
 @Injectable({
@@ -34,8 +31,6 @@ export class UploadService {
         document_id: response.document_id,
         filename: response.filename ?? file.name,
         status: response.status,
-        // TODO: replace this with the real backend field once it's exposed.
-        embedding_status: 'done',
       }))
     );
   }

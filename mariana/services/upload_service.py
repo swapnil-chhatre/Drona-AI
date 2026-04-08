@@ -7,8 +7,8 @@ from fastapi import UploadFile, HTTPException
 from services.rag_service import RagService
 
 class UploadService:
-    # 0.5MB Limit
-    MAX_FILE_SIZE = 0.5 * 1024 * 1024 
+    # 2MB Limit
+    MAX_FILE_SIZE = 2 * 1024 * 1024 
 
     def __init__(self):
         """Initializes UploadService and its dependencies."""

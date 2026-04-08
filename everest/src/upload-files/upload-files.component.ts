@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { EmbeddingStatus, UploadResponse, UploadService } from '../services/upload.service';
+import { UploadResponse, UploadService } from '../services/upload.service';
 
 type UploadTone = 'indexed' | 'processing';
 type NotificationTone = 'success' | 'error' | 'info';
@@ -14,7 +14,6 @@ interface UploadFileItem {
   typeTone: DocumentTone;
   date: string;
   statusLabel: string;
-  embeddingStatus: EmbeddingStatus | null;
   tone: UploadTone;
   fileUrl: string | null;
   documentId: string | null;
@@ -152,28 +151,19 @@ export class UploadFilesComponent implements OnDestroy {
       typeIcon: this.getTypeIcon(file.name),
       typeTone: this.getTypeTone(file.name),
       date: this.formatDate(new Date()),
-      statusLabel: 'Uploading and indexing',
-      embeddingStatus: null,
+      statusLabel: 'Uploading',
       tone: 'processing',
       fileUrl: URL.createObjectURL(file),
       documentId: null,
     };
 
     this.documents.set([newDocument, ...this.documents()]);
-    this.showToast(`Uploading "${file.name}" and generating embeddings...`, 'info');
+    this.showToast(`Uploading "${file.name}"...`, 'info');
 
     this.uploadService.uploadFile(file).subscribe({
       next: (response: UploadResponse) => {
-        this.markDocumentAsIndexed(
-          localId,
-          response.document_id,
-          response.filename,
-          response.embedding_status
-        );
-        this.showToast(
-          `"${response.filename}" uploaded successfully. Embedding status: ${response.embedding_status}.`,
-          'success'
-        );
+        this.markDocumentAsUploaded(localId, response.document_id, response.filename);
+        this.showToast(`"${response.filename}" uploaded successfully.`, 'success');
       },
       error: (error) => {
         this.markDocumentAsFailed(localId);
@@ -187,23 +177,21 @@ export class UploadFilesComponent implements OnDestroy {
     });
   }
 
-  private markDocumentAsIndexed(
+  private markDocumentAsUploaded(
     localId: string,
     documentId: string,
-    filename: string,
-    embeddingStatus: EmbeddingStatus
+    filename: string
   ): void {
     this.documents.set(
       this.documents().map((document) =>
         document.id === localId
           ? {
-              ...document,
-              title: filename,
-              documentId,
-              embeddingStatus,
-              statusLabel: this.getIndexedStatusLabel(embeddingStatus),
-              tone: 'indexed',
-            }
+            ...document,
+            title: filename,
+            documentId,
+            statusLabel: 'Uploaded',
+            tone: 'indexed',
+          }
           : document
       )
     );
@@ -224,11 +212,10 @@ export class UploadFilesComponent implements OnDestroy {
       this.documents().map((document) =>
         document.id === localId
           ? {
-              ...document,
-              embeddingStatus: null,
-              statusLabel: 'Upload failed',
-              tone: 'processing',
-            }
+            ...document,
+            statusLabel: 'Upload failed',
+            tone: 'processing',
+          }
           : document
       )
     );
@@ -257,14 +244,6 @@ export class UploadFilesComponent implements OnDestroy {
   private getTypeTone(fileName: string): DocumentTone {
     return fileName.toLowerCase().endsWith('.pdf') ? 'pdf' : 'doc';
   }
-
-  private getIndexedStatusLabel(embeddingStatus: EmbeddingStatus): string {
-    return embeddingStatus === 'done' ? 'Embedded and ready' : 'Indexed';
-  }
-
-  // protected deleteDocument(document: UploadFileItem): void {
-  //   // Keep delete functionality disabled until the backend delete endpoint exists.
-  // }
 
   private createId(fileName: string): string {
     return `${fileName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${Date.now()}`;
