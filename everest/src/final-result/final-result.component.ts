@@ -9,6 +9,7 @@ import {
 import { MarkdownComponent } from 'ngx-markdown';
 import { ApiService } from '../services/api.service';
 import { Router, RouterLink } from '@angular/router';
+import { MatButtonToggle, MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/button-toggle';
 import { PlanStateService } from '../services/plan-state.service';
 import { Subscription } from 'rxjs';
 import { FinalResultDocument } from '../interfaces/final-result';
@@ -16,7 +17,7 @@ import { FinalResultDocument } from '../interfaces/final-result';
 @Component({
   selector: 'app-final-result',
   standalone: true,
-  imports: [MarkdownComponent, RouterLink],
+  imports: [MarkdownComponent, RouterLink, MatButtonToggle, MatButtonToggleModule],
   templateUrl: './final-result.component.html',
   styleUrl: './final-result.component.css',
 })
@@ -41,6 +42,7 @@ export class FinalResultComponent implements OnInit, OnDestroy {
       icon: 'menu_book',
       tone: 'primary',
       markdown: '',
+      type: 'plan',
     },
     {
       id: 'quiz',
@@ -48,6 +50,8 @@ export class FinalResultComponent implements OnInit, OnDestroy {
       icon: 'quiz',
       tone: 'tertiary',
       markdown: '',
+      type: 'quiz',
+      level: '',
     },
     {
       id: 'keywords',
@@ -55,6 +59,7 @@ export class FinalResultComponent implements OnInit, OnDestroy {
       icon: 'translate',
       tone: 'secondary',
       markdown: '',
+      type: 'plan',
     },
     {
       id: 'activities',
@@ -62,8 +67,31 @@ export class FinalResultComponent implements OnInit, OnDestroy {
       icon: 'groups',
       tone: 'primary',
       markdown: '',
+      type: 'activities',
+      level: '',
     },
   ]);
+
+  protected testType: 'quiz' | 'activities' = 'quiz';
+  protected testTypeSelected = false;
+
+  protected selectTestType(type: string): void {
+    if (type === 'quiz' || type === 'activities') {
+      this.testType = type;
+      this.testTypeSelected = true;
+      this.activeDocumentId.set(type);
+    }
+  }
+
+  protected onDifficultyChange (event: MatButtonToggleChange): void {
+    this.actionCards.update(cards => cards.map(card => {
+      if (card.type === this.testType) {
+        card.level = event.value;
+        this.request()!.level = event.value;
+      }
+      return card;
+    }));
+  }
 
   protected readonly activeDocument = computed(() => {
     return (

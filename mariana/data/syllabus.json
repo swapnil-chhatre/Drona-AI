@@ -1,5 +1,344 @@
 {
+  "English": {
+    "Year 7": {
+      "level_description": {
+        "overview": "The Year 7 English curriculum focuses on developing students' knowledge, understanding and skills in listening, reading, viewing, speaking, writing and creating. Students interact with others in familiar and unfamiliar contexts, including local community contexts.",
+        "key_ideas": "Students engage with a variety of texts for enjoyment and to inform. They develop an understanding of how language features, text structures and images shape meaning and influence audiences.",
+        "note": "The curriculum is organized into three interrelated strands: Language, Literature and Literacy."
+      },
+      "content_descriptions": {
+        "Language": {
+          "Language variation and change": [
+            {
+              "description": "Understand that Standard Australian English is one of many varieties of English used around the world",
+              "code": "ACELA1528",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELA1528"
+            }
+          ],
+          "Text structure and organisation": [
+            {
+              "description": "Understand that the coherence of complex texts relies on devices that signal sequences and build connections",
+              "code": "ACELA1529",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELA1529"
+            }
+          ]
+        },
+        "Literature": {
+          "Literature and context": [
+            {
+              "description": "Identify and explore ideas and viewpoints in a variety of literary texts drawn from different historical, social and cultural contexts",
+              "code": "ACELT1619",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELT1619"
+            }
+          ]
+        },
+        "Literacy": {
+          "Interpreting, analysing, evaluating": [
+            {
+              "description": "Analyse the ways language is used to express and clarify expectations and values in texts",
+              "code": "ACELY1719",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELY1719"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students understand how text structures and language features help to achieve particular effects. They explain how the choices made by authors influence personal responses. They create texts for different purposes and audiences."
+      }
+    },
+    "Year 8": {
+      "level_description": {
+        "overview": "In Year 8, students listen to, read, view, interpret, evaluate and create a range of spoken, written and multimodal texts. These include various types of media and literary texts that challenge and explore themes.",
+        "key_ideas": "Focus on how language is used to present different points of view and how creators of texts use language features to influence the audience's response.",
+        "note": "Learning in English is recursive and cumulative."
+      },
+      "content_descriptions": {
+        "Language": {
+          "Language for interaction": [
+            {
+              "description": "Understand the use of punctuation and how it assists in the creation of meaning",
+              "code": "ACELA1544",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELA1544"
+            }
+          ]
+        },
+        "Literature": {
+          "Responding to literature": [
+            {
+              "description": "Explore and explain the combinations of language and visual choices that authors make to present information",
+              "code": "ACELT1628",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELT1628"
+            }
+          ]
+        },
+        "Literacy": {
+          "Creating texts": [
+            {
+              "description": "Create imaginative, informative and persuasive texts that raise issues and report on events",
+              "code": "ACELY1736",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELY1736"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students explain how ideas are represented and how texts reflect or challenge contexts. They explain the aesthetic qualities of texts and how text structures shape meaning."
+      }
+    },
+    "Year 9": {
+      "level_description": {
+        "overview": "Year 9 students experience learning in familiar and unfamiliar contexts, including local or global community and vocational contexts. They create increasingly complex texts.",
+        "key_ideas": "Analyzing the ways in which language and images are used to create character, setting and plot in different forms of literature.",
+        "note": "Strands: Language, Literature, Literacy."
+      },
+      "content_descriptions": {
+        "Language": {
+          "Expressing and developing ideas": [
+            {
+              "description": "Analyse how higher order concepts are developed in complex texts through language features",
+              "code": "ACELA1554",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELA1554"
+            }
+          ]
+        },
+        "Literacy": {
+          "Interpreting, analysing, evaluating": [
+            {
+              "description": "Evaluate the use of evidence and the logic of arguments in a range of persuasive texts",
+              "code": "ACELY1742",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELY1742"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 9, students analyze how ideas are portrayed and how texts are influenced by contexts. They explain how authors create nuance and complexity in their work."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "In Year 10, students evaluate how text structures and language features can be used to influence audiences and represent viewpoints. They engage with a wide range of sophisticated texts.",
+        "key_ideas": "Critically analyzing the influence of context, purpose and audience on the development of texts.",
+        "note": "Integration of the three strands."
+      },
+      "content_descriptions": {
+        "Literature": {
+          "Literature and context": [
+            {
+              "description": "Evaluate the social, moral and ethical positions represented in texts from different cultures and times",
+              "code": "ACELT1812",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELT1812"
+            }
+          ]
+        },
+        "Literacy": {
+          "Interacting with others": [
+            {
+              "description": "Identify and explore the purposes and effects of different types of language used in public debate",
+              "code": "ACELY1751",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACELY1751"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students evaluate how text structures and language features influence interpretations. They demonstrate a high level of control over language choices to create impact."
+      }
+    }
+  },
+  "Mathematics": {
+    "Year 7": {
+      "level_description": {
+        "overview": "The Year 7 curriculum focuses on number and place value, algebra, and the introduction of variables. Students develop their understanding of fractions, decimals, and percentages.",
+        "key_ideas": "Proficiency strands: Understanding, Fluency, Problem-solving and Reasoning.",
+        "note": "Content strands: Number and Algebra, Measurement and Geometry, Statistics and Probability."
+      },
+      "content_descriptions": {
+        "Number and Algebra": {
+          "Number and place value": [
+            {
+              "description": "Investigate and represent whole numbers as products of powers of prime numbers",
+              "code": "ACMNA149",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA149"
+            },
+            {
+              "description": "Investigate everyday situations that use integers. Locate and represent these numbers on a number line",
+              "code": "ACMNA151",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA151"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students solve problems involving the comparison, addition and subtraction of integers. They make connections between whole numbers and index notation and represent numbers as products of prime factors."
+      }
+    },
+    "Year 8": {
+      "level_description": {
+        "overview": "The proficiency strands understanding, fluency, problem-solving and reasoning are an integral part of mathematics content across the three content strands: number and algebra, measurement and geometry, and statistics and probability. The proficiencies reinforce the significance of working mathematically within the content and describe how the content is explored or developed.",
+        "key_ideas": "At this year level: understanding includes describing patterns in uses of indices with whole numbers, recognising equivalences between fractions, decimals, percentages and ratios, plotting non-linear relationships, and identifying conditions for congruence of triangles.",
+        "note": "The mathematics content at this year level involves three strands: Number and Algebra, Measurement and Geometry, and Statistics and Probability."
+      },
+      "content_descriptions": {
+        "Number and Algebra": {
+          "Number and place value": [
+            {
+              "description": "Use index notation with numbers to establish the index laws with positive integral indices and the zero index",
+              "code": "ACMNA182",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA182"
+            }
+          ],
+          "Real numbers": [
+            {
+              "description": "Carry out the four operations with rational numbers and integers, using efficient mental and written strategies and appropriate digital technologies",
+              "code": "ACMNA183",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA183"
+            },
+            {
+              "description": "Investigate terminating and recurring decimals",
+              "code": "ACMNA184",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA184"
+            }
+          ],
+          "Money and financial mathematics": [
+            {
+              "description": "Solve problems involving profit and loss, with and without digital technologies",
+              "code": "ACMNA189",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA189"
+            }
+          ],
+          "Linear and non-linear relationships": [
+            {
+              "description": "Plot linear relationships on the Cartesian plane with and without the use of digital technologies",
+              "code": "ACMNA193",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA193"
+            },
+            {
+              "description": "Solve linear equations using algebraic and graphical techniques. Verify solutions by substitution",
+              "code": "ACMNA194",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA194"
+            }
+          ]
+        },
+        "Measurement and Geometry": {
+          "Using units of measurement": [
+            {
+              "description": "Choose appropriate units of measurement for area and volume and convert from one unit to another",
+              "code": "ACMMG195",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG195"
+            },
+            {
+              "description": "Find perimeters and areas of parallelograms, trapeziums, rhombuses and kites",
+              "code": "ACMMG196",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG196"
+            }
+          ],
+          "Geometric reasoning": [
+            {
+              "description": "Define congruence of plane shapes using transformations",
+              "code": "ACMMG200",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG200"
+            }
+          ]
+        },
+        "Statistics and Probability": {
+          "Chance": [
+            {
+              "description": "Identify complementary events and use the sum of probabilities to solve problems",
+              "code": "ACMSP204",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP204"
+            }
+          ],
+          "Data representation and interpretation": [
+            {
+              "description": "Investigate techniques for collecting data, including census, sampling and observation",
+              "code": "ACMSP284",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP284"
+            },
+            {
+              "description": "Explore the practicalities and implications of obtaining data through sampling using a variety of investigative processes",
+              "code": "ACMSP206",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP206"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 8, students solve everyday problems involving rates, ratios and percentages. They recognise index laws and apply them to whole numbers. They describe rational and irrational numbers. Students solve problems involving profit and loss. They make connections between expanding and factorising algebraic expressions. Students solve linear equations and graph linear relationships on the Cartesian plane. They convert between units of measurement for area and for volume, and perform calculations to determine perimeter and area of parallelograms, rhombuses and kites. They identify conditions for congruence of triangles and deduce the properties of quadrilaterals. Students model authentic situations with two-way tables and Venn diagrams. They choose appropriate language to describe events and experiments."
+      }
+    },
+    "Year 9": {
+      "level_description": {
+        "overview": "Year 9 focuses on expanding knowledge of indices, scientific notation, and non-linear relationships. Students are introduced to basic trigonometry.",
+        "key_ideas": "Applying index laws, sketching parabolas, and calculating surface area and volume of composite solids.",
+        "note": "Proficiencies are integrated into all strands."
+      },
+      "content_descriptions": {
+        "Measurement and Geometry": {
+          "Pythagoras and trigonometry": [
+            {
+              "description": "Investigate Pythagoras' Theorem and its application to solving simple problems involving right-angled triangles",
+              "code": "ACMMG222",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG222"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 9, students solve problems involving simple interest and apply index laws to numerical expressions. They find the surface area and volume of right prisms and cylinders."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "Year 10 involves higher-level algebraic expansion and factorisation, quadratics, and advanced probability. Students study bivariate data and circular functions.",
+        "key_ideas": "Solving quadratic equations, determining probabilities of independent and dependent events, and calculating surface area/volume of spheres and pyramids.",
+        "note": "Prepares students for senior secondary mathematics."
+      },
+      "content_descriptions": {
+        "Number and Algebra": {
+          "Patterns and algebra": [
+            {
+              "description": "Factorise algebraic expressions by taking out a common algebraic factor",
+              "code": "ACMNA230",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA230"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students recognize the connection between simple and compound interest. They expand binomial expressions and solve simple quadratic equations. They determine the surface area and volume of pyramids and spheres."
+      }
+    }
+  },
   "Science": {
+    "Year 7": {
+      "level_description": {
+        "overview": "In Year 7, students explore the diversity of life on Earth and the role of classification. They investigate the properties of mixtures and how they can be separated.",
+        "key_ideas": "Systems involve interactions between components; change can be caused by forces like gravity.",
+        "note": "Science inquiry skills and human endeavour are addressed across Years 7-8."
+      },
+      "content_descriptions": {
+        "Science Understanding": {
+          "Biological sciences": [
+            {
+              "description": "There are differences within and between groups of organisms; classification helps organise this diversity",
+              "code": "ACSSU111",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU111"
+            }
+          ],
+          "Chemical sciences": [
+            {
+              "description": "Mixtures, including solutions, contain a combination of pure substances and can be separated using a range of techniques",
+              "code": "ACSSU113",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU113"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students describe techniques to separate mixtures and identify physical and chemical changes. They predict the effect of environmental changes on feeding relationships."
+      }
+    },
     "Year 8": {
       "level_description": {
         "overview": "In Year 8, students are introduced to cells as microscopic structures that explain macroscopic properties of living systems. They link form and function at a cellular level and explore the organisation of body systems in terms of flows of matter between interdependent organs. Similarly, they explore changes in matter at a particle level, and distinguish between chemical and physical change. They begin to classify different forms of energy, and describe the role of energy in causing change in systems, including the role of heat and kinetic energy in the rock cycle.",
@@ -134,105 +473,72 @@
       "achievement_standard": {
         "summary": "By the end of Year 8, students explain how differences in cells may relate to their function, and describe the organisation of body systems. They describe patterns of change and compare physical and chemical change. They explain energy transformations and transfers and describe the role of energy in forming geological features. They describe factors that can influence the development of science understanding, and explain how science is used to inform decisions and actions."
       }
-    }
-  },
-  "Mathematics": {
-    "Year 8": {
+    },
+    "Year 9": {
       "level_description": {
-        "overview": "The proficiency strands understanding, fluency, problem-solving and reasoning are an integral part of mathematics content across the three content strands: number and algebra, measurement and geometry, and statistics and probability. The proficiencies reinforce the significance of working mathematically within the content and describe how the content is explored or developed.",
-        "key_ideas": "At this year level: understanding includes describing patterns in uses of indices with whole numbers, recognising equivalences between fractions, decimals, percentages and ratios, plotting non-linear relationships, and identifying conditions for congruence of triangles.",
-        "note": "The mathematics content at this year level involves three strands: Number and Algebra, Measurement and Geometry, and Statistics and Probability."
+        "overview": "Year 9 students explore ecosystems, atomic theory, and chemical reactions. They study the theory of plate tectonics and how it explains geological activity.",
+        "key_ideas": "Matter and energy flow through systems. Understanding the structure of the atom is key to chemical behavior.",
+        "note": "Science inquiry skills and human endeavour are addressed across Years 9-10."
       },
       "content_descriptions": {
-        "Number and Algebra": {
-          "Number and place value": [
+        "Science Understanding": {
+          "Physical sciences": [
             {
-              "description": "Use index notation with numbers to establish the index laws with positive integral indices and the zero index",
-              "code": "ACMNA182",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA182"
-            }
-          ],
-          "Real numbers": [
-            {
-              "description": "Carry out the four operations with rational numbers and integers, using efficient mental and written strategies and appropriate digital technologies",
-              "code": "ACMNA183",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA183"
-            },
-            {
-              "description": "Investigate terminating and recurring decimals",
-              "code": "ACMNA184",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA184"
-            }
-          ],
-          "Money and financial mathematics": [
-            {
-              "description": "Solve problems involving profit and loss, with and without digital technologies",
-              "code": "ACMNA189",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA189"
-            }
-          ],
-          "Linear and non-linear relationships": [
-            {
-              "description": "Plot linear relationships on the Cartesian plane with and without the use of digital technologies",
-              "code": "ACMNA193",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA193"
-            },
-            {
-              "description": "Solve linear equations using algebraic and graphical techniques. Verify solutions by substitution",
-              "code": "ACMNA194",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMNA194"
-            }
-          ]
-        },
-        "Measurement and Geometry": {
-          "Using units of measurement": [
-            {
-              "description": "Choose appropriate units of measurement for area and volume and convert from one unit to another",
-              "code": "ACMMG195",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG195"
-            },
-            {
-              "description": "Find perimeters and areas of parallelograms, trapeziums, rhombuses and kites",
-              "code": "ACMMG196",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG196"
-            }
-          ],
-          "Geometric reasoning": [
-            {
-              "description": "Define congruence of plane shapes using transformations",
-              "code": "ACMMG200",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMMG200"
-            }
-          ]
-        },
-        "Statistics and Probability": {
-          "Chance": [
-            {
-              "description": "Identify complementary events and use the sum of probabilities to solve problems",
-              "code": "ACMSP204",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP204"
-            }
-          ],
-          "Data representation and interpretation": [
-            {
-              "description": "Investigate techniques for collecting data, including census, sampling and observation",
-              "code": "ACMSP284",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP284"
-            },
-            {
-              "description": "Explore the practicalities and implications of obtaining data through sampling using a variety of investigative processes",
-              "code": "ACMSP206",
-              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACMSP206"
+              "description": "Energy transfer through different mediums can be explained using wave and particle models",
+              "code": "ACSSU182",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU182"
             }
           ]
         }
       },
       "achievement_standard": {
-        "summary": "By the end of Year 8, students solve everyday problems involving rates, ratios and percentages. They recognise index laws and apply them to whole numbers. They describe rational and irrational numbers. Students solve problems involving profit and loss. They make connections between expanding and factorising algebraic expressions. Students solve linear equations and graph linear relationships on the Cartesian plane. They convert between units of measurement for area and for volume, and perform calculations to determine perimeter and area of parallelograms, rhombuses and kites. They identify conditions for congruence of triangles and deduce the properties of quadrilaterals. Students model authentic situations with two-way tables and Venn diagrams. They choose appropriate language to describe events and experiments."
+        "summary": "By the end of Year 9, students explain chemical processes and natural radioactivity in terms of atoms and the subatomic particles they contain. They explain how the theory of plate tectonics explains global patterns of geological activity."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "Year 10 focuses on genetics, evolution, the periodic table, and the Big Bang theory. Students apply laws of physics to motion and forces.",
+        "key_ideas": "The universe is a vast system governed by physical laws. Evolution explains the diversity of life over time.",
+        "note": "Integration of global systems and human impacts."
+      },
+      "content_descriptions": {
+        "Science Understanding": {
+          "Earth and space sciences": [
+            {
+              "description": "The Big Bang theory can be used to explain the origin of the universe",
+              "code": "ACSSU188",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU188"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students analyze how the periodic table is used to predict the properties of elements and their chemical reactions. They explain the origin of the universe and how evolution has occurred through natural selection."
       }
     }
   },
   "History": {
+    "Year 7": {
+      "level_description": {
+        "overview": "A study of history from the time of the earliest human communities to the end of the ancient period, c.60,000 BC – c.650 AD.",
+        "key_ideas": "Ancient world overview including Egypt, Mesopotamia, Greece, Rome, and China.",
+        "note": "Focus on historical knowledge and skills."
+      },
+      "content_descriptions": {
+        "Historical Knowledge and Understanding": {
+          "Overview of the ancient world": [
+            {
+              "description": "The theory that people moved out of Africa between 120,000 and 60,000 years ago",
+              "code": "ACOKFH001",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACOKFH001"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students describe the effects of change on societies and individuals. They identify the motives and actions of people in the ancient world."
+      }
+    },
     "Year 8": {
       "level_description": {
         "overview": "The Year 8 curriculum provides a study of history from the end of the ancient period to the beginning of the modern period, c.650–1750 AD (CE). This was when major civilisations around the world came into contact with each other. Social, economic, religious and political beliefs were often challenged and significantly changed. It was the period when the modern world began to take shape.",
@@ -291,9 +597,72 @@
       "achievement_standard": {
         "summary": "By the end of Year 8, students recognise and explain patterns of change and continuity over time. They explain the causes and effects of events and developments. They identify the motives and actions of people at the time. Students explain the significance of individuals and groups and how they were influenced by the beliefs and values of their society. They describe different interpretations of the past."
       }
+    },
+    "Year 9": {
+      "level_description": {
+        "overview": "A study of the history of the making of the modern world from 1750 to 1918.",
+        "key_ideas": "Industrial Revolution, movement of peoples, and World War I.",
+        "note": "Focus on patterns of change and continuity."
+      },
+      "content_descriptions": {
+        "Historical Knowledge and Understanding": {
+          "The Industrial Revolution": [
+            {
+              "description": "The nature and significance of the Industrial Revolution and how it affected living conditions",
+              "code": "ACOKFH016",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACOKFH016"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 9, students refer to key events and actions to explain patterns of change. They analyze the causes and effects of industrialization and global conflict."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "A study of the history of the modern world and Australia from 1918 to the present.",
+        "key_ideas": "World War II, the Cold War, and the struggle for rights and freedoms.",
+        "note": "Emphasizes Australia's global context."
+      },
+      "content_descriptions": {
+        "Historical Knowledge and Understanding": {
+          "Global conflict": [
+            {
+              "description": "The causes and course of World War II, including the experience of Australians",
+              "code": "ACOKFH018",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACOKFH018"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students evaluate the significance of individuals and groups in shaping the modern world. They analyze different interpretations of the past."
+      }
     }
   },
   "Geography": {
+    "Year 7": {
+      "level_description": {
+        "overview": "Two units: 'Water in the world' and 'Place and liveability'.",
+        "key_ideas": "Water as a renewable resource and the factors that influence the liveability of places.",
+        "note": "Interrelated strands of knowledge and skills."
+      },
+      "content_descriptions": {
+        "Geographical Knowledge and Understanding": {
+          "Water in the world": [
+            {
+              "description": "The classification of environmental resources and the forms that water takes",
+              "code": "ACHGK037",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK037"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students describe geographical processes that influence the characteristics of places. They explain the interconnections between people and environments."
+      }
+    },
     "Year 8": {
       "level_description": {
         "overview": "There are two units of study in the Year 8 curriculum for Geography: 'Landforms and landscapes' and 'Changing nations'. 'Landforms and landscapes' focuses on investigating geomorphology through a study of landscapes and their landforms. 'Changing nations' investigates the changing human geography of countries, as revealed by shifts in population distribution.",
@@ -340,9 +709,72 @@
       "achievement_standard": {
         "summary": "By the end of Year 8, students explain geographical processes that influence the characteristics of places and explain how places are perceived and valued differently. They explain interconnections within environments and between people and places and explain how they change places and environments. They compare alternative strategies to a geographical challenge, taking into account environmental, economic and social factors."
       }
+    },
+    "Year 9": {
+      "level_description": {
+        "overview": "Two units: 'Biomes and food security' and 'Geographies of interconnections'.",
+        "key_ideas": "Distribution of biomes and the challenges of feeding a growing global population.",
+        "note": "Focus on sustainability and interconnectedness."
+      },
+      "content_descriptions": {
+        "Geographical Knowledge and Understanding": {
+          "Biomes and food security": [
+            {
+              "description": "The distribution and characteristics of biomes as regions with distinctive climates and vegetation",
+              "code": "ACHGK060",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK060"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 9, students explain how geographical processes change the characteristics of places. They analyze strategies to improve food security."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "Two units: 'Environmental change and management' and 'Geographies of human wellbeing'.",
+        "key_ideas": "Management of environmental change and the variations in human wellbeing between places.",
+        "note": "Focus on global issues and management strategies."
+      },
+      "content_descriptions": {
+        "Geographical Knowledge and Understanding": {
+          "Environmental change": [
+            {
+              "description": "The human-induced environmental changes and their impacts on ecosystem services",
+              "code": "ACHGK070",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHGK070"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students evaluate environmental management strategies and explain variations in human wellbeing across different regions."
+      }
     }
   },
   "Civics and Citizenship": {
+    "Year 7": {
+      "level_description": {
+        "overview": "Focus on the key features of Australia's system of government and the Constitution.",
+        "key_ideas": "Protections provided by the Constitution and the principle of justice.",
+        "note": "Knowledge and skills are taught in an integrated way."
+      },
+      "content_descriptions": {
+        "Civics and Citizenship Knowledge and Understanding": {
+          "Government and democracy": [
+            {
+              "description": "The key features of the Australian Government's system, including the Constitution",
+              "code": "ACHCK048",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK048"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students explain features of Australia's Constitution and how the legal system is based on the principle of justice."
+      }
+    },
     "Year 8": {
       "level_description": {
         "overview": "The Year 8 curriculum provides a study of the responsibilities and freedoms of citizens and how Australians can actively participate in their democracy. Students consider how laws are made and the types of laws used in Australia. Students also examine what it means to be Australian by identifying the reasons for and influences that shape national identity.",
@@ -396,9 +828,72 @@
       "achievement_standard": {
         "summary": "By the end of Year 8, students analyse features of Australian democracy, and explain features of Australia's democracy that enable active participation. They recognise different types of law in Australia and explain how laws are made. They identify the diverse belief systems in Australia and analyse issues about national identity and the factors that contribute to people's sense of belonging."
       }
+    },
+    "Year 9": {
+      "level_description": {
+        "overview": "Understanding Australia's political system and how it enables change through parties and interest groups.",
+        "key_ideas": "Influence of the media and the key principles of the justice system.",
+        "note": "Focus on active participation."
+      },
+      "content_descriptions": {
+        "Civics and Citizenship Knowledge and Understanding": {
+          "Laws and citizens": [
+            {
+              "description": "The key principles of Australia's justice system, including the right to a fair trial",
+              "code": "ACHCK077",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK077"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 9, students evaluate features of Australia's political system and analyze the influences on people's political choices."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "Comparing systems of government and analyzing Australia's global roles and responsibilities.",
+        "key_ideas": "The role of the High Court and international obligations.",
+        "note": "Advanced study of democratic values."
+      },
+      "content_descriptions": {
+        "Civics and Citizenship Knowledge and Understanding": {
+          "Government and democracy": [
+            {
+              "description": "The key features and values of Australia's system of government compared to at least one other system",
+              "code": "ACHCK090",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHCK090"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students compare systems of government and analyze the Australian Government's global roles."
+      }
     }
   },
   "Economics and Business": {
+    "Year 7": {
+      "level_description": {
+        "overview": "Exploring how resources are allocated and the interdependence of consumers and producers.",
+        "key_ideas": "The role of businesses and the characteristics of entrepreneurs.",
+        "note": "Knowledge and skills strands."
+      },
+      "content_descriptions": {
+        "Economics and Business Knowledge and Understanding": {
+          "Resource allocation": [
+            {
+              "description": "The way resources are allocated in an economy to meet needs and wants",
+              "code": "ACHEK017",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK017"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 7, students describe the interdependence of consumers and producers in the market and the reasons businesses exist."
+      }
+    },
     "Year 8": {
       "level_description": {
         "overview": "The Year 8 curriculum gives students the opportunity to further develop their understanding of economics and business concepts by exploring the ways markets – including traditional Aboriginal and Torres Strait Islander markets – work within Australia, the participants in the market system and the ways they may influence the market's operation.",
@@ -453,6 +948,48 @@
       },
       "achievement_standard": {
         "summary": "By the end of Year 8, students explain how markets operate and recognise why governments may influence the market's operation. They explain the rights and responsibilities of consumers and businesses in terms of financial and economic decision-making. They explain why different types of businesses exist and describe the different ways businesses can respond to opportunities in the market. Students describe influences on the way people work and factors that may affect work in the future."
+      }
+    },
+    "Year 9": {
+      "level_description": {
+        "overview": "Focus on the performance of the economy and the factors that influence living standards.",
+        "key_ideas": "Managing financial risks and rewards and the role of the government in the economy.",
+        "note": "Integration of financial literacy."
+      },
+      "content_descriptions": {
+        "Economics and Business Knowledge and Understanding": {
+          "Economic performance": [
+            {
+              "description": "Indicators of economic performance and how they examine the state of the economy",
+              "code": "ACHEK039",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK039"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 9, students explain how the performance of the economy is measured and analyze the role of participants in the global economy."
+      }
+    },
+    "Year 10": {
+      "level_description": {
+        "overview": "Exploring the global economy and the ways in which businesses manage their workforces.",
+        "key_ideas": "Impact of global trends and the future of work.",
+        "note": "Focus on management and global markets."
+      },
+      "content_descriptions": {
+        "Economics and Business Knowledge and Understanding": {
+          "Global economy": [
+            {
+              "description": "The impact of the global economy on Australia's economic performance",
+              "code": "ACHEK050",
+              "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACHEK050"
+            }
+          ]
+        }
+      },
+      "achievement_standard": {
+        "summary": "By the end of Year 10, students analyze how the global economy affects Australia and explain the factors that influence business decision-making."
       }
     }
   }

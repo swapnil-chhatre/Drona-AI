@@ -8,7 +8,7 @@
             "curriculum_alignment": "exemplary",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "phet.colorado.edu",
+            "domain": "resources.ttn.edu.au",
             "follow_up_questions": [
                 "How does changing the friction setting affect the total energy of the system?",
                 "Can you predict the kinetic energy at the bottom of the ramp based on the starting height?"
@@ -22,8 +22,8 @@
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
-            "reading_level": "Year 8",
-            "domain": "flipeducation.ai",
+            "reading_level": "Year 8-10",
+            "domain": "education.cosmosmagazine.com",
             "follow_up_questions": [
                 "What are the key differences between energy transfer and transformation?",
                 "Can you draw a flow diagram for a bicycle?"
@@ -152,11 +152,18 @@
     ],
     "curriculum_outcomes": [
         {
-            "code": "ACSSU155",
-            "description": "Energy appears in different forms, including movement (kinetic energy), heat and potential energy, and energy transformations and transfers cause change within systems",
-            "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU155",
+            "code": "ACSSU149",
+            "description": "Cells are the basic units of living things; they have specialised structures and functions",
+            "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU149",
             "strand": "Science Understanding",
-            "sub_strand": "Physical sciences"
+            "sub_strand": "Biological sciences"
+        },
+        {
+            "code": "ACSSU152",
+            "description": "Differences between elements, compounds and mixtures can be described at a particle level",
+            "scootle_url": "https://www.scootle.edu.au/ec/search?accContentId=ACSSU152",
+            "strand": "Science Understanding",
+            "sub_strand": "Chemical sciences"
         }
     ],
     "search_queries_used": [

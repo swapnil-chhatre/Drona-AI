@@ -1,6 +1,5 @@
 from typing import Literal
 from pydantic import BaseModel
-
 from models.resource import Resource, CurriculumOutcome
 
 
@@ -9,14 +8,14 @@ class DiscoverRequest(BaseModel):
     subject: str              # e.g. "History"
     state: str                # e.g. "NSW"
     topic: str                # e.g. "World War I causes"
-    first_nation: bool # e.g. "false"
+    first_nation: bool = False # e.g. "false"
 
 class GenerateRequest(BaseModel):
     grade: str
     subject: str
     state: str
     topic: str
-    first_nation: bool
+    first_nation: bool = False
     selected_resources: list[Resource]
     curriculum_outcomes: list[CurriculumOutcome] = []
     additional_context: str = ""
