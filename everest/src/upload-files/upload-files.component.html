@@ -21,7 +21,7 @@
               learning and retrieval. Documents will be used for further study plan generation.
             </p>
 
-            <input #fileInput type="file" accept=".pdf,.docx,.txt" multiple hidden (change)="onFileSelected($event)" />
+            <input #fileInput type="file" accept=".pdf,.txt" multiple hidden (change)="onFileSelected($event)" />
 
             <button type="button" class="dropzone" (click)="fileInput.click()" (dragover)="onDragOver($event)"
               (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
@@ -29,16 +29,8 @@
                 <span class="material-symbols-outlined" aria-hidden="true">cloud_upload</span>
               </span>
               <span class="dropzone__headline">Click to upload or drag and drop</span>
-              <span class="dropzone__subcopy">PDF, DOCX, TXT (Max 2MB per file)</span>
+              <span class="dropzone__subcopy">PDF or TXT (Max 0.5MB per file)</span>
             </button>
-
-            @if (showNotification()) {
-            <div class="upload-notification" [class.success]="notificationTone() === 'success'"
-              [class.error]="notificationTone() === 'error'">
-              <span>{{ notificationMessage() }}</span>
-              <button type="button" (click)="dismissNotification()">✕</button>
-            </div>
-            }
           </div>
         </article>
       </section>
@@ -74,7 +66,9 @@
               <h3>{{ document.title }}</h3>
               <div class="document-badges">
                 <span class="document-date">{{ document.date }}</span>
-                <span class="document-status" [class.document-status--processing]="document.tone === 'processing'">
+                <span class="document-status" 
+                  [class.document-status--processing]="document.tone === 'processing'"
+                  [class.document-status--warning]="document.statusLabel === 'Already exists'">
                   <span class="document-status__dot"></span>
                   {{ document.statusLabel }}
                 </span>
@@ -89,7 +83,7 @@
           <div class="document-meta">
             <h3>No uploaded documents yet</h3>
             <div class="document-badges">
-              <span class="document-date">Upload a PDF, DOCX, or TXT file to start indexing content.</span>
+              <span class="document-date">Upload a PDF or TXT file to start indexing content.</span>
             </div>
           </div>
         </article>

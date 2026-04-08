@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, computed, inject, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { UploadResponse, UploadService } from '../services/upload.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { UploadResponse, UploadService, UploadedFile } from '../services/upload.service';
 
 type UploadTone = 'indexed' | 'processing';
 type NotificationTone = 'success' | 'error' | 'info';
@@ -26,16 +27,13 @@ interface UploadFileItem {
   templateUrl: './upload-files.component.html',
   styleUrl: './upload-files.component.css',
 })
-export class UploadFilesComponent implements OnDestroy {
+export class UploadFilesComponent implements OnInit, OnDestroy {
   private readonly uploadService = inject(UploadService);
-  private readonly maxFileSize = 2 * 1024 * 1024;
-  private readonly allowedExtensions = ['pdf', 'docx', 'txt'];
-  private notificationTimeoutId: ReturnType<typeof setTimeout> | null = null;
+  private readonly snackBar = inject(MatSnackBar);
+  private readonly maxFileSize = 0.5 * 1024 * 1024;
+  private readonly allowedExtensions = ['pdf', 'txt'];
 
   protected readonly searchQuery = signal('');
-  protected readonly notificationMessage = signal('');
-  protected readonly notificationTone = signal<NotificationTone>('info');
-  protected readonly showNotification = signal(false);
   protected readonly documents = signal<UploadFileItem[]>([]);
 
   protected readonly filteredDocuments = computed(() => {
@@ -46,25 +44,30 @@ export class UploadFilesComponent implements OnDestroy {
     }
 
     return this.documents().filter((document) =>
-      document.title.toLowerCase().includes(query)
+      document.title.toLowerCase().includes(query),
     );
   });
 
   protected readonly indexedCount = computed(
-    () => this.documents().filter((document) => document.tone === 'indexed').length
+    () =>
+      this.documents().filter((document) => document.tone === 'indexed').length,
   );
 
   protected readonly processingCount = computed(
-    () => this.documents().filter((document) => document.tone === 'processing').length
+    () =>
+      this.documents().filter((document) => document.tone === 'processing')
+        .length,
   );
 
-  protected readonly hasDocuments = computed(() => this.filteredDocuments().length > 0);
+  protected readonly hasDocuments = computed(
+    () => this.filteredDocuments().length > 0,
+  );
+
+  ngOnInit(): void {
+    this.loadUploadedFiles();
+  }
 
   ngOnDestroy(): void {
-    if (this.notificationTimeoutId) {
-      clearTimeout(this.notificationTimeoutId);
-    }
-
     for (const document of this.documents()) {
       if (document.fileUrl) {
         URL.revokeObjectURL(document.fileUrl);
@@ -74,7 +77,10 @@ export class UploadFilesComponent implements OnDestroy {
 
   protected viewDocument(document: UploadFileItem): void {
     if (!document.fileUrl) {
-      this.showToast('Preview is only available for files uploaded in this session.', 'info');
+      this.showToast(
+        'Preview is only available for files uploaded in this session.',
+        'info',
+      );
       return;
     }
 
@@ -115,16 +121,6 @@ export class UploadFilesComponent implements OnDestroy {
     this.handleFiles(files);
   }
 
-  protected dismissNotification(): void {
-    if (this.notificationTimeoutId) {
-      clearTimeout(this.notificationTimeoutId);
-      this.notificationTimeoutId = null;
-    }
-
-    this.showNotification.set(false);
-    this.notificationMessage.set('');
-  }
-
   private handleFiles(files: File[]): void {
     for (const file of files) {
       this.handleSingleFile(file);
@@ -135,12 +131,18 @@ export class UploadFilesComponent implements OnDestroy {
     const extension = file.name.split('.').pop()?.toLowerCase();
 
     if (!extension || !this.allowedExtensions.includes(extension)) {
-      this.showToast('Only PDF, DOCX, and TXT files are supported right now.', 'error');
+      this.showToast(
+        'Only PDF and TXT files are supported right now.',
+        'error',
+      );
       return;
     }
 
     if (file.size > this.maxFileSize) {
-      this.showToast(`"${file.name}" is larger than 2MB. Try again with a smaller file.`, 'error');
+      this.showToast(
+        `"${file.name}" is larger than 0.5MB. Try again with a smaller file.`,
+        'error',
+      );
       return;
     }
 
@@ -157,13 +159,28 @@ export class UploadFilesComponent implements OnDestroy {
       documentId: null,
     };
 
-    this.documents.set([newDocument, ...this.documents()]);
-    this.showToast(`Uploading "${file.name}"...`, 'info');
+    this.documents.set(this.sortAlpha([newDocument, ...this.documents()]));
 
     this.uploadService.uploadFile(file).subscribe({
       next: (response: UploadResponse) => {
-        this.markDocumentAsUploaded(localId, response.document_id, response.filename);
-        this.showToast(`"${response.filename}" uploaded successfully.`, 'success');
+        this.markDocumentAsUploaded(
+          localId,
+          response.document_id,
+          response.filename,
+          response.is_duplicate,
+        );
+
+        if (response.is_duplicate) {
+          this.showToast(
+            `"${response.filename}" already exists in your library.`,
+            'info',
+          );
+        } else {
+          this.showToast(
+            `"${response.filename}" uploaded successfully.`,
+            'success',
+          );
+        }
       },
       error: (error) => {
         this.markDocumentAsFailed(localId);
@@ -177,23 +194,51 @@ export class UploadFilesComponent implements OnDestroy {
     });
   }
 
+  private loadUploadedFiles(): void {
+    this.uploadService.getUploadedFiles().subscribe({
+      next: (files: UploadedFile[]) => {
+        const mappedDocs: UploadFileItem[] = files.map((file) => ({
+          id: file.id,
+          title: file.filename,
+          typeIcon: this.getTypeIcon(file.filename),
+          typeTone: this.getTypeTone(file.filename),
+          date: file.created_at
+            ? this.formatDate(new Date(file.created_at))
+            : 'Unknown',
+          statusLabel: 'Indexed',
+          tone: 'indexed',
+          fileUrl: null,
+          documentId: file.id,
+        }));
+        this.documents.set(this.sortAlpha(mappedDocs));
+      },
+      error: (err) => {
+        console.error('Error loading uploaded files:', err);
+        this.showToast('Failed to load existing documents.', 'error');
+      },
+    });
+  }
+
   private markDocumentAsUploaded(
     localId: string,
     documentId: string,
-    filename: string
+    filename: string,
+    isDuplicate: boolean = false,
   ): void {
     this.documents.set(
-      this.documents().map((document) =>
-        document.id === localId
-          ? {
-            ...document,
-            title: filename,
-            documentId,
-            statusLabel: 'Uploaded',
-            tone: 'indexed',
-          }
-          : document
-      )
+      this.sortAlpha(
+        this.documents().map((document) =>
+          document.id === localId
+            ? {
+                ...document,
+                title: filename,
+                documentId,
+                statusLabel: isDuplicate ? 'Already exists' : 'Uploaded',
+                tone: 'indexed',
+              }
+            : document,
+        ),
+      ),
     );
   }
 
@@ -212,33 +257,29 @@ export class UploadFilesComponent implements OnDestroy {
       this.documents().map((document) =>
         document.id === localId
           ? {
-            ...document,
-            statusLabel: 'Upload failed',
-            tone: 'processing',
-          }
-          : document
-      )
+              ...document,
+              statusLabel: 'Upload failed',
+              tone: 'processing',
+            }
+          : document,
+      ),
     );
   }
 
   private showToast(message: string, tone: NotificationTone): void {
-    if (this.notificationTimeoutId) {
-      clearTimeout(this.notificationTimeoutId);
-    }
+    this.snackBar.open(message, 'Dismiss', {
+      panelClass: [`snack-${tone}`],
+    });
+  }
 
-    this.notificationMessage.set(message);
-    this.notificationTone.set(tone);
-    this.showNotification.set(true);
-
-    this.notificationTimeoutId = setTimeout(() => {
-      this.showNotification.set(false);
-      this.notificationMessage.set('');
-      this.notificationTimeoutId = null;
-    }, 3000);
+  private sortAlpha(docs: UploadFileItem[]): UploadFileItem[] {
+    return [...docs].sort((a, b) => a.title.localeCompare(b.title));
   }
 
   private getTypeIcon(fileName: string): string {
-    return fileName.toLowerCase().endsWith('.pdf') ? 'picture_as_pdf' : 'description';
+    return fileName.toLowerCase().endsWith('.pdf')
+      ? 'picture_as_pdf'
+      : 'description';
   }
 
   private getTypeTone(fileName: string): DocumentTone {

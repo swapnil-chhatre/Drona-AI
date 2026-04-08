@@ -7,12 +7,21 @@ interface UploadApiResponse {
   document_id: string;
   filename: string | null;
   status: 'success';
+  is_duplicate?: boolean;
 }
 
 export interface UploadResponse {
   document_id: string;
   filename: string;
   status: 'success';
+  is_duplicate: boolean;
+}
+
+export interface UploadedFile {
+  id: string;
+  filename: string;
+  file_size: number;
+  created_at: string | null;
 }
 
 @Injectable({
@@ -31,7 +40,12 @@ export class UploadService {
         document_id: response.document_id,
         filename: response.filename ?? file.name,
         status: response.status,
+        is_duplicate: response.is_duplicate ?? false,
       }))
     );
+  }
+
+  getUploadedFiles(): Observable<UploadedFile[]> {
+    return this.http.get<UploadedFile[]>(this.apiUrl);
   }
 }
