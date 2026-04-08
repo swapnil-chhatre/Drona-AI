@@ -9,14 +9,20 @@ upload_service = UploadService()
 async def upload_file(file: Annotated[UploadFile, File()]):
     """Handles file uploads, extracts text, and ingests into the RAG system."""
     try:
-        document_id = await upload_service.process_upload(file)
+        result = await upload_service.process_upload(file)
         return {
-            "document_id": document_id,
+            "document_id": result["document_id"],
             "filename": file.filename,
-            "status": "success"
+            "status": "success",
+            "is_duplicate": result.get("is_duplicate", False),
         }
     except HTTPException as he:
         raise he
     except Exception as e:
         print(f"❌ Upload API Error: {e}")
         raise HTTPException(status_code=500, detail="Internal server error during upload")
+
+@router.get("/upload")
+async def list_uploaded_files():
+    """Returns a list of all previously uploaded files."""
+    return upload_service.list_files()

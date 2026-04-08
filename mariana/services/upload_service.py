@@ -7,15 +7,15 @@ from fastapi import UploadFile, HTTPException
 from services.rag_service import RagService
 
 class UploadService:
-    # 0.5MB Limit
-    MAX_FILE_SIZE = 0.5 * 1024 * 1024 
+    # 2MB Limit
+    MAX_FILE_SIZE = 2 * 1024 * 1024 
 
     def __init__(self):
         """Initializes UploadService and its dependencies."""
         self.rag = RagService()
         self.db_url = os.getenv("DATABASE_URL")
 
-    async def process_upload(self, file: UploadFile) -> str:
+    async def process_upload(self, file: UploadFile) -> dict:
         """Processes an uploaded file: checks for duplicates, extracts text, and ingests into RAG."""
         
         # 1. Read file content
@@ -33,7 +33,10 @@ class UploadService:
         existing_id = self._get_existing_file_id(file_hash)
         if existing_id:
             print(f"♻️  Duplicate found. Returning existing ID.")
-            return existing_id
+            return {
+                "document_id": existing_id,
+                "is_duplicate": True
+            }
 
         # 5. Extract text based on file type
         text = self._extract_text(file, content)
@@ -55,7 +58,30 @@ class UploadService:
         }
         self.rag.ingest(text, metadata)
 
-        return new_id
+        return {
+            "document_id": new_id,
+            "is_duplicate": False
+        }
+
+    def list_files(self) -> list[dict]:
+        """Retrieves a list of all uploaded files from the database."""
+        try:
+            with psycopg2.connect(self.db_url) as conn:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT id, filename, file_size, created_at FROM uploaded_files ORDER BY created_at DESC")
+                    rows = cur.fetchall()
+                    return [
+                        {
+                            "id": str(row[0]),
+                            "filename": row[1],
+                            "file_size": row[2],
+                            "created_at": row[3].isoformat() if row[3] else None
+                        }
+                        for row in rows
+                    ]
+        except Exception as e:
+            print(f"❌ DB List Error: {e}")
+            return []
 
     def _get_existing_file_id(self, file_hash: str) -> str | None:
         """Checks if a file with the same hash already exists in the database."""

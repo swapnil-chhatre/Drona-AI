@@ -43,6 +43,32 @@ select {
   font: inherit;
 }
 
+/* ── Material Snackbar tone overrides ─────────────────────────────── */
+.snack-success .mdc-snackbar__surface {
+  background: #1b5e20 !important;
+  color: #fff !important;
+}
+
+.snack-error .mdc-snackbar__surface {
+  background: #b71c1c !important;
+  color: #fff !important;
+}
+
+.snack-info .mdc-snackbar__surface {
+  background: #01579b !important;
+  color: #fff !important;
+}
+
+.snack-success .mat-mdc-snack-bar-label,
+.snack-error .mat-mdc-snack-bar-label,
+.snack-info .mat-mdc-snack-bar-label,
+.snack-success .mat-mdc-button,
+.snack-error .mat-mdc-button,
+.snack-info .mat-mdc-button {
+  color: #fff !important;
+}
+/* ──────────────────────────────────────────────────────────────────── */
+
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-style: normal;

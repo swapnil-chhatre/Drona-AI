@@ -1,0 +1,109 @@
+<div class="upload-shell">
+  <main class="upload-main">
+    <header class="upload-topbar">
+      <div class="upload-topbar__title">
+        <h1>Library</h1>
+      </div>
+      <label class="upload-search" aria-label="Search documents">
+        <span class="material-symbols-outlined" aria-hidden="true">search</span>
+        <input type="text" [ngModel]="searchQuery()" (ngModelChange)="searchQuery.set($event)"
+          placeholder="Search documents..." />
+      </label>
+    </header>
+
+    <div class="upload-content">
+      <section class="upload-hero">
+        <article class="hero-card">
+          <div class="hero-card__body">
+            <h2>Ingest Knowledge</h2>
+            <p>
+              Add new documents to your intellectual vault. Drona-AI will index them for context-aware
+              learning and retrieval. Documents will be used for further study plan generation.
+            </p>
+
+            <input #fileInput type="file" accept=".pdf,.txt" multiple hidden (change)="onFileSelected($event)" />
+
+            <button type="button" class="dropzone" (click)="fileInput.click()" (dragover)="onDragOver($event)"
+              (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
+              <span class="dropzone__icon">
+                <span class="material-symbols-outlined" aria-hidden="true">cloud_upload</span>
+              </span>
+              <span class="dropzone__headline">Click to upload or drag and drop</span>
+              <span class="dropzone__subcopy">PDF or TXT (Max 0.5MB per file)</span>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="library-section">
+        <div class="library-toolbar">
+          <div class="library-toolbar__left">
+            <h2>Document Library</h2>
+          </div>
+        </div>
+
+        @if (hasDocuments()) {
+        <div class="documents-grid documents-grid--list">
+          @for (document of filteredDocuments(); track document.id) {
+          <article class="document-card" [class.document-card--processing]="document.tone === 'processing'">
+            <div class="document-card__header">
+              <div class="document-icon" [class.document-icon--pdf]="document.typeTone === 'pdf'"
+                [class.document-icon--doc]="document.typeTone === 'doc'">
+                <span class="material-symbols-outlined" aria-hidden="true">{{ document.typeIcon }}</span>
+              </div>
+
+              <div class="document-actions">
+                <button type="button" aria-label="Preview document"
+                  [class.document-action--disabled]="!document.fileUrl"
+                  [title]="document.fileUrl ? 'View document' : 'No preview available'"
+                  (click)="viewDocument(document)">
+                  <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="document-meta">
+              <h3>{{ document.title }}</h3>
+              <div class="document-badges">
+                <span class="document-date">{{ document.date }}</span>
+                <span class="document-status" 
+                  [class.document-status--processing]="document.tone === 'processing'"
+                  [class.document-status--warning]="document.statusLabel === 'Already exists'">
+                  <span class="document-status__dot"></span>
+                  {{ document.statusLabel }}
+                </span>
+              </div>
+            </div>
+
+          </article>
+          }
+        </div>
+        } @else {
+        <article class="document-card">
+          <div class="document-meta">
+            <h3>No uploaded documents yet</h3>
+            <div class="document-badges">
+              <span class="document-date">Upload a PDF or TXT file to start indexing content.</span>
+            </div>
+          </div>
+        </article>
+        }
+      </section>
+
+      <footer class="context-bar">
+        <div class="context-bar__summary">
+          <div class="context-bar__icon">
+            <span class="material-symbols-outlined" aria-hidden="true">insights</span>
+          </div>
+          <div>
+            <h4>Retrieval Context Health</h4>
+            <p>
+              Your AI model currently has access to the documents uploaded in this session, with
+              {{ indexedCount() }} indexed documents and {{ processingCount() }} in-progress upload.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+</div>
