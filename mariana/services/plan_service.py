@@ -1,12 +1,11 @@
 import asyncio
-import json
 from pathlib import Path
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 from langchain.agents.structured_output import ToolStrategy
 from models.study_plan import StudyPlan
-from models.requests import GenerateRequest
+from models.requests import GenerateRequest, FollowUpRequest
 from langchain_community.document_loaders import WebBaseLoader
 
 from config import TEST_MODE
@@ -24,9 +23,7 @@ _CHUNK_SIZE = 40  # characters per streamed chunk in test mode
 
 
 FOLLOW_UP_CHIPS = [
-    "Generate a quiz",
     "Simplify for struggling students",
-    "Add First Nations perspectives",
     "Create a differentiated version",
     "Generate discussion questions",
     "Make a rubric",
@@ -150,8 +147,27 @@ class PlanService:
                 collected.append(chunk.text)
                 yield chunk.text
 
-        # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
+        # Write the full response to the fixture file for use in TEST_MODE (best-effort)
+        try:
+            _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
+        except OSError as e:
+            print(f"⚠️ Could not save study plan fixture: {e}")
+
+    async def stream_followup(self, request: FollowUpRequest):
+        """Streams a revised document based on the teacher's selected follow-up chip."""
+        prompt = PromptService.followup_prompt(
+            grade=request.grade,
+            subject=request.subject,
+            state=request.state,
+            topic=request.topic,
+            chip=request.chip,
+            current_content=request.current_content,
+            output_type=request.output_type,
+        )
+
+        async for chunk in self.llm.astream(prompt):
+            if chunk.text:
+                yield chunk.text
 
     async def stream_quiz(self, request: GenerateRequest):
         """Yields quiz markdown tokens as they are generated."""

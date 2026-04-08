@@ -1,24 +1,24 @@
 {
     "resources": [
         {
-            "title": "PhET: Energy Forms and Changes Simulation",
-            "url": "https://phet.colorado.edu/en/simulation/energy-forms-and-changes",
-            "summary": "An interactive simulation that allows students to build systems with energy sources, changers, and users to visualize energy flow and transformations.",
+            "title": "PhET Energy Skate Park Simulation",
+            "url": "https://phet.colorado.edu/en/simulation/energy-skate-park",
+            "summary": "An interactive simulation that allows students to build tracks, ramps, and jumps to explore the conservation of energy and the transformation between kinetic and potential energy.",
             "source_type": "web",
             "curriculum_alignment": "exemplary",
             "bias_risk": "low",
             "reading_level": "Year 8",
             "domain": "phet.colorado.edu",
             "follow_up_questions": [
-                "How does changing the energy source affect the output in the simulation?",
-                "Can you identify where energy is 'lost' to the surroundings as heat?"
+                "How does changing the friction setting affect the total energy of the system?",
+                "Can you predict the kinetic energy at the bottom of the ramp based on the starting height?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
             "title": "Energy Transfer and Transformation Lesson Plan",
             "url": "https://flipeducation.ai/curriculum/au/science/year-8/energy-transfer-and-transformation",
-            "summary": "A comprehensive lesson plan that defines energy transfer and transformation, provides real-world examples, and guides students in creating energy flow diagrams.",
+            "summary": "A comprehensive lesson plan that guides students through identifying energy forms and using flow diagrams to model energy transfers and transformations in everyday devices.",
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
@@ -26,129 +26,128 @@
             "domain": "flipeducation.ai",
             "follow_up_questions": [
                 "What are the key differences between energy transfer and transformation?",
-                "How can you represent energy flow using a diagram?"
+                "Can you draw a flow diagram for a bicycle?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Illustration of Practice: Energy Transfer (Wind Turbines)",
-            "url": "https://v8.australiancurriculum.edu.au/resources/student-diversity/illustrations-of-practice/science-energy-transfer/",
-            "summary": "An illustration of practice showing how a school engaged students in a practical investigation about wind turbines to demonstrate energy transfer and transformation.",
+            "title": "Science Learning Hub: Energy Conservation and Transfer",
+            "url": "https://www.sciencelearn.org.nz/concepts/energy",
+            "summary": "A collection of articles and diagrams explaining energy conservation, transfer, and transformation with clear, real-world examples like pendulums and food energy.",
             "source_type": "web",
             "curriculum_alignment": "high",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "v8.australiancurriculum.edu.au",
+            "domain": "sciencelearn.org.nz",
             "follow_up_questions": [
-                "How did the students use peer support to engage with the task?",
-                "What alternative tasks could demonstrate understanding of energy?"
+                "How does a pendulum demonstrate energy transfer?",
+                "Why is heat often considered 'lost' energy in these systems?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Grade 8 Physics: Energy Transfer and Transformation (YouTube)",
-            "url": "https://www.youtube.com/watch?v=YYA_9I7m3kQ",
-            "summary": "A clear, age-appropriate video explaining the fundamental concepts of energy transfer and transformation with visual examples.",
+            "title": "NSW Department of Education: Science 7-10 Energy Resources",
+            "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/science/science-curriculum-resources-k-12/science-s5-energy",
+            "summary": "Official NSW Department of Education resources providing syllabus-aligned guidance, assessment tasks, and unit planning for Stage 4/5 energy topics.",
             "source_type": "web",
             "curriculum_alignment": "high",
-            "bias_risk": "low",
-            "reading_level": "Year 8",
-            "domain": "youtube.com",
-            "follow_up_questions": [
-                "What is the difference between kinetic and potential energy?",
-                "Can you list three examples of energy transformation from the video?"
-            ],
-            "document_id": null
-        },
-        {
-            "title": "Forms of Energy - Year 8 CLE",
-            "url": "https://asta.edu.au/resource/forms-of-energy-year-8-cle/",
-            "summary": "A Connected Learning Experience (CLE) that investigates energy transformation through data analysis and modeling.",
-            "source_type": "web",
-            "curriculum_alignment": "high",
-            "bias_risk": "low",
-            "reading_level": "Year 8",
-            "domain": "asta.edu.au",
-            "follow_up_questions": [
-                "How can we use data to justify our conclusions about energy?",
-                "What patterns did you observe in your energy data?"
-            ],
-            "document_id": null
-        },
-        {
-            "title": "Year 8 Physics Online Course (AU Curriculum)",
-            "url": "https://www.goodscience.com.au/courses/year-8-physics-course/",
-            "summary": "An online course covering the Australian Curriculum (v8.4) with specific quizzes on energy transfer, transformation, and efficiency.",
-            "source_type": "web",
-            "curriculum_alignment": "high",
-            "bias_risk": "low",
-            "reading_level": "Year 8",
-            "domain": "goodscience.com.au",
-            "follow_up_questions": [
-                "Which energy transformation quiz was the most challenging?",
-                "Can you explain the concept of energy efficiency?"
-            ],
-            "document_id": null
-        },
-        {
-            "title": "Year 8 Science Sample Assessment: Energy Test",
-            "url": "https://www.qcaa.qld.edu.au/downloads/p_10/ac_sa_sci_yr8_energy_test.pdf",
-            "summary": "A sample assessment test for Year 8 Science, useful for gauging student understanding of energy concepts.",
-            "source_type": "web",
-            "curriculum_alignment": "high",
-            "bias_risk": "low",
-            "reading_level": "Year 8",
-            "domain": "qcaa.qld.edu.au",
-            "follow_up_questions": [
-                "How well did you perform on the test?",
-                "Which questions required you to apply your knowledge of energy transformations?"
-            ],
-            "document_id": null
-        },
-        {
-            "title": "Energy - NSW Department of Education",
-            "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/sustainability/teaching-and-learning/energy",
-            "summary": "NSW Department of Education resources on energy management and sustainability, useful for connecting classroom learning to real-world school infrastructure.",
-            "source_type": "web",
-            "curriculum_alignment": "medium",
             "bias_risk": "low",
             "reading_level": "Year 8",
             "domain": "education.nsw.gov.au",
             "follow_up_questions": [
-                "How can school energy audits help us understand energy use?",
-                "What are the benefits of monitoring school solar generation?"
+                "How can you improve the fairness of your energy investigation?",
+                "What variables are you controlling in your energy experiment?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Year 8 Science: Energy around you (YouTube)",
-            "url": "https://www.youtube.com/watch?v=bnsEkrG1hbk",
-            "summary": "A short, introductory video suitable for Year 8 students that provides a basic overview of energy forms.",
+            "title": "TED-Ed: A Guide to the Energy of the Earth",
+            "url": "https://ed.ted.com/lessons/a-guide-to-the-energy-of-the-earth-joshua-m-sneideman",
+            "summary": "An engaging animated video and lesson that explores how energy cycles through the planet, from the sun to food chains and electricity.",
+            "source_type": "web",
+            "curriculum_alignment": "high",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "ed.ted.com",
+            "follow_up_questions": [
+                "How does energy cycle through the Earth's systems?",
+                "What are the implications of our energy choices on the environment?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "Grade 8 Physics: Thermal Energy Transfer (YouTube)",
+            "url": "https://www.youtube.com/watch?v=xn8MhoyokAc",
+            "summary": "A clear video explanation of thermal energy transfer (conduction, convection, and radiation) suitable for Year 8 physics.",
             "source_type": "web",
             "curriculum_alignment": "medium",
             "bias_risk": "low",
             "reading_level": "Year 8",
             "domain": "youtube.com",
             "follow_up_questions": [
-                "What are the main forms of energy mentioned?",
-                "How does the video relate energy to our daily lives?"
+                "What are the three main ways thermal energy is transferred?",
+                "Can you provide an example of each type of heat transfer?"
             ],
-            "document_id": null
+            "document_id": "null"
         },
         {
-            "title": "Energy Transfer and Transformation (YouTube)",
-            "url": "https://www.youtube.com/watch?v=gEzvfE8xxNI",
-            "summary": "A short video specifically addressing the distinction between energy transfer and energy transformation.",
+            "title": "ASTA: Forms of Energy Year 8 CLE",
+            "url": "https://asta.edu.au/resource/forms-of-energy-year-8-cle/",
+            "summary": "A Connected Learning Experience (CLE) that guides students through investigating energy transformations and using data representations to justify conclusions.",
             "source_type": "web",
             "curriculum_alignment": "medium",
             "bias_risk": "low",
             "reading_level": "Year 8",
-            "domain": "youtube.com",
+            "domain": "asta.edu.au",
             "follow_up_questions": [
-                "What is the difference between energy transfer and transformation?",
-                "Can you provide an example of each?"
+                "How can you use digital technologies to represent your energy data?",
+                "What patterns did you observe in your energy investigation?"
             ],
-            "document_id": null
+            "document_id": "null"
+        },
+        {
+            "title": "Good Science: Introduction to Energy Course",
+            "url": "https://www.goodscience.com.au/courses/year-8-physics-course/lessons/introduction-to-energy-lesson/",
+            "summary": "A structured course covering various energy topics with topic quizzes to test understanding of kinetic, potential, and thermal energy.",
+            "source_type": "web",
+            "curriculum_alignment": "medium",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "goodscience.com.au",
+            "follow_up_questions": [
+                "How do you calculate the efficiency of an energy transformation?",
+                "What is the role of heat as a by-product in energy systems?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "Energy Transformation Diagrams Explained",
+            "url": "https://digestiblenotes.com/physics/heat_and_energy/energy_transformation_diagrams.php",
+            "summary": "An explanation of energy transformation diagrams (Sankey diagrams) and how they represent the flow and efficiency of energy.",
+            "source_type": "web",
+            "curriculum_alignment": "medium",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "digestiblenotes.com",
+            "follow_up_questions": [
+                "Why is the thickness of the arrow important in a Sankey diagram?",
+                "What does a Sankey diagram tell us about energy efficiency?"
+            ],
+            "document_id": "null"
+        },
+        {
+            "title": "3483410.pdf",
+            "url": "null",
+            "summary": "A document discussing energy efficiency in the context of product lifecycles and supply chains, useful for discussing real-world energy applications.",
+            "source_type": "teacher_upload",
+            "curriculum_alignment": "low",
+            "bias_risk": "low",
+            "reading_level": "Year 8",
+            "domain": "teacher_upload",
+            "follow_up_questions": [
+                "How does energy efficiency relate to the product lifecycle mentioned in this document?"
+            ],
+            "document_id": "baf5d593-b196-452f-b38a-f7f12fd73fd0"
         }
     ],
     "curriculum_outcomes": [
@@ -163,15 +162,15 @@
     "search_queries_used": [
         "Year 8 Science energy transfer and transformation ACSSU155 Australia",
         "ABC Education energy transfer and transformation Year 8 Science",
-        "NSW Department of Education Year 8 Science energy lesson plans",
-        "energy transfer and transformation interactive simulations for students",
-        "PhET simulations energy forms and changes",
-        "Science by Doing energy Year 8",
-        "energy transfer vs transformation examples for Year 8 students",
-        "TED-Ed energy transfer and transformation videos",
-        "Year 8 Science energy kinetic potential heat Australian curriculum",
-        "Australian Academy of Science Year 8 Science energy resources"
+        "NSW Department of Education Year 8 Science energy resources",
+        "energy transfer and transformation interactive simulation Year 8 science",
+        "kinetic and potential energy examples for Year 8 science",
+        "energy transformation diagrams for students",
+        "PhET energy skate park simulation for schools",
+        "sciencelearn.org.nz energy transfer and transformation",
+        "TED-Ed energy transfer videos for students",
+        "Year 8 Science energy unit plan Australia"
     ],
     "total_found": 10,
-    "ai_recommendation": "The PhET 'Energy Forms and Changes' simulation is the most valuable resource for this topic, as it provides an interactive, visual environment for students to build systems and observe energy transformations in real-time, directly addressing ACSSU155. I recommend using this alongside the 'Energy Transfer and Transformation' lesson plan from Flip Education, which provides structured guidance on using flow diagrams to help students conceptualize these abstract energy concepts."
+    "ai_recommendation": "The PhET 'Energy Skate Park' simulation is the most valuable resource as it provides an interactive, visual, and inquiry-based environment for students to explore the conservation of energy and the transformation between kinetic and potential energy. I recommend using this alongside the 'Energy Transfer and Transformation' lesson plan from Flip Education, which provides a structured framework for students to apply their observations from the simulation to real-world examples and flow diagrams."
 }

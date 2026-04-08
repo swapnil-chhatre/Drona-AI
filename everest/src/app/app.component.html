@@ -1,2 +1,8 @@
-<app-sidebar (actionTriggered)="goToLanding()" />
-<router-outlet />
+<div class="app-container sidebar-active">
+  <app-sidebar (actionTriggered)="goToLanding()" />
+  
+  <div class="main-content">
+    <router-outlet />
+    <app-footer />
+  </div>
+</div>
