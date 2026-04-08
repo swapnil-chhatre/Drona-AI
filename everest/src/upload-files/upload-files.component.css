@@ -557,23 +557,6 @@
   color: #fff;
 }
 
-.assistant-fab {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.2rem;
-  height: 3.2rem;
-  border: 0;
-  border-radius: 999px;
-  background: #12315f;
-  color: #fff;
-  box-shadow: 0 16px 36px rgba(18, 49, 95, 0.24);
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .upload-main {
     margin-left: 16rem;
