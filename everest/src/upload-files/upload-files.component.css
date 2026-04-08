@@ -70,6 +70,60 @@
   display: block;
 }
 
+.upload-notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.8rem;
+  background: #f1f5f9;
+  border: 1px solid rgba(113, 119, 131, 0.15);
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 600;
+  animation: slideUp 240ms ease-out;
+}
+
+.upload-notification.success {
+  background: #ecfdf5;
+  border-color: #10b98126;
+  color: #065f46;
+}
+
+.upload-notification.error {
+  background: #fef2f2;
+  border-color: #ef444426;
+  color: #991b1b;
+}
+
+.upload-notification.info {
+  background: #eff6ff;
+  border-color: #3b82f626;
+  color: #1e40af;
+}
+
+.upload-notification button {
+  background: transparent;
+  border: 0;
+  padding: 0.25rem;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: opacity 150ms ease;
+}
+
+.upload-notification button:hover {
+  opacity: 1;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
 .hero-card,
 .insight-card,
 .document-card,
@@ -355,6 +409,11 @@
 .document-status--processing {
   background: rgba(148, 71, 0, 0.1);
   color: var(--color-tertiary);
+}
+
+.document-status--warning {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .document-status__dot {
