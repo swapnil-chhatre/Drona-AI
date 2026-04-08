@@ -1,5 +1,6 @@
 <div class="landing-shell">
   <main class="landing-main">
+
     <section class="hero">
       <div class="hero__copy">
         <h1>
@@ -13,6 +14,21 @@
       <div class="selector-grid">
         <article class="panel panel--compact">
           <div class="panel__eyebrow">
+            <span class="material-symbols-outlined">map</span>
+            <span>Curriculum Standard</span>
+          </div>
+
+          <label class="field-shell">
+            <select [ngModel]="selectedStandard()" (ngModelChange)="selectedStandard.set($event)">
+              @for (standard of curriculumStandards; track standard) {
+              <option [value]="standard">{{ standard }}</option>
+              }
+            </select>
+          </label>
+        </article>
+
+        <article class="panel panel--centered">
+          <div class="panel__eyebrow">
             <span class="material-symbols-outlined">school</span>
             <span>Grade Level</span>
           </div>
@@ -25,6 +41,18 @@
               {{ grade }}
             </button>
             }
+          </div>
+        </article>
+
+        <article class="panel panel--compact">
+          <div class="panel__eyebrow">
+            <span class="material-symbols-outlined">public</span>
+            <span>First Nation</span>
+          </div>
+          <div>
+            <mat-slide-toggle [checked]="firstNation()" (change)="firstNation.set($event.checked)">
+              <b>Yes</b>
+            </mat-slide-toggle>
           </div>
         </article>
 
@@ -45,23 +73,23 @@
           </div>
         </article>
 
-        <article class="panel">
+        <article class="panel panel--wide">
           <div class="panel__eyebrow">
-            <span class="material-symbols-outlined">map</span>
-            <span>Curriculum Standard</span>
+            <span class="material-symbols-outlined">lightbulb_2</span>
+            <span>Suggestions</span>
           </div>
 
-          <label class="field-shell">
-            <select [ngModel]="selectedStandard()" (ngModelChange)="selectedStandard.set($event)">
-              @for (standard of curriculumStandards; track standard) {
-              <option [value]="standard">{{ standard }}</option>
-              }
-            </select>
-          </label>
+          <div class="chip-row">
+            @for (prompt of suggestedPrompts(); track prompt) {
+            <button class="choice-chip" type="button" (click)="setFocusTopic(prompt)">
+              {{ prompt }}
+            </button>
+            }
+          </div>
         </article>
       </div>
 
-      <div class="suggestions">
+      <!-- <div class="suggestions">
         <span class="suggestions__label">Suggested:</span>
 
         @for (prompt of suggestedPrompts(); track prompt) {
@@ -69,13 +97,13 @@
           {{ prompt }}
         </button>
         }
-      </div>
+      </div> -->
     </section>
 
     <footer class="composer">
       <div class="composer__glow"></div>
       <div class="composer__inner">
-        <input type="text" [ngModel]="focusTopic()" (ngModelChange)="focusTopic.set($event)" name="focusTopic" placeholder="Help me build a study plan for..." (keyup.enter)="sendPrompt()" />
+        <input type="text" [ngModel]="focusTopic()" (ngModelChange)="focusTopic.set($event)" name="focusTopic" placeholder="Help me find resources for..." (keyup.enter)="sendPrompt()" />
         <button type="button" aria-label="Send prompt" (click)="sendPrompt()">
           <span class="material-symbols-outlined">send</span>
         </button>
@@ -83,8 +111,8 @@
       <p>Drona-AI may generate information that requires professional verification.</p>
     </footer>
 
-    <div class="background-mark" aria-hidden="true">
+    <!-- <div class="background-mark" aria-hidden="true">
       <span class="material-symbols-outlined">architecture</span>
-    </div>
+    </div> -->
   </main>
 </div>

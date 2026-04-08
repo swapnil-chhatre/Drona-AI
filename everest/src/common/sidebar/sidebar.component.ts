@@ -18,9 +18,7 @@ export interface SidebarNavItem {
 export class SidebarComponent {
   protected readonly sidebarItems: SidebarNavItem[] = [
     { label: 'Dashboard', icon: 'dashboard', route: '/' },
-    { label: 'My Study Plans', icon: 'menu_book', route: '/discover' },
     { label: 'Uploaded Docs', icon: 'upload_file' },
-    { label: 'Settings', icon: 'settings' },
   ];
 
   readonly items = input<SidebarNavItem[]>(this.sidebarItems);
