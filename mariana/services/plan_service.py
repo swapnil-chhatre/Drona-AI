@@ -147,11 +147,12 @@ class PlanService:
                 collected.append(chunk.text)
                 yield chunk.text
 
-        # Write the full response to the fixture file for use in TEST_MODE (best-effort)
-        try:
-            _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
-        except OSError as e:
-            print(f"⚠️ Could not save study plan fixture: {e}")
+        # Write the full response to the fixture file for use in future TEST_MODE runs
+        if TEST_MODE:
+            try:
+                _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
+            except OSError as e:
+                print(f"⚠️ Could not save study plan fixture: {e}")
 
     async def stream_followup(self, request: FollowUpRequest):
         """Streams a revised document based on the teacher's selected follow-up chip."""
@@ -209,7 +210,8 @@ class PlanService:
                 yield chunk.text
 
         # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_QUIZ_PLAN.write_text("".join(collected), encoding="utf-8")
+        if TEST_MODE:
+            _FIXTURE_PATH_QUIZ_PLAN.write_text("".join(collected), encoding="utf-8")
 
     async def stream_activities(self, request: GenerateRequest):
         """Yields activities markdown tokens as they are generated."""
@@ -251,7 +253,8 @@ class PlanService:
                 yield chunk.text
 
         # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_ACTIVITIES.write_text("".join(collected), encoding="utf-8")
+        if TEST_MODE:
+            _FIXTURE_PATH_ACTIVITIES.write_text("".join(collected), encoding="utf-8")
 
     async def stream_keywords(self, request: GenerateRequest):
         """Yields keywords markdown tokens as they are generated."""
@@ -292,7 +295,8 @@ class PlanService:
                 yield chunk.text
 
         # Write the full response to the fixture file for use in TEST_MODE
-        _FIXTURE_PATH_KEYWORDS.write_text("".join(collected), encoding="utf-8")
+        if TEST_MODE:
+            _FIXTURE_PATH_KEYWORDS.write_text("".join(collected), encoding="utf-8")
 
     async def _fixture_stream(self, type="study_plan"):
         """Streams the saved markdown fixture in small chunks to simulate LLM output."""

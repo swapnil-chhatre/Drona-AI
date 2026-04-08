@@ -177,8 +177,9 @@ ACARA outcomes listed above using this 5-level scale:
         # If you are on an older version of Pydantic (v1), use .json() instead:
         # json_data = result.json(indent=4)
 
-        with open(_FIXTURE_PATH, "w") as f:
-            f.write(json_data)
+        if TEST_MODE:
+            with open(_FIXTURE_PATH, "w") as f:
+                f.write(json_data)
 
         return result
 
