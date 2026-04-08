@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Uploaded Docs - Drona-AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2d3037",
+                        "surface-container-high": "#e6e8f0",
+                        "tertiary": "#944700",
+                        "error": "#ba1a1a",
+                        "on-background": "#181c21",
+                        "on-primary-fixed-variant": "#004786",
+                        "on-primary-fixed": "#001c3a",
+                        "primary-container": "#1976d2",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#733600",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#a5c8ff",
+                        "surface-bright": "#f9f9ff",
+                        "tertiary-fixed-dim": "#ffb688",
+                        "primary-fixed": "#d4e3ff",
+                        "surface": "#f9f9ff",
+                        "on-secondary-fixed-variant": "#354a53",
+                        "primary-fixed-dim": "#a5c8ff",
+                        "on-tertiary-container": "#fffeff",
+                        "secondary": "#4c616c",
+                        "on-surface-variant": "#414752",
+                        "surface-container-low": "#f2f3fc",
+                        "surface-container": "#ecedf6",
+                        "secondary-container": "#cfe6f2",
+                        "outline": "#717783",
+                        "on-tertiary-fixed": "#311300",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "primary": "#005dac",
+                        "secondary-fixed": "#cfe6f2",
+                        "inverse-on-surface": "#eff0f9",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c1c6d4",
+                        "on-secondary-container": "#526772",
+                        "surface-variant": "#e0e2ea",
+                        "on-secondary-fixed": "#071e27",
+                        "on-primary-container": "#fffdff",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#005faf",
+                        "secondary-fixed-dim": "#b4cad6",
+                        "surface-dim": "#d8dae2",
+                        "surface-container-highest": "#e0e2ea",
+                        "tertiary-container": "#ba5b00",
+                        "tertiary-fixed": "#ffdbc7",
+                        "on-surface": "#181c21",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-background min-h-screen flex">
+    <!-- SideNavBar Component -->
+    <aside class="h-screen w-64 fixed left-0 top-0 bg-slate-100/80 backdrop-blur-xl flex flex-col p-4 gap-2 z-40">
+        <div class="mb-8 px-4 py-2">
+            <h1 class="text-xl font-black text-blue-900 font-manrope">Drona-AI</h1>
+            <p class="text-xs font-medium tracking-wide text-slate-500 font-manrope">Intellectual Architect</p>
+        </div>
+        <nav class="flex flex-col gap-1 flex-grow">
+            <!-- Dashboard Tab (Inactive) -->
+            <a class="flex items-center gap-3 text-slate-500 px-4 py-3 hover:text-blue-600 hover:bg-white/50 transition-all font-manrope text-sm font-medium tracking-wide rounded-lg group"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">dashboard</span>
+                Dashboard
+            </a>
+            <!-- My Study Plans Tab (Inactive) -->
+            <a class="flex items-center gap-3 text-slate-500 px-4 py-3 hover:text-blue-600 hover:bg-white/50 transition-all font-manrope text-sm font-medium tracking-wide rounded-lg group"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">menu_book</span>
+                My Study Plans
+            </a>
+            <!-- Uploaded Docs Tab (Active) -->
+            <a class="flex items-center gap-3 bg-white text-blue-700 rounded-lg px-4 py-3 font-bold font-manrope text-sm tracking-wide shadow-sm"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">upload_file</span>
+                Uploaded Docs
+            </a>
+            <!-- Settings Tab (Inactive) -->
+            <a class="flex items-center gap-3 text-slate-500 px-4 py-3 hover:text-blue-600 hover:bg-white/50 transition-all font-manrope text-sm font-medium tracking-wide rounded-lg group"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                Settings
+            </a>
+        </nav>
+        <button
+            class="mt-auto mb-4 bg-gradient-to-r from-primary to-primary-container text-white rounded-xl py-3 px-4 font-bold text-sm shadow-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[20px]">add</span>
+            Generate New Plan
+        </button>
+        <div class="flex items-center gap-3 px-4 py-3 mt-4 border-t border-slate-200/50">
+            <div
+                class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 font-bold text-xs">
+                JD</div>
+            <div class="flex flex-col overflow-hidden">
+                <span class="text-xs font-bold truncate">John Doe</span>
+                <span class="text-[10px] text-slate-400 truncate">Premium Plan</span>
+            </div>
+        </div>
+    </aside>
+    <main class="flex-grow ml-64 min-h-screen flex flex-col">
+        <!-- TopNavBar Component -->
+        <header
+            class="w-full sticky top-0 z-30 bg-gradient-to-b from-slate-50 to-slate-100 flex justify-between items-center px-6 py-3">
+            <div class="flex items-center gap-4">
+                <h2 class="text-2xl font-extrabold text-blue-800 font-manrope tracking-tight">Library</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex relative group">
+                    <input
+                        class="bg-surface-container-low border-none rounded-full py-2 pl-10 pr-4 text-sm w-64 focus:ring-2 focus:ring-primary/20 transition-all"
+                        placeholder="Search documents..." type="text" />
+                    <span
+                        class="material-symbols-outlined absolute left-3 top-2 text-slate-400 text-[18px]">search</span>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content -->
+        <div class="p-8 max-w-7xl mx-auto w-full flex flex-col gap-8">
+            <!-- Upload Area (Hero Section) -->
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div
+                    class="lg:col-span-2 bg-surface-container-lowest p-8 rounded-xl relative overflow-hidden group border border-blue-50/50">
+                    <!-- Subtle AI Background Texture -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32">
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold font-manrope text-blue-900 mb-2">Ingest Knowledge</h3>
+                        <p class="text-secondary body-lg mb-8 max-w-md">Add new documents to your intellectual vault.
+                            Drona-AI will index them for context-aware learning and retrieval.</p>
+                        <div
+                            class="border-2 border-dashed border-outline-variant/40 rounded-xl p-12 flex flex-col items-center justify-center gap-4 bg-surface-container-low/30 hover:bg-surface-container-low/60 transition-all cursor-pointer group/upload">
+                            <div
+                                class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm group-hover/upload:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-primary text-3xl">cloud_upload</span>
+                            </div>
+                            <div class="text-center">
+                                <p class="font-semibold text-on-surface">Click to upload or drag and drop</p>
+                                <p class="text-xs text-secondary mt-1">PDF, DOCX, TXT or URLs (Max 50MB per file)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick Stats / AI Insights -->
+                <div class="flex flex-col gap-4">
+                    <div class="bg-surface-container-low p-6 rounded-xl">
+                        <h4 class="text-sm font-bold text-blue-900 mb-3 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+                            RAG Optimization
+                        </h4>
+                        <p class="text-xs text-secondary leading-relaxed">
+                            Your latest upload "Quantum Mechanics Vol 2" is currently being vectorized. Indexing at 89%.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Library Content -->
+            <section class="flex flex-col gap-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <h3 class="text-lg font-bold font-manrope">Document Library</h3>
+                        <div class="flex gap-2 bg-surface-container-low p-1 rounded-lg">
+                            <button class="p-1.5 bg-white shadow-sm rounded-md"><span
+                                    class="material-symbols-outlined text-[20px] text-primary">grid_view</span></button>
+                            <button class="p-1.5 text-slate-400 hover:text-slate-600"><span
+                                    class="material-symbols-outlined text-[20px]">view_list</span></button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button
+                            class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-secondary bg-surface-container-low hover:bg-surface-container-high rounded-lg transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">filter_list</span>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+                <!-- Documents Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <!-- File Card 1 (Indexed) -->
+                    <div
+                        class="bg-surface-container-lowest p-5 rounded-xl flex flex-col gap-4 group hover:shadow-xl hover:shadow-primary/5 transition-all">
+                        <div class="flex items-start justify-between">
+                            <div class="w-12 h-12 bg-red-50 text-red-500 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[32px]">picture_as_pdf</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <button
+                                    class="p-1.5 text-slate-400 hover:text-blue-600 rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">visibility</span></button>
+                                <button class="p-1.5 text-slate-400 hover:text-error rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">delete</span></button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h4 class="font-bold text-on-surface truncate pr-4">Advanced_Neurobiology_2024.pdf</h4>
+                            <div class="flex items-center gap-2">
+                                <span
+                                    class="text-[10px] text-secondary font-medium px-2 py-0.5 bg-surface-container-low rounded">Oct
+                                    12, 2023</span>
+                                <span
+                                    class="text-[10px] text-primary font-bold px-2 py-0.5 bg-primary/5 rounded flex items-center gap-1">
+                                    <span class="w-1 h-1 bg-primary rounded-full"></span> Indexed
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- File Card 2 (Processing) -->
+                    <div
+                        class="bg-surface-container-lowest p-5 rounded-xl flex flex-col gap-4 group hover:shadow-xl hover:shadow-primary/5 transition-all">
+                        <div class="flex items-start justify-between">
+                            <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[32px]">description</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <button
+                                    class="p-1.5 text-slate-300 cursor-not-allowed rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">visibility</span></button>
+                                <button class="p-1.5 text-slate-400 hover:text-error rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">delete</span></button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h4 class="font-bold text-on-surface truncate pr-4">Study_Notes_Quantum_Physics.docx</h4>
+                            <div class="flex items-center gap-2">
+                                <span
+                                    class="text-[10px] text-secondary font-medium px-2 py-0.5 bg-surface-container-low rounded">Oct
+                                    14, 2023</span>
+                                <span
+                                    class="text-[10px] text-tertiary font-bold px-2 py-0.5 bg-tertiary/10 rounded flex items-center gap-1">
+                                    <span class="w-1 h-1 bg-tertiary rounded-full animate-pulse"></span> Processing
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- File Card 3 (URL) -->
+                    <div
+                        class="bg-surface-container-lowest p-5 rounded-xl flex flex-col gap-4 group hover:shadow-xl hover:shadow-primary/5 transition-all">
+                        <div class="flex items-start justify-between">
+                            <div
+                                class="w-12 h-12 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[32px]">link</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <button
+                                    class="p-1.5 text-slate-400 hover:text-blue-600 rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">visibility</span></button>
+                                <button class="p-1.5 text-slate-400 hover:text-error rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">delete</span></button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h4 class="font-bold text-on-surface truncate pr-4">Wikipedia: Architecture_Patterns</h4>
+                            <div class="flex items-center gap-2">
+                                <span
+                                    class="text-[10px] text-secondary font-medium px-2 py-0.5 bg-surface-container-low rounded">Oct
+                                    10, 2023</span>
+                                <span
+                                    class="text-[10px] text-primary font-bold px-2 py-0.5 bg-primary/5 rounded flex items-center gap-1">
+                                    <span class="w-1 h-1 bg-primary rounded-full"></span> Indexed
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- File Card 4 (PDF) -->
+                    <div
+                        class="bg-surface-container-lowest p-5 rounded-xl flex flex-col gap-4 group hover:shadow-xl hover:shadow-primary/5 transition-all">
+                        <div class="flex items-start justify-between">
+                            <div class="w-12 h-12 bg-red-50 text-red-500 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[32px]">picture_as_pdf</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <button
+                                    class="p-1.5 text-slate-400 hover:text-blue-600 rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">visibility</span></button>
+                                <button class="p-1.5 text-slate-400 hover:text-error rounded-md transition-colors"><span
+                                        class="material-symbols-outlined text-[20px]">delete</span></button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h4 class="font-bold text-on-surface truncate pr-4">Ethical_AI_Framework_V2.pdf</h4>
+                            <div class="flex items-center gap-2">
+                                <span
+                                    class="text-[10px] text-secondary font-medium px-2 py-0.5 bg-surface-container-low rounded">Sep
+                                    28, 2023</span>
+                                <span
+                                    class="text-[10px] text-primary font-bold px-2 py-0.5 bg-primary/5 rounded flex items-center gap-1">
+                                    <span class="w-1 h-1 bg-primary rounded-full"></span> Indexed
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add New Doc Placeholder -->
+                    <div
+                        class="border-2 border-dashed border-slate-200 p-5 rounded-xl flex flex-col items-center justify-center gap-2 group hover:border-primary/40 hover:bg-primary/5 transition-all cursor-pointer">
+                        <div
+                            class="w-10 h-10 bg-slate-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center transition-colors">
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">add_circle</span>
+                        </div>
+                        <span class="text-sm font-bold text-slate-400 group-hover:text-primary transition-colors">New
+                            Knowledge Source</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Bottom Context Bar (AI Usage Summary) -->
+            <footer
+                class="mt-8 bg-surface-container-lowest p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary"
+                            style="font-variation-settings: 'FILL' 1;">insights</span>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-bold font-manrope">Retrieval Context Health</h5>
+                        <p class="text-xs text-secondary">Your AI model currently has access to 142 distinct knowledge
+                            chunks across 4 verified documents.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <button
+                        class="px-6 py-2.5 rounded-lg border border-outline-variant text-sm font-bold hover:bg-slate-50 transition-colors">Clean
+                        Cache</button>
+                    <button
+                        class="px-6 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-sm hover:opacity-90 transition-opacity">Optimize
+                        Index</button>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Floating Tooltip for Help -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <button
+            class="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all">
+            <span class="material-symbols-outlined">smart_toy</span>
+        </button>
+    </div>
+</body>
+
+</html>

@@ -9,7 +9,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI(title="Drona-AI API")
+# Suppress LangChain / Tavily Search warning
+os.environ.setdefault("USER_AGENT", "Drona-AI-FastAPI")
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+connection = psycopg2.connect(DATABASE_URL)
 
 # ALLOWED_ORIGINS env var is a comma-separated list of allowed origins.
 # Set it in Railway to your Vercel URL, e.g.:

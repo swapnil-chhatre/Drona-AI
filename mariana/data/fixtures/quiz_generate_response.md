@@ -1,95 +1,97 @@
-# Year 8 Mathematics: Pythagoras’ Theorem Quiz
-**Topic:** Investigation, Proof, and Application of Pythagoras’ Theorem  
-**Curriculum Alignment:** NSW Mathematics Syllabus (Stage 4) | ACARA [AC9M8M06]
+# Year 8 Science: Cell Biology Mastery Quiz
+
+This assessment is designed to evaluate your understanding of cellular structures, their functions, and the integration of traditional ecological knowledge with modern biological science.
 
 ---
 
-## 🎯 Learning Objectives
-**01** Identify the hypotenuse in a right-angled triangle and apply the formula $c^2 = a^2 + b^2$.  
-**02** Understand and explain the geometric proof of Pythagoras’ Theorem using area.  
-**03** Apply the theorem to solve practical problems, including those involving irrational numbers and rounding.
+### 🎯 **Learning Objectives**
+**01** Identify and describe the function of key organelles in plant and animal cells.  
+**02** Compare and contrast the structural differences between plant and animal cells.  
+**03** Connect biological cell structures to the practical applications of native Australian plants as understood through First Nations knowledge.
 
 ---
 
-## ❓ Part A: Multiple Choice Questions
+### ❓ Part A: Multiple Choice Questions
 *Select the best answer for each question.*
 
-**1. Which side of a right-angled triangle is always the longest?**  
-a) The side adjacent to the smallest angle  
-b) The hypotenuse  
-c) The side opposite the smallest angle  
-d) The base  
+**1. Which organelle is primarily responsible for photosynthesis in plant cells, allowing them to produce their own energy?**  
+A) Mitochondria  
+B) Chloroplast  
+C) Nucleus  
+D) Vacuole  
 
-**2. If a right-angled triangle has legs of length $5\text{ cm}$ and $12\text{ cm}$, what is the length of the hypotenuse?**  
-a) $13\text{ cm}$  
-b) $17\text{ cm}$  
-c) $169\text{ cm}$  
-d) $7\text{ cm}$  
+**2. 🇦🇺 When studying the *Black Kurrajong* (Brachychiton populneus), which cell structure would be present in its leaf cells that is absent in human skin cells?**  
+A) Cell membrane  
+B) Cytoplasm  
+C) Cell wall  
+D) Ribosome  
 
-**3. Which of the following sets of numbers forms a Pythagorean triad?**  
-a) $1, 2, 3$  
-b) $3, 4, 6$  
-c) $6, 8, 10$  
-d) $5, 5, 10$  
+**3. Which of the following statements correctly describes a difference between plant and animal cells?**  
+A) Animal cells have a large central vacuole; plant cells have many small ones.  
+B) Plant cells have a rigid cell wall; animal cells do not.  
+C) Animal cells contain chloroplasts; plant cells do not.  
+D) Plant cells lack a nucleus; animal cells possess one.  
 
-**4. When calculating the hypotenuse, the result is often an irrational number. How should you express this if asked to round to two decimal places?**  
-a) As a terminating decimal  
-b) As a recurring decimal  
-c) By rounding the final digit based on the third decimal place  
-d) By truncating the number after the first digit  
+**4. The "powerhouse" of the cell, where cellular respiration occurs to produce energy ($ATP$), is the:**  
+A) Mitochondria  
+B) Endoplasmic reticulum  
+C) Golgi body  
+D) Cell wall  
 
-**5. A ladder is leaning against a wall in an 🇦🇺 Australian backyard. If the ladder is $5\text{ m}$ long and the base is $3\text{ m}$ from the wall, how high up the wall does the ladder reach?**  
-a) $8\text{ m}$  
-b) $2\text{ m}$  
-c) $4\text{ m}$  
-d) $\sqrt{34}\text{ m}$  
-
----
-
-## ✍️ Part B: Short Answer Questions
-
-**❓ Question 6:** State the formula for Pythagoras' Theorem and define what $a$, $b$, and $c$ represent in the context of a right-angled triangle.  
-**✅ Marking Criteria:** 1 mark for the correct formula ($a^2 + b^2 = c^2$); 1 mark for identifying $a$ and $b$ as legs; 1 mark for identifying $c$ as the hypotenuse.
-
-**❓ Question 7:** A triangle has side lengths of $7\text{ mm}$, $24\text{ mm}$, and $25\text{ mm}$. Use the converse of Pythagoras' Theorem to determine if this is a right-angled triangle. Show your working.  
-**✅ Marking Criteria:** 1 mark for substituting into the formula; 1 mark for correct calculation ($49 + 576 = 625$); 1 mark for concluding "Yes, it is a right-angled triangle."
-
-**❓ Question 8:** Calculate the length of the missing side $x$ in a right-angled triangle where the hypotenuse is $10\text{ cm}$ and one leg is $6\text{ cm}$. Give your answer as a whole number.  
-**✅ Marking Criteria:** 1 mark for correct substitution ($x^2 + 6^2 = 10^2$); 1 mark for algebraic manipulation ($x^2 = 100 - 36$); 1 mark for final answer ($8\text{ cm}$).
+**5. 🇦🇺 First Nations peoples have used native plants for medicine and tools for over 60,000 years. If a plant is used for its structural strength (e.g., making twine or tools), which organelle is most responsible for providing that rigid support at a cellular level?**  
+A) Nucleus  
+B) Cell wall  
+C) Mitochondria  
+D) Lysosome  
 
 ---
 
-## 🚀 Part C: Extended Response
+### ❓ Part B: Short Answer Questions
 
-**❓ Question 9: The Visual Proof**  
-Explain how the area of squares constructed on the sides of a right-angled triangle provides a visual proof of Pythagoras' Theorem. You may draw a diagram or describe the arrangement of squares with side lengths $a$, $b$, and $c$. Why does the area of the two smaller squares equal the area of the largest square?  
-**✅ Marking Criteria:** 
-- 2 marks: Accurate description of the relationship between the areas of the squares ($Area = side^2$).
-- 2 marks: Explanation that the sum of the areas of the squares on the legs equals the area of the square on the hypotenuse.
-- 1 mark: Clear, logical communication.
+**6. Compare the function of the vacuole in a plant cell versus an animal cell.**  
+*Marking Criteria:* 2 marks. (1 mark for identifying the large central vacuole in plants for turgor pressure/storage; 1 mark for identifying small/temporary vacuoles in animals).
 
----
+**7. 🇦🇺 Explain why a plant cell needs a cell wall, whereas an animal cell relies only on a cell membrane.**  
+*Marking Criteria:* 2 marks. (1 mark for explaining that plants need structural support to grow upright without a skeleton; 1 mark for mentioning the role of cellulose/rigidity).
 
-## 📚 Curated Resources
-📄 [AMSI TIMES Module: Pythagoras' Theorem](https://amsi.org.au/teacher_modules/pythagoras_theorem.html)  
-🌐 [Visual Proof of Pythagoras' Theorem - Eddie Woo](https://www.youtube.com/watch?v=tTHhBE5lYTg)  
-🌐 [NSW Dept of Education: Pythagoras Resources](https://education.nsw.gov.au/teaching-and-learning/curriculum/mathematics/mathematics-curriculum-resources-k-12/mathematics-7-10-resources/pythagoras-theorem)  
-🌐 [Terminating and Recurring Decimals Refresher](https://www.youtube.com/watch?v=plLlmHUH2aY)
+**8. Define the term "organelle" and provide one example of an organelle found in both plant and animal cells.**  
+*Marking Criteria:* 2 marks. (1 mark for defining an organelle as a specialised structure within a cell; 1 mark for a correct example like the nucleus, mitochondria, or ribosome).
 
 ---
 
-## ✅ Answer Key (Part A)
-1. **b**
-2. **a** ($5^2 + 12^2 = 25 + 144 = 169$; $\sqrt{169} = 13$)
-3. **c** ($6^2 + 8^2 = 36 + 64 = 100 = 10^2$)
-4. **c**
-5. **c** ($3^2 + x^2 = 5^2 \rightarrow 9 + x^2 = 25 \rightarrow x^2 = 16 \rightarrow x = 4$)
+### ❓ Part C: Extended Response
+
+**9. Analysis: The Intersection of Biology and Culture**  
+Many native Australian plants, such as the *Black Kurrajong*, have been used by Aboriginal and Torres Strait Islander peoples for generations to create resources like rope, nets, and food. 
+
+Using your knowledge of cell structure, write a paragraph explaining:
+*   How the presence of a **cell wall** in these plants contributes to the physical properties of the materials (like rope) made from them.
+*   Why the **chloroplasts** in these plants are essential for the survival of the ecosystem that First Nations peoples have managed for millennia.
+
+*Marking Criteria:* 4 marks. (1 mark for linking cell wall to structural strength/fibres; 1 mark for linking chloroplasts to energy production/photosynthesis; 1 mark for acknowledging the role of these structures in ecosystem stability; 1 mark for clear, scientific communication).
 
 ---
 
-## ✅ Mastery Assessment Card
-*   **Topic:** Pythagoras' Theorem & Geometric Proof
-*   **Skill Level:** Year 8
-*   **Assessment Type:** Formative Quiz
-*   **Tags:** `Measurement`, `Geometry`, `Algebra`, `Irrational Numbers`
-*   **Due:** End of Week 4 `Weighted 15%`
+### ✅ Answer Key & Marking Guide
+
+**Part A Answers:**
+1. B
+2. C
+3. B
+4. A
+5. B
+
+**Part B Marking Guide:**
+*   **Q6:** Plants have one large central vacuole for water storage and turgor pressure. Animals have small, temporary vacuoles for waste or transport.
+*   **Q7:** Plants lack a skeletal system; the cell wall provides the necessary rigidity to stand against gravity. Animal cells are mobile and require flexibility, provided by the membrane.
+*   **Q8:** Organelles are "little organs" or specialised structures within a cell that perform specific tasks. Examples: Nucleus, Mitochondria, Ribosomes, Cytoplasm.
+
+**Part C Marking Guide:**
+*   **High (4):** Excellent connection between the cellulose in the cell wall and the tensile strength of plant fibres. Clear explanation of how chloroplasts drive the energy cycle ($6CO_2 + 6H_2O \rightarrow C_6H_{12}O_6 + 6O_2$) which sustains the plant and the broader ecosystem.
+*   **Satisfactory (2-3):** Identifies the cell wall as providing strength and chloroplasts as providing energy, but lacks detail on the connection to cultural use or ecosystem management.
+*   **Limited (0-1):** Basic definitions provided with little application to the prompt.
+
+---
+
+### 📌 Mastery Assessment Metadata
+`Topic: Cells` `Level: Year 8` `Curriculum: ACSSU149` `Due: Week 4` `Weighting: 15%`

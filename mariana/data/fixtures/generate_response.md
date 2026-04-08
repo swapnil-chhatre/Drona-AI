@@ -1,56 +1,56 @@
-# Study Plan: Pythagoras' Theorem (Year 8 Mathematics)
-
-This 2-week intensive unit is designed for the NSW Year 8 Mathematics curriculum. It balances conceptual understanding (proofs) with procedural fluency and real-world application.
-
----
-
-### 🎯 **Learning Objectives**
-
-*   **01** Identify the hypotenuse and apply the Pythagorean relationship $a^2 + b^2 = c^2$ to find unknown side lengths. [AC9M8M06]
-*   **02** Investigate and explain the geometric proof of Pythagoras' Theorem using visual models. [AC9M8M06]
-*   **03** Distinguish between terminating and recurring decimals when calculating square roots of non-perfect squares. [ACMNA184]
-*   **04** Apply Pythagoras' Theorem to solve practical problems, including collecting and interpreting measurement data. [ACMSP284]
+# Study Plan: The Building Blocks of Life
+**Subject:** Science | **Grade:** 8 | **Timeline:** 2 Weeks (10 Lessons)  
+**Focus:** Plant vs. Animal Cells & First Nations Scientific Knowledge
 
 ---
 
-### 🚀 **Core Learning Activities**
+### 🎯 Learning Objectives
+*   **01** Identify and describe the function of organelles in animal and plant cells [ACSSU149].
+*   **02** Compare and contrast the structural differences between plant and animal cells [ACSSU149].
+*   **03** Explain how the structure of specific plant cells facilitates the survival of native Australian flora [ACSSU149].
+*   **04** Describe the composition of cellular structures at a particle level, relating to elements and compounds [ACSSU152].
+
+---
+
+### 🚀 Core Learning Activities
 
 | 🔍 Deep Dive: Analysis | 🏗️ Architectural Build |
 | :--- | :--- |
-| **Week 1: Foundations & Proofs** | **Week 1: Hands-on Construction** |
-| Investigate the history of the 3-4-5 triangle (Egyptian rope stretchers). | Construct a physical proof using grid paper or geoboards to show areas of squares on sides. |
-| Analyze Eddie Woo’s visual proof to understand *why* the theorem works. | Solve for missing sides in right-angled triangles using algebraic manipulation. |
-| **Week 2: Real-World Application** | **Week 2: Data & Precision** |
-| Discuss irrational numbers and why calculators show recurring decimals for $\sqrt{2}$. | Use trundle wheels/tape measures to verify right angles in the school playground. |
-| Analyze Pythagorean Triads and their use in construction and navigation. | Create a "Pythagoras Survey" report using collected measurement data. |
+| **Week 1:** Microscopy and Cell Theory. Use AERO Ochre Lessons 1-3 to master the microscope and define eukaryotic cells. | **Week 1:** Prepare wet mounts of *Elodea* (waterweed) and human cheek cells. Sketch and label organelles. |
+| **Week 2:** Analyze the "Why" behind plant cell walls and chloroplasts using the Khan Academy video. | **Week 2:** Create a 3D model or "Cell Map" comparing a plant cell to a native Australian plant (e.g., Black Kurrajong). |
+
+📌 **Note:** Integrate the *Cosmos Magazine* article to discuss how the cell structure of native plants (like the Black Kurrajong) supports their medicinal and nutritional properties, reflecting 60,000+ years of First Nations observation.
 
 ---
 
-### 📚 **Curated Resources & Citations**
-
-*   📄 [Mathematics Hub: Pythagoras and Trigonometry Planning Tool](https://www.mathematicshub.edu.au/planning-tool/8/measurement/pythagoras-and-trigonometry/)
-*   🌐 [Visual Proof of Pythagoras' Theorem - Eddie Woo](https://www.youtube.com/watch?v=tTHhBE5lYTg)
-*   📄 [NSW Dept of Education: Pythagoras Theorem Resources](https://education.nsw.gov.au/teaching-and-learning/curriculum/mathematics/mathematics-curriculum-resources-k-12/mathematics-7-10-resources/pythagoras-theorem)
-*   📄 [AMSI TIMES Module: Pythagoras' Theorem](https://amsi.org.au/teacher_modules/pythagoras_theorem.html)
-*   🌐 [Khan Academy: Pythagoras' Theorem Unit](https://www.khanacademy.org/math/grade-8-math/x37b9516354b6ae1a:pythagoras-theorem)
-*   🌐 [YouTube: Terminating and Recurring Decimals](https://www.youtube.com/watch?v=plLlmHUH2aY)
+### 📚 Curated Resources & Citations
+*   📄 [AERO Ochre Science Year 8 Unit 1 - Cells, tissues and organs](https://resources.ttn.edu.au/resource/view/A003880/index.html)
+*   🌐 [5 native plants that illuminate deep Aboriginal knowledge](https://education.cosmosmagazine.com/five-native-plants-that-illuminate-deep-aboriginal-knowledge/)
+*   🌐 [Comparing animal and plant cells (Khan Academy)](https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms/x0c5bb03129646fd6:cell-parts-and-functions/v/comparing-animal-and-plant-cells)
 
 ---
 
-### 📌 **Teacher Notes & Context**
-*   ⏱️ **Timeframe:** 10 lessons (5 per week).
-*   🇦🇺 **Australian Context:** Use local examples such as calculating the length of a diagonal fence line on a standard rectangular Australian block or determining the height of a flagpole using shadow lengths.
-*   **Misconception Alert:** Students often assume the hypotenuse is always the "slanted" side. Use the "opposite the right angle" rule to ensure they identify the hypotenuse correctly regardless of triangle orientation.
+### 🧪 Integration of First Nations Perspective
+🇦🇺 **The First Scientists:** Throughout the unit, frame the study of plant cells through the lens of traditional ecological knowledge. When discussing chloroplasts and photosynthesis, connect this to the deep understanding Aboriginal peoples have of the life cycles of native plants. 
+*   **Activity:** Research the *Black Kurrajong*. Discuss how its structural adaptations (cell walls/storage tissues) allow it to survive in harsh Australian environments, linking cellular biology to the survival strategies observed by First Nations peoples for millennia.
 
 ---
 
-### ✅ **Mastery Assessment**
+### ✅ Mastery Assessment: "The Living Landscape" Project
 
-#### **Project: The "Right-Angle" Field Report**
-Students will act as "Junior Surveyors." They must:
-1.  Identify three right-angled structures around the school (e.g., corner of a building, goal post, window frame).
-2.  Measure the two shorter sides and use Pythagoras' Theorem to calculate the expected length of the hypotenuse.
-3.  Measure the actual hypotenuse and calculate the percentage error.
-4.  Present findings, noting whether their results were terminating or recurring decimals and rounding to 2 decimal places.
+**Task:** Students must produce a comparative report or digital presentation titled *"Cells of the Country."* 
+*   **Part A:** Create a labeled diagram comparing a generic animal cell to a native plant cell.
+*   **Part B:** Write a 300-word reflection on how the specific organelles (e.g., cell wall, vacuole) of a native plant assist in its use for food, medicine, or tools as documented by First Nations knowledge.
+*   **Part C:** Explain at a particle level (using chemical symbols/concepts) how the plant converts water ($H_2O$) and carbon dioxide ($CO_2$) into energy, linking to [ACSSU152].
 
-`Due in 2 weeks` | `Weighted 40%` | `Skills: Measurement, Algebra, Data Interpretation`
+⏱️ **Timeline:** 2 Weeks  
+`Due in 2 weeks` | `Weighted 40% of Term Grade`
+
+---
+
+### 🗓️ Weekly Schedule (Snapshot)
+
+*   **Week 1, Days 1-3:** Microscope skills and introduction to the "Basic Unit of Life" (AERO Lessons 1-3).
+*   **Week 1, Days 4-5:** Animal vs. Plant cell organelles (AERO Lessons 4-5).
+*   **Week 2, Days 6-7:** Comparative analysis and the role of the cell wall/chloroplast in native flora (Cosmos Article).
+*   **Week 2, Days 8-10:** Finalizing the "Living Landscape" project and peer review.

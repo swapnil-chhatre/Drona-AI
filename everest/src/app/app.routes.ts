@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LandingComponent } from '../landing/landing.component';
 import { DiscoverComponent } from '../discover/discover.component';
 import { FinalResultComponent } from '../final-result/final-result.component';
+import { UploadFilesComponent } from '../upload-files/upload-files.component';
 
 export const routes: Routes = [
   {
@@ -11,6 +12,10 @@ export const routes: Routes = [
   {
     path: 'discover',
     component: DiscoverComponent,
+  },
+  {
+    path: 'upload-files',
+    component: UploadFilesComponent,
   },
   {
     path: 'final-result',
