@@ -12,15 +12,31 @@
 
 .landing-main {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  padding: 1.5rem 1.5rem 8.5rem;
-  overflow: hidden;
+  padding: 1rem 1rem 2rem;
 }
+
+/* .landing-topbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.25rem 0 1.5rem;
+}
+
+.landing-topbar__brand {
+  font-family: var(--font-headline);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--color-primary);
+} */
 
 .hero,
 .composer {
   position: relative;
-  z-index: 1;
 }
 
 .icon-button {
@@ -59,7 +75,7 @@
   background: var(--color-tertiary);
 }
 
-.profile-chip {
+/* .profile-chip {
   padding-left: 0.9rem;
   border-left: 1px solid rgba(113, 119, 131, 0.2);
 }
@@ -71,12 +87,13 @@
   border-radius: 999px;
   object-fit: cover;
   box-shadow: 0 12px 28px rgba(0, 93, 172, 0.12);
-}
+} */
 
 .hero {
+  flex: 1;
   display: grid;
   place-items: center;
-  padding-top: clamp(2rem, 7vw, 5rem);
+  padding-top: 2rem;
 }
 
 .hero__copy {
@@ -112,7 +129,6 @@
 }
 
 .panel {
-  grid-column: span 12;
   padding: 1.5rem;
   border: 1px solid rgba(113, 119, 131, 0.1);
   border-radius: 1.5rem;
@@ -226,12 +242,9 @@
 }
 
 .composer {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  width: 100%;
   max-width: 64rem;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
 .composer__glow {
@@ -280,6 +293,14 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
   color: #fff;
   cursor: pointer;
+  transition: opacity 180ms ease, background 180ms ease;
+}
+
+.composer__inner button:disabled {
+  background: var(--color-outline-variant);
+  color: var(--color-outline);
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .composer p {
@@ -308,15 +329,19 @@
 @media (min-width: 768px) {
   .landing-main {
     margin-left: 16rem;
-    padding: 1.5rem 2rem 8.5rem;
+    padding: 1.5rem 2rem 2rem;
   }
 
   .panel--compact {
-    grid-column: span 4;
+    grid-column: span 3;
+  }
+
+  .panel--centered {
+    grid-column: span 6;
   }
 
   .panel--wide {
-    grid-column: span 8;
+    grid-column: span 12;
   }
 
   .panel:not(.panel--compact):not(.panel--wide):not(.panel--topic) {
@@ -326,17 +351,11 @@
   .panel--topic {
     grid-column: span 7;
   }
-
-  .composer {
-    left: calc(16rem + 2rem);
-    right: 2rem;
-    width: auto;
-  }
 }
 
 @media (max-width: 767px) {
   .landing-main {
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
   }
 
   .topbar {

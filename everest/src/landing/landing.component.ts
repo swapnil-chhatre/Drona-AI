@@ -1,6 +1,7 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit, signal, computed } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { DiscoverRequest } from '../interfaces/discover-request';
 import { DiscoverStateService } from '../services/discover-state.service';
 import { ApiService } from '../services/api.service';
@@ -8,7 +9,7 @@ import { ApiService } from '../services/api.service';
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, MatSlideToggleModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',
 })
@@ -17,6 +18,7 @@ export class LandingComponent implements OnInit {
   private readonly discoverState = inject(DiscoverStateService);
   private readonly api = inject(ApiService);
 
+  protected readonly firstNation = signal<boolean>(false);
   protected readonly grades = signal<string[]>([]);
   protected readonly subjects = signal<string[]>([]);
   protected readonly suggestedPrompts = signal<string[]>([]);
@@ -26,14 +28,19 @@ export class LandingComponent implements OnInit {
 
   protected readonly curriculumStandards = [
     'NSW - Australia',
-    'Common Core - USA',
-    'Ontario Curriculum - Canada',
-    'National Curriculum - UK',
+    'VIC - Australia',
+    'WA - Australia',
+    'QLD - Australia',
   ];
 
   protected readonly selectedStandard = signal(this.curriculumStandards[0]);
   protected readonly focusTopic = signal('');
-  protected readonly firstNation = signal(false);
+
+  protected readonly isTopicValid = computed(() => {
+    const topic = this.focusTopic().trim();
+    if (!topic) return false;
+    return topic.split(/\s+/).length >= 3;
+  });
 
   ngOnInit(): void {
     this.loadSuggestions();
@@ -53,7 +60,15 @@ export class LandingComponent implements OnInit {
     this.focusTopic.set(prompt);
   }
 
+  protected toggleFirstNation(): void {
+    this.firstNation.update((value) => !value);
+  }
+
   protected sendPrompt(): void {
+    if (!this.isTopicValid()) {
+      return;
+    }
+
     const request: DiscoverRequest = {
       grade: this.selectedGrade(),
       subject: this.selectedSubject(),

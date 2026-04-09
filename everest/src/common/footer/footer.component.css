@@ -1,0 +1,106 @@
+.app-footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: var(--color-surface, #ffffff);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: auto; /* Push to bottom of flex container */
+  position: relative;
+  z-index: 50;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.developers-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #64748b; /* slate-500 */
+}
+
+.label {
+  font-weight: 700;
+  color: #1e293b; /* slate-800 */
+  margin-right: 0.25rem;
+}
+
+.developer-link {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.developer-link:hover {
+  color: var(--color-primary, #005dac);
+  text-decoration: underline;
+}
+
+.separator {
+  opacity: 0.4;
+}
+
+.heart-line {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155; /* slate-700 */
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.heart {
+  color: #e11d48; /* rose-600 */
+  font-size: 1.1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.github-link:hover {
+  color: var(--color-primary, #005dac);
+}
+
+.github-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: #94a3b8; /* slate-400 */
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* For layouts with sidebar, ensure footer is pushed correctly */
+@media (min-width: 768px) {
+  :host-context(.sidebar-active) .app-footer {
+    padding-left: 16rem; /* Match sidebar width */
+  }
+}

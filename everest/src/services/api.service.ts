@@ -14,6 +14,12 @@ export class ApiService {
 
   constructor(private readonly http: HttpClient) {}
 
+  uploadPdf(blob: Blob): Observable<{ url: string }> {
+    const form = new FormData();
+    form.append('file', blob, 'study-plan.pdf');
+    return this.http.post<{ url: string }>(`${this.base}/api/pdf/upload`, form);
+  }
+
   discoverResources(request: DiscoverRequest) {
     return this.http.post<ResourceList>(`${this.base}/api/discover`, request);
   }

@@ -1,5 +1,5 @@
+from typing import Literal
 from pydantic import BaseModel
-
 from models.resource import Resource, CurriculumOutcome
 
 
@@ -8,14 +8,14 @@ class DiscoverRequest(BaseModel):
     subject: str              # e.g. "History"
     state: str                # e.g. "NSW"
     topic: str                # e.g. "World War I causes"
-    first_nation: bool # e.g. "false"
+    first_nation: bool = False # e.g. "false"
 
 class GenerateRequest(BaseModel):
     grade: str
     subject: str
     state: str
     topic: str
-    first_nation: bool
+    first_nation: bool = False
     selected_resources: list[Resource]
     curriculum_outcomes: list[CurriculumOutcome] = []
     additional_context: str = ""
@@ -31,3 +31,15 @@ class GenerateRequest(BaseModel):
     def selected_document_ids(self) -> list[str]:
         return [r.document_id for r in self.selected_resources
                 if r.source_type == "teacher_upload" and r.document_id is not None]
+
+
+class FollowUpRequest(BaseModel):
+    grade: str
+    subject: str
+    state: str
+    topic: str
+    chip: str                   # the follow-up chip the teacher selected
+    current_content: str        # the existing markdown to modify
+    output_type: Literal["study_plan", "quiz", "activities", "keywords"]
+
+

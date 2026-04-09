@@ -4,6 +4,9 @@ export interface FinalResultDocument {
   icon: string;
   tone: 'primary' | 'secondary' | 'tertiary';
   markdown: string;
+  type: 'plan' | 'quiz' | 'activities';
+  level?: string;
+  generatedLevel?: string;
 }
 
 export interface FinalResultExportOption {

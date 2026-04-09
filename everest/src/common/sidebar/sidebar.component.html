@@ -1,13 +1,14 @@
 <aside class="sidebar">
   <div class="sidebar__brand">
-    <div class="sidebar__brand-icon">
-      <span class="material-symbols-outlined">{{ brandIcon() }}</span>
-    </div>
-
-    <div>
-      <h2>{{ brandTitle() }}</h2>
-      <p>{{ brandSubtitle() }}</p>
-    </div>
+    <a routerLink="/">
+      <div class="sidebar__brand-icon">
+        <span class="material-symbols-outlined">{{ brandIcon() }}</span>
+      </div>
+    </a>
+      <div>
+        <h2>{{ brandTitle() }}</h2>
+        <p>{{ brandSubtitle() }}</p>
+      </div>
   </div>
 
   <nav class="sidebar__nav" aria-label="Primary">
@@ -33,9 +34,4 @@
       }
     }
   </nav>
-
-  <button class="sidebar__action" type="button" (click)="actionTriggered.emit()">
-    <span class="material-symbols-outlined">{{ actionIcon() }}</span>
-    <span>{{ actionLabel() }}</span>
-  </button>
 </aside>

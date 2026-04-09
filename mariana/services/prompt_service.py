@@ -293,6 +293,42 @@ the classroom alongside one complementary resource."""
   Format the output as a complete, ready-to-use markdown activities plan."""
 
     @staticmethod
+    def followup_prompt(
+        grade: str,
+        subject: str,
+        state: str,
+        topic: str,
+        chip: str,
+        current_content: str,
+        output_type: str,
+    ) -> str:
+        output_label = {
+            "study_plan": "study plan",
+            "quiz": "quiz",
+            "activities": "activities plan",
+            "keywords": "keywords list",
+        }.get(output_type, "document")
+
+        return f"""You are an expert Australian curriculum designer.
+
+A teacher has requested the following modification to an existing {output_label}:
+"{chip}"
+
+Context:
+- Grade: {grade}
+- Subject: {subject}
+- State: {state}
+- Topic: {topic}
+
+Existing {output_label}:
+{current_content}
+
+Produce a revised, complete {output_label} that incorporates the requested modification.
+Keep everything that does not need to change. Apply the modification thoroughly and consistently throughout.
+Use the same markdown formatting and emoji conventions as the original.
+Output only the revised {output_label} — no preamble, no explanation."""
+
+    @staticmethod
     def keywords_generation_prompt(
         grade: str,
         subject: str,
