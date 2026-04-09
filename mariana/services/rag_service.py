@@ -1,5 +1,5 @@
 from langchain_postgres.vectorstores import PGVector
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from dotenv import load_dotenv
@@ -10,8 +10,11 @@ load_dotenv()
 class RagService:
     def __init__(self):
         """Initializes PGVector with Google embeddings for document retrieval."""
-        embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
-
+        embeddings = NVIDIAEmbeddings(                                        # ← changed
+            model="nvidia/llama-3.2-nemoretriever-300m-embed-v1",
+            api_key=os.getenv("NVIDIA_API_KEY"), # Would need to remove if env variable is stored in Railway
+            truncate="NONE",
+        )
         self.vector_store = PGVector(
             embeddings=embeddings,
             collection_name="documents",
