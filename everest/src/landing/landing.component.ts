@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit, signal, computed } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -35,7 +35,13 @@ export class LandingComponent implements OnInit {
 
   protected readonly selectedStandard = signal(this.curriculumStandards[0]);
   protected readonly focusTopic = signal('');
-  
+
+  protected readonly isTopicValid = computed(() => {
+    const topic = this.focusTopic().trim();
+    if (!topic) return false;
+    return topic.split(/\s+/).length >= 3;
+  });
+
   ngOnInit(): void {
     this.loadSuggestions();
   }
@@ -59,6 +65,10 @@ export class LandingComponent implements OnInit {
   }
 
   protected sendPrompt(): void {
+    if (!this.isTopicValid()) {
+      return;
+    }
+
     const request: DiscoverRequest = {
       grade: this.selectedGrade(),
       subject: this.selectedSubject(),

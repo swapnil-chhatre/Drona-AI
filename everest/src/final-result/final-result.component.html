@@ -94,14 +94,14 @@
               }
             }
           </div>
-          <mat-button-toggle-group class="utility-grid__difficulty" [disabled]="!testTypeSelected" (change)="onDifficultyChange($event)">
-              <mat-button-toggle value="Beginner" class="toggle-beginner">Beginner</mat-button-toggle>
-              <mat-button-toggle value="Intermediate" class="toggle-intermediate">Intermediate</mat-button-toggle>
-              <mat-button-toggle value="Advanced" class="toggle-advanced">Advanced</mat-button-toggle>
+          <mat-button-toggle-group class="utility-grid__difficulty" [value]="currentTestLevel()" (change)="onDifficultyChange($event)">
+              <mat-button-toggle value="Beginner" class="toggle-beginner" [disabled]="!testTypeSelected() || isTestGenerated()">Beginner</mat-button-toggle>
+              <mat-button-toggle value="Intermediate" class="toggle-intermediate" [disabled]="!testTypeSelected() || isTestGenerated()">Intermediate</mat-button-toggle>
+              <mat-button-toggle value="Advanced" class="toggle-advanced" [disabled]="!testTypeSelected() || isTestGenerated()">Advanced</mat-button-toggle>
           </mat-button-toggle-group>
           <button type="button" class="generate-test__button"
-            (click)="selectDocument(testType)"
-            [disabled]="!testTypeSelected">
+            (click)="selectDocument(testType())"
+            [disabled]="!testTypeSelected() || !currentTestLevel() || isTestGenerated()">
             <span>Generate Test</span>
             <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
           </button>
@@ -112,14 +112,26 @@
           <p class="utility-card__desc">Download your study plan in high-fidelity formats.</p>
 
           <div class="export-list">
-            <button type="button" class="export-button">
+            <button type="button" class="export-button" (click)="downloadPdf()" [disabled]="isGeneratingPdf() || !activeDocument().markdown">
               <span class="export-button__label">
                 <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
-                <span>Download as PDF</span>
+                <span>{{ isGeneratingPdf() ? 'Generating…' : 'Download as PDF' }}</span>
               </span>
-              <span class="material-symbols-outlined" aria-hidden="true">download</span>
+              <span class="material-symbols-outlined" aria-hidden="true">{{ isGeneratingPdf() ? 'hourglass_top' : 'download' }}</span>
             </button>
           </div>
+
+          @if (pdfBlobUrl()) {
+            <div class="qr-section">
+              <p class="qr-section__label">
+                <span class="material-symbols-outlined" aria-hidden="true">qr_code_2</span>
+                Scan to open PDF
+              </p>
+              <div class="qr-section__code">
+                <qrcode [qrdata]="pdfBlobUrl()!" [width]="148" [margin]="2" [errorCorrectionLevel]="'M'" cssClass="qr-canvas"></qrcode>
+              </div>
+            </div>
+          }
         </div>
       </aside>
     </section>

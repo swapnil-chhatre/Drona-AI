@@ -6,6 +6,7 @@ export interface FinalResultDocument {
   markdown: string;
   type: 'plan' | 'quiz' | 'activities';
   level?: string;
+  generatedLevel?: string;
 }
 
 export interface FinalResultExportOption {
