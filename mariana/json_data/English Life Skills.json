@@ -1,0 +1,4263 @@
+{
+  "Year 11": {
+    "English Life Skills": {
+      "Communicating": [
+        {
+          "description": "Use preferred communication form(s) to communicate a message",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Interact with a person, object or event in everyday situations",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to communication initiated by others",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Initiate communication with a familiar person or audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and use appropriate nonverbal cues and behaviours to communicate a message",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Communicate needs, requests, choices and preferences with purpose and clarity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Follow individual or multi-step instructions to understand and complete routines or tasks",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Ask questions to clarify or acquire information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and use safe and responsible communication",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the meaning of colloquial or non-literal language",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify when to share information in everyday situations",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Initiate, sustain and respectfully conclude interactions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage in interactions with people in familiar and unfamiliar contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use environmental or auditory cues to make informed decisions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Communicate emotions and feelings in contextually and age-appropriate ways",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify people and support networks that can be trusted when sharing information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify roles and responsibilities when working collaboratively",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use inclusive verbal and nonverbal communication respectfully",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply interpersonal skills to solve problems",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates in a range of everyday contexts for familiar purposes and audiences",
+          "code": "EN-LS-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to communicate for different purposes in different contexts",
+          "code": "EN-LS-02",
+          "scootle_url": ""
+        }
+      ],
+      "Engaging with texts": [
+        {
+          "description": "Engage with a range of preferred objects or images",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify a preference for a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Demonstrate appropriate listening skills when engaging with texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to shared reading, viewing or listening experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Express a preferred way to access a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond personally to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise alternative responses to texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use literacy strategies to decode unfamiliar words in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use tools or programs to aid comprehension",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the relevance and usefulness of information presented in a text, including digital texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify facts and opinions in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies to improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        }
+      ],
+      "Understanding and responding to texts": [
+        {
+          "description": "Explore home languages and language connections within the class or community",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise the differences in formal and informal register",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Express agreement or disagreement with ideas and perspectives presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personally relevant and important themes presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore how different characters in texts respond to a particular theme or issue",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand how culture and identity influence personal responses to texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how a personal opinion can be changed in response to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Demonstrate respect for the ideas of others",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare texts on a similar theme",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand the impact of texts on personal understanding of the world",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore how different audiences value texts for different reasons",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare adaptations or appropriations of texts to the source text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        }
+      ],
+      "Expressing ideas and composing texts": [
+        {
+          "description": "Recognise that photographs, pictures or symbols communicate meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Create multimodal texts to inform or engage an audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and demonstrate online communication that is safe and ethical",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify issues that can occur when creating digital texts and develop strategies to overcome these issues",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply grammar conventions accurately in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use punctuation to clarify meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Choose the most appropriate mode to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use scaffolding to plan compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use model texts to plan and monitor text structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select editing techniques or tools to enhance clarity and meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply peer or teacher feedback to enhance clarity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own or peers' composition process",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Reading to write (aligned to English Studies)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Reading to write provides opportunities to engage with texts from a variety of modes and media. This focus area can be explored through a concept selected by the teacher or with the intention of building on students' personal goals. Students study texts that are personally engaging, and which inspire or provoke them to respond. The selection of texts for this focus area offers a range of opportunities for students to read and engage with information and ideas. Texts could include model texts to illustrate the use of forms and features, student-selected wide reading material relevant to the focus of the unit or everyday texts used to access information and engage in post-school activities. Through the study of texts, students can develop insights into the world around them, their understanding of themselves and the lives of others, and enhance their enjoyment of reading. By reading and composing texts, they can use language to communicate for specific audiences and purposes.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content aligns with the content of the focus area Reading to write: Transition to English Studies in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies to improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare texts on a similar theme",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply grammar conventions accurately in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use punctuation to clarify meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use scaffolding to plan compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use model texts to plan and monitor text structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select editing techniques or tools to enhance clarity and meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        }
+      ],
+      "Reading to write (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Reading to write provides opportunities to engage with texts from a variety of modes and media. This focus area can be explored through a concept selected by the teacher or with the intention of building on students' personal goals. Students study texts that are personally engaging, and which inspire or provoke them to respond. The selection of texts for this focus area offers a range of opportunities for students to read and engage with information and ideas. Texts could include model texts to illustrate the use of forms and features, student-selected wide reading material relevant to the focus of the unit or everyday texts used to access information and engage in post-school activities. Through the study of texts, students can develop insights into the world around them, their understanding of themselves and the lives of others, and enhance their enjoyment of reading. By reading and composing texts, they can use language to communicate for specific audiences and purposes.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Reading to write: Transition to English Standard focus area in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare texts on a similar theme",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular contexts and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use scaffolding to plan compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use model texts to plan and monitor text structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select editing techniques or tools to enhance clarity and meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Contemporary possibilities (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Contemporary possibilities provides opportunities to explore how contemporary worlds are represented in multimodal texts such as film, television, social media, podcasts and digital platforms. The selection of texts for this focus area can also include digital texts such as game worlds and participatory storytelling. Students are provided opportunities to engage with storytelling using technology and new modes of communication. In this focus area students may explore the way stories are communicated digitally through a range of language and visual forms and features, experiment with these forms and features, or create their own multimodal or digital texts that communicate and represent their ideas.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Contemporary possibilities focus area in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore how different audiences value texts for different reasons",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare adaptations or appropriations of texts to the source text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Create multimodal texts to inform or engage an audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and demonstrate online communication that is safe and ethical",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify issues that can occur when creating digital texts and develop strategies to overcome these issues",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Choose the most appropriate mode to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own or peers' composition process",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Close study of literature (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Close study of literature provides opportunities to develop knowledge and understanding of a substantial literary text. Students may access text through excerpts and extracts, paraphrased or illustrated versions. The text selected for this focus area can provide opportunities for discussion and for developing understanding of language forms or features. Students may be supported by additional texts as appropriate to develop understanding. Personal responses to the text could include identifying personal preferences, shared reading experiences or the exploration of ideas and characteristics of the text.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Close study of literature focus areas in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ]
+    }
+  },
+  "Year 12": {
+    "English Life Skills": {
+      "Communicating": [
+        {
+          "description": "Use preferred communication form(s) to communicate a message",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Interact with a person, object or event in everyday situations",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to communication initiated by others",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Initiate communication with a familiar person or audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and use appropriate nonverbal cues and behaviours to communicate a message",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Communicate needs, requests, choices and preferences with purpose and clarity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Follow individual or multi-step instructions to understand and complete routines or tasks",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Ask questions to clarify or acquire information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and use safe and responsible communication",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the meaning of colloquial or non-literal language",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify when to share information in everyday situations",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Initiate, sustain and respectfully conclude interactions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage in interactions with people in familiar and unfamiliar contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use environmental or auditory cues to make informed decisions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Communicate emotions and feelings in contextually and age-appropriate ways",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify people and support networks that can be trusted when sharing information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify roles and responsibilities when working collaboratively",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use inclusive verbal and nonverbal communication respectfully",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply interpersonal skills to solve problems",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates in a range of everyday contexts for familiar purposes and audiences",
+          "code": "EN-LS-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to communicate for different purposes in different contexts",
+          "code": "EN-LS-02",
+          "scootle_url": ""
+        }
+      ],
+      "Engaging with texts": [
+        {
+          "description": "Engage with a range of preferred objects or images",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify a preference for a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Demonstrate appropriate listening skills when engaging with texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to shared reading, viewing or listening experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Express a preferred way to access a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond personally to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise alternative responses to texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use literacy strategies to decode unfamiliar words in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use tools or programs to aid comprehension",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the relevance and usefulness of information presented in a text, including digital texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify facts and opinions in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies to improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        }
+      ],
+      "Understanding and responding to texts": [
+        {
+          "description": "Explore home languages and language connections within the class or community",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise the differences in formal and informal register",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Express agreement or disagreement with ideas and perspectives presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personally relevant and important themes presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore how different characters in texts respond to a particular theme or issue",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand how culture and identity influence personal responses to texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how a personal opinion can be changed in response to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Demonstrate respect for the ideas of others",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare texts on a similar theme",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand the impact of texts on personal understanding of the world",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore how different audiences value texts for different reasons",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compare adaptations or appropriations of texts to the source text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        }
+      ],
+      "Expressing ideas and composing texts": [
+        {
+          "description": "Recognise that photographs, pictures or symbols communicate meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Create multimodal texts to inform or engage an audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise and demonstrate online communication that is safe and ethical",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify issues that can occur when creating digital texts and develop strategies to overcome these issues",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply grammar conventions accurately in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use punctuation to clarify meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Choose the most appropriate mode to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use scaffolding to plan compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use model texts to plan and monitor text structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select editing techniques or tools to enhance clarity and meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply peer or teacher feedback to enhance clarity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own or peers' composition process",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Narrative and human experiences (aligned to English Studies)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Narrative and human experiences provides opportunities to explore narratives that share people's experiences. Students explore how characters respond to events and the relationships between characters. They explore how storytelling is used to share moments of challenge and growth. Selected texts can take a range of forms and should be selected based on students' interest and needs. Students create personal responses to the characters' experiences in texts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the focus area Narrative and human experiences in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personally relevant and important themes presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore how different characters in texts respond to a particular theme or issue",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand how culture and identity influence personal responses to texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how a personal opinion can be changed in response to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand the impact of texts on personal understanding of the world",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use scaffolding to plan compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select editing techniques or tools to enhance clarity and meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Writing for purpose (aligned to English Studies)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Writing for purpose provides opportunities to develop knowledge and skills as composers of everyday, community or workplace texts for a variety of audiences and purposes. They engage with and respond to a variety of texts to develop their knowledge and understanding of a range of textual forms. Texts should be selected based on students' interest and needs. Students develop their use of language forms and features to clearly communicate information or ideas. By planning, editing and refining, students explore how to organise their ideas with an appropriate structure and use language, grammar and syntax to create meaning.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Writing for purpose focus area in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond personally to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise the differences in formal and informal register",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply grammar conventions accurately in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use punctuation to clarify meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use scaffolding to plan compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use model texts to plan and monitor text structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select editing techniques or tools to enhance clarity and meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective A: Voices of Australia": [
+        {
+          "description": "For students studying English Life Skills, the elective Voices of Australia provides opportunities to explore their understanding of personal identity, individual rights and community responsibilities. Students engage with texts about contemporary and historical Australia, including texts by and about Aboriginal and/or Torres Strait Islander Peoples, and texts composed by migrant and refugee Australians, to explore the diversity of cultures, peoples, perspectives and voices that contribute to Australian society.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective B: Media and influence": [
+        {
+          "description": "For students studying English Life Skills, the elective Media and influence provides opportunities to develop an understanding of the functions, roles and responsibilities of print and digital media as means of communicating information. Students explore how media texts represent information and influence audiences.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective C: On the road": [
+        {
+          "description": "For students studying English Life Skills, the elective On the road provides opportunities to explore texts that are encountered or produced as part of the experiences of travel, including advertising, journalism and filmmaking. They have opportunities to recognise the language of blogs, reviews, travel advertisements and documentaries, as well as comprehend government advice about overseas travel.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective D: Playing the game": [
+        {
+          "description": "For students studying English Life Skills, the elective Playing the game provides opportunities to explore ways language is used in texts about sporting events and issues. Students may engage with feature articles, news reports, speeches, online blogs, biographies, autobiographies, advertisements, documentaries, films, short stories and novels.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective E: Lyrical voices": [
+        {
+          "description": "For students studying English Life Skills, the elective Lyrical voices provides opportunities to explore how ideas, experiences or perspectives are communicated through music and lyrics. Through the study of songs, reviews, music journalism, biographies or documentaries, students consider how the language forms and features of these texts are used to represent experiences and ideas. Students experiment with the language forms and features identified in music and lyrics in their own responses.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective F: Everyday heroes": [
+        {
+          "description": "For students studying English Life Skills, the elective Everyday heroes provides opportunities to recognise individuals who have made a worthwhile contribution to the community. Students may explore texts such as feature articles, reality television, documentaries, short prose fiction, photography, artworks and digital texts to recognise the qualities, motivations and decisions of people striving to improve the lives of those around them.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective G: Part of a family": [
+        {
+          "description": "For students studying English Life Skills, the elective Part of a family provides opportunities to develop an understanding of ways language and texts are used to represent ideas of family. They explore their own place in their family structures, recognising the impact this has on their identity. Students may engage with informative and imaginative texts, such as novels, films, poetry, feature articles or documentaries, to develop an understanding of the diversity of family structures, human relationships or other topics related to family life.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective H: Uncovering the truth": [
+        {
+          "description": "For students studying English Life Skills, the elective Uncovering the truth provides opportunities to explore texts that represent investigations of truth. Texts selected may include true crime, crime fiction and investigative journalism texts such as podcasts and historical mysteries. They explore ways language and text are used to present information, influence opinion or encourage further investigation.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective I: The big screen": [
+        {
+          "description": "For students studying English Life Skills, the elective The big screen provides opportunities to engage with and enjoy a range of films that use visual language and other cinematic techniques to convey meaning, including narrative and documentary, feature-length films or short films. Students have opportunities to compose short multimodal texts to communicate their ideas, preferences or opinions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective J: Representing the past": [
+        {
+          "description": "For students studying English Life Skills, the elective Representing the past provides opportunities to explore texts that offer representations of people and events from the past. They have the opportunity to experience, engage with, and create texts in print, spoken, visual and electronic forms. The texts may depict events, individuals and communities in factual or imaginative ways.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Elective K: Achieving through English -- English in education, work and community": [
+        {
+          "description": "For students studying English Life Skills, the elective Achieving through English -- English in education, work and community provides opportunities to engage with texts that represent people's working, educational and community lives. Texts may include films, biographies, television series and drama texts, as well as extracts and short texts. Students have opportunities to develop skills that assist them to access and comprehend information in everyday and workplace texts. Students compose texts related to the workplace and other practical applications.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Elective focus areas in English Studies 11--12 and has been provided as a suggestion only. Further content can also be used to address these focus areas and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with real-world texts to gain information",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with texts for interest or enjoyment",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Engage with a broadening range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Share preferences and new understandings",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify preferred reading strategies that improve understanding and engagement",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use reading, viewing or listening strategies to locate and extract information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how information is conveyed in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise connections between ideas and features within texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use strategies to organise information and make connections between ideas in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Set and monitor personal goals to improve composition skills",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personal barriers to composing texts and strategies to overcome these",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "reads, views, represents or responds to texts in familiar contexts",
+          "code": "EN-LS-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses a range of strategies to engage with texts",
+          "code": "EN-LS-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises the relationships between texts",
+          "code": "EN-LS-08",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Texts and human experiences (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Texts and human experiences provides opportunities to develop an understanding of how texts represent human experiences and emotions. They explore aspects of identity and culture, including ways of seeing the world differently. Students explore the ways language is used to shape representations in texts. Texts selected can take a range of forms and should be selected based on student interests and needs. Personal responses to texts enable students to consider the ways that texts encourage them to reflect personally about the nature of human experience.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Texts and human experiences focus area in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Express agreement or disagreement with ideas and perspectives presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify the message, values or experiences in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify personally relevant and important themes presented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understand how culture and identity influence personal responses to texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how a personal opinion can be changed in response to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Demonstrate respect for the ideas of others",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        }
+      ],
+      "Language, identity and culture (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Language, identity and culture provides opportunities to consider how texts can represent or shape identity. Students have the opportunity to engage with ways language can be used to affirm or challenge beliefs about themselves and others. They explore ways language forms or features are used to communicate information, ideas, values or attitudes. The selection of texts for this unit could explore a range of short texts or excerpts that draw on students' personal experiences with languages and cultures. Students experiment with language forms and features to compose texts that explore their own identity and culture.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Language, identity and culture focus area in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explore different perspectives on a particular topic, theme or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Respond to a text by providing a personal opinion or perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how a personal opinion can be changed in response to a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "responds to a range of ideas and experiences in texts",
+          "code": "EN-LS-06",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        }
+      ],
+      "The craft of writing (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area The craft of writing provides opportunities to develop student composition skills. They compose everyday texts for authentic audiences and purposes. Students engage with everyday texts as models and stimuli for the development of their own ideas and creative expression. They recognise how composers use language to describe the world around them. Through consideration of texts students can experiment with applying their knowledge of language forms and features in their own compositions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the knowledge and skills of the focus area The craft of writing in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate form, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Create multimodal texts to inform or engage an audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Apply grammar conventions accurately in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use punctuation to clarify meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use a range of sentence structures to create meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use vocabulary for purposeful effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use visual or language features to create texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with language forms, features or structures to develop creativity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Choose the most appropriate mode to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use model texts to plan and monitor text structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own or peers' composition process",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Reflect on own final composition",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ],
+      "Close study of literature (aligned to English Standard)": [
+        {
+          "description": "For students studying English Life Skills, the focus area Close study of literature provides opportunities to develop knowledge and understanding of a substantial literary text. Students may access text through excerpts and extracts, paraphrased or illustrated versions. The text selected for this focus area can provide opportunities for discussion and for developing understanding of language forms or features. Students may be supported by additional texts as appropriate to develop understanding. Personal responses to the text could include identifying personal preferences, shared reading experiences or the exploration of ideas and characteristics of the text.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The content below aligns to the content of the Close study of literature focus areas in English Standard 11--12 and has been provided as a suggestion only. Further content can also be used to address this focus area and meet the individual needs of students as appropriate.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms, features or structures can create meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise ways language forms and features change according to purpose and audience",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify how texts can represent a particular time or event",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that an author's personal experiences can shape meaning in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise that audience responses to texts can vary",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Identify that texts represent a diverse range of lived experiences or cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Recognise how context influences audience, ideas and attitudes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that offer personal responses to a chosen text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Represent personal experiences and ideas for particular audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts for different purposes and audiences using appropriate forms, language or visual features to communicate, including workplace and real-life texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use language forms or structures to express ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways language forms and features of texts create meaning",
+          "code": "EN-LS-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies ways context influences responses",
+          "code": "EN-LS-07",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts for a variety of purposes and audiences",
+          "code": "EN-LS-09",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses language forms and features to compose texts",
+          "code": "EN-LS-10",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans, reflects on and revises the composition of texts",
+          "code": "EN-LS-11",
+          "scootle_url": ""
+        }
+      ]
+    }
+  }
+}
