@@ -16,7 +16,11 @@ class RagService:
             embeddings=embeddings,
             collection_name="documents",
             connection=os.getenv("DATABASE_URL"),
+            engine_args={"pool_pre_ping": True, "pool_recycle": 300},
         )
+
+        self.vector_store.create_tables_if_not_exists()
+        self.vector_store.create_collection()
 
         self.retriever = self.vector_store.as_retriever(search_kwargs={"k": 5})
 

@@ -26,6 +26,24 @@ async def generate_stream(request: GenerateRequest):
     )
 
 
+@router.post("/generate/stream/simple")
+async def generate_stream_simple(request: GenerateRequest):
+    """Streams a simplified study plan with no web scraping or RAG — used as a fallback."""
+    async def event_generator():
+        async for chunk in plan_service.stream_generate_simple(request):
+            yield f"data: {json.dumps({'token': chunk})}\n\n"
+        yield f"event: done\ndata: {{}}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
+    )
+
+
 @router.post("/generate/quiz/stream")
 async def generate_quiz_stream(request: GenerateRequest):
     """Streams the quiz markdown token by token via SSE."""

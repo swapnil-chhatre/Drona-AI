@@ -1,0 +1,619 @@
+{
+  "Year 11": {
+    "English EAL/D": {
+      "Reading to write: Transition to English EAL/D": [
+        {
+          "description": "Students read, view and listen to quality short texts from a variety of modes and mediums. In doing so, they experiment with reading strategies to examine language and gradually increase their vocabulary in English through their engagement with imaginative, discursive and persuasive texts. They read texts that are engaging aesthetically, stylistically and conceptually to inspire them to respond critically and creatively. Students develop their understanding and use of form and structure when composing and responding to texts. To build their language proficiency and fluency students develop their understanding of metalanguage to use in their own compositions. Explicit, targeted English language study centres on using descriptive, rhetorical and persuasive language appropriate for purpose and audience. Students also develop their understanding and use of correct syntax, the effect of phrasal verbs and collocations, and clause and sentence structure in their own spoken and written texts across a range of modes and mediums.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students compare and contrast texts to develop their own written expression and offer inspiration for their own writing. They also develop the vocabulary to appreciate, understand and analyse texts, and plan, draft and refine their own written and spoken texts. Through wide reading of texts, students develop insights into the world around them, deepen their understanding of themselves and others, and enhance their enjoyment of reading to strengthen their personal voice as writers.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The language forms, text structures and stylistic features in spoken and written texts to shape ideas and perspectives, including parts of speech and verb forms and tenses",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: Synonyms and antonyms",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The use of discourse markers to show cause and effect",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways ideas, attitudes and perspectives are represented in spoken and written texts and how these shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The conventions of genre and the ways texts may conform or subvert these conventions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The impact of language forms, conventions and literary devices in familiar and unfamiliar texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose texts that experiment with tone, modality and register for different purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose imaginative texts that experiment with point of view, form and setting to represent a range of personal, social, historical or cultural contexts and perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Select and use appropriate structure to communicate ideas and opinions for different purposes, audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose critical and creative texts that use accurate spelling, punctuation and syntax in a range of modes and mediums",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Plan, draft and refine ideas and language in own texts for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Assess their choices of language and textual form in their own critical and creative compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-11-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-11-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the connections between texts",
+          "code": "EEA-11-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information, ideas and opinions in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-11-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-11-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-11-06",
+          "scootle_url": ""
+        }
+      ],
+      "Texts and society": [
+        {
+          "description": "Students explore, analyse, respond to and compose a selection of texts that are commonly encountered in community, vocational and academic settings. They investigate how these texts communicate information, ideas, attitudes and belief systems.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students compare and contrast the types of texts that are used in community interactions, workplace communication and formal learning situations across different disciplines. They read and listen for specific content in texts to identify and explain the purposes, to distinguish between facts and opinions and to examine the similarities and differences in textual forms and language features. They consider what the texts indicate and imply about prevailing customs, norms, behaviours and organisational cultures in the social and vocational contexts in which they are used, and the construction of knowledge in particular fields of study and academic disciplines.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Explicit, targeted English language study centres on aspects of language usage, including recognising irony and humour, technical terminology, appropriacy and jargon, and understanding and using conventions of textual forms and language to shape meaning and influence responders (the reader, listener, viewer, an audience) in specific contexts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The impact of variations in style and register in spoken and written texts in semi-formal and formal texts and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The use of active and passive voice",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: Clause types, including declarative, interrogative, imperative and exclamative",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways in which verbal and nonverbal elements interact to shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose texts in a range of modes and mediums with appropriate application of language conventions including syntax, spelling and grammar",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose a variety of texts in different modes and mediums to present ideas and opinions for different purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use technical terminology, semantic fields, appropriacy and jargon in spoken and written texts particular to specific areas of society",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use the information and ideas gathered from a range of texts to present and support ideas in analytical, expressive and imaginative ways",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Plan, draft and refine ideas and language in own texts for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-11-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-11-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the connections between texts",
+          "code": "EEA-11-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information, ideas and opinions in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-11-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-11-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-11-06",
+          "scootle_url": ""
+        }
+      ],
+      "Close study of text": [
+        {
+          "description": "Students develop understanding, knowledge and appreciation of a substantial literary text, its information and ideas, and consider the ways in which the content, form and language of the text shape meaning.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "In their study of one substantial literary text students experiment with interpretive approaches to examine the text's meaning and significance and develop and expand their vocabulary of interpretation and response. Explicit, targeted English language study centres on identifying, analysing and responding to the ways in which language shapes meaning, including implied meaning, in their text. Students also examine the language and conventions that are particular to their literary form, and the ways that authors make inferences, and use, manipulate and challenge those conventions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The aesthetic qualities, themes and representation of ideas, values and attitudes in a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways the context of the author and the audience shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: Language for making connections, posing questions, affirming, challenging, speculating and generalising",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose sustained texts that experiment with appropriate metalanguage and structural choices to shape perspectives and opinions in a range of modes and mediums",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use descriptive, rhetorical and persuasive language to express ideas, attitudes and evaluations of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Apply the conventions of syntax, spelling and grammar accurately in own compositions for specific purposes, audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Plan, draft, reflect, edit and refine texts using accurate syntax in clauses and sentences for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-11-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-11-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the connections between texts",
+          "code": "EEA-11-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information, ideas and opinions in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-11-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-11-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-11-06",
+          "scootle_url": ""
+        }
+      ]
+    }
+  },
+  "Year 12": {
+    "English EAL/D": {
+      "Texts and human experiences": [
+        {
+          "description": "Students interpret and respond to texts that examine what it means to be human. They experiment with different approaches to textual appreciation and analysis, consolidating and building on skills in reading, speaking, listening, viewing, responding and composing. They undertake the study of ONE prescribed text and explore a range of short texts in a variety of forms and media. Students examine how texts provide insight into emotional, intellectual, physical, cultural and lived experiences and draw from personal experience to make connections between themselves, the world of the text and their wider world.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "They consider the role of storytelling throughout time in communicating and reflecting the human experience. They explore how texts represent the tension between agency and conformity in our human experience, while examining the paradoxes of motivation and behaviour. Explicit, targeted English language study centres on structural, stylistic and linguistic elements, including the use of descriptive and expressive language in spoken and written texts. Students analyse texts, comparing and contrasting the ways composers, narrators and personas represent insights into the human experience and explore their own assumptions about the possibilities of human experience.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: Comparative, temporal and consequential conjunctions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The impact of direct and indirect speech",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The use of literary and persuasive features, including rhetorical devices, figurative language and dramatic irony, in familiar and unfamiliar texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways arguments are presented in nonfiction texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose creative, informed and sustained interpretations of texts supported by integrated textual evidence",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Apply a range of language features in own compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Make connections with other texts through language, form and structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use cohesive links and discourse markers to show cause and effect in spoken and written texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use metalanguage to interpret texts and evaluate their own learning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "evaluates the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the connections between texts",
+          "code": "EEA-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates ideas, perspectives and arguments in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-12-06",
+          "scootle_url": ""
+        }
+      ],
+      "Language, identity and culture": [
+        {
+          "description": "Language has the power to reflect and shape individual and collective identity. Students explore and analyse the ways that language is used to express the complexities and subtleties of personal, social and cultural identity. They investigate how textual forms and conventions, and language structures and features are used to communicate information, ideas, values and attitudes. Students also consider the impact texts have on shaping individuals' or communities' sense of identity in both personal and public worlds that inform and influence perceptions of ourselves and other people. Through the study of ONE prescribed text and a range of short texts, students develop an understanding of how individual perceptions of and relationships with others and the world are shaped by spoken, written and visual language.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Through close language study, and by experimenting with different language choices, students consider and reflect on ways in which texts affirm and challenge prevailing assumptions and beliefs about individuals, and social and cultural groupings. Explicit, targeted English language study centres on vernaculars, idioms, colloquialisms and other forms of expression representing aspects of individual and collective identity. Students consider representations of and perspectives on culture and identity and they reflect on their own and others' experiences of adapting to changed circumstances.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways cultural perspectives and identities are represented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways in which texts created by authors from diverse backgrounds represent people, places, histories and experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: Culturally specific phrases, idioms, colloquialisms, collocations and references in a range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The different perspectives on personal, social and historical issues represented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose texts that use forms and features to represent a range of perspectives on culture and identity",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose critical texts that affirm and challenge ideas, values and perspectives that are represented in text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use accurate syntax in clauses and sentences in own spoken and written texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Make connections with other texts through language, form and structure",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "evaluates the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the connections between texts",
+          "code": "EEA-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates ideas, perspectives and arguments in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-12-06",
+          "scootle_url": ""
+        }
+      ],
+      "Close study of text": [
+        {
+          "description": "Students develop understanding, knowledge and appreciation of a substantial literary text, its information and ideas, and consider the ways in which the content, form and language of the text shapes meaning.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "In their study of ONE substantial literary text, students experiment with interpretive approaches to examine the text's meaning and significance and develop and expand their vocabulary of interpretation and response. Explicit, targeted English language study centres on identifying, analysing and responding to the ways in which language shapes meaning in their text. They also examine the language forms and conventions that are particular to the selected literary form, and the ways that authors use, manipulate and challenge those conventions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways context shapes meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The influence of narrative point(s) of view to convey ideas, attitudes and values in literary texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose extended texts that explain the use and effects of particular textual forms and language choices",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose a range of critical and analytical texts that explore complex ideas about the relationship between content, form and language",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose informed arguments about texts supported by appropriate textual analysis",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use descriptive, persuasive and rhetorical vocabulary to construct sustained interpretations of texts in a range of modes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use lexical chains and referential devices to achieve cohesion in spoken and written texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "evaluates the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the connections between texts",
+          "code": "EEA-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates ideas, perspectives and arguments in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-12-06",
+          "scootle_url": ""
+        }
+      ],
+      "Writing": [
+        {
+          "description": "Students develop and refine their knowledge and skills in writing, speaking and representing. They create and present a range of texts to communicate information, ideas, values and attitudes for different purposes, audiences and contexts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students analyse, evaluate and reflect on the expressive, aesthetic and imaginative qualities of a wide range of written, spoken and multimodal texts, including texts studied in other focus areas. Using these texts as models, they experiment with techniques, styles and forms in a range of modes and mediums to produce their own works, including imaginative, discursive and persuasive texts. Explicit, targeted English language study includes research and referencing, and implementing and maintaining ethical practices and standards when composing texts. As part of the writing process, students generate ideas, experiment with techniques, styles and forms, and reflect on the language choices in their own compositions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The ways language forms, features and structures are adapted for different purposes, audiences and contexts in a range of forms, modes and mediums",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The impact of descriptive, rhetorical and persuasive language",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: Synonyms and antonyms",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding: The impact of conventions of form and structure in their own spoken and written compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Compose sustained imaginative, persuasive, discursive texts that affirm and challenge the ideas, perspectives and values represented in other texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Recreate existing texts as new texts by changing context and perspective",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Use referencing skills to support ideas, arguments and perspectives in own compositions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Responding: Plan, draft and refine spoken and written texts applying accurate conventions of syntax, spelling and grammar for their purpose, audience and context",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "evaluates the ways an author's choice of textual forms and features shapes meaning in texts from different modes and mediums",
+          "code": "EEA-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context, cultural references and perspectives influence composition and audience response",
+          "code": "EEA-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the connections between texts",
+          "code": "EEA-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates ideas, perspectives and arguments in a range of modes for a variety of purposes, audiences and contexts",
+          "code": "EEA-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts that use textual form and language features to shape meaning for a range of purposes and audiences",
+          "code": "EEA-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains how choices of language, form and structure can shape meaning in own compositions",
+          "code": "EEA-12-06",
+          "scootle_url": ""
+        }
+      ]
+    }
+  }
+}

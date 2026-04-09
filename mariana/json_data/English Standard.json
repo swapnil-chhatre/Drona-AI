@@ -1,0 +1,619 @@
+{
+  "Year 11": {
+    "English Standard": {
+      "Reading to write: Transition to English Standard": [
+        {
+          "description": "Students undertake the close reading of quality texts from a variety of modes and mediums. In doing so, they develop the knowledge to appreciate, understand, analyse and evaluate the ways texts convey complex ideas, relationships, endeavours and scenarios. Central to this focus area is developing student capacity to respond perceptively to texts through their own thoughtful writing and judicious reflection on their knowledge and skills as writers. Students read texts that are aesthetically, stylistically or conceptually engaging to inspire or provoke them to respond critically and creatively. Through wide reading and the close study of texts, students develop insights into the world around them, deepen their understanding of themselves and the lives of others, and enhance their enjoyment of reading.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The power of language to shape and influence meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways mode, medium and context shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways various language features, including figurative elements, shape ideas, perspectives and experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways close analysis of language and literary devices informs interpretations of familiar and unfamiliar texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways personal experience is transformed into imaginative texts across a range of purposes, audiences and contexts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The similarities and differences in language forms, features and structures within and between texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose persuasive, discursive and imaginative texts that explore increasingly complex ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that make thematic and stylistic connections with other texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that explore a range of values and perspectives, including their own",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that integrate different modes and mediums for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Draft, edit, revise and refine texts for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use appropriate metalanguage to assess and reflect on the value of writing",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use accurate spelling, punctuation, syntax and metalanguage in creating critical and creative texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways an author's choice of language, form and structure shape meaning in texts of different modes and mediums",
+          "code": "EST-11-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-11-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the ways context and values influence composition and audience response",
+          "code": "EST-11-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-11-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-11-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-11-06",
+          "scootle_url": ""
+        }
+      ],
+      "Contemporary possibilities": [
+        {
+          "description": "Students develop an understanding of the creative possibilities of storytelling in evolving technologies and new modes of communication. Students engage in a detailed study of ONE complex multimodal text and a range of other texts. Students develop an understanding of the power of storytelling to represent ideas, people and events in innovative ways. They explore how these representations are shaped by aspects of culture, context and experience. Students analyse a range of language forms and features related to textual hybridity, reading pathways, interactivity and intertextuality. They appreciate the complex nature of communicating in a contemporary world and the limitations and possibilities of storytelling in a range of modes and mediums.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The language features, text structures and stylistic choices that influence narratives from a range of modes and mediums, including digital texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways different mediums and technologies shape meaning and influence storytelling",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways composers transform and adapt texts for different contexts, purposes and audiences, including appropriations in popular culture",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The impact of intertextuality on purpose, audience and content",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The values and assumptions that are represented and communicated in texts from emerging modes and mediums",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Experiment with text structures and language features related to specific genres and modes and mediums",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose logical, ordered and cohesive texts that build effective arguments in response to the ideas generated through texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose critical and creative texts that reflect particular values and perspectives, including their own",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that reflect on the processes of composition in different mediums and technologies",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use different processes and technologies to generate, investigate, clarify, organise, refine and present information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways an author's choice of language, form and structure shape meaning in texts of different modes and mediums",
+          "code": "EST-11-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-11-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the ways context and values influence composition and audience response",
+          "code": "EST-11-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-11-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-11-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-11-06",
+          "scootle_url": ""
+        }
+      ],
+      "Close study of literature": [
+        {
+          "description": "Students develop their knowledge and appreciation of a substantial literary print text. Through their close study of and personal responses to the text in its entirety, students develop an understanding of the ways that language features, text structures and stylistic choices can be used in literary texts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students study ONE substantial literary print text, such as prose fiction, drama or poetry. They identify, analyse and respond to the ideas in the text and the ways in which meaning is shaped. Students examine the conventions that are particular to the chosen literary form, and the ways that authors use, manipulate or challenge those conventions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways textual forms and language features, including style, tone and point of view, shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The relationship between language and content in a literary text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways language forms, features and structure conform to, or challenge, accepted conventions",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways that different perspectives can affect interpretations of a text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Select, interpret and use appropriate textual evidence to support informed personal interpretations of a literary text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose logical, ordered and cohesive texts that build effective arguments in response to the ideas generated from a literary text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose critical and creative texts that reflect particular values and perspectives, including their own",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways an author's choice of language, form and structure shape meaning in texts of different modes and mediums",
+          "code": "EST-11-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-11-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the ways context and values influence composition and audience response",
+          "code": "EST-11-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-11-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-11-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-11-06",
+          "scootle_url": ""
+        }
+      ]
+    }
+  },
+  "Year 12": {
+    "English Standard": {
+      "Texts and human experiences": [
+        {
+          "description": "Students deepen their understanding of how texts represent individual and collective human experiences. They examine how texts represent emotions and qualities related to these experiences. By responding to a range of texts, students explore how texts provide insight into emotional, intellectual, physical, cultural and lived experiences. They explore the ways texts represent identity, culture, acceptance and growth, invite the reader to see the world differently, and challenge assumptions. Students explore how texts can represent the tension between agency and conformity in our human experience, while examining the paradoxes of motivation and behaviour. Through critical and creative responses to texts, students consider the ways that texts encourage them to reflect personally and challenge their assumptions about the nature of human experience.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The language, forms and features of texts that shape meaning for different audiences and purposes in familiar and unfamiliar texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The language, forms and features of texts that shape a range of perspectives, personal and public worlds, and diverse human experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The aesthetic qualities of texts and the power of language to express personal ideas and experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Language used for making connections, questioning, affirming, challenging and speculating about texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The evaluative language and metalanguage used to make informed judgements about texts and express personal perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Develop creative, informed and sustained interpretations of texts, supported by close textual analysis",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose creative and critical texts that affirm or challenge ideas, values and perspectives represented in a range of texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts using structures, language features and stylistic elements for specific audiences, to reinterpret ideas and perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "critically analyses the ways an author's choice of language, form and structure shapes meaning in complex texts of different modes and mediums",
+          "code": "EST-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context and values influence composition and audience response",
+          "code": "EST-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "justifies own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-12-06",
+          "scootle_url": ""
+        }
+      ],
+      "Language, identity and culture": [
+        {
+          "description": "Language has the power to reflect and shape individual and collective identity. In this focus area, students consider how their responses to written, spoken, audio and visual texts shape their self-perception. They also consider the impact texts have in shaping individuals' and communities' sense of identity. Through understanding and responding to texts, students deepen their understanding of how language can affirm, ignore, challenge and disrupt prevailing assumptions and beliefs about themselves, individuals and culturally connected groups.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students study ONE prescribed text in detail and a range of textual material to explore, analyse and assess the ways in which meaning about individual and community identity and cultural perspectives is shaped in and through texts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways personal, social, cultural and historical contexts shape meaning in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways specific language features and forms of texts influence perceptions of ourselves, other people and a range of cultural perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways mode and medium shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways context and implicit cultural assumptions influence the perspectives and ideas of authors",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways content shapes the social, moral and ethical positions represented in texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Develop an understanding of the ways language features, text structures and stylistic choices shape points of view and influence audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use information and ideas for a range of purposes including the development of sustained, evidence-based, logical and complex arguments",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Develop an understanding of how different perspectives, attitudes and values can be represented in texts for meaning and purpose",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose informed and cohesive interpretations of texts, supported by close textual analysis",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "critically analyses the ways an author's choice of language, form and structure shapes meaning in complex texts of different modes and mediums",
+          "code": "EST-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context and values influence composition and audience response",
+          "code": "EST-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "justifies own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-12-06",
+          "scootle_url": ""
+        }
+      ],
+      "Close study of literature": [
+        {
+          "description": "Students develop knowledge, understanding and appreciation of a substantial literary text. Through their development of considered personal responses to the text, students explore and analyse the particular ideas and characteristics of the text and understand the ways in which these characteristics establish its distinctive qualities.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students study ONE text chosen from the list of prescribed texts. They engage in an extensive exploration and interpretation of the text and the ways the author portrays people, ideas, settings and situations in the text. By analysing the interplay between the ideas, form and language within the text, students develop personal and intellectual connections with the text to appreciate how these elements may affect those responding to it.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways texts influence and position readers",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways textual forms, language and stylistic choices shape meaning",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways mode and medium shape meaning and influence personal responses",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The relationship between text and context",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The ways texts conform to, or challenge, accepted conventions through their textual forms, language and stylistic choices",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts that demonstrate their understanding of and appreciation for how language features, form and stylistic choices are effectively integrated to shape meaning and influence responses",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Consider different interpretations of texts derived from a range of perspectives",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose informed personal interpretations of a literary text, supported by close textual analysis",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose logical, ordered and cohesive texts that build arguments in response to the ideas generated from a literary text",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "critically analyses the ways an author's choice of language, form and structure shapes meaning in complex texts of different modes and mediums",
+          "code": "EST-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context and values influence composition and audience response",
+          "code": "EST-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "justifies own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-12-06",
+          "scootle_url": ""
+        }
+      ],
+      "The craft of writing": [
+        {
+          "description": "Students strengthen and extend their knowledge and skills as writers. They write for a range of purposes and audiences to convey ideas with power and increasing precision. Through the study of quality texts from the past and contemporary works, students analyse and assess the ways writers use structure, language and form. Through their engagement with these texts, students reflect on the process of writing and apply their knowledge of structure, language and form to create their own sustained and cohesive compositions. They examine how writers of complex texts use language creatively and imaginatively for a range of purposes, to describe the world around them, evoke emotion, shape a perspective or share a vision.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students generate and explore ideas through discussion and engagement with a range of texts. Through drafting and revising, students experiment with a range of language forms and features, including imagery, rhetoric, voice, characterisation, point of view, dialogue and tone. Students consider purpose and audience to carefully shape meaning in their own imaginative, discursive and persuasive texts. They accurately apply the conventions of syntax, spelling, punctuation and grammar in their own compositions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Through their critical and creative engagement with these texts, students reflect on the complex and recursive process of writing to further develop their knowledge and application of textual forms and features in their own sustained and cohesive compositions. They compose texts that combine different modes and mediums for a variety of purposes, audiences and contexts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students refine and strengthen their own skills in producing imaginative, discursive, persuasive and reflective texts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The power of language to express ideas, perspectives and experiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The forms, language features and stylistic choices that shape imaginative, discursive, persuasive and reflective texts",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use different processes to generate, investigate, clarify, organise, refine and present information and ideas",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use and manipulate genre in a range of modes and mediums for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose texts by changing context, perspective or point of view, and assess the effectiveness of these changes",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Compose imaginative, discursive, persuasive and reflective texts that make thematic or stylistic connections with other texts and reflect particular values and perspectives, including their own",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Use appropriate metalanguage to assess and reflect on the ways meaning is made in their own writing and the writing of others",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Draft, reflect, edit, refine, revise and present texts for a range of purposes and audiences",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "critically analyses the ways an author's choice of language, form and structure shapes meaning in complex texts of different modes and mediums",
+          "code": "EST-12-01",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains the relationships between texts through context, form and language",
+          "code": "EST-12-02",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the ways context and values influence composition and audience response",
+          "code": "EST-12-03",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes texts, using language forms and features in new and different contexts",
+          "code": "EST-12-04",
+          "scootle_url": ""
+        },
+        {
+          "description": "composes critical and creative texts for a range of audiences and purposes",
+          "code": "EST-12-05",
+          "scootle_url": ""
+        },
+        {
+          "description": "justifies own compositional processes and the ways choices of language, form and structure can shape meaning",
+          "code": "EST-12-06",
+          "scootle_url": ""
+        }
+      ]
+    }
+  }
+}

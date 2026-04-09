@@ -1,7 +1,9 @@
+import asyncio
 import os
 import psycopg2
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from api.discover import router as discover_router
 from api.generate import router as generate_router
 from api.upload import router as upload_router
@@ -29,6 +31,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+_REQUEST_TIMEOUT = 180.0  # seconds
+
+@app.middleware("http")
+async def timeout_middleware(request: Request, call_next):
+    try:
+        return await asyncio.wait_for(call_next(request), timeout=_REQUEST_TIMEOUT)
+    except asyncio.TimeoutError:
+        print(f"⚠️ Request timed out: {request.method} {request.url.path}")
+        return JSONResponse({"detail": "Request timed out"}, status_code=504)
 
 @app.get("/health")
 def health() -> dict:
