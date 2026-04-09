@@ -177,6 +177,30 @@ the classroom alongside one complementary resource."""
   Format the output as a complete, ready-to-use markdown study plan using the emoji and visual formatting rules above."""
 
     @staticmethod
+    def plan_generation_prompt_simple(
+        grade: str,
+        subject: str,
+        state: str,
+        topic: str,
+        timeline_weeks: int = 2,
+    ) -> str:
+        return f"""You are an expert Australian curriculum designer.
+
+  Generate a concise study plan for:
+  - Grade: {grade}
+  - Subject: {subject}
+  - State/Region: {state}
+  - Topic: {topic}
+  - Timeline: {timeline_weeks} weeks
+
+  ## Requirements
+  - Align with {state} curriculum standards
+  - Include learning objectives, a brief lesson sequence, and one assessment idea
+  - Keep the plan short and practical — this is a quick-start version
+
+  Format the output as markdown."""
+
+    @staticmethod
     def quiz_generation_prompt(
         grade: str,
         subject: str,

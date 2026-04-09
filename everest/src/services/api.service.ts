@@ -33,45 +33,90 @@ export class ApiService {
 
   // SSE with POST requires fetch — HttpClient doesn't support streaming responses.
   streamStudyPlan(request: GenerateRequest): Observable<string> {
+    return this.streamWithFallback(
+      `${this.base}/api/generate/stream`,
+      `${this.base}/api/generate/stream/simple`,
+      request,
+    );
+  }
+
+  /**
+   * Starts a streaming SSE request. If no token arrives within 30 seconds,
+   * aborts and retries against the simple fallback URL instead.
+   */
+  private streamWithFallback(
+    fullUrl: string,
+    simpleUrl: string,
+    request: GenerateRequest,
+  ): Observable<string> {
     return new Observable(observer => {
-      const controller = new AbortController();
+      let controller = new AbortController();
+      let usedFallback = false;
+      let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
-      fetch(`${this.base}/api/generate/stream`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(request),
-        signal: controller.signal,
-      })
-        .then(response => {
-          const reader = response.body!.getReader();
-          const decoder = new TextDecoder();
-
-          const read = () => {
-            reader.read().then(({ done, value }) => {
-              if (done) { observer.complete(); return; }
-
-              const text = decoder.decode(value, { stream: true });
-              for (const line of text.split('\n')) {
-                if (line.startsWith('event: done')) {
-                  observer.complete();
-                  return;
-                }
-                if (line.startsWith('data: ')) {
-                  try {
-                    const parsed = JSON.parse(line.slice(6));
-                    if (parsed.token !== undefined) observer.next(parsed.token);
-                  } catch { /* partial chunk — ignore */ }
-                }
-              }
-              read();
-            }).catch(err => observer.error(err));
-          };
-          read();
+      const startStream = (url: string) => {
+        fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(request),
+          signal: controller.signal,
         })
-        .catch(err => observer.error(err));
+          .then(response => {
+            const reader = response.body!.getReader();
+            const decoder = new TextDecoder();
 
-      // Cancel the fetch if the Observable is unsubscribed
-      return () => controller.abort();
+            const read = () => {
+              reader.read().then(({ done, value }) => {
+                if (done) { observer.complete(); return; }
+
+                const text = decoder.decode(value, { stream: true });
+                for (const line of text.split('\n')) {
+                  if (line.startsWith('event: done')) {
+                    observer.complete();
+                    return;
+                  }
+                  if (line.startsWith('data: ')) {
+                    try {
+                      const parsed = JSON.parse(line.slice(6));
+                      if (parsed.token !== undefined) {
+                        // First token received — cancel the timeout
+                        if (timeoutId !== null) {
+                          clearTimeout(timeoutId);
+                          timeoutId = null;
+                        }
+                        observer.next(parsed.token);
+                      }
+                    } catch { /* partial chunk — ignore */ }
+                  }
+                }
+                read();
+              }).catch(err => {
+                // AbortError means we triggered the fallback — not a real error
+                if (!usedFallback) observer.error(err);
+              });
+            };
+            read();
+          })
+          .catch(err => {
+            if (!usedFallback) observer.error(err);
+          });
+      };
+
+      // Start the full request and set a 30-second timeout
+      startStream(fullUrl);
+      timeoutId = setTimeout(() => {
+        usedFallback = true;
+        controller.abort();
+        controller = new AbortController();
+        console.warn('Study plan timed out after 30s — switching to simplified version');
+        startStream(simpleUrl);
+      }, 30_000);
+
+      // Cancel everything if the Observable is unsubscribed
+      return () => {
+        if (timeoutId !== null) clearTimeout(timeoutId);
+        controller.abort();
+      };
     });
   }
 

@@ -8,6 +8,8 @@ from models.study_plan import StudyPlan
 from models.requests import GenerateRequest, FollowUpRequest
 from langchain_community.document_loaders import WebBaseLoader
 
+_WEB_FETCH_TIMEOUT = 10.0  # seconds per URL
+
 from config import TEST_MODE
 from services.llm_service import LLMService
 from services.rag_service import RagService
@@ -34,7 +36,7 @@ class PlanService:
         """Initializes LLM and RAG services."""
         self.curriculum = CurriculumService()
         if not TEST_MODE:
-            self.llm = LLMService.get(temperature=0.4)
+            self.llm = LLMService.get(temperature=0.4, timeout=120)
             self.rag = RagService()
 
     def _build_curriculum_context(self, request: GenerateRequest) -> str:
@@ -153,6 +155,25 @@ class PlanService:
                 _FIXTURE_PATH_STUDY_PLAN.write_text("".join(collected), encoding="utf-8")
             except OSError as e:
                 print(f"⚠️ Could not save study plan fixture: {e}")
+
+    async def stream_generate_simple(self, request: GenerateRequest):
+        """Yields study plan tokens using a minimal prompt — no web scraping or RAG."""
+        if TEST_MODE:
+            async for chunk in self._fixture_stream():
+                yield chunk
+            return
+
+        prompt = PromptService.plan_generation_prompt_simple(
+            grade=request.grade,
+            subject=request.subject,
+            state=request.state,
+            topic=request.topic,
+            timeline_weeks=request.timeline_weeks,
+        )
+
+        async for chunk in self.llm.astream(prompt):
+            if chunk.text:
+                yield chunk.text
 
     async def stream_followup(self, request: FollowUpRequest):
         """Streams a revised document based on the teacher's selected follow-up chip."""
@@ -318,19 +339,25 @@ class PlanService:
         """Scrapes text content from the provided web URLs."""
         if not urls:
             return ""
-        
+
+        loop = asyncio.get_event_loop()
         sections = []
         for url in urls:
             try:
-                pages = WebBaseLoader(url).load()
+                pages = await asyncio.wait_for(
+                    loop.run_in_executor(None, lambda u=url: WebBaseLoader(u).load()),
+                    timeout=_WEB_FETCH_TIMEOUT,
+                )
                 if pages:
                     sections.append(
                         f"SOURCE: {url}\n\n"
                         + pages[0].page_content.strip()[:2000]
                     )
+            except asyncio.TimeoutError:
+                print(f"⚠️ Timed out fetching {url} after {_WEB_FETCH_TIMEOUT}s — skipping")
             except Exception as e:
                 print(f"⚠️ Failed to load {url}: {e}")
-        
+
         return "\n\n---\n\n".join(sections)
     
     async def _fetch_doc_content(self, topic: str, document_ids: list[str]) -> str:
