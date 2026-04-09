@@ -17,11 +17,11 @@ export class FooterComponent {
     },
     {
       name: 'Swapnil Chhatre',
-      url: 'https://www.linkedin.com/in/swapnilchhatre/',
+      url: 'https://www.linkedin.com/in/swapnil-chhatre/',
     },
     {
       name: 'Ruben Easo Thomas',
-      url: 'https://www.linkedin.com/in/ruben-easo-thomas/',
+      url: 'https://www.linkedin.com/in/rubent99/',
     },
   ];
 }

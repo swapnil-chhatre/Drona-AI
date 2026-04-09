@@ -67,6 +67,26 @@
   animation: pulse 1.5s ease-in-out infinite;
 }
 
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.github-link:hover {
+  color: var(--color-primary, #005dac);
+}
+
+.github-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
 .copyright {
   font-size: 0.75rem;
   color: #94a3b8; /* slate-400 */

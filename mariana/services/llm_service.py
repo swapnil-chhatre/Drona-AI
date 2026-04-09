@@ -1,12 +1,13 @@
+import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 
 class LLMService:
-    DEFAULT_MODEL = "gemini-3.1-flash-lite-preview"
+    DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3-flash-preview")
 
     @staticmethod
     def get(
-        model=DEFAULT_MODEL,
+        model=None,
         temperature: float = 0.2,
         max_tokens: int | None = None,
         timeout: int | None = None,
@@ -14,7 +15,7 @@ class LLMService:
         ) -> ChatGoogleGenerativeAI:
         """Instantiates and returns a ChatGoogleGenerativeAI model."""
         return ChatGoogleGenerativeAI(
-            model=model,
+            model=model or LLMService.DEFAULT_MODEL,
             temperature=temperature,
             max_tokens=max_tokens,
             timeout=timeout,
