@@ -12,9 +12,10 @@
 
 .landing-main {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  padding: 1rem 1rem 1rem 1rem;
-  overflow: hidden;
+  padding: 1rem 1rem 2rem;
 }
 
 /* .landing-topbar {
@@ -36,7 +37,6 @@
 .hero,
 .composer {
   position: relative;
-  z-index: 1;
 }
 
 .icon-button {
@@ -90,6 +90,7 @@
 } */
 
 .hero {
+  flex: 1;
   display: grid;
   place-items: center;
   padding-top: 2rem;
@@ -241,12 +242,9 @@
 }
 
 .composer {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  width: 100%;
   max-width: 64rem;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
 .composer__glow {
@@ -295,6 +293,14 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
   color: #fff;
   cursor: pointer;
+  transition: opacity 180ms ease, background 180ms ease;
+}
+
+.composer__inner button:disabled {
+  background: var(--color-outline-variant);
+  color: var(--color-outline);
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .composer p {
@@ -323,7 +329,7 @@
 @media (min-width: 768px) {
   .landing-main {
     margin-left: 16rem;
-    padding: 1.5rem 2rem 8.5rem;
+    padding: 1.5rem 2rem 2rem;
   }
 
   .panel--compact {
@@ -345,17 +351,11 @@
   .panel--topic {
     grid-column: span 7;
   }
-
-  .composer {
-    left: calc(16rem + 2rem);
-    right: 2rem;
-    width: auto;
-  }
 }
 
 @media (max-width: 767px) {
   .landing-main {
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
   }
 
   .topbar {

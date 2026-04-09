@@ -6,6 +6,7 @@ from api.discover import router as discover_router
 from api.generate import router as generate_router
 from api.upload import router as upload_router
 from api.suggestions import router as suggestions_router
+from api.pdf import router as pdf_router
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -38,3 +39,4 @@ app.include_router(discover_router)
 app.include_router(generate_router)
 app.include_router(upload_router)
 app.include_router(suggestions_router)
+app.include_router(pdf_router)
