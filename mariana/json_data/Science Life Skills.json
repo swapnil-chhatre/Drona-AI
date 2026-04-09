@@ -1,0 +1,1170 @@
+{
+  "Year 11": {
+    "Investigating Science Life Skills": {
+      "Module 1: Cause and Effect": [
+        {
+          "description": "Students recognise and make observations and use these to make predictions. They pose questions, and plan and conduct investigations to develop their knowledge and understanding of the world around them. They also explore data they have collected to identify patterns and trends and use these to make observations and draw conclusions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Scientific Models": [
+        {
+          "description": "Students engage with scientific models and gain an understanding of how models can represent scientific concepts. They explore a range of scientific models and participate in practical investigations to construct some models.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Science and Technology": [
+        {
+          "description": "Students develop an understanding of the process of scientific investigation. They observe and participate in a range of scientific investigations and recognise how these can be made reliable and valid. They also explore advances in scientific understanding and how science and technology are related.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises processes involved in a range of scientific investigations",
+          "code": "SCLS6-11",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Science and Society": [
+        {
+          "description": "Students explore myths that seem to have a scientific basis. They also explore how science can be used for human progress and development. They engage with ethical issues in science and how these impact on scientific research.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises that scientific investigations can support or refute a hypothesis",
+          "code": "SCLS6-13",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates how science impacts on society",
+          "code": "SCLS6-14",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores contemporary issues involving science",
+          "code": "SCLS6-15",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Physical World Science Life Skills": {
+      "Module 1: Forces and Motion": [
+        {
+          "description": "Students engage in observations and practical investigations to recognise motion in everyday life. They explore types of forces and investigate how force can impact on motion.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Energy": [
+        {
+          "description": "Students explore models of energy to develop an understanding of how energy can be transferred and transformed. They observe, explore or construct electrical circuits and recognise how an understanding of energy transformations has led to technological applications that people use in their everyday lives.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Earth and Space Science Life Skills": {
+      "Module 1: Earth's Resources": [
+        {
+          "description": "Students explore models of the Earth and its position in space. They investigate rocks and minerals, and the role of technologies in geology. They also consider the importance of the Earth's resources in people's lives.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Human Impacts": [
+        {
+          "description": "Students recognise the significance of the Earth's resources for living things. They explore a range of resources provided by the Earth and how humans use these resources to maintain life. They also consider the human impact on the environment.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Earth's Processes and Hazards": [
+        {
+          "description": "Students explore how the Earth has evolved over time. Through an exploration of climate variation and other geological processes, they develop an understanding of the occurrence and impacts of natural disasters. Students investigate how technologies can be used to predict and respond to these events.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Resource Management": [
+        {
+          "description": "Students explore a range of issues related to the Earth's resources that impact on human life, including pollution and disposal of waste. Students also consider the importance of managing resources and waste sustainably and how this can improve the world's future.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises that scientific investigations can support or refute a hypothesis",
+          "code": "SCLS6-13",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates how science impacts on society",
+          "code": "SCLS6-14",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores contemporary issues involving science",
+          "code": "SCLS6-15",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Living World Science Life Skills": {
+      "Module 1: The Structure and Organisation of Living Things": [
+        {
+          "description": "Students develop an understanding of the importance of natural resources, including energy from the Sun, for the survival of living things. They investigate the ways in which living things use their environment to obtain the resources necessary for their survival.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Diversity and Ecosystems": [
+        {
+          "description": "Students investigate a range of past and present habitats and ecosystems to explore the diversity of living things. They consider the relationship between living things and their environment and how human impact can affect diversity within a habitat or ecosystem.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Heredity and Genetics": [
+        {
+          "description": "Students recognise observable genetic traits and identify common genetic traits within their family. They develop an understanding of the difference between inherited traits and traits that are learned or passed on in social and cultural contexts. They also consider the ethics of selecting and producing genetic traits in a range of living things.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises that scientific investigations can support or refute a hypothesis",
+          "code": "SCLS6-13",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates how science impacts on society",
+          "code": "SCLS6-14",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores contemporary issues involving science",
+          "code": "SCLS6-15",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Disease and Disorders": [
+        {
+          "description": "Students investigate infectious and non-infectious diseases and disorders to develop an understanding of the treatment, prevention and control of diseases and disorders in our society. They explore issues relating to human health, including the use of technologies in treating diseases and disorders.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Chemical World Science Life Skills": {
+      "Module 1: Properties of Matter": [
+        {
+          "description": "Students explore properties of matter, and recognise the relationship between these properties and their uses in everyday contexts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Chemical Reactions": [
+        {
+          "description": "Students investigate a range of common chemical reactions and relate these to actions or products in everyday life.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ]
+    }
+  },
+  "Year 12": {
+    "Investigating Science Life Skills": {
+      "Module 1: Cause and Effect": [
+        {
+          "description": "Students recognise and make observations and use these to make predictions. They pose questions, and plan and conduct investigations to develop their knowledge and understanding of the world around them. They also explore data they have collected to identify patterns and trends and use these to make observations and draw conclusions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Scientific Models": [
+        {
+          "description": "Students engage with scientific models and gain an understanding of how models can represent scientific concepts. They explore a range of scientific models and participate in practical investigations to construct some models.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Science and Technology": [
+        {
+          "description": "Students develop an understanding of the process of scientific investigation. They observe and participate in a range of scientific investigations and recognise how these can be made reliable and valid. They also explore advances in scientific understanding and how science and technology are related.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises processes involved in a range of scientific investigations",
+          "code": "SCLS6-11",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Science and Society": [
+        {
+          "description": "Students explore myths that seem to have a scientific basis. They also explore how science can be used for human progress and development. They engage with ethical issues in science and how these impact on scientific research.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises that scientific investigations can support or refute a hypothesis",
+          "code": "SCLS6-13",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates how science impacts on society",
+          "code": "SCLS6-14",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores contemporary issues involving science",
+          "code": "SCLS6-15",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Physical World Science Life Skills": {
+      "Module 1: Forces and Motion": [
+        {
+          "description": "Students engage in observations and practical investigations to recognise motion in everyday life. They explore types of forces and investigate how force can impact on motion.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Energy": [
+        {
+          "description": "Students explore models of energy to develop an understanding of how energy can be transferred and transformed. They observe, explore or construct electrical circuits and recognise how an understanding of energy transformations has led to technological applications that people use in their everyday lives.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Earth and Space Science Life Skills": {
+      "Module 1: Earth's Resources": [
+        {
+          "description": "Students explore models of the Earth and its position in space. They investigate rocks and minerals, and the role of technologies in geology. They also consider the importance of the Earth's resources in people's lives.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Human Impacts": [
+        {
+          "description": "Students recognise the significance of the Earth's resources for living things. They explore a range of resources provided by the Earth and how humans use these resources to maintain life. They also consider the human impact on the environment.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Earth's Processes and Hazards": [
+        {
+          "description": "Students explore how the Earth has evolved over time. Through an exploration of climate variation and other geological processes, they develop an understanding of the occurrence and impacts of natural disasters. Students investigate how technologies can be used to predict and respond to these events.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Resource Management": [
+        {
+          "description": "Students explore a range of issues related to the Earth's resources that impact on human life, including pollution and disposal of waste. Students also consider the importance of managing resources and waste sustainably and how this can improve the world's future.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises that scientific investigations can support or refute a hypothesis",
+          "code": "SCLS6-13",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates how science impacts on society",
+          "code": "SCLS6-14",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores contemporary issues involving science",
+          "code": "SCLS6-15",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Living World Science Life Skills": {
+      "Module 1: The Structure and Organisation of Living Things": [
+        {
+          "description": "Students develop an understanding of the importance of natural resources, including energy from the Sun, for the survival of living things. They investigate the ways in which living things use their environment to obtain the resources necessary for their survival.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Diversity and Ecosystems": [
+        {
+          "description": "Students investigate a range of past and present habitats and ecosystems to explore the diversity of living things. They consider the relationship between living things and their environment and how human impact can affect diversity within a habitat or ecosystem.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "identifies how primary or secondary data is used in scientific investigations",
+          "code": "SCLS6-8",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Heredity and Genetics": [
+        {
+          "description": "Students recognise observable genetic traits and identify common genetic traits within their family. They develop an understanding of the difference between inherited traits and traits that are learned or passed on in social and cultural contexts. They also consider the ethics of selecting and producing genetic traits in a range of living things.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "recognises that scientific investigations can support or refute a hypothesis",
+          "code": "SCLS6-13",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates how science impacts on society",
+          "code": "SCLS6-14",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores contemporary issues involving science",
+          "code": "SCLS6-15",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Disease and Disorders": [
+        {
+          "description": "Students investigate infectious and non-infectious diseases and disorders to develop an understanding of the treatment, prevention and control of diseases and disorders in our society. They explore issues relating to human health, including the use of technologies in treating diseases and disorders.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "collects and represents qualitative or quantitative data and information using media as appropriate",
+          "code": "SCLS6-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        },
+        {
+          "description": "investigates technologies used in science",
+          "code": "SCLS6-12",
+          "scootle_url": ""
+        }
+      ]
+    },
+    "Chemical World Science Life Skills": {
+      "Module 1: Properties of Matter": [
+        {
+          "description": "Students explore properties of matter, and recognise the relationship between these properties and their uses in everyday contexts.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops conclusions from primary or secondary data and information",
+          "code": "SCLS6-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates information about an investigation using scientific language and terminology",
+          "code": "SCLS6-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explores models and descriptions of phenomena",
+          "code": "SCLS6-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Chemical Reactions": [
+        {
+          "description": "Students investigate a range of common chemical reactions and relate these to actions or products in everyday life.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "poses questions and hypotheses for scientific investigation",
+          "code": "SCLS6-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "plans an investigation individually or collaboratively to obtain primary or secondary data and information",
+          "code": "SCLS6-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "participates in investigations individually or collaboratively to collect primary or secondary data and information",
+          "code": "SCLS6-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses strategies to solve scientific problems",
+          "code": "SCLS6-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "uses patterns and trends in data to make observations and draw conclusions",
+          "code": "SCLS6-9",
+          "scootle_url": ""
+        }
+      ]
+    }
+  }
+}

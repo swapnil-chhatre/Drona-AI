@@ -1,0 +1,281 @@
+{
+  "Year 11": {
+    "Earth and Environmental Science": {
+      "Module 1: Earth's Resources": [
+        {
+          "description": "This module investigates compositional layers of the Earth. Students engage with rock composition and the origins of the component materials, including minerals. They extend their knowledge of the Earth and space from Science Stage 5 by learning about soil, the Rock Cycle and technologies used to gather geological data.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students explore science as a human endeavour in relation to the work of geologists, including the significance of this work to the mining of non-renewable resources. They also explore technologies used to gather and interpret data, including absolute and relative dating of rocks.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "EES11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "EES11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "EES11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes the key features of the Earth's systems, including the geosphere, atmosphere, hydrosphere and biosphere and how they are interrelated",
+          "code": "EES11-8",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Plate Tectonics": [
+        {
+          "description": "The Earth's surface is made of a series of tectonic plates that move and interact with one another. Solid evidence for the theory of plate tectonics was not proposed until the early 20th century. Initially, the theory was dismissed because of a lack of evidence. Eventually, however, the work of a series of scientists was combined to produce enough evidence to support acceptance of the theory. In many cases, the development of new technologies has allowed the individual pieces of this scientific puzzle be put together.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The theory of plate tectonics can explain not only the location and causes of earthquakes and volcanoes, but also the location of mountain ranges (both above and under the oceans) and deep ocean floor trenches. This theory also helps to explain many aspects of climate, evolution and extinction, and supports predictions about the future.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation []{.mark}",
+          "code": "EES11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "EES11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "EES11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "EES11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "EES11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes the evidence for the theory of plate tectonics and the energy and geological changes that occur at plate boundaries",
+          "code": "EES11-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Energy Transformations": [
+        {
+          "description": "Earth's processes require energy. This energy may be transformed from one form into another or transferred between objects. Energy from the Sun and the Earth's interior control processes within and between the Earth's spheres. Heat and gravitational energy in the Earth 's interior also drives the movements of tectonic plates. Energy transfers that occur on different timescales between the atmosphere, oceans and land generate weather and climate phenomena. The influence of cyclic phenomena, including El Ni\u00f1o and La Ni\u00f1a, affect global weather patterns.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Knowledge of the Earth's processes and of energy transfer allows scientists to explain phenomena and predict areas at risk.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "EES11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "EES11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "EES11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes the factors that influence how energy is transferred and transformed in the Earth's systems",
+          "code": "EES11-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Human Impacts": [
+        {
+          "description": "Humans use the Earth's resources to maintain life and provide infrastructure. However, natural resources are not infinite. Renewable resources such as water, soil, plants and animals can be managed sustainably using scientific knowledge. Incomplete information or failure to consider the impact of resources use may cause environmental damage.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Scientific knowledge enables efficient use of resources and also the rehabilitation of damaged ecosystems. Healthy ecosystems provide renewable resources, purify air and water, regulate climate and provide cultural services.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation []{.mark}",
+          "code": "EES11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "EES11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "EES11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes human impact on the Earth in relation to hydrological processes, geological processes and biological changes",
+          "code": "EES11-11",
+          "scootle_url": ""
+        }
+      ]
+    }
+  },
+  "Year 12": {
+    "Earth and Environmental Science": {
+      "Module 5: Earth's Processes": [
+        {
+          "description": "Since the formation of the Earth, both the atmosphere and lithosphere have been continually changing, each influencing the other. The processes of plate tectonics, together with the formation of water and the introduction of life, have further contributed to these changes. All three, in combination, have altered and continue to alter both the atmosphere and lithosphere.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "With the discovery of fossils, it became possible to develop the geological timescale and to determine when mass evolution and extinction events occurred. Both were and are strongly influenced by the phases of the plate tectonic supercycle, which has a significant effect on climate. This knowledge gives us new information about climate and natural cycles of change.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "EES11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "EES11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "EES11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and evaluates the models that show the structure and development of the Earth over its history",
+          "code": "EES12-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 6: Hazards": [
+        {
+          "description": "Natural disasters such as earthquakes, volcanic activity and cyclones have a significant impact on the Earth's environment, and often affect thousands of people, causing enormous damage. In many cases, the probability of such an event occurring is closely linked to an area's proximity to a plate boundary. The type of plate boundary can also influence the severity of the event.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "To some extent, technologies can be used to predict hazardous events and mitigate their effects. However, humans are still not able to prevent these events from occurring. Whether the climate alters the frequency and magnitude of these events is also uncertain. Students will explore the use, development and analysis of seismic data in order to examine significant seismic events.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation",
+          "code": "EES11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "EES11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "EES11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "EES11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and evaluates the causes of the Earth's hazards and the ways in which they affect, and are affected by, the Earth's systems",
+          "code": "EES12-13",
+          "scootle_url": ""
+        }
+      ],
+      "Module 7: Climate Science": [
+        {
+          "description": "A significant global concern of governments and non-government bodies relates to natural and scientific evidence of anthropogenic climate variation. The acidification and warming of oceans can impact on marine life, and evidence indicates that rising sea levels could also impact on human communities in low-lying locations around the world.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students examine the mechanisms and scientific evidence for climate variation. They distinguish between evidence of natural processes and scientific evidence of anthropogenic influences, which both cause the Earth's climate to change. Students are provided with opportunities to form evidence-based opinions on, and develop strategies to manage, the effects of climate variation in the future.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation",
+          "code": "EES11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "EES11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "EES11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses the natural processes and human influences on the Earth, including the scientific evidence for changes in climate",
+          "code": "EES12-14",
+          "scootle_url": ""
+        }
+      ],
+      "Module 8: Resource Management": [
+        {
+          "description": "Australia is rich in both renewable natural resources (eg agricultural production, sunlight) and non-renewable natural resources (eg minerals, fossil fuels). Students examine how the extraction and disposal of waste can greatly impact on the surrounding environment, affecting the quality and availability of renewable resources such as water and living organisms. The extent of this impact is referred to as an 'ecological footprint'.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Scientific models of resource extraction, use and management have developed over time in response to new discoveries and through the incorporation of sustainable practices, many of which have been developed by Aboriginal and Torres Strait Islander Peoples. The world's population is increasing and more natural resources are being extracted to provide food, consumer goods, energy and infrastructure. Sustainable management of both natural resources and waste is vital for human long-term survival.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "EES11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "EES11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "EES11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and assesses renewable and non-renewable Earth resources and how their extraction, use, consumption and disposal affect the Earth's systems",
+          "code": "EES12-15",
+          "scootle_url": ""
+        }
+      ]
+    }
+  }
+}
