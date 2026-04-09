@@ -1,0 +1,331 @@
+{
+  "Year 11": {
+    "Physics": {
+      "Module 1: Kinematics": [
+        {
+          "description": "Motion is a fundamental observable phenomenon. The study of kinematics involves describing, measuring and analysing motion without considering the forces and masses involved in that motion. Uniformly accelerated motion is described in terms of relationships between measurable scalar and vector quantities, including displacement, speed, velocity, acceleration and time.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Representations -- including graphs and vectors, and equations of motion -- can be used qualitatively and quantitatively to describe and predict linear motion.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "By studying this module, students come to understand that scientific knowledge enables scientists to offer valid explanations and make reliable predictions, particularly in regard to the motion of an object.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "PH11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "PH11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "PH11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "PH11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "PH11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and analyses motion in terms of scalar and vector quantities in two dimensions and makes quantitative measurements and calculations for distance, displacement, speed, velocity and acceleration",
+          "code": "PH11-8",
+          "scootle_url": ""
+        }
+      ],
+      "Module 2: Dynamics": [
+        {
+          "description": "The relationship between the motion of objects and the forces that act on them is often complex. However, Newton's Laws of Motion can be used to describe the effect of forces on the motion of single objects and simple systems. This module develops the key concept that forces are always produced in pairs that act on different objects and add to zero.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "By applying Newton's laws directly to simple systems, and, where appropriate, the law of conservation of momentum and law of conservation of mechanical energy, students examine the effects of forces. They also examine the interactions and relationships that can occur between objects by modelling and representing these using vectors and equations.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "In many situations, within and beyond the discipline of physics, knowing the rates of change of quantities provides deeper insight into various phenomena. In this module, the rates of change of displacement, velocity and energy are of particular significance and students develop an understanding of the usefulness and limitations of modelling.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "PH11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "PH11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "PH11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and explains events in terms of Newton's Laws of Motion, the law of conservation of momentum and the law of conservation of energy",
+          "code": "PH11-9",
+          "scootle_url": ""
+        }
+      ],
+      "Module 3: Waves and Thermodynamics": [
+        {
+          "description": "Wave motion involves the transfer of energy without the transfer of matter. By exploring the behaviour of wave motion and examining the characteristics of wavelength, frequency, period, velocity and amplitude, students further their understanding of the properties of waves. They are then able to demonstrate how waves can be reflected, refracted, diffracted and superposed (interfered) and to develop an understanding that not all waves require a medium for their propagation. Students examine mechanical waves and electromagnetic waves, including their similarities and differences.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students also examine energy and its transfer, in the form of heat, from one place to another. Thermodynamics is the study of the relationship between energy, work, temperature and matter. Understanding this relationship allows students to appreciate particle motion within objects. Students have the opportunity to examine how hot objects lose energy in three ways: first, by conduction, and, second, by convection -- which both involve the motion of particles; and, third, the emission of electromagnetic radiation. An understanding of thermodynamics is a pathway to understanding related concepts in many fields involving Science, Technology, Engineering and Mathematics (STEM).",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "PH11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "PH11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "PH11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "PH11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains and analyses waves and the transfer of energy by sound, light and thermodynamic principles",
+          "code": "PH11-10",
+          "scootle_url": ""
+        }
+      ],
+      "Module 4: Electricity and Magnetism": [
+        {
+          "description": "Atomic theory and the laws of conservation of energy and electric charge are unifying concepts in understanding the electrical and magnetic properties and behaviour of matter. Interactions resulting from these properties and behaviour can be understood and analysed in terms of electric fields represented by lines. Students use these representations and mathematical models to make predictions about the behaviour of objects, and explore the limitations of the models.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students also examine how the analysis of electrical circuits' behaviour and the transfer and conversion of energy in electrical circuits has led to a variety of technological applications.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation",
+          "code": "PH11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "PH11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "PH11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains and quantitatively analyses electric fields, circuitry and magnetism",
+          "code": "PH11-11",
+          "scootle_url": ""
+        }
+      ]
+    }
+  },
+  "Year 12": {
+    "Physics": {
+      "Module 5: Advanced Mechanics": [
+        {
+          "description": "Motion in one dimension at constant velocity or constant acceleration can be explained and analysed relatively simply. However, motion is frequently more complicated because objects move in two or three dimensions, causing the net force to vary in size or direction.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Students develop an understanding that all forms of complex motion can be understood by analysing the forces acting on a system, including the energy transformations taking place within and around the system. By applying new mathematical techniques, students model and predict the motion of objects within systems. They examine two-dimensional motion, including projectile motion and uniform circular motion, along with the orbital motion of planets and satellites, which are modelled as an approximation to uniform circular motion.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "PH11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "PH11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "PH11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "PH11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and analyses qualitatively and quantitatively circular motion and motion in a gravitational field, in particular, the projectile motion of particles",
+          "code": "PH12-12",
+          "scootle_url": ""
+        }
+      ],
+      "Module 6: Electromagnetism": [
+        {
+          "description": "Discoveries about the interactions that take place between charged particles and electric and magnetic fields not only produced significant advances in physics, but also led to significant technological developments. These developments include the generation and distribution of electricity, and the invention of numerous devices that convert electrical energy into other forms of energy.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Understanding the similarities and differences in the interactions of single charges in electric and magnetic fields provides students with a conceptual foundation for this module. Phenomena that include the force produced on a current-carrying wire in a magnetic field, the force between current-carrying wires, Faraday's Law of Electromagnetic Induction, the principles of transformers and the workings of motors and generators can all be understood as instances of forces acting on moving charged particles in magnetic fields.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "The law of conservation of energy underpins all of these interactions. The conversion of energy into forms other than the intended form is a problem that constantly drives engineers to improve designs of electromagnetic devices.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation",
+          "code": "PH11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "PH11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "PH11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "PH11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "PH11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains and analyses the electric and magnetic interactions due to charged particles and currents and evaluates their effect both qualitatively and quantitatively",
+          "code": "PH12-13",
+          "scootle_url": ""
+        }
+      ],
+      "Module 7: The Nature of Light": [
+        {
+          "description": "Prior to the 20th century, physicists, including Newton and Maxwell, developed theories and models about mechanics, electricity and magnetism and the nature of matter. These theories and models had great explanatory power and produced useful predictions. However, the 20th century saw major developments in physics as existing theories and models were challenged by new observations that could not be explained. These observations led to the development of quantum theory and the theory of relativity. Technologies arising from these theories have shaped the modern world. For example, the independence of the speed of light on the frame of observation or the motion of the source and observer had significant consequences for the measurement, and concepts about the nature, of time and space.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Throughout this module, students explore the evidence supporting these physical theories, along with the power of scientific theories to make useful predictions.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "develops and evaluates questions and hypotheses for scientific investigation",
+          "code": "PH11/12-1",
+          "scootle_url": ""
+        },
+        {
+          "description": "designs and evaluates investigations in order to obtain primary and secondary data and information",
+          "code": "PH11/12-2",
+          "scootle_url": ""
+        },
+        {
+          "description": "conducts investigations to collect valid and reliable primary and secondary data and information",
+          "code": "PH11/12-3",
+          "scootle_url": ""
+        },
+        {
+          "description": "selects and processes appropriate qualitative and quantitative data and information using a range of appropriate media",
+          "code": "PH11/12-4",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "PH11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "describes and analyses evidence for the properties of light and evaluates the implications of this evidence for modern theories of physics in the contemporary world",
+          "code": "PH12-14",
+          "scootle_url": ""
+        }
+      ],
+      "Module 8: From the Universe to the Atom": [
+        {
+          "description": "Humans have always been fascinated with the finite or infinite state of the Universe and whether there ever was a beginning to time. Where does all the matter that makes up the Universe come from? Ideas and theories about the beginnings of the Universe, based on sound scientific evidence, have come and gone. Current theories such as the Big Bang theory and claims of an expanding Universe are based on scientific evidence available today through investigations that use modern technologies. Evidence gathered on the nucleosynthesis reactions in stars allows scientists to understand how elements are made in the nuclear furnace of stars. On scales as large as the Universe to those as small as an atom, humans look to the sky for answers through astronomical observations of stars and galaxies.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Beginning in the late 19th and early 20th centuries, experimental discoveries revolutionised the accepted understanding of the nature of matter on an atomic scale. Observations of the properties of matter and light inspired the development of better models of matter, which in turn have been modified or abandoned in the light of further experimental investigations.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "By studying the development of the atomic models through the work of Thomson and Rutherford, who established the nuclear model of the atom -- a positive nucleus surrounded by electrons -- students further their understanding of the limitations of theories and models. The work of Bohr, de Broglie and, later, Schr\u00f6dinger demonstrated that the quantum mechanical nature of matter was a better way to understand the structure of the atom. Experimental investigations of the nucleus have led to an understanding of radioactive decay, the ability to extract energy from nuclear fission and fusion, and a deeper understanding of the atomic model.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "Particle accelerators have revealed that protons themselves are not fundamental, and have continued to provide evidence in support of the Standard Model of matter. In studying this module, students can appreciate that the fundamental particle model is forever being updated and that our understanding of the nature of matter remains incomplete.",
+          "code": "",
+          "scootle_url": ""
+        },
+        {
+          "description": "analyses and evaluates primary and secondary data and information",
+          "code": "PH11/12-5",
+          "scootle_url": ""
+        },
+        {
+          "description": "solves scientific problems using primary and secondary data, critical thinking skills and scientific processes",
+          "code": "PH11/12-6",
+          "scootle_url": ""
+        },
+        {
+          "description": "communicates scientific understanding using suitable language and terminology for a specific audience or purpose",
+          "code": "PH11/12-7",
+          "scootle_url": ""
+        },
+        {
+          "description": "explains and analyses the evidence supporting the relationship between astronomical events and the nucleosynthesis of atoms and relates these to the development of the current model of the atom",
+          "code": "PH12-15",
+          "scootle_url": ""
+        }
+      ]
+    }
+  }
+}
