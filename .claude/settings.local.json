@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npx ng:*)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('Angular:', p.dependencies['@angular/core']\\)\")",
+      "Bash(npm view:*)",
+      "Bash(node -e \"const v=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const arr=JSON.parse\\(v\\); console.log\\(arr.slice\\(-5\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/angularx-qrcode/package.json'\\).version\\)\")"
     ]
   }
 }
