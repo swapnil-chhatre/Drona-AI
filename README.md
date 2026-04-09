@@ -1,8 +1,6 @@
 # Drona-AI
 ## Hackathon Project
 
----
-
 ## Introduction
 
 ### Challenge Statement
@@ -189,6 +187,16 @@ uv run fastapi dev main.py
 ```
 
 Runs at `http://localhost:8000`
+
+## Built By
+
+| Name | LinkedIn |
+|---|---|
+| Abraham Wilson | [linkedin.com/in/abraham-wilson-aba231192](https://www.linkedin.com/in/abraham-wilson-aba231192/) |
+| Swapnil Chhatre | [linkedin.com/in/swapnil-chhatre](https://www.linkedin.com/in/swapnil-chhatre/) |
+| Ruben Easo Thomas | [linkedin.com/in/rubent99](https://www.linkedin.com/in/rubent99/) |
+
+---
 
 ## Future Scope
 
