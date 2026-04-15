@@ -72,8 +72,25 @@ class DiscoveryService:
 
     def _search_web_resources_logic(self, query: str) -> str:
         """Encapsulates the logic for searching web resources."""
-        results = self.tavily.invoke(query)
-        return json.dumps(results)
+        try:
+            results = self.tavily.invoke(query)
+        except Exception as e:
+            return json.dumps({"error": str(e)})
+
+        # Tavily can embed exception objects in its results on partial failures;
+        # convert anything non-serializable to its string representation.
+        def _safe(obj):
+            if isinstance(obj, list):
+                return [_safe(item) for item in obj]
+            if isinstance(obj, dict):
+                return {k: _safe(v) for k, v in obj.items()}
+            try:
+                json.dumps(obj)
+                return obj
+            except (TypeError, ValueError):
+                return str(obj)
+
+        return json.dumps(_safe(results))
 
     def _build_system_prompt(self) -> str:
         """Returns the system prompt instructing the agent on resource criteria."""

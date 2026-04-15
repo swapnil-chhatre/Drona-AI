@@ -23,7 +23,7 @@ class CurriculumOutcome(BaseModel):
 
 class ResourceList(BaseModel):
     resources: list[Resource] = Field(min_length=10, description="At least 10 unique resources must be returned.")
-    curriculum_outcomes: list[CurriculumOutcome]  # Scootle cards for frontend
+    curriculum_outcomes: list[CurriculumOutcome]
     search_queries_used: list[str]
     total_found: int
     ai_recommendation: str = Field(description="A concise 2-3 sentence recommendation for the teacher summarising the best resources found and why.")
